@@ -1,4 +1,4 @@
-export const SITE_URL = "https://gkformation.com";
+export const SITE_URL = "https://ganttkarr.com";
 export const SITE_NAME = "Gantt & Karr Formation Group";
 
 const ORG_BASE = {
@@ -9,14 +9,14 @@ const ORG_BASE = {
   url: SITE_URL,
   logo: {
     "@type": "ImageObject",
-    url: `${SITE_URL}/gantt-karr/opengraph.jpg`,
+    url: `${SITE_URL}/opengraph.jpg`,
     width: 1200,
     height: 630,
   },
-  image: `${SITE_URL}/gantt-karr/opengraph.jpg`,
+  image: `${SITE_URL}/opengraph.jpg`,
   description:
     "Family-led business formation, notary services, and startup support powered by Anna AI. Serving entrepreneurs across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana.",
-  email: "contact@gkformation.com",
+  email: "Info@ganttkarr.com",
   telephone: "1-800-GANTT-KARR",
   priceRange: "$$",
   address: {
@@ -71,9 +71,9 @@ const ORG_BASE = {
     "Startup Support",
   ],
   sameAs: [
-    "https://www.facebook.com/gkformationgroup",
-    "https://www.instagram.com/gkformationgroup",
-    "https://www.linkedin.com/company/gkformationgroup",
+    "https://www.facebook.com/ganttkarr",
+    "https://www.instagram.com/ganttkarr",
+    "https://www.linkedin.com/company/ganttkarr",
   ],
 };
 

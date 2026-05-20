@@ -43,7 +43,7 @@ export function Footer() {
           <div>
             <h4 className="font-bold mb-6 text-white tracking-wider text-sm uppercase">Contact</h4>
             <ul className="space-y-3 text-sm text-primary-foreground/80">
-              <li>contact@gkformation.com</li>
+              <li>Info@ganttkarr.com</li>
               <li>1-800-GANTT-KARR</li>
               <li className="pt-4"><Link href="/consultation" className="text-secondary font-medium hover:text-white transition-colors">Book a Consultation</Link></li>
               <li><Link href="/become-a-partner" className="hover:text-secondary transition-colors">Partner With Us</Link></li>

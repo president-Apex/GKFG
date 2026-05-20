@@ -107,7 +107,7 @@ export default function TermsOfService() {
         <p>
           Questions about these Terms?<br />
           <strong>Gantt & Karr Formation Group</strong><br />
-          contact@gkformation.com<br />
+          Info@ganttkarr.com<br />
           1-800-GANTT-KARR
         </p>
 

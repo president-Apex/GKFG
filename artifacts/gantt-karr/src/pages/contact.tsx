@@ -68,7 +68,7 @@ export default function Contact() {
                 <div className="space-y-8">
                   <div>
                     <h4 className="text-sm font-medium text-secondary mb-2 uppercase tracking-wider">Email</h4>
-                    <p className="text-lg">contact@gkformation.com</p>
+                    <p className="text-lg">Info@ganttkarr.com</p>
                   </div>
                   
                   <div>

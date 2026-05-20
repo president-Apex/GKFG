@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gkformation.com/gantt-karr/sitemap.xml
+Sitemap: https://ganttkarr.com/sitemap.xml

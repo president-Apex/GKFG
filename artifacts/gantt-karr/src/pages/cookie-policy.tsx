@@ -115,7 +115,7 @@ export default function CookiePolicy() {
         <h2>Contact Us</h2>
         <p>
           Questions about our use of cookies? Contact us at:<br />
-          privacy@gkformation.com
+          Info@ganttkarr.com
         </p>
 
         <div className="flex flex-wrap gap-4 mt-12 text-sm text-gray-500 border-t pt-6">

@@ -60,7 +60,7 @@ export default function MessagingTerms() {
         <h2>6. Help</h2>
         <p>
           For assistance, reply <strong>HELP</strong> to any message or contact us at:<br />
-          contact@gkformation.com<br />
+          Info@ganttkarr.com<br />
           1-800-GANTT-KARR
         </p>
 

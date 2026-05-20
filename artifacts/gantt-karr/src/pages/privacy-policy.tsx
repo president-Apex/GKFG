@@ -70,7 +70,7 @@ export default function PrivacyPolicy() {
           <li>Request restriction of processing or object to processing</li>
           <li>Lodge a complaint with a supervisory authority</li>
         </ul>
-        <p>To exercise any of these rights, contact us at privacy@gkformation.com.</p>
+        <p>To exercise any of these rights, contact us at Info@ganttkarr.com.</p>
 
         <h2>7. Security</h2>
         <p>
@@ -100,7 +100,7 @@ export default function PrivacyPolicy() {
         <p>
           If you have questions about this Privacy Policy, please contact us:<br />
           <strong>Gantt & Karr Formation Group</strong><br />
-          privacy@gkformation.com<br />
+          Info@ganttkarr.com<br />
           1-800-GANTT-KARR
         </p>
 
