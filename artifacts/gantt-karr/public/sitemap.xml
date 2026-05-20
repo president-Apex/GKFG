@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Core Pages -->
+  <url><loc>https://gkformation.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://gkformation.com/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gkformation.com/meet-the-founder</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/meet-kaileyanne</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/meet-anna</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/pricing</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://gkformation.com/how-it-works</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gkformation.com/consultation</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://gkformation.com/faq</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/blog</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gkformation.com/become-a-partner</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Services Hub -->
+  <url><loc>https://gkformation.com/services</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
+  <!-- Core Service Pages -->
+  <url><loc>https://gkformation.com/services/llc-formation</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://gkformation.com/services/corporation-filing</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://gkformation.com/services/ein-assistance</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gkformation.com/services/registered-agent</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://gkformation.com/services/boi-reporting</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://gkformation.com/services/online-notary</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gkformation.com/services/mobile-notary</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gkformation.com/services/loan-signing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gkformation.com/services/launch-packages</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gkformation.com/services/anna-ai-intake</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Additional Services -->
+  <url><loc>https://gkformation.com/services/notary</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/services/business-formation</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/services/operating-agreement</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/services/business-name-search</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/services/document-preparation</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://gkformation.com/services/startup-consultation</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/services/startup-compliance</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://gkformation.com/services/google-business-profile</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Resources -->
+  <url><loc>https://gkformation.com/resources</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/resources/professional-center</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Locations Hub -->
+  <url><loc>https://gkformation.com/locations</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- State Pages -->
+  <url><loc>https://gkformation.com/locations/missouri</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gkformation.com/locations/arizona</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gkformation.com/locations/north-carolina</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gkformation.com/locations/georgia</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gkformation.com/locations/tennessee</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gkformation.com/locations/montana</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Missouri Cities -->
+  <url><loc>https://gkformation.com/locations/missouri/kansas-city</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/locations/missouri/liberty</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/locations/missouri/st-louis</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Arizona Cities -->
+  <url><loc>https://gkformation.com/locations/arizona/phoenix</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/locations/arizona/scottsdale</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/locations/arizona/chandler</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- North Carolina Cities -->
+  <url><loc>https://gkformation.com/locations/north-carolina/charlotte</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/locations/north-carolina/raleigh</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/locations/north-carolina/durham</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Georgia Cities -->
+  <url><loc>https://gkformation.com/locations/georgia/atlanta</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/locations/georgia/alpharetta</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/locations/georgia/savannah</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Tennessee Cities -->
+  <url><loc>https://gkformation.com/locations/tennessee/nashville</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/locations/tennessee/franklin</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/locations/tennessee/knoxville</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Montana Cities -->
+  <url><loc>https://gkformation.com/locations/montana/bozeman</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/locations/montana/billings</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gkformation.com/locations/montana/missoula</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Legal Pages -->
+  <url><loc>https://gkformation.com/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://gkformation.com/cookie-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://gkformation.com/terms-of-service</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://gkformation.com/messaging-terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://gkformation.com/disclaimer</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+</urlset>

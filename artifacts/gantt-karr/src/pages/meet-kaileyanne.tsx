@@ -1,6 +1,7 @@
 import { SEO } from "@/components/seo";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { personSchema, breadcrumbSchema, SITE_URL } from "@/lib/schema";
 
 export default function MeetKaileyanne() {
   return (
@@ -8,6 +9,11 @@ export default function MeetKaileyanne() {
       <SEO
         title="Meet Kaileyanne Karr | Gantt & Karr Formation Group"
         description="Kaileyanne Karr supports Gantt & Karr Formation Group through client assistance, document coordination, scheduling support, and notary services."
+        image={`${SITE_URL}/gantt-karr/kaileyanne-karr.png`}
+        schema={[
+          personSchema({ name: "Kaileyanne Karr", jobTitle: "Business Support & Notary Specialist", description: "Kaileyanne Karr supports Gantt & Karr Formation Group through client assistance, document coordination, scheduling support, and notary services.", image: `${SITE_URL}/gantt-karr/kaileyanne-karr.png`, url: `${SITE_URL}/meet-kaileyanne` }),
+          breadcrumbSchema([{ name: "Home", href: "/" }, { name: "About", href: "/about" }, { name: "Meet Kaileyanne Karr", href: "/meet-kaileyanne" }]),
+        ]}
       />
 
       {/* Hero */}

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link, useParams } from "wouter";
 import { locationsData, cityData } from "@/data/locations-data";
 import NotFound from "@/pages/not-found";
+import { locationSchema, breadcrumbSchema } from "@/lib/schema";
 
 export default function LocationDetail() {
   const { state, city } = useParams();
@@ -14,12 +15,28 @@ export default function LocationDetail() {
   if (!stateInfo) return <NotFound />;
   if (city && !cityInfo) return <NotFound />;
 
-  const title = city ? `${cityInfo.name}, ${stateInfo.name}` : stateInfo.name;
-  const context = city ? cityInfo.context : stateInfo.info;
+  const resolvedCity = cityInfo ?? null;
+  const title = city && resolvedCity ? `${resolvedCity.name}, ${stateInfo.name}` : stateInfo.name;
+  const context = city && resolvedCity ? resolvedCity.context : stateInfo.info;
 
   return (
     <>
-      <SEO title={`Business Formation in ${title}`} />
+      <SEO
+        title={`Business Formation in ${title} | Gantt & Karr Formation Group`}
+        description={`Business formation assistance, notary services, and startup support in ${title}. LLC formation, EIN assistance, and registered agent services from Gantt & Karr Formation Group.`}
+        schema={[
+          ...(city && resolvedCity && state
+            ? [locationSchema({ city: resolvedCity.name, state: stateInfo.name, slug: `${state}/${city}` })]
+            : []),
+          breadcrumbSchema([
+            { name: "Home", href: "/" },
+            { name: "Locations", href: "/locations" },
+            ...(city && resolvedCity && state
+              ? [{ name: stateInfo.name, href: `/locations/${state}` }, { name: resolvedCity.name, href: `/locations/${state}/${city}` }]
+              : [{ name: stateInfo.name, href: `/locations/${state ?? ""}` }]),
+          ]),
+        ]}
+      />
       
       <div className="pt-24 pb-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 max-w-4xl text-center">

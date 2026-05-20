@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/seo";
 import { Disclaimer } from "@/components/disclaimer";
 import { CheckCircle, Building2, ArrowRight } from "lucide-react";
+import { serviceSchema, faqSchema, breadcrumbSchema, SITE_URL } from "@/lib/schema";
 
 const process = [
   {
@@ -100,6 +101,17 @@ export default function CorporationFiling() {
       <SEO
         title="Corporation Filing Assistance | Gantt & Karr Formation Group"
         description="Professional corporation filing assistance for entrepreneurs and growing businesses. We coordinate your Articles of Incorporation, state filing, and post-formation support."
+        schema={[
+          serviceSchema({ name: "Corporation Filing Assistance", description: "Professional support for forming a corporation. We coordinate Articles of Incorporation, state filing, and post-formation documentation across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana.", url: `${SITE_URL}/services/corporation-filing`, category: "Business Formation Service" }),
+          faqSchema([
+            { q: "What states do you assist with corporation filings?", a: "We currently assist with corporation filings across several states including Missouri, Arizona, North Carolina, Tennessee, Georgia, and Montana. Contact us to confirm availability for your specific state." },
+            { q: "What is the difference between a C-Corp and an S-Corp?", a: "A C-Corporation is the default corporate structure subject to corporate income tax. An S-Corporation is a tax election made with the IRS that allows income and losses to pass through to shareholders' personal tax returns, avoiding double taxation." },
+            { q: "Do I need a registered agent for my corporation?", a: "Yes. Every corporation is required to maintain a registered agent with a physical address in the state of formation. We offer Missouri registered agent coordination as part of our services." },
+            { q: "Is corporation formation right for my business?", a: "Corporations are often best for businesses that plan to raise investment capital, issue stock to employees, or eventually go public. We can discuss your goals during a free consultation." },
+            { q: "Do you provide legal or tax advice?", a: "No. Gantt & Karr Formation Group provides business formation assistance and document coordination — not legal, tax, or financial advice. We strongly encourage consulting a licensed attorney or CPA before deciding on your business structure." },
+          ]),
+          breadcrumbSchema([{ name: "Home", href: "/" }, { name: "Services", href: "/services" }, { name: "Corporation Filing Assistance", href: "/services/corporation-filing" }]),
+        ]}
       />
 
       {/* Hero */}

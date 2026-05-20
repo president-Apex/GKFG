@@ -2,6 +2,7 @@ import { SEO } from "@/components/seo";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { CheckCircle, ArrowRight } from "lucide-react";
+import { homePageSchema } from "@/lib/schema";
 
 const coreServices = [
   { title: "LLC Formation Assistance", slug: "llc-formation", desc: "State filing coordination and document support" },
@@ -27,7 +28,11 @@ const trustPoints = [
 export default function Home() {
   return (
     <>
-      <SEO title="Home" />
+      <SEO
+        title="Business Formation, Notary &amp; Startup Support"
+        description="Gantt &amp; Karr Formation Group — family-led LLC formation, corporation filing, notary services, and startup support across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana."
+        schema={homePageSchema()}
+      />
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-primary text-primary-foreground py-28 md:py-36 lg:py-44">

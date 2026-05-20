@@ -1,9 +1,17 @@
 import { SEO } from "@/components/seo";
+import { personSchema, breadcrumbSchema, SITE_URL } from "@/lib/schema";
 
 export default function MeetTheFounder() {
   return (
     <>
-      <SEO title="Meet the Founder - Loresa Gantt" />
+      <SEO
+        title="Meet Loresa Gantt — Founder & CEO"
+        description="Loresa Gantt is the founder and CEO of Gantt & Karr Formation Group, a family-led business formation and notary services company serving entrepreneurs across 6 states."
+        schema={[
+          personSchema({ name: "Loresa Gantt", jobTitle: "Founder & CEO", description: "Founder of Gantt & Karr Formation Group, providing family-led business formation, notary, and startup support across Missouri and 5 other states.", url: `${SITE_URL}/meet-the-founder` }),
+          breadcrumbSchema([{ name: "Home", href: "/" }, { name: "About", href: "/about" }, { name: "Meet Loresa Gantt", href: "/meet-the-founder" }]),
+        ]}
+      />
       <div className="pt-24 pb-16 bg-muted">
         <div className="container mx-auto px-4 max-w-4xl flex flex-col md:flex-row items-center gap-12">
           <div className="w-48 h-48 md:w-64 md:h-64 bg-primary/10 rounded-full flex-shrink-0 flex items-center justify-center overflow-hidden border-4 border-white shadow-xl">
