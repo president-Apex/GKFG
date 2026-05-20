@@ -1,0 +1,336 @@
+Build a complete 54-page website for:
+
+GANTT & KARR FORMATION GROUP
+
+Tagline:
+Family-Led Business Formation, Notary & Startup Support
+Powered by Anna
+
+Brand:
+Professional, beautiful, trustworthy, warm, premium, family-led, female-led.
+
+Do NOT use Apex colors.
+Do NOT use navy, gold, dark tech, cyber, or AI command-center styling.
+
+Use:
+Primary Sage Green: #7A9E8E
+Deep Forest Green: #4D665A
+Warm Cream: #F6F2EA
+Soft Taupe: #D7CEC3
+Dusty Rose Accent: #C89C94
+Text: #2F2F2F
+
+Typography:
+Headlines: Playfair Display
+Body: Inter
+
+Founder:
+Loresa Gantt — Founder & CEO
+
+Team:
+Kaileyanne Karr — Director of Client Experience & Operations
+
+AI Assistant:
+Anna — AI Intake Assistant
+
+Core Services:
+Business formation assistance, EIN application assistance, LLC formation assistance, corporation formation assistance, S-Corp election assistance, Missouri registered agent services, notary services, mobile notary, remote online notarization if legally available, loan signing agent services, document support, startup packages, and AI-powered intake through Anna.
+
+Compliance:
+Gantt & Karr Formation Group is not a law firm, CPA firm, tax advisory firm, or financial advisory firm. We do not provide legal, tax, accounting, or financial advice. Clients should consult a licensed attorney, CPA, tax professional, or financial advisor for advice specific to their situation.
+
+Primary CTA:
+Start My Business Setup
+
+Secondary CTA:
+Book a Free Startup Consultation
+
+==================================================
+54 PAGE WEBSITE STRUCTURE
+==================================================
+
+CORE PAGES — 5
+
+1. Home
+2. About
+3. Services
+4. Pricing
+5. Contact / Book Consultation
+
+SERVICE PAGES — 14
+
+6. LLC Formation Assistance
+7. Corporation Formation Assistance
+8. S-Corp Election Assistance
+9. EIN Application Assistance
+10. Missouri Registered Agent Services
+11. Operating Agreement Support
+12. BOI Report Guide / Educational Page Only
+13. Business License Research
+14. Startup Packages
+15. Notary Services
+16. Mobile Notary Services
+17. Remote Online Notarization
+18. Loan Signing Agent Services
+19. Anna AI Intake Assistant
+
+STATE PAGES — 6
+
+20. Missouri
+21. Arizona
+22. North Carolina
+23. Tennessee
+24. Georgia
+25. Montana
+
+CITY PAGES — 18
+
+26. Kansas City, Missouri
+27. Liberty, Missouri
+28. St. Louis, Missouri
+
+29. Phoenix, Arizona
+30. Scottsdale, Arizona
+31. Chandler, Arizona
+
+32. Charlotte, North Carolina
+33. Raleigh, North Carolina
+34. Durham, North Carolina
+
+35. Nashville, Tennessee
+36. Franklin, Tennessee
+37. Knoxville, Tennessee
+
+38. Atlanta, Georgia
+39. Alpharetta, Georgia
+40. Savannah, Georgia
+
+41. Bozeman, Montana
+42. Billings, Montana
+43. Missoula, Montana
+
+BLOG / RESOURCE PAGES — 8
+
+44. How to Start an LLC in Missouri
+45. LLC vs Corporation
+46. What Is a Registered Agent?
+47. BOI Report Guide
+48. What Is Remote Online Notarization?
+49. Mobile Notary vs Online Notary
+50. Missouri LLC Checklist
+51. Loan Signing Guide
+
+LEGAL / COMPLIANCE PAGES — 3
+
+52. Privacy Policy
+53. Terms of Service
+54. Disclaimer
+
+==================================================
+PRICING PAGE
+==================================================
+
+Add pricing packages:
+
+START PACKAGE — $297
+Includes:
+- Startup consultation
+- Business name guidance
+- EIN application assistance
+- Startup checklist
+- Document organization support
+- Anna AI intake support
+- Email support
+
+GROW PACKAGE — $597
+Includes:
+- Everything in Start
+- LLC formation assistance
+- Operating agreement support
+- Business startup guidance
+- Business address guidance
+- Priority support
+- Startup planning session
+
+FOUNDERS PACKAGE — $997
+Includes:
+- Everything in Grow
+- EIN application assistance
+- Missouri registered agent service, if applicable
+- Business startup roadmap
+- Business phone setup guidance
+- Google Business Profile guidance
+- One-on-one strategy session
+- Priority onboarding
+
+EXECUTIVE PACKAGE — $1,997
+Includes:
+- Everything in Founders
+- White-glove startup support
+- Business systems setup guidance
+- Website launch guidance
+- AI intake consultation
+- Extended founder consultation
+- VIP support
+
+Add note:
+State filing fees, government fees, third-party fees, and professional fees are separate unless specifically stated.
+
+==================================================
+ADD-ONS
+==================================================
+
+EIN Application Assistance — $75
+Rush EIN Assistance — $125
+LLC Formation Assistance — $175
+Corporation Formation Assistance — $225
+S-Corp Election Filing Assistance — $150
+Operating Agreement Support — $75
+Business Name Search Guidance — $50
+Missouri Registered Agent Service — $125/year
+Mobile Notary — Starting at $25 + travel fees
+Loan Signing Agent Services — Starting at $125
+Remote Online Notary — Starting at $25
+Document Preparation Support — $75
+Document Organization Package — $50
+Business License Research — $99
+Business Address Guidance — $50
+Business Startup Consultation — $99
+Rush Startup Processing — $199
+Business Phone Setup Guidance — $99
+Google Business Profile Setup Guidance — $149
+AI Intake Consultation with Anna — $297
+Website Launch Guidance — $299
+Priority Support Upgrade — $49
+
+==================================================
+ANNA AI INTAKE
+==================================================
+
+Create Anna page and homepage section.
+
+Copy:
+Anna is our AI intake assistant. She helps capture inquiries, collect startup details, route leads, book consultations, and support faster follow-up.
+
+Anna does not provide legal, tax, accounting, or financial advice. Final support is reviewed by the Gantt & Karr team.
+
+==================================================
+SEO / GEO / SCHEMA
+==================================================
+
+Every page must include:
+- SEO title
+- Meta description
+- H1
+- H2 sections
+- Internal links
+- CTA
+- FAQ section where appropriate
+- Unique copy
+- City/state targeting on location pages
+
+Add schema:
+- Organization
+- LocalBusiness
+- ProfessionalService
+- Service
+- FAQPage
+- BreadcrumbList
+- WebSite
+- ContactPage
+- BlogPosting for blog posts
+
+Do not use fake reviews.
+Do not use fake testimonials.
+Do not make fake guarantees.
+
+==================================================
+LOCATION PAGE RULES
+==================================================
+
+Each city page should include:
+- Business formation assistance in that city
+- Notary services in that city, where applicable
+- Startup support in that city
+- Why entrepreneurs in that market need support
+- Services available
+- Nearby areas served
+- CTA
+- FAQ
+
+Missouri Registered Agent Services must say:
+Available in Missouri only.
+
+==================================================
+CONVERSION FEATURES
+==================================================
+
+Add:
+- Contact forms
+- Book consultation buttons
+- Click-to-call mobile buttons
+- Email buttons
+- Social proof pop-up
+- Cookie banner
+- Cookie Policy link if needed
+- Footer compliance disclaimer
+- Lead capture forms
+
+Social proof pop-up examples:
+“Jessica M. in Charlotte just requested LLC Formation Assistance.”
+“Marcus T. in Atlanta just booked a Free Startup Consultation.”
+“Danielle R. in Phoenix just started a Business Launch Package.”
+“Chris J. in Kansas City just requested Notary Services.”
+“Angela W. in Nashville just requested EIN Assistance.”
+
+Use “requested,” “booked,” or “started.” Do not use fake purchase claims.
+
+==================================================
+COOKIE BANNER
+==================================================
+
+Add cookie consent banner:
+Headline:
+Your Privacy Matters
+
+Buttons:
+Accept All
+Customize Preferences
+Reject Optional Cookies
+Save Preferences
+
+Preferences:
+Essential Cookies — Always Active
+Analytics Cookies — Toggle
+Marketing Cookies — Toggle
+Functional Cookies — Toggle
+
+Remember user selection.
+
+==================================================
+DESIGN DIRECTION
+==================================================
+
+The site should feel:
+Warm
+Professional
+Trustworthy
+Beautiful
+Premium
+Family-led
+Clean
+Comfortable
+
+Use:
+- Warm cream backgrounds
+- Sage and forest green accents
+- Dusty rose accents sparingly
+- Soft taupe sections
+- Rounded cards
+- Clean icons
+- Professional mother/daughter leadership imagery
+- Entrepreneur imagery
+- Document signing imagery
+- Small business owner imagery
+
+Make it mobile responsive, fast-loading, SEO-ready, GEO-ready, schema-ready, and conversion-focused.
