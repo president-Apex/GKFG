@@ -1,35 +1,72 @@
 import { SEO } from "@/components/seo";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 
 export default function MeetKaileyanne() {
   return (
     <>
-      <SEO title="Meet Kaileyanne Karr" />
-      <div className="pt-24 pb-16 bg-muted">
-        <div className="container mx-auto px-4 max-w-4xl flex flex-col md:flex-row items-center gap-12">
-          <div className="w-48 h-48 md:w-64 md:h-64 bg-primary/10 rounded-full flex-shrink-0 flex items-center justify-center overflow-hidden border-4 border-white shadow-xl">
-             <div className="text-4xl font-serif text-primary opacity-50">KK</div>
-          </div>
-          <div>
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-primary">Kaileyanne Karr</h1>
-            <p className="text-xl text-secondary font-medium mb-6 uppercase tracking-wider">Director of Client Experience & Operations</p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              "Every client deserves an experience that feels seamless, supported, and perfectly coordinated."
-            </p>
+      <SEO
+        title="Meet Kaileyanne Karr | Gantt & Karr Formation Group"
+        description="Kaileyanne Karr supports Gantt & Karr Formation Group through client assistance, document coordination, scheduling support, and notary services."
+      />
+
+      {/* Hero */}
+      <section className="bg-primary text-primary-foreground pt-28 pb-20">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <Link href="/about" className="text-secondary hover:text-primary-foreground text-sm font-semibold uppercase tracking-wider mb-10 inline-block">
+            &larr; Back to About
+          </Link>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
+            <div className="flex-shrink-0">
+              <img
+                src="/gantt-karr/kaileyanne-karr.png"
+                alt="Kaileyanne Karr"
+                className="w-52 h-52 md:w-64 md:h-64 rounded-2xl object-cover object-top shadow-xl border-4 border-primary-foreground/10"
+              />
+            </div>
+            <div className="text-center md:text-left">
+              <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary-foreground mb-3">
+                Kaileyanne Karr
+              </h1>
+              <p className="text-secondary font-semibold uppercase tracking-widest text-sm mb-8">
+                Business Support & Notary Specialist
+              </p>
+              <p className="text-primary-foreground/75 text-lg leading-relaxed max-w-2xl italic">
+                "Dedicated to making every client feel welcomed, organized, and supported every step of the way."
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <section className="py-20">
-        <div className="container mx-auto px-4 max-w-3xl prose prose-lg">
-          <p>
-            As the Director of Client Experience & Operations, Kaileyanne Karr is the operational heartbeat of Gantt & Karr Formation Group. She ensures that every entrepreneur who walks through our doors—whether physically or digitally—receives a premium, boutique experience.
-          </p>
-          <p>
-            Kaileyanne oversees the intricate coordination required for business setup, from managing document flows and notary schedules to liaising with our network of professional partners. Her meticulous attention to detail ensures that no step is missed and that our clients feel informed and confident throughout the entire process.
-          </p>
-          <p>
-            Working closely with Founder Loresa Gantt, Kaileyanne helps maintain the firm's family-led ethos, bringing warmth, professionalism, and executive polish to every client interaction.
-          </p>
+      </section>
+
+      {/* Bio */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <div className="space-y-6 text-foreground/80 leading-relaxed text-lg">
+            <p>
+              Kaileyanne supports Gantt & Karr Formation Group through client assistance, document
+              coordination, scheduling support, and notary services. She works closely with Founder
+              Loresa Gantt to help clients feel welcomed, organized, and supported throughout the
+              startup process.
+            </p>
+            <p>
+              As she continues building her experience in business formation and entrepreneurship,
+              Kaileyanne brings dedication, warmth, and attention to detail to the Gantt & Karr team.
+            </p>
+          </div>
+
+          <div className="mt-14 flex flex-col sm:flex-row gap-4">
+            <Link href="/consultation">
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+                Book a Consultation
+              </Button>
+            </Link>
+            <Link href="/about">
+              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                Meet the Full Team
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </>
