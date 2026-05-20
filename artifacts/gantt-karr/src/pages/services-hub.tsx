@@ -1,11 +1,11 @@
 import { SEO } from "@/components/seo";
 import { Link } from "wouter";
 
-const services = [
+const services: { title: string; slug: string; desc: string; badge?: string }[] = [
   { title: "LLC Formation Assistance", slug: "llc-formation", desc: "Start your business structure" },
   { title: "Business Formation Assistance", slug: "business-formation", desc: "General formation support" },
   { title: "EIN Assistance", slug: "ein-assistance", desc: "Secure your tax ID" },
-  { title: "Registered Agent Coordination", slug: "registered-agent", desc: "Maintain state compliance" },
+  { title: "Registered Agent Services", slug: "registered-agent", desc: "Missouri only — maintain state compliance", badge: "Missouri Only" },
   { title: "Operating Agreement Support", slug: "operating-agreement", desc: "Internal structure documentation" },
   { title: "Business Name Search Guidance", slug: "business-name-search", desc: "Clear your desired name" },
   { title: "Business Address & Mailbox Guidance", slug: "business-address", desc: "Professional physical presence" },
@@ -41,7 +41,14 @@ export default function ServicesHub() {
             {services.map((s) => (
               <Link key={s.slug} href={`/services/${s.slug}`}>
                 <div className="block group p-6 rounded-2xl border border-border bg-card hover:border-secondary hover:shadow-lg transition-all h-full flex flex-col">
-                  <h3 className="font-bold text-lg mb-2 text-foreground group-hover:text-primary transition-colors">{s.title}</h3>
+                  <div className="flex items-start justify-between gap-2 mb-2">
+                    <h3 className="font-bold text-lg text-foreground group-hover:text-primary transition-colors">{s.title}</h3>
+                    {s.badge && (
+                      <span className="flex-shrink-0 text-[10px] font-semibold uppercase tracking-wider bg-secondary/10 text-secondary border border-secondary/20 rounded-full px-2 py-0.5 leading-tight">
+                        {s.badge}
+                      </span>
+                    )}
+                  </div>
                   <p className="text-sm text-muted-foreground flex-grow">{s.desc}</p>
                   <div className="mt-6 text-secondary text-sm font-medium flex items-center">
                     Learn More <span className="ml-1 group-hover:translate-x-1 transition-transform">&rarr;</span>

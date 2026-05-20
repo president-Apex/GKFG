@@ -15,9 +15,9 @@ export const servicesData: Record<string, { title: string; description: string; 
     benefits: ["IRS Form SS-4 preparation", "Application submission", "Fast retrieval of your EIN", "Guidance on EIN usage"]
   },
   "registered-agent": {
-    title: "Registered Agent Coordination",
-    description: "Maintain state compliance with a reliable registered agent. We help coordinate professional registered agent services for your business.",
-    benefits: ["Reliable state correspondence reception", "Compliance deadline reminders", "Privacy protection", "Seamless document forwarding"]
+    title: "Registered Agent Services (Missouri Only)",
+    description: "Professional Missouri registered agent services designed to help business owners maintain a reliable point of contact for official business notices and required correspondence. Available exclusively within Missouri.",
+    benefits: ["Privacy support — keep your personal address off public filings", "Reliable document handling for legal and state correspondence", "Consistent communication with the Missouri Secretary of State", "Professional business support to maintain good standing"]
   },
   "operating-agreement": {
     title: "Operating Agreement Support",
