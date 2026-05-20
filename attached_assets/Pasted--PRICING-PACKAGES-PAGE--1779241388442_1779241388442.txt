@@ -1,0 +1,183 @@
+==================================================
+PRICING + PACKAGES PAGE
+==================================================
+
+Create a full pricing page.
+
+Important note:
+State filing fees and government fees are separate and are not included unless specifically stated.
+
+Display:
+
+"State filing fees, government filing fees, and third-party fees may apply separately."
+
+==================================================
+STARTUP PACKAGES
+==================================================
+
+PACKAGE 1
+
+START PACKAGE
+$297
+
+Includes:
+
+✓ Startup consultation
+✓ Business name guidance
+✓ EIN application assistance
+✓ Startup checklist
+✓ Document organization support
+✓ Anna AI intake support
+✓ Email support
+
+CTA:
+Start My Business
+
+--------------------------------------------------
+
+PACKAGE 2
+
+GROW PACKAGE
+$597
+
+Includes:
+
+Everything in Start plus:
+
+✓ LLC formation assistance
+✓ Operating agreement support
+✓ Business startup guidance
+✓ Business address guidance
+✓ Priority support
+✓ Startup planning session
+
+CTA:
+Launch My Business
+
+--------------------------------------------------
+
+PACKAGE 3
+
+FOUNDERS PACKAGE
+$997
+
+Includes:
+
+Everything in Grow plus:
+
+✓ EIN application assistance
+✓ Registered agent service (Missouri only if applicable)
+✓ Business startup roadmap
+✓ Business phone setup guidance
+✓ Google Business Profile guidance
+✓ One-on-one strategy session
+✓ Priority onboarding
+
+CTA:
+Build My Business
+
+--------------------------------------------------
+
+PACKAGE 4
+
+EXECUTIVE PACKAGE
+$1,997
+
+Includes:
+
+Everything in Founders plus:
+
+✓ White-glove startup support
+✓ Business systems setup guidance
+✓ Website launch guidance
+✓ AI intake consultation
+✓ Extended founder consultation
+✓ VIP support
+
+CTA:
+Start Executive Setup
+
+==================================================
+ADD-ONS
+==================================================
+
+EIN Application Assistance
+$75
+
+Rush EIN Assistance
+$125
+
+LLC Formation Assistance
+$175
+
+Corporation Formation Assistance
+$225
+
+S-Corp Election Filing Assistance
+$150
+
+Operating Agreement Support
+$75
+
+Business Name Search Guidance
+$50
+
+Registered Agent Service
+Missouri only
+$125/year
+
+Mobile Notary
+Starting at $25
++ travel fees
+
+Document Preparation Support
+$75
+
+Document Organization Package
+$50
+
+Business Address Guidance
+$50
+
+Business Startup Consultation
+$99
+
+Rush Startup Processing
+$199
+
+Business Phone Setup Guidance
+$99
+
+Google Business Profile Setup Guidance
+$149
+
+AI Intake Consultation (Anna)
+$297
+
+Website Launch Guidance
+$299
+
+Priority Support Upgrade
+$49
+
+==================================================
+UPSELL SECTION
+==================================================
+
+Frequently Added Services:
+
+✓ Registered Agent Services
+✓ Mobile Notary
+✓ Business Startup Roadmap
+✓ Google Business Profile Setup
+✓ AI Intake Setup with Anna
+✓ Priority Processing
+✓ Website Guidance
+
+==================================================
+CHECKOUT NOTE
+==================================================
+
+Display:
+
+Government filing fees and state fees may apply separately and are not included unless specifically specified.
