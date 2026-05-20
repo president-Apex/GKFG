@@ -22,6 +22,11 @@ import LocationsHub from "@/pages/locations-hub";
 import ServiceDetail from "@/pages/service-detail";
 import ResourceDetail from "@/pages/resource-detail";
 import LocationDetail from "@/pages/location-detail";
+import PrivacyPolicy from "@/pages/privacy-policy";
+import CookiePolicy from "@/pages/cookie-policy";
+import TermsOfService from "@/pages/terms-of-service";
+import MessagingTerms from "@/pages/messaging-terms";
+import Disclaimer from "@/pages/disclaimer";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -49,6 +54,11 @@ function Router() {
         <Route path="/resources/:type" component={ResourceDetail} />
         <Route path="/locations/:state/:city" component={LocationDetail} />
         <Route path="/locations/:state" component={LocationDetail} />
+        <Route path="/privacy-policy" component={PrivacyPolicy} />
+        <Route path="/cookie-policy" component={CookiePolicy} />
+        <Route path="/terms-of-service" component={TermsOfService} />
+        <Route path="/messaging-terms" component={MessagingTerms} />
+        <Route path="/disclaimer" component={Disclaimer} />
         <Route component={NotFound} />
       </Switch>
     </Layout>

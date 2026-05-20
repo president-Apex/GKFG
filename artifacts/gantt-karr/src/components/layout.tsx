@@ -1,5 +1,7 @@
 import { Nav } from "./nav";
 import { Footer } from "./footer";
+import { SocialProof } from "./social-proof";
+import { CookieBanner } from "./cookie-banner";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -9,6 +11,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
       </main>
       <Footer />
+      <SocialProof />
+      <CookieBanner />
     </div>
   );
 }

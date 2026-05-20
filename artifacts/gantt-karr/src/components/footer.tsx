@@ -55,11 +55,14 @@ export function Footer() {
           <div className="text-xs text-primary-foreground/60 mb-6 leading-relaxed max-w-4xl">
             <strong>Important Compliance Disclaimer:</strong> Gantt & Karr Formation Group is not a law firm, accounting firm, tax advisory firm, or financial advisory firm. We do not provide legal, tax, accounting, or financial advice. We provide business formation assistance, notary support, startup guidance, document coordination, and business setup support. Clients should consult a licensed attorney, CPA, tax professional, or financial advisor for advice specific to their situation.
           </div>
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-primary-foreground/50">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 text-xs text-primary-foreground/50">
             <p>&copy; {new Date().getFullYear()} Gantt & Karr Formation Group. All rights reserved.</p>
-            <div className="flex gap-4">
-              <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>
-              <Link href="/terms" className="hover:text-white">Terms of Service</Link>
+            <div className="flex flex-wrap gap-x-5 gap-y-2">
+              <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link href="/cookie-policy" className="hover:text-white transition-colors">Cookie Policy</Link>
+              <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+              <Link href="/messaging-terms" className="hover:text-white transition-colors">Messaging Terms</Link>
+              <Link href="/disclaimer" className="hover:text-white transition-colors">Disclaimer</Link>
             </div>
           </div>
         </div>
