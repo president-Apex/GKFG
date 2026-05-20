@@ -14,6 +14,16 @@ export const servicesData: Record<string, { title: string; description: string; 
     description: "Secure your Employer Identification Number (Tax ID) from the IRS, a critical step for opening a bank account and hiring employees.",
     benefits: ["IRS Form SS-4 preparation", "Application submission", "Fast retrieval of your EIN", "Guidance on EIN usage"]
   },
+  "corporation-filing": {
+    title: "Corporation Filing Assistance",
+    description: "Professional support for forming a corporation. We coordinate your Articles of Incorporation, state filing, and post-formation documentation so your business starts on solid legal footing.",
+    benefits: ["Articles of Incorporation preparation", "State filing coordination", "Name availability guidance", "Document organization support", "EIN assistance (add-on)", "S-Corp election guidance (add-on)"]
+  },
+  "boi-reporting": {
+    title: "BOI Reporting Assistance",
+    description: "General information and document preparation support for business owners navigating Beneficial Ownership Information (BOI) reporting requirements under the Corporate Transparency Act. Not legal advice.",
+    benefits: ["General BOI information and overview", "Documentation checklist and organization", "Beneficial owner information gathering support", "Referrals to licensed professionals for filing", "Document preparation support"]
+  },
   "registered-agent": {
     title: "Registered Agent Services (Missouri Only)",
     description: "Professional Missouri registered agent services designed to help business owners maintain a reliable point of contact for official business notices and required correspondence. Available exclusively within Missouri.",
@@ -43,6 +53,16 @@ export const servicesData: Record<string, { title: string; description: string; 
     title: "Mobile Notary Services",
     description: "We come to you. Convenient mobile notary services providing professional notarization at your location.",
     benefits: ["Unmatched convenience", "Flexible scheduling", "Professional on-site service", "Secure document handling"]
+  },
+  "online-notary": {
+    title: "Online Notary Services",
+    description: "Professional remote online notarization for clients who need documents notarized from anywhere. Subject to state availability and applicable regulations.",
+    benefits: ["Notarize documents from home or office", "Secure video-based identity verification", "Legally valid where permitted by state law", "Convenient scheduling — no travel required"]
+  },
+  "loan-signing": {
+    title: "Loan Signing Services",
+    description: "Certified loan signing agent services for real estate closings, mortgage refinances, and loan document packages. Professional, accurate, and reliable.",
+    benefits: ["Certified signing agent", "Accurate document review and signing facilitation", "Flexible scheduling including evenings and weekends", "Real estate, mortgage, and refinance packages"]
   },
   "document-preparation": {
     title: "Document Preparation Support",

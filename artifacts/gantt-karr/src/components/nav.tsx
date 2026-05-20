@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { 
+import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
@@ -12,6 +12,19 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+
+const keyServices = [
+  { label: "LLC Formation Assistance", href: "/services/llc-formation" },
+  { label: "Corporation Filing Assistance", href: "/services/corporation-filing" },
+  { label: "EIN Application Assistance", href: "/services/ein-assistance" },
+  { label: "Missouri Registered Agent", href: "/services/registered-agent", badge: "MO Only" },
+  { label: "BOI Reporting Assistance", href: "/services/boi-reporting" },
+  { label: "Mobile Notary Services", href: "/services/mobile-notary" },
+  { label: "Online Notary Services", href: "/services/online-notary" },
+  { label: "Loan Signing Services", href: "/services/loan-signing" },
+  { label: "Startup Packages", href: "/services/launch-packages" },
+  { label: "Anna AI Intake", href: "/services/anna-ai-intake" },
+];
 
 export function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,70 +46,70 @@ export function Nav() {
                   <Link href="/about">About</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
-              
+
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Services</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                    <li className="col-span-2 pb-2 mb-2 border-b border-border">
-                      <Link href="/services" className="font-medium text-primary hover:text-secondary transition-colors block">
-                        View All Services &rarr;
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/services/llc-formation" className="block p-2 hover:bg-muted rounded-md text-sm">
-                        <div className="font-medium">LLC Formation</div>
-                        <div className="text-muted-foreground text-xs mt-1">Start your business structure</div>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/services/notary" className="block p-2 hover:bg-muted rounded-md text-sm">
-                        <div className="font-medium">Notary Services</div>
-                        <div className="text-muted-foreground text-xs mt-1">Professional document notarization</div>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/services/startup-consultation" className="block p-2 hover:bg-muted rounded-md text-sm">
-                        <div className="font-medium">Startup Consultation</div>
-                        <div className="text-muted-foreground text-xs mt-1">Strategic guidance for launch</div>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/services/anna-ai-intake" className="block p-2 hover:bg-muted rounded-md text-sm">
-                        <div className="font-medium">AI Intake Setup</div>
-                        <div className="text-muted-foreground text-xs mt-1">Powered by Anna AI</div>
-                      </Link>
-                    </li>
-                  </ul>
+                  <div className="w-[520px] p-4">
+                    <Link
+                      href="/services"
+                      className="block font-semibold text-primary hover:text-secondary transition-colors text-sm mb-4 pb-3 border-b border-border"
+                    >
+                      View All Services &rarr;
+                    </Link>
+                    <ul className="grid grid-cols-2 gap-1">
+                      {keyServices.map((s) => (
+                        <li key={s.href}>
+                          <Link
+                            href={s.href}
+                            className="flex items-center justify-between gap-2 p-2 hover:bg-muted rounded-md text-sm text-foreground/80 hover:text-foreground transition-colors group"
+                          >
+                            <span>{s.label}</span>
+                            {s.badge && (
+                              <span className="text-[9px] font-bold uppercase tracking-wider bg-secondary/15 text-secondary border border-secondary/20 rounded-full px-1.5 py-0.5 flex-shrink-0">
+                                {s.badge}
+                              </span>
+                            )}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4">
+                  <ul className="grid w-[340px] gap-1 p-4">
                     <li>
                       <Link href="/resources" className="block p-2 hover:bg-muted rounded-md text-sm">
                         <div className="font-medium">Resource Hub</div>
-                        <div className="text-muted-foreground text-xs mt-1">Guides, checklists, and articles</div>
+                        <div className="text-muted-foreground text-xs mt-0.5">Guides, checklists, and articles</div>
                       </Link>
                     </li>
                     <li>
                       <Link href="/resources/professional-center" className="block p-2 hover:bg-muted rounded-md text-sm">
                         <div className="font-medium">Professional Center</div>
-                        <div className="text-muted-foreground text-xs mt-1">Connect with licensed experts</div>
+                        <div className="text-muted-foreground text-xs mt-0.5">Connect with licensed experts</div>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/blog" className="block p-2 hover:bg-muted rounded-md text-sm">
+                        <div className="font-medium">Blog & Articles</div>
+                        <div className="text-muted-foreground text-xs mt-0.5">Formation guides and startup tips</div>
                       </Link>
                     </li>
                     <li>
                       <Link href="/locations" className="block p-2 hover:bg-muted rounded-md text-sm">
                         <div className="font-medium">Locations Served</div>
-                        <div className="text-muted-foreground text-xs mt-1">Find support in your state</div>
+                        <div className="text-muted-foreground text-xs mt-0.5">Find support in your state</div>
                       </Link>
                     </li>
                     <li>
                       <Link href="/faq" className="block p-2 hover:bg-muted rounded-md text-sm">
                         <div className="font-medium">FAQ</div>
-                        <div className="text-muted-foreground text-xs mt-1">Common formation questions</div>
+                        <div className="text-muted-foreground text-xs mt-0.5">Common formation questions</div>
                       </Link>
                     </li>
                   </ul>
@@ -105,12 +118,15 @@ export function Nav() {
             </NavigationMenuList>
           </NavigationMenu>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
+            <Link href="/pricing">
+              <Button variant="ghost" size="sm" className="hidden xl:inline-flex text-foreground/70 hover:text-foreground">Pricing</Button>
+            </Link>
             <Link href="/consultation">
-              <Button variant="ghost" className="hidden xl:inline-flex">Book Consultation</Button>
+              <Button variant="ghost" size="sm" className="hidden xl:inline-flex">Book Consultation</Button>
             </Link>
             <Link href="/how-it-works">
-              <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90">Start My Business Setup</Button>
+              <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">Start My Business Setup</Button>
             </Link>
           </div>
         </div>
@@ -125,29 +141,38 @@ export function Nav() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px] overflow-y-auto">
-              <div className="flex flex-col gap-6 pt-10">
-                <Link href="/" onClick={() => setIsOpen(false)} className="text-lg font-medium">Home</Link>
+              <div className="flex flex-col gap-5 pt-10">
+                <Link href="/" onClick={() => setIsOpen(false)} className="text-lg font-semibold text-primary">Home</Link>
                 <Link href="/about" onClick={() => setIsOpen(false)} className="text-lg font-medium">About</Link>
-                <div className="flex flex-col gap-3">
-                  <h4 className="text-lg font-medium">Services</h4>
-                  <Link href="/services" onClick={() => setIsOpen(false)} className="text-muted-foreground ml-4">All Services</Link>
-                  <Link href="/services/llc-formation" onClick={() => setIsOpen(false)} className="text-muted-foreground ml-4">LLC Formation</Link>
-                  <Link href="/services/notary" onClick={() => setIsOpen(false)} className="text-muted-foreground ml-4">Notary Services</Link>
+
+                <div className="flex flex-col gap-2">
+                  <h4 className="text-lg font-semibold">Services</h4>
+                  <Link href="/services" onClick={() => setIsOpen(false)} className="text-secondary text-sm font-medium ml-2">View All Services &rarr;</Link>
+                  {keyServices.map((s) => (
+                    <Link key={s.href} href={s.href} onClick={() => setIsOpen(false)} className="text-muted-foreground text-sm ml-2 hover:text-foreground transition-colors">
+                      {s.label}{s.badge ? ` (${s.badge})` : ""}
+                    </Link>
+                  ))}
                 </div>
-                <div className="flex flex-col gap-3">
-                  <h4 className="text-lg font-medium">Resources</h4>
-                  <Link href="/resources/professional-center" onClick={() => setIsOpen(false)} className="text-muted-foreground ml-4">Professional Center</Link>
-                  <Link href="/locations" onClick={() => setIsOpen(false)} className="text-muted-foreground ml-4">Locations Served</Link>
-                  <Link href="/faq" onClick={() => setIsOpen(false)} className="text-muted-foreground ml-4">FAQ</Link>
+
+                <div className="flex flex-col gap-2">
+                  <h4 className="text-lg font-semibold">Resources</h4>
+                  <Link href="/resources" onClick={() => setIsOpen(false)} className="text-muted-foreground text-sm ml-2">Resource Hub</Link>
+                  <Link href="/resources/professional-center" onClick={() => setIsOpen(false)} className="text-muted-foreground text-sm ml-2">Professional Center</Link>
+                  <Link href="/blog" onClick={() => setIsOpen(false)} className="text-muted-foreground text-sm ml-2">Blog & Articles</Link>
+                  <Link href="/locations" onClick={() => setIsOpen(false)} className="text-muted-foreground text-sm ml-2">Locations Served</Link>
+                  <Link href="/faq" onClick={() => setIsOpen(false)} className="text-muted-foreground text-sm ml-2">FAQ</Link>
                 </div>
+
+                <Link href="/pricing" onClick={() => setIsOpen(false)} className="text-lg font-medium">Pricing</Link>
                 <Link href="/contact" onClick={() => setIsOpen(false)} className="text-lg font-medium">Contact</Link>
-                
-                <div className="mt-8 flex flex-col gap-4">
+
+                <div className="mt-6 flex flex-col gap-3">
                   <Link href="/consultation" onClick={() => setIsOpen(false)}>
-                    <Button variant="outline" className="w-full">Book Free Consultation</Button>
+                    <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">Book Free Consultation</Button>
                   </Link>
                   <Link href="/how-it-works" onClick={() => setIsOpen(false)}>
-                    <Button className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90">Start My Business Setup</Button>
+                    <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">Start My Business Setup</Button>
                   </Link>
                 </div>
               </div>

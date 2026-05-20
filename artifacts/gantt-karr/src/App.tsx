@@ -22,6 +22,8 @@ import LocationsHub from "@/pages/locations-hub";
 import ServiceDetail from "@/pages/service-detail";
 import ResourceDetail from "@/pages/resource-detail";
 import LocationDetail from "@/pages/location-detail";
+import CorporationFiling from "@/pages/corporation-filing";
+import BOIReporting from "@/pages/boi-reporting";
 import RegisteredAgentMissouri from "@/pages/registered-agent-missouri";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import CookiePolicy from "@/pages/cookie-policy";
@@ -51,6 +53,8 @@ function Router() {
         <Route path="/blog" component={Blog} />
         <Route path="/resources" component={ResourcesHub} />
         <Route path="/locations" component={LocationsHub} />
+        <Route path="/services/corporation-filing" component={CorporationFiling} />
+        <Route path="/services/boi-reporting" component={BOIReporting} />
         <Route path="/services/registered-agent" component={RegisteredAgentMissouri} />
         <Route path="/services/:slug" component={ServiceDetail} />
         <Route path="/resources/:type" component={ResourceDetail} />
