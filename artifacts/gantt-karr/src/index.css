@@ -52,40 +52,40 @@
 }
 
 :root {
-  /* Soft Ivory #F5F3F0 */
-  --background: 36 14% 95%;
-  /* Rich Graphite #404040 */
-  --foreground: 0 0% 25%;
+  /* Warm Off-White #F8F6F3 */
+  --background: 36 22% 97%;
+  /* Deep Charcoal */
+  --foreground: 216 20% 14%;
 
   --card: 0 0% 100%;
-  --card-foreground: 0 0% 25%;
+  --card-foreground: 216 20% 14%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 25%;
+  --popover-foreground: 216 20% 14%;
 
-  /* Deep Charcoal #2E3138 */
-  --primary: 222 10% 20%;
-  /* Ivory on Charcoal */
-  --primary-foreground: 36 14% 95%;
+  /* Deep Slate Navy #1B2E4B — calm authority, trustworthy */
+  --primary: 216 46% 20%;
+  /* Warm Off-White on Navy */
+  --primary-foreground: 36 22% 97%;
 
-  /* Warm Taupe #B8A89B */
-  --secondary: 27 17% 66%;
-  --secondary-foreground: 222 10% 20%;
+  /* Warm Champagne #C4A558 — premium, approachable confidence */
+  --secondary: 42 48% 55%;
+  --secondary-foreground: 216 46% 14%;
 
-  /* Light taupe tint for section backgrounds */
-  --muted: 27 12% 90%;
-  --muted-foreground: 0 0% 42%;
+  /* Soft navy-tinted background for alternating sections */
+  --muted: 220 20% 93%;
+  --muted-foreground: 216 15% 44%;
 
-  /* Dusty Rose #C98E95 */
-  --accent: 353 35% 67%;
+  /* Sage Green — growth, forward motion */
+  --accent: 145 20% 50%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 27 12% 85%;
-  --input: 27 12% 85%;
-  --ring: 222 10% 20%;
+  --border: 220 18% 88%;
+  --input: 220 18% 88%;
+  --ring: 216 46% 20%;
 
   --radius: 0.625rem;
   --app-font-sans: 'Inter', sans-serif;

@@ -11,7 +11,7 @@ const coreServices = [
   { title: "Missouri Registered Agent", slug: "registered-agent", desc: "Reliable state correspondence and compliance support", badge: "MO Only" },
   { title: "BOI Reporting Assistance", slug: "boi-reporting", desc: "Beneficial Ownership Information document support" },
   { title: "Online Notary Services", slug: "online-notary", desc: "Remote notarization from anywhere" },
-  { title: "Mobile Notary Services", slug: "mobile-notary", desc: "We come to your location" },
+  { title: "Mobile Notary Services", slug: "mobile-notary", desc: "We come to your location", badge: "MO Only" },
   { title: "Loan Signing Services", slug: "loan-signing", desc: "Certified signing agent for closings and refinances" },
   { title: "Startup Packages", slug: "launch-packages", desc: "Bundled services from $297 to get you started" },
   { title: "Anna AI Intake", slug: "anna-ai-intake", desc: "AI-powered client intake and consultation booking" },

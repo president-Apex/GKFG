@@ -19,7 +19,7 @@ const keyServices = [
   { label: "EIN Application Assistance", href: "/services/ein-assistance" },
   { label: "Missouri Registered Agent", href: "/services/registered-agent", badge: "MO Only" },
   { label: "BOI Reporting Assistance", href: "/services/boi-reporting" },
-  { label: "Mobile Notary Services", href: "/services/mobile-notary" },
+  { label: "Mobile Notary Services", href: "/services/mobile-notary", badge: "MO Only" },
   { label: "Online Notary Services", href: "/services/online-notary" },
   { label: "Loan Signing Services", href: "/services/loan-signing" },
   { label: "Startup Packages", href: "/services/launch-packages" },

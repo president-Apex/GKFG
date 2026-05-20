@@ -38,6 +38,7 @@ const featuredServices: { title: string; slug: string; desc: string; badge?: str
     title: "Mobile Notary Services",
     slug: "mobile-notary",
     desc: "We come to your location for professional, convenient document notarization.",
+    badge: "Missouri Only",
   },
   {
     title: "Loan Signing Services",
