@@ -1,4 +1,5 @@
 import { SEO } from "@/components/seo";
+import { howToSchema, breadcrumbSchema } from "@/lib/schema";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
@@ -28,7 +29,19 @@ const steps = [
 export default function HowItWorks() {
   return (
     <>
-      <SEO title="How It Works | The Process" />
+      <SEO
+        title="How It Works | The Business Formation Process | Gantt & Karr"
+        description="Our four-step process — Consult, Document, Form, Launch — takes the guesswork out of starting your business. See exactly how Gantt & Karr guides you from idea to operating entity."
+        schema={[
+          howToSchema({
+            name: "How to Form a Business with Gantt & Karr Formation Group",
+            description: "A clear four-step process to form your business, secure your EIN, and launch with confidence.",
+            url: "/how-it-works",
+            steps: steps.map((s) => ({ name: s.title, text: s.desc })),
+          }),
+          breadcrumbSchema([{ name: "How It Works", href: "/how-it-works" }]),
+        ]}
+      />
       <div className="pt-24 pb-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">A clear path to launch.</h1>

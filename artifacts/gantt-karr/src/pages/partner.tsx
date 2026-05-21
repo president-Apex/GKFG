@@ -1,4 +1,5 @@
 import { SEO } from "@/components/seo";
+import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -19,7 +20,19 @@ export default function Partner() {
 
   return (
     <>
-      <SEO title="Become a Partner | Professional Network" />
+      <SEO
+        title="Become a Partner | Professional Network | Gantt & Karr"
+        description="Join Gantt & Karr's curated network of attorneys, CPAs, and business experts. Partner with a trusted business formation group serving entrepreneurs across 6 states."
+        schema={[
+          webPageSchema({
+            url: "/partner",
+            name: "Partner With Gantt & Karr Formation Group",
+            description: "Apply to join our curated professional network of attorneys, CPAs, and business experts supporting entrepreneurs across 6 states.",
+            breadcrumbItems: [{ name: "Partner With Us", href: "/partner" }],
+          }),
+          breadcrumbSchema([{ name: "Partner With Us", href: "/partner" }]),
+        ]}
+      />
       
       <div className="pt-24 pb-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center max-w-4xl">

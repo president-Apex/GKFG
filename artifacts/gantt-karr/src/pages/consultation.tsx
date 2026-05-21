@@ -1,4 +1,5 @@
 import { SEO } from "@/components/seo";
+import { serviceSchema, breadcrumbSchema } from "@/lib/schema";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -19,7 +20,19 @@ export default function Consultation() {
 
   return (
     <>
-      <SEO title="Book a Free Startup Consultation" />
+      <SEO
+        title="Book a Free Startup Consultation"
+        description="Book a free startup consultation with Gantt & Karr Formation Group. Discuss your vision, choose the right business structure, and get a clear launch plan."
+        schema={[
+          serviceSchema({
+            name: "Free Startup Consultation",
+            description: "A complimentary consultation to evaluate your business vision, recommend the right entity structure, and outline the exact steps to launch your business correctly.",
+            url: "/consultation",
+            category: "Business Consulting",
+          }),
+          breadcrumbSchema([{ name: "Book Consultation", href: "/consultation" }]),
+        ]}
+      />
       <div className="pt-24 pb-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Book a Startup Consultation</h1>

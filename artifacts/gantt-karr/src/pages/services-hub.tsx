@@ -1,6 +1,7 @@
 import { SEO } from "@/components/seo";
 import { Link } from "wouter";
 import { CheckCircle } from "lucide-react";
+import { itemListSchema, breadcrumbSchema } from "@/lib/schema";
 
 const featuredServices: { title: string; slug: string; desc: string; badge?: string }[] = [
   {
@@ -100,6 +101,19 @@ export default function ServicesHub() {
       <SEO
         title="Our Services | Business Formation, Notary & Startup Support"
         description="LLC formation, corporation filing, EIN assistance, Missouri registered agent, BOI reporting, notary services, loan signing, and startup packages."
+        schema={[
+          itemListSchema({
+            name: "Gantt & Karr Business Formation & Notary Services",
+            description: "Complete service catalog for business formation, notary, and startup support across 6 states.",
+            url: "/services",
+            items: featuredServices.map((s) => ({
+              name: s.title,
+              url: `/services/${s.slug}`,
+              description: s.desc,
+            })),
+          }),
+          breadcrumbSchema([{ name: "Services", href: "/services" }]),
+        ]}
       />
 
       {/* Hero */}

@@ -1,4 +1,5 @@
 import { SEO } from "@/components/seo";
+import { offerCatalogSchema, breadcrumbSchema } from "@/lib/schema";
 import { Disclaimer } from "@/components/disclaimer";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
@@ -111,6 +112,17 @@ export default function Pricing() {
       <SEO
         title="Pricing & Packages | Gantt & Karr Formation Group"
         description="Transparent startup packages from $297. LLC formation, EIN assistance, notary services, and white-glove business setup support."
+        schema={[
+          offerCatalogSchema({
+            packages: [
+              { name: "Start Package", price: "$297", description: "Startup consultation, EIN application assistance, business name guidance, and document organization support.", url: "/pricing" },
+              { name: "Grow Package", price: "$597", description: "Everything in Start plus LLC formation assistance, operating agreement support, and priority service.", url: "/pricing" },
+              { name: "Founders Package", price: "$997", description: "Comprehensive business formation with registered agent coordination and full launch planning session.", url: "/pricing" },
+              { name: "Executive Package", price: "$1997", description: "White-glove business setup with full formation, compliance coordination, and ongoing priority support.", url: "/pricing" },
+            ],
+          }),
+          breadcrumbSchema([{ name: "Pricing", href: "/pricing" }]),
+        ]}
       />
 
       {/* Hero */}

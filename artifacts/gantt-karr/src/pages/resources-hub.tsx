@@ -1,13 +1,30 @@
 import { SEO } from "@/components/seo";
 import { Link } from "wouter";
 import { resourcesData } from "@/data/resources-data";
+import { itemListSchema, breadcrumbSchema } from "@/lib/schema";
 
 export default function ResourcesHub() {
   const resourceTypes = Object.keys(resourcesData).filter(k => k !== "professional-center");
 
   return (
     <>
-      <SEO title="Professional Resources Center" />
+      <SEO
+        title="Professional Resources Center | Gantt & Karr Formation Group"
+        description="Find licensed attorneys, CPAs, and business professionals through our curated Professional Resources Center — vetted partners for every stage of your business journey."
+        schema={[
+          itemListSchema({
+            name: "Professional Resources Center",
+            description: "Curated directory of licensed professionals supporting Gantt & Karr clients.",
+            url: "/resources",
+            items: resourceTypes.map((type) => ({
+              name: resourcesData[type].title,
+              url: `/resources/${type}`,
+              description: resourcesData[type].description,
+            })),
+          }),
+          breadcrumbSchema([{ name: "Resources", href: "/resources" }]),
+        ]}
+      />
       <div className="pt-24 pb-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Professional Resources Center</h1>

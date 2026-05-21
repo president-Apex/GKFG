@@ -1,4 +1,5 @@
 import { SEO } from "@/components/seo";
+import { contactPageSchema, breadcrumbSchema } from "@/lib/schema";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -19,7 +20,14 @@ export default function Contact() {
 
   return (
     <>
-      <SEO title="Contact Us" />
+      <SEO
+        title="Contact Us"
+        description="Get in touch with Gantt & Karr Formation Group. We're here to support your business journey — reach out with questions about formation, notary, or startup support."
+        schema={[
+          contactPageSchema(),
+          breadcrumbSchema([{ name: "Contact", href: "/contact" }]),
+        ]}
+      />
       <div className="pt-24 pb-16 bg-muted">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-primary">Contact Us</h1>

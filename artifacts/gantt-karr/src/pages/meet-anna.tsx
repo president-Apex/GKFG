@@ -2,7 +2,14 @@ import { SEO } from "@/components/seo";
 import { Disclaimer } from "@/components/disclaimer";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { CheckCircle, Clock, PhoneCall, Calendar, Zap, ArrowRight } from "lucide-react";
+import { CheckCircle, Clock, PhoneCall, Calendar, Zap, ArrowRight, ChevronDown } from "lucide-react";
+import { useState } from "react";
+import {
+  annaSoftwareSchema,
+  webPageSchema,
+  faqSchema,
+  breadcrumbSchema,
+} from "@/lib/schema";
 
 const capabilities = [
   {
@@ -27,22 +34,82 @@ const capabilities = [
   },
 ];
 
+const FAQS = [
+  {
+    q: "What is Anna and who built her?",
+    a: "Anna is an AI receptionist supporting Gantt & Karr Formation Group, built through Apex Key Group Holdings, Inc. She is designed to answer common questions, route appointment requests, collect basic intake details, and ensure no client inquiry is missed.",
+  },
+  {
+    q: "Does Anna provide legal or notary advice?",
+    a: "No. Anna does not provide legal advice, notary advice, or make legal decisions of any kind. She helps direct clients to the right next step with the Gantt & Karr team. All substantive guidance comes from Loresa, Kaileyanne, or a licensed professional in our network.",
+  },
+  {
+    q: "Is Anna available 24/7?",
+    a: "Yes. Anna is available around the clock to respond to inquiries, collect intake information, and route requests to the appropriate team member — so no inquiry goes unanswered regardless of business hours.",
+  },
+  {
+    q: "Who is responsible for client service — Anna or Gantt & Karr?",
+    a: "Gantt & Karr Formation Group remains fully responsible for all client service, appointment handling, and business support decisions. Anna is a support tool that helps ensure clients reach the right person promptly.",
+  },
+  {
+    q: "Can I speak with a real person instead of Anna?",
+    a: "Absolutely. Anna's job is to connect you with our team — not replace them. After interacting with Anna, you will be routed to Loresa, Kaileyanne, or another team member for your consultation.",
+  },
+];
+
+const ANNA_SCHEMA = [
+  annaSoftwareSchema(),
+  webPageSchema({
+    url: "/meet-anna",
+    name: "Meet Anna — Our Apex-Built Receptionist | Gantt & Karr Formation Group",
+    description:
+      "Anna is Gantt & Karr's AI receptionist, built through Apex Key Group Holdings, Inc. She answers common questions, routes appointment requests, collects intake details, and ensures no client inquiry is missed.",
+    breadcrumbItems: [{ name: "Meet Anna", href: "/meet-anna" }],
+  }),
+  faqSchema(FAQS),
+  breadcrumbSchema([{ name: "Meet Anna", href: "/meet-anna" }]),
+];
+
+function FaqItem({ q, a }: { q: string; a: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border border-border rounded-xl overflow-hidden">
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left bg-card hover:bg-muted/40 transition-colors"
+        aria-expanded={open}
+      >
+        <span className="font-medium text-foreground text-sm leading-snug">{q}</span>
+        <ChevronDown
+          className={`h-4 w-4 text-muted-foreground flex-shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+        />
+      </button>
+      {open && (
+        <div className="px-6 pb-5 pt-2 text-sm text-muted-foreground leading-relaxed bg-muted/20 border-t border-border">
+          {a}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function MeetAnna() {
   return (
     <>
       <SEO
         title="Meet Anna — Our Apex-Built Receptionist | Gantt & Karr Formation Group"
         description="Anna is Gantt & Karr's AI receptionist, built through Apex Key Group Holdings, Inc. She answers common questions, routes appointment requests, collects intake details, and ensures no client inquiry is missed."
+        schema={ANNA_SCHEMA}
       />
 
       {/* Hero — dark, tech-forward, full-bleed image */}
       <section className="relative overflow-hidden bg-[#0a0a14] text-white min-h-[90vh] flex items-center">
-        {/* Purple glow backdrop */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a14] via-[#0a0a14]/90 to-transparent z-10" />
         <div className="absolute right-0 top-0 bottom-0 w-full lg:w-[58%]">
           <img
             src="/gantt-karr/anna-ai.png"
-            alt="Anna — Gantt & Karr AI Intake Assistant"
+            alt="Anna — Gantt & Karr AI Receptionist, built through Apex Key Group Holdings, Inc."
             className="h-full w-full object-cover object-center"
           />
         </div>
@@ -52,13 +119,13 @@ export default function MeetAnna() {
             <span className="inline-block py-1.5 px-4 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 text-xs font-semibold mb-6 uppercase tracking-widest">
               Built by Apex Key Group Holdings, Inc.
             </span>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-4">
+            <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-4 speakable">
               Meet Anna.
             </h1>
             <p className="text-xl text-white/70 font-medium mb-2 uppercase tracking-widest">
               Our Apex-Built Receptionist
             </p>
-            <p className="text-lg text-white/60 leading-relaxed mb-8 max-w-md">
+            <p className="text-lg text-white/60 leading-relaxed mb-8 max-w-md speakable">
               Anna is the AI receptionist supporting Gantt & Karr Formation Group. She helps answer common questions, route appointment requests, collect basic intake details, and make sure client inquiries are never missed.
             </p>
 
@@ -97,7 +164,7 @@ export default function MeetAnna() {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-14">
             <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-4">What Anna Does</p>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-5">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-5 speakable">
               A smarter first step for every client.
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -127,7 +194,7 @@ export default function MeetAnna() {
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div>
               <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-4">Inside G&K</p>
-              <h2 className="font-serif text-3xl font-bold text-primary mb-5">
+              <h2 className="font-serif text-3xl font-bold text-primary mb-5 speakable">
                 Your seamless first step into the Gantt & Karr experience.
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-5">
@@ -143,12 +210,11 @@ export default function MeetAnna() {
               </Link>
             </div>
 
-            {/* Mini stat cards */}
             <div className="grid grid-cols-2 gap-4">
               {[
                 { stat: "24/7", label: "Always available" },
                 { stat: "< 60s", label: "Average response time" },
-                { stat: "100%", label: "Leads followed up" },
+                { stat: "100%", label: "Inquiries captured" },
                 { stat: "0", label: "Missed opportunities" },
               ].map(({ stat, label }) => (
                 <div key={label} className="bg-card border border-border rounded-2xl p-6 text-center">
@@ -157,6 +223,26 @@ export default function MeetAnna() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ — visible content for SEO + GEO extraction */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <div className="text-center mb-12">
+            <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-4">Common Questions</p>
+            <h2 className="font-serif text-3xl font-bold text-primary mb-4 speakable">
+              Frequently Asked About Anna
+            </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Everything you need to know about how Anna works and what she can — and cannot — do.
+            </p>
+          </div>
+          <div className="space-y-3">
+            {FAQS.map((faq) => (
+              <FaqItem key={faq.q} q={faq.q} a={faq.a} />
+            ))}
           </div>
         </div>
       </section>

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/seo";
 import { Disclaimer } from "@/components/disclaimer";
 import { MapPin, ShieldCheck, FileText, Phone, Users, CheckCircle } from "lucide-react";
+import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/schema";
 
 const faqs = [
   {
@@ -69,6 +70,20 @@ export default function RegisteredAgentMissouri() {
       <SEO
         title="Missouri Registered Agent Services | Gantt & Karr Formation Group"
         description="Professional Missouri registered agent coordination for LLCs, corporations, and small businesses. Maintain a reliable point of contact for state correspondence and compliance notices."
+        schema={[
+          serviceSchema({
+            name: "Missouri Registered Agent Services",
+            description: "Professional Missouri registered agent coordination for LLCs and corporations. We help businesses maintain a reliable, compliant point of contact for state correspondence and legal notices.",
+            url: "/services/registered-agent",
+            category: "Registered Agent Service",
+            statesServed: ["Missouri"],
+          }),
+          faqSchema(faqs),
+          breadcrumbSchema([
+            { name: "Services", href: "/services" },
+            { name: "Missouri Registered Agent", href: "/services/registered-agent" },
+          ]),
+        ]}
       />
 
       {/* Hero */}

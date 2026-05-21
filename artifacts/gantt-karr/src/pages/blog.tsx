@@ -1,4 +1,5 @@
 import { SEO } from "@/components/seo";
+import { itemListSchema, breadcrumbSchema } from "@/lib/schema";
 import { Link } from "wouter";
 
 export default function Blog() {
@@ -25,7 +26,23 @@ export default function Blog() {
 
   return (
     <>
-      <SEO title="Blog & Insights" />
+      <SEO
+        title="Blog & Insights | Business Formation Guides | Gantt & Karr"
+        description="Expert articles on LLC formation, business compliance, operating agreements, EIN applications, and startup strategy from the Gantt & Karr Formation Group team."
+        schema={[
+          itemListSchema({
+            name: "Gantt & Karr Formation Group — Blog & Insights",
+            description: "Expert guides on business formation, compliance, and startup strategy.",
+            url: "/blog",
+            items: posts.map((p, i) => ({
+              name: p.title,
+              url: `/blog/${i}`,
+              description: p.excerpt,
+            })),
+          }),
+          breadcrumbSchema([{ name: "Blog", href: "/blog" }]),
+        ]}
+      />
       <div className="pt-24 pb-16 bg-muted">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-primary">Insights & Guides</h1>

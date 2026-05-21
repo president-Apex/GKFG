@@ -1,11 +1,29 @@
 import { SEO } from "@/components/seo";
 import { Link } from "wouter";
 import { locationsData, cityData } from "@/data/locations-data";
+import { itemListSchema, breadcrumbSchema } from "@/lib/schema";
 
 export default function LocationsHub() {
   return (
     <>
-      <SEO title="Locations Served | Gantt & Karr" />
+      <SEO
+        title="Locations Served | Gantt & Karr Formation Group"
+        description="Gantt & Karr Formation Group serves entrepreneurs across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana. Find your city and get local business formation support."
+        schema={[
+          itemListSchema({
+            name: "Locations Served by Gantt & Karr Formation Group",
+            description: "Business formation, notary, and startup support across key markets in 6 states.",
+            url: "/locations",
+            items: Object.entries(locationsData).flatMap(([stateSlug, state]) =>
+              state.cities.map((citySlug) => ({
+                name: `${cityData[citySlug].name}, ${state.name}`,
+                url: `/locations/${stateSlug}/${citySlug}`,
+              }))
+            ),
+          }),
+          breadcrumbSchema([{ name: "Locations", href: "/locations" }]),
+        ]}
+      />
       <div className="pt-24 pb-16 bg-muted">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-primary">Locations We Serve</h1>
