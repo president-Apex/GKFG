@@ -1,0 +1,185 @@
+Next is #9 Client Intake Form. This should function as both your onboarding document and your CRM capture form (GHL/Replit/Search Atlas). I’m structuring it so it works for LLCs, corporations, registered agent clients, and notary services without collecting unnecessary information.
+
+Gantt & Karr Formation Group
+
+Client Intake Form
+
+Client Information
+
+Full Legal Name:
+
+⸻
+
+Business Name (if applicable):
+
+⸻
+
+Email Address:
+
+⸻
+
+Phone Number:
+
+⸻
+
+Preferred Contact Method:
+
+☐ Phone
+☐ Text Message
+☐ Email
+
+Business Address:
+
+⸻
+
+City: ______________________
+
+State: ______________________
+
+ZIP Code: ___________________
+
+⸻
+
+Service Requested
+
+Which services are you interested in?
+
+☐ LLC Formation
+☐ Corporation Formation
+☐ Registered Agent Services
+☐ EIN Assistance
+☐ Business Compliance Assistance
+☐ Mobile Notary Services
+☐ Online Notary Services
+☐ Business Consultation
+☐ Other
+
+Other:
+
+⸻
+
+⸻
+
+Business Information
+
+Desired Business Name:
+
+⸻
+
+Do you already have a business formed?
+
+☐ Yes
+☐ No
+
+State of Formation:
+
+⸻
+
+Business Industry:
+
+⸻
+
+Estimated Number of Owners:
+
+☐ 1
+☐ 2–5
+☐ 6+
+
+Business Purpose:
+
+⸻
+
+⸻
+
+Ownership Information
+
+Owner/Member Name(s):
+
+⸻
+
+⸻
+
+⸻
+
+⸻
+
+Registered Agent Information
+
+Will you need registered agent services?
+
+☐ Yes
+☐ No
+
+⸻
+
+Document Information
+
+Do you currently have documents that need review or processing?
+
+☐ Yes
+☐ No
+
+If yes, describe:
+
+⸻
+
+⸻
+
+Scheduling Preferences
+
+Preferred appointment date:
+
+⸻
+
+Preferred appointment time:
+
+⸻
+
+⸻
+
+Additional Information
+
+Please provide any additional information that may help us better assist you:
+
+⸻
+
+⸻
+
+⸻
+
+⸻
+
+Client Acknowledgments
+
+☐ I certify that information provided is accurate to the best of my knowledge.
+
+☐ I understand that Gantt & Karr Formation Group provides administrative and business support services.
+
+☐ I understand that Gantt & Karr Formation Group is not a law firm and does not provide legal advice, tax advice, or legal representation.
+
+☐ I have reviewed the Privacy Policy, Terms of Service, and applicable policies.
+
+☐ I agree to receive SMS communications regarding my inquiry, appointment reminders, and service updates. Message frequency may vary. Message and data rates may apply. Reply STOP to unsubscribe.
+
+Client Signature:
+
+⸻
+
+Date:
+
+⸻
+
+⸻
+
+This form should connect directly into your CRM tags:
+
+* New Lead
+* LLC Lead
+* Corporation Lead
+* Registered Agent Lead
+* Notary Lead
+* Consultation Booked
+* Documents Pending
+* Follow-Up Needed
+
+Next in order: #10 Business Formation Questionnaire (more detailed than intake and used after a client decides to move forward).
