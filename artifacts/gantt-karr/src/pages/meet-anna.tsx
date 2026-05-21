@@ -7,23 +7,23 @@ import { CheckCircle, Clock, PhoneCall, Calendar, Zap, ArrowRight } from "lucide
 const capabilities = [
   {
     icon: PhoneCall,
-    title: "Answers Inbound Calls 24/7",
-    body: "Anna picks up when the team can't — routing every caller to the right person or resource without delay.",
+    title: "Answers Common Questions",
+    body: "Anna handles frequently asked questions about our services, availability, and next steps — so clients get clear answers right away.",
   },
   {
     icon: Calendar,
-    title: "Books & Qualifies Leads",
-    body: "Pre-vets potential clients and books meetings directly on your calendar. Only warm, ready leads reach your desk.",
+    title: "Routes Appointment Requests",
+    body: "She directs clients to the right next step with our team — whether that's booking a consultation, completing an intake form, or reaching Loresa or Kaileyanne directly.",
   },
   {
     icon: Zap,
-    title: "Instant FAQ Resolution",
-    body: "Anna handles your most common questions — services, pricing, availability — instantly and professionally.",
+    title: "Collects Basic Intake Details",
+    body: "Before your consultation, Anna gathers the essential information our team needs — saving time and making every meeting more productive.",
   },
   {
     icon: Clock,
-    title: "Friendly Follow-Up & Nurturing",
-    body: "No lead falls through the cracks. Anna follows up, nurtures, and keeps your pipeline warm around the clock.",
+    title: "Ensures No Inquiry Is Missed",
+    body: "Anna is available when the team isn't. Every client inquiry is captured, acknowledged, and routed — nothing falls through the cracks.",
   },
 ];
 
@@ -31,8 +31,8 @@ export default function MeetAnna() {
   return (
     <>
       <SEO
-        title="Meet Anna — AI Intake Assistant | Gantt & Karr Formation Group"
-        description="Anna is Gantt & Karr's 24/7 AI Intake Assistant — answering calls, booking consultations, qualifying leads, and keeping your pipeline moving at all hours."
+        title="Meet Anna — Our Apex-Built Receptionist | Gantt & Karr Formation Group"
+        description="Anna is Gantt & Karr's AI receptionist, built through Apex Key Group Holdings, Inc. She answers common questions, routes appointment requests, collects intake details, and ensures no client inquiry is missed."
       />
 
       {/* Hero — dark, tech-forward, full-bleed image */}
@@ -50,23 +50,24 @@ export default function MeetAnna() {
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-xl py-28 lg:py-36">
             <span className="inline-block py-1.5 px-4 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 text-xs font-semibold mb-6 uppercase tracking-widest">
-              Lead Shield AI · Powered by Gantt & Karr
+              Built by Apex Key Group Holdings, Inc.
             </span>
             <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-4">
               Meet Anna.
             </h1>
             <p className="text-xl text-white/70 font-medium mb-2 uppercase tracking-widest">
-              Receptionist. 24/7.
+              Our Apex-Built Receptionist
             </p>
-            <p className="text-lg text-white/60 italic mb-8 leading-relaxed">
-              "Pre-qualified leads are just a friendly call away."
+            <p className="text-lg text-white/60 leading-relaxed mb-8 max-w-md">
+              Anna is the AI receptionist supporting Gantt & Karr Formation Group. She helps answer common questions, route appointment requests, collect basic intake details, and make sure client inquiries are never missed.
             </p>
 
             <ul className="space-y-3 mb-10">
               {[
-                "Answers inbound calls 24/7, routing them to the right person",
-                "Qualifies and books meetings with pre-vetted leads 24/7",
-                "Provides friendly, professional follow-up and lead nurturing",
+                "Answers common questions about our services",
+                "Routes appointment requests to the right team member",
+                "Collects basic intake details before your consultation",
+                "Ensures no client inquiry slips through the cracks",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-white/80 text-sm">
                   <CheckCircle className="h-4 w-4 text-purple-400 flex-shrink-0 mt-0.5" />
@@ -95,12 +96,12 @@ export default function MeetAnna() {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-14">
-            <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-4">Always On</p>
+            <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-4">What Anna Does</p>
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-5">
-              Intelligent, polished, and always available.
+              A smarter first step for every client.
             </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed">
-              Anna is Gantt & Karr's proprietary AI intake assistant — designed to provide immediate support, qualify leads, and keep your pipeline moving while you focus on delivering results.
+            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Anna is available to help clients get answers, schedule time with our team, and start the intake process — so no one has to wait. She does not provide legal advice, notary advice, or make legal decisions. She helps direct clients to the right next step with our team.
             </p>
           </div>
 
@@ -130,10 +131,10 @@ export default function MeetAnna() {
                 Your seamless first step into the Gantt & Karr experience.
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-5">
-                When you reach out to Gantt & Karr — by phone, form, or chat — Anna is your first point of contact. She gathers your information, answers your initial questions, routes your inquiry to the right specialist, and books your consultation — all without you having to wait for business hours.
+                When you reach out to Gantt & Karr, Anna is your first point of contact. She answers common questions about our services, collects your basic intake details, and routes your request to the right team member — all without you having to wait for business hours.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                By the time you speak with Loresa or Kaileyanne, Anna has already made sure they have everything they need to make your consultation as productive as possible.
+                By the time you connect with Loresa or Kaileyanne, Anna has already made sure they have the context they need to make your consultation focused and productive. Anna does not give legal or notary advice — she simply helps you reach the right person at the right time.
               </p>
               <Link href="/consultation">
                 <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
@@ -196,8 +197,11 @@ export default function MeetAnna() {
         </div>
       </section>
 
-      <section className="py-12 bg-background">
-        <div className="container mx-auto px-4 max-w-3xl">
+      <section className="py-12 bg-muted/40 border-t border-border">
+        <div className="container mx-auto px-4 max-w-3xl space-y-4">
+          <p className="text-xs text-muted-foreground leading-relaxed text-center">
+            Anna is provided through <strong className="text-foreground">Apex Key Group Holdings, Inc.</strong> Gantt & Karr Formation Group remains responsible for client service, appointment handling, and business support decisions.
+          </p>
           <Disclaimer />
         </div>
       </section>
