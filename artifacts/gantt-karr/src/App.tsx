@@ -35,6 +35,7 @@ import RefundPolicy from "@/pages/refund-policy";
 import ServiceAgreement from "@/pages/service-agreement";
 import ClientIntake from "@/pages/client-intake";
 import FormationQuestionnaire from "@/pages/formation-questionnaire";
+import AnnaDemo from "@/pages/anna-demo";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -75,6 +76,7 @@ function Router() {
         <Route path="/service-agreement" component={ServiceAgreement} />
         <Route path="/client-intake" component={ClientIntake} />
         <Route path="/formation-questionnaire" component={FormationQuestionnaire} />
+        <Route path="/anna-demo" component={AnnaDemo} />
         <Route component={NotFound} />
       </Switch>
     </Layout>

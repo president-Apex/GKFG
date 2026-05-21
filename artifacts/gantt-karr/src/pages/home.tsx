@@ -248,6 +248,55 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Meet Anna — after hours support strip */}
+      <section className="py-20 bg-[#0a0a14]">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="inline-block py-1 px-3 rounded-full text-xs font-semibold uppercase tracking-widest mb-5 bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                Available 24/7
+              </span>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+                Meet Anna
+              </h2>
+              <p className="text-white/65 text-lg leading-relaxed mb-3">
+                "Need help at 10:00 PM? Anna is available 24/7 to answer questions and start your intake process."
+              </p>
+              <p className="text-white/50 text-sm leading-relaxed mb-8">
+                Anna answers first. Our team reviews, supports, and finalizes behind the scenes.
+                Loresa and Kaileyanne are still your trusted human team — Anna just makes sure you
+                never have to wait.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link href="/anna-demo">
+                  <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white h-13 px-8 font-semibold">
+                    Try Anna
+                  </Button>
+                </Link>
+                <Link href="/meet-anna">
+                  <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 h-13 px-8">
+                    Learn More <ArrowRight className="h-4 w-4 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { label: "24/7 availability", sub: "No more waiting for business hours" },
+                { label: "6 service paths", sub: "LLC, EIN, Notary, Agent & more" },
+                { label: "Intake captured", sub: "Zero inquiries missed" },
+                { label: "Apex-built technology", sub: "Powered by Apex Key Group Holdings" },
+              ].map(({ label, sub }) => (
+                <div key={label} className="bg-white/5 border border-white/10 rounded-2xl p-5">
+                  <p className="text-white font-semibold text-sm mb-1">{label}</p>
+                  <p className="text-white/45 text-xs leading-snug">{sub}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center max-w-2xl">
