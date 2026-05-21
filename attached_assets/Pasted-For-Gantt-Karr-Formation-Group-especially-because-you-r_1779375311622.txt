@@ -1,0 +1,114 @@
+For Gantt & Karr Formation Group, especially because you’re collecting contact information and may use forms, texting, appointment booking, and business formation intake, you want language that supports website compliance and SMS/Twilio requirements without overpromising legal services.
+
+Privacy Policy
+
+Effective Date: May 21, 2026
+
+Welcome to Gantt & Karr Formation Group (“Company,” “we,” “our,” or “us”). We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, protect, and disclose information obtained through our website, forms, communications, and services.
+
+1. Information We Collect
+
+We may collect personal information including:
+
+* Full name
+* Email address
+* Phone number
+* Business name
+* Mailing address
+* Information submitted through forms
+* Appointment details
+* Business formation information provided by you
+* Website usage information and analytics data
+* IP address and browser/device information
+
+2. How We Use Your Information
+
+We may use your information to:
+
+* Respond to inquiries
+* Provide requested services
+* Process business formation requests
+* Schedule consultations or appointments
+* Send updates regarding services
+* Provide customer support
+* Improve website functionality and user experience
+* Communicate service announcements and business updates
+* Comply with legal obligations
+
+3. SMS Communications
+
+By providing your phone number and opting in, you consent to receive SMS text messages from Gantt & Karr Formation Group, including:
+
+* Appointment reminders
+* Business formation updates
+* Customer service notifications
+* Service-related communications
+* Follow-up communications
+
+Message frequency may vary.
+
+Message and data rates may apply.
+
+Reply STOP at any time to unsubscribe.
+
+Reply HELP for assistance.
+
+SMS consent is not a condition of purchase.
+
+SMS consent and phone numbers collected for SMS purposes will not be shared, sold, rented, or disclosed to third parties for marketing purposes.
+
+4. Sharing Information
+
+We do not sell your personal information.
+
+We may share information with:
+
+* Trusted service providers assisting our operations
+* Payment processors
+* Scheduling providers
+* Technology platforms used to deliver services
+* Legal or regulatory authorities if required by law
+
+All third-party providers are expected to maintain appropriate confidentiality and security standards.
+
+5. Cookies and Analytics
+
+Our website may use:
+
+* Cookies
+* Analytics tools
+* Tracking technologies
+
+These tools help us understand website performance and improve user experience.
+
+You may disable cookies through your browser settings.
+
+6. Data Security
+
+We implement commercially reasonable safeguards designed to protect your information against unauthorized access, disclosure, alteration, or destruction.
+
+However, no electronic transmission or storage system can be guaranteed as completely secure.
+
+7. Third-Party Websites
+
+Our website may contain links to third-party websites. We are not responsible for their privacy practices or content.
+
+8. Children’s Privacy
+
+Our services are not intended for individuals under the age of 18, and we do not knowingly collect information from minors.
+
+9. Changes to This Policy
+
+We reserve the right to modify this Privacy Policy at any time. Updated versions will be posted with a revised effective date.
+
+10. Contact Information
+
+Gantt & Karr Formation Group
+Website:  www.ganttkarr.com￼
+Email: info@ganttkarr.com
+
+If you have questions regarding this Privacy Policy, please contact us.
+
+⸻
+
+I also recommend creating a separate Messaging Terms & Conditions / SMS Terms page because Twilio and many SMS providers commonly ask for that in addition to the Privacy Policy.

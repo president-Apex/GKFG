@@ -1,0 +1,76 @@
+Messaging Terms & Conditions / SMS Terms of Service
+
+Effective Date: May 21, 2026
+
+Welcome to Gantt & Karr Formation Group. These Messaging Terms & Conditions govern participation in our SMS/text messaging program.
+
+1. SMS Program Description
+
+By providing your phone number and opting into our messaging program, you agree to receive text messages from Gantt & Karr Formation Group, including but not limited to:
+
+* Appointment reminders
+* Consultation confirmations
+* Business formation updates
+* Document notifications
+* Service-related updates
+* Customer support communications
+* Follow-up communications
+
+Message frequency may vary based on your interaction with us and requested services.
+
+2. User Consent
+
+By submitting your phone number through our website, forms, scheduling pages, applications, or other communication methods, you expressly consent to receive text messages from Gantt & Karr Formation Group at the phone number provided.
+
+Consent is not a condition of purchase.
+
+3. Message and Data Rates
+
+Message and data rates may apply according to your wireless carrier plan.
+
+Charges are determined by your mobile carrier and are your responsibility.
+
+4. Opt-Out Instructions
+
+You may opt out of receiving SMS messages at any time by replying:
+
+STOP
+
+After opting out, you may receive one confirmation message verifying your removal from future SMS communications.
+
+5. Help Instructions
+
+For assistance, reply:
+
+HELP
+
+You may also contact us at:
+
+Website:  Gantt & Karr Formation Group￼
+Email: info@ganttkarr.com
+
+6. Carrier Disclaimer
+
+Wireless carriers are not responsible for delayed or undelivered messages.
+
+Delivery timing depends on carrier networks and device capabilities.
+
+7. Privacy
+
+Your privacy is important to us.
+
+Phone numbers and SMS consent information collected for texting purposes will not be sold, rented, shared, or disclosed to third parties for marketing purposes.
+
+Please review our Privacy Policy for additional information regarding collection and use of information.
+
+8. Changes to Messaging Terms
+
+Gantt & Karr Formation Group reserves the right to modify these Messaging Terms at any time. Any updates will become effective upon posting to our website.
+
+9. Contact Information
+
+Gantt & Karr Formation Group
+Website:  www.ganttkarr.com￼
+Email: info@ganttkarr.com
+
+This version is structured to fit what SMS providers like Twilio and carriers typically expect when reviewing business messaging compliance.
