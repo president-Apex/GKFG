@@ -1,19 +1,15 @@
 import { useState, useEffect, useCallback } from "react";
-import { CheckCircle, X } from "lucide-react";
+import { UserCircle2, X } from "lucide-react";
 
 const NOTIFICATIONS = [
-  "Jessica M. in Charlotte just requested LLC Formation Assistance.",
-  "Marcus T. in Atlanta just booked a Free Startup Consultation.",
-  "Danielle R. in Phoenix just started a Business Launch Package.",
-  "Chris J. in Kansas City just requested Notary Services.",
-  "Angela W. in Nashville just requested EIN Assistance.",
-  "Brittany S. in Scottsdale just booked Business Startup Support.",
-  "Taylor K. in Bozeman just requested Registered Agent Coordination.",
-  "Monica L. in Raleigh just started the Entrepreneur Support Package.",
-  "Devon A. in Houston just requested AI Intake Setup with Anna.",
-  "Simone P. in Denver just started a Business Launch Package.",
-  "James W. in Columbus just requested LLC Formation Assistance.",
-  "Keisha R. in Memphis just booked a Free Startup Consultation.",
+  "Nicole M. scheduled an Online Notary appointment",
+  "Jason B. booked a Mobile Notary consultation",
+  "Carla K. started a Business Formation request",
+  "Michael T. requested Registered Agent information",
+  "Amanda S. booked a Startup Support consultation",
+  "Chris R. completed a Business Formation intake",
+  "Taylor H. requested Loan Signing services",
+  "David P. scheduled an Online Notary session",
 ];
 
 function getRandomBetween(min: number, max: number) {
@@ -38,7 +34,7 @@ export function SocialProof() {
 
     const hideTimer = setTimeout(() => {
       setVisible(false);
-    }, getRandomBetween(5000, 7000));
+    }, getRandomBetween(5000, 8000));
 
     return hideTimer;
   }, [lastMessage]);
@@ -51,13 +47,13 @@ export function SocialProof() {
       loopTimer = setTimeout(() => {
         hideTimer = show();
         schedule();
-      }, getRandomBetween(18000, 35000));
+      }, getRandomBetween(20000, 45000));
     }
 
     const initial = setTimeout(() => {
       hideTimer = show();
       schedule();
-    }, getRandomBetween(5000, 10000));
+    }, getRandomBetween(8000, 15000));
 
     return () => {
       clearTimeout(initial);
@@ -71,26 +67,29 @@ export function SocialProof() {
   return (
     <div
       aria-live="polite"
-      className={`fixed bottom-5 left-4 z-[9999] max-w-[320px] w-[calc(100vw-2rem)] sm:w-80 transition-all duration-500 ease-out ${
+      aria-atomic="true"
+      className={`fixed bottom-6 right-5 z-[9990] max-w-[300px] w-[calc(100vw-2.5rem)] sm:w-72 transition-all duration-500 ease-out pointer-events-none ${
         visible
-          ? "opacity-100 translate-y-0 pointer-events-auto"
-          : "opacity-0 translate-y-4 pointer-events-none"
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 translate-y-3"
       }`}
     >
-      <div className="flex items-start gap-3 rounded-xl bg-[#FAFAF7] shadow-lg border border-emerald-100 px-4 py-3.5">
-        <CheckCircle className="h-5 w-5 text-emerald-500 flex-shrink-0 mt-0.5" />
-        <p className="text-[13px] text-[#2D2D2D] leading-snug flex-1">{message}</p>
+      <div className="flex items-start gap-3 rounded-xl bg-white shadow-xl border border-border px-4 py-3.5 pointer-events-auto">
+        <div className="flex-shrink-0 mt-0.5 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+          <UserCircle2 className="h-4 w-4 text-primary" />
+        </div>
+        <div className="flex-1 min-w-0">
+          <p className="text-[12px] font-semibold text-secondary uppercase tracking-wider mb-0.5">Recent Activity</p>
+          <p className="text-[13px] text-foreground leading-snug">{message}</p>
+        </div>
         <button
           onClick={() => setVisible(false)}
-          className="text-[#9CA3AF] hover:text-[#2D2D2D] transition-colors flex-shrink-0 -mt-0.5 -mr-1"
-          aria-label="Close notification"
+          className="text-muted-foreground hover:text-foreground transition-colors flex-shrink-0 -mt-0.5 -mr-1 pointer-events-auto"
+          aria-label="Dismiss notification"
         >
-          <X className="h-4 w-4" />
+          <X className="h-3.5 w-3.5" />
         </button>
       </div>
-      <p className="text-[10px] text-[#9CA3AF] mt-1.5 px-1 leading-tight">
-        Demo notifications — not real-time transactions.
-      </p>
     </div>
   );
 }

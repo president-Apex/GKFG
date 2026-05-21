@@ -3,6 +3,7 @@ import { useLocation } from "wouter";
 import { Nav } from "./nav";
 import { Footer } from "./footer";
 import { CookieBanner } from "./cookie-banner";
+import { SocialProof } from "./social-proof";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -22,6 +23,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </main>
       <Footer />
       <CookieBanner />
+      <SocialProof />
     </div>
   );
 }

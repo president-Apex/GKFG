@@ -89,6 +89,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Trust Strip — immediately under hero */}
+      <section className="bg-secondary/10 border-b border-secondary/20 py-3.5">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center items-center gap-x-0 gap-y-1 text-xs font-semibold text-foreground/70 uppercase tracking-wider">
+            {[
+              "Family-Led",
+              "Serving 6 States",
+              "Missouri Registered Agent Services",
+              "Secure Client Intake",
+            ].map((item, i, arr) => (
+              <span key={item} className="flex items-center">
+                <span className="hover:text-secondary transition-colors">{item}</span>
+                {i < arr.length - 1 && (
+                  <span className="mx-4 text-secondary/50">•</span>
+                )}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Trust Bar */}
       <section className="bg-muted/60 border-b border-border py-10">
         <div className="container mx-auto px-4">
