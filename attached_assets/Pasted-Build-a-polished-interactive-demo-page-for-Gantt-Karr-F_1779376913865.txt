@@ -1,0 +1,120 @@
+Build a polished interactive demo page for Gantt & Karr Formation Group featuring “Anna,” our AI receptionist/intake assistant.
+
+Brand:
+Gantt & Karr Formation Group
+Website: www.ganttkarr.com
+Email: info@ganttkarr.com
+Business focus: LLC formation, EIN help, registered agent guidance, notary services, business filing support, and attorney referral coordination.
+Important disclaimer: We are not a law firm and do not provide legal, tax, or financial advice.
+
+Demo goal:
+Show how Anna answers inquiries 24/7, qualifies the visitor, captures contact information, explains service options, and routes them to the correct next step.
+
+Page style:
+Professional, clean, premium, trustworthy.
+Do NOT use navy/gold/white as the primary look because those are used for other businesses.
+Use a polished neutral palette: charcoal, soft taupe, ivory, muted plum, and warm gray.
+Make it mobile-responsive.
+
+Hero section:
+Headline:
+“Meet Anna — Your 24/7 Formation Intake Assistant”
+
+Subheadline:
+“Anna helps new business owners get directed to the right formation, notary, registered agent, or referral service without waiting for office hours.”
+
+CTA buttons:
+“Start Demo”
+“Request Formation Help”
+
+Demo interaction:
+Create a simulated chat/voice demo where Anna greets the visitor and walks through this conversation flow:
+
+Anna:
+“Thank you for contacting Gantt & Karr Formation Group. I’m Anna. I can help you get started with formation support, notary services, registered agent information, or attorney referral coordination. What are you trying to accomplish today?”
+
+Visitor options:
+1. Start an LLC
+2. Get an EIN
+3. Need a registered agent
+4. Need notary help
+5. Need attorney referral information
+6. Not sure yet
+
+If Start an LLC:
+Anna asks:
+“What state are you forming in?”
+“What type of business are you starting?”
+“Do you already have a business name picked out?”
+“Would you like help checking availability or preparing next steps?”
+
+If EIN:
+Anna asks:
+“Have you already formed your LLC or corporation?”
+“Are you applying for the EIN for banking, taxes, payroll, or vendor setup?”
+
+If registered agent:
+Anna asks:
+“What state is your business registered in?”
+“Are you forming a new company or replacing your current registered agent?”
+
+If notary:
+Anna asks:
+“What type of document needs notarized?”
+“Are you looking for mobile notary help or in-office notary support?”
+
+If attorney referral:
+Anna says:
+“We can help route you toward attorney referral information, but Gantt & Karr Formation Group is not a law firm and does not provide legal advice. What type of issue are you trying to get help with?”
+
+Lead capture:
+After 3–4 questions, Anna should collect:
+Full name
+Phone number
+Email
+Preferred service
+State
+Best time to contact
+
+Then Anna says:
+“Thank you. A member of the Gantt & Karr Formation Group team will review your information and contact you with the appropriate next step.”
+
+Add a sidebar card:
+“Anna can help with:”
+- LLC formation intake
+- EIN preparation guidance
+- Registered agent inquiries
+- Notary request routing
+- Attorney referral coordination
+- Basic document preparation intake
+- Appointment requests
+
+Add compliance/disclaimer section:
+“Gantt & Karr Formation Group is not a law firm and does not provide legal advice, tax advice, financial advice, or legal representation. Information collected through this demo is for intake and routing purposes only.”
+
+Add form submission behavior:
+When the demo is complete, show a confirmation screen:
+“Your request has been received.”
+“Next step: our team will contact you using the information provided.”
+
+Create a backend or form handler that emails demo submissions to:
+info@ganttkarr.com
+
+Fields to include in email:
+Name
+Phone
+Email
+Service selected
+State
+Business type
+Business name if provided
+Preferred contact time
+Notes
+
+Add footer:
+Gantt & Karr Formation Group
+www.ganttkarr.com
+info@ganttkarr.com
+Not a law firm. No legal or tax advice.
+
+Make the page feel like a live AI receptionist demo, but clearly mark it as a simulation/demo.
