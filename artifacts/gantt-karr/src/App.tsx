@@ -29,7 +29,8 @@ import PrivacyPolicy from "@/pages/privacy-policy";
 import CookiePolicy from "@/pages/cookie-policy";
 import TermsOfService from "@/pages/terms-of-service";
 import MessagingTerms from "@/pages/messaging-terms";
-import Disclaimer from "@/pages/disclaimer";
+import DisclaimerPage from "@/pages/disclaimer";
+import DocumentUpload from "@/pages/document-upload";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -64,7 +65,8 @@ function Router() {
         <Route path="/cookie-policy" component={CookiePolicy} />
         <Route path="/terms-of-service" component={TermsOfService} />
         <Route path="/messaging-terms" component={MessagingTerms} />
-        <Route path="/disclaimer" component={Disclaimer} />
+        <Route path="/disclaimer" component={DisclaimerPage} />
+        <Route path="/documents" component={DocumentUpload} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
