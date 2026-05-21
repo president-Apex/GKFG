@@ -152,10 +152,10 @@ export default function Consultation() {
                     className="mt-0.5 h-4 w-4 rounded border-border accent-primary flex-shrink-0"
                   />
                   <span className="text-xs text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">
-                    <strong className="text-foreground">Optional — SMS Consent:</strong> By checking this box, you agree to receive text messages from Gantt & Karr Formation Group regarding your inquiry, appointments, business formation services, document updates, reminders, and related follow-up. Message frequency may vary. Message and data rates may apply. Reply STOP to unsubscribe at any time. Reply HELP for assistance. Your consent to receive text messages is not a condition of purchase. We do not sell or share your phone number for marketing purposes. View our{" "}
-                    <Link href="/messaging-terms" className="text-secondary hover:underline">Messaging Terms</Link>{" "}
-                    and{" "}
-                    <Link href="/privacy-policy" className="text-secondary hover:underline">Privacy Policy</Link>.
+                    I agree to receive SMS text messages from Gantt & Karr Formation Group regarding my inquiry, appointments, service updates, account notifications, and related communications. Message frequency may vary. Message and data rates may apply. Reply STOP to unsubscribe or HELP for assistance. Consent is not a condition of purchase.{" "}
+                    <Link href="/privacy-policy" className="text-secondary hover:underline">Privacy Policy</Link>
+                    {" "}·{" "}
+                    <Link href="/messaging-terms" className="text-secondary hover:underline">Messaging Terms & Conditions</Link>
                   </span>
                 </label>
               </div>

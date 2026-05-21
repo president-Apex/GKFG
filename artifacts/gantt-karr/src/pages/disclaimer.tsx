@@ -25,106 +25,115 @@ export default function DisclaimerPage() {
           <div className="container mx-auto px-4 max-w-3xl">
             <p className="text-secondary text-sm uppercase tracking-widest mb-3 font-semibold">Legal</p>
             <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary-foreground">Disclaimer</h1>
-            <p className="text-primary-foreground/70 mt-4 text-sm">Last updated: May 2026</p>
+            <p className="text-primary-foreground/70 mt-4 text-sm">Effective Date: May 21, 2026</p>
           </div>
         </div>
 
         <div className="container mx-auto px-4 py-16 max-w-3xl prose prose-slate">
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
-            <p className="text-amber-900 font-semibold text-sm leading-relaxed m-0">
-              Important: Gantt & Karr Formation Group is not a law firm, accounting firm, tax advisory
-              firm, or financial advisory firm, and does not provide legal, tax, accounting, or financial advice.
-            </p>
-          </div>
-
-          <h2>Not Legal Advice</h2>
           <p>
-            All information provided on this website and through our services is for general informational
-            and educational purposes only. Nothing on this site, in our communications, or through any
-            interaction with our team should be construed as legal advice. No attorney-client relationship
-            is formed by your use of this website, our intake forms, or any of our services.
+            The information provided by Gantt & Karr Formation Group ("Company," "we," "our," or "us")
+            on this website, through communications, forms, consultations, social media, text messages,
+            emails, and services is for general informational and educational purposes only.
           </p>
           <p>
-            You should consult a licensed attorney for any legal questions related to your business
-            structure, contracts, liability, compliance obligations, or any other legal matter.
+            While we strive to provide accurate and current information, we make no representations or
+            warranties regarding completeness, reliability, accuracy, suitability, or availability of
+            any information contained on this website or through our services.
           </p>
 
-          <h2>Not Tax or Financial Advice</h2>
+          <h2>Not a Law Firm</h2>
           <p>
-            We do not provide tax, accounting, financial planning, payroll, or investment advice. Business
-            formation decisions — including entity type selection, tax elections, and financial structure —
-            can have significant tax and financial implications that vary based on your individual
-            circumstances. Please consult a licensed CPA, enrolled agent, financial planner, or other
-            qualified professional before making decisions about your business structure or financial
-            strategy.
+            Gantt & Karr Formation Group is not a law firm and does not provide legal representation,
+            legal advice, legal opinions, or legal services.
           </p>
-
-          <h2>Nature of Our Services</h2>
           <p>
-            Gantt & Karr Formation Group provides the following types of services:
+            No information provided by Gantt & Karr Formation Group should be interpreted as legal advice.
           </p>
+          <p>Use of our website, forms, communications, or services does not establish:</p>
           <ul>
-            <li>Business formation assistance and document coordination</li>
-            <li>EIN application assistance</li>
-            <li>Registered agent coordination (Missouri)</li>
-            <li>BOI reporting assistance and general information</li>
-            <li>Notary services (online and mobile, where applicable by state)</li>
-            <li>Startup guidance, planning support, and operational setup</li>
-            <li>AI intake support through Anna, our Apex-built receptionist</li>
+            <li>Attorney-client relationship</li>
+            <li>Legal representation</li>
+            <li>Fiduciary relationship</li>
+            <li>Partnership relationship</li>
+          </ul>
+          <p>If legal guidance is needed, we encourage you to consult a licensed attorney.</p>
+
+          <h2>No Tax, Financial, or Accounting Advice</h2>
+          <p>Information provided by Gantt & Karr Formation Group does not constitute:</p>
+          <ul>
+            <li>Tax advice</li>
+            <li>Accounting advice</li>
+            <li>Financial advice</li>
+            <li>Investment advice</li>
+          </ul>
+          <p>You should consult licensed professionals regarding your individual circumstances.</p>
+
+          <h2>Business Formation Disclaimer</h2>
+          <p>
+            Business formation assistance and related services are administrative support services only.
+          </p>
+          <p>We cannot guarantee:</p>
+          <ul>
+            <li>State approval of filings</li>
+            <li>Government processing times</li>
+            <li>Approval outcomes</li>
+            <li>Business success</li>
+            <li>Tax outcomes</li>
+            <li>Regulatory compliance outcomes</li>
+          </ul>
+          <p>Government agencies may reject filings based on factors outside our control.</p>
+
+          <h2>Third-Party Disclaimer</h2>
+          <p>
+            This website may include links to third-party resources, websites, referrals, software
+            platforms, or service providers.
+          </p>
+          <p>We do not endorse or guarantee:</p>
+          <ul>
+            <li>Third-party products</li>
+            <li>Third-party services</li>
+            <li>Third-party content</li>
+            <li>Accuracy of third-party information</li>
+          </ul>
+          <p>Users interact with third parties at their own discretion and risk.</p>
+
+          <h2>Attorney Referral Notice</h2>
+          <p>
+            Gantt & Karr Formation Group may provide referrals to independent attorneys or legal
+            professionals for your convenience.
+          </p>
+          <p>We do not:</p>
+          <ul>
+            <li>Endorse specific attorneys</li>
+            <li>Guarantee outcomes</li>
+            <li>Provide legal advice</li>
+            <li>Control third-party legal services</li>
           </ul>
           <p>
-            We are a document preparation and administrative support company. Our role is to assist you in
-            organizing, preparing, coordinating, and submitting documents — not to provide professional
-            advice on their legal, tax, or financial effect.
+            Any attorney-client relationship exists solely between you and the attorney you select.
           </p>
 
-          <h2>Government Filings and Processing Times</h2>
+          <h2>Testimonials and Results Disclaimer</h2>
           <p>
-            We assist in preparing and coordinating submissions to government agencies; however, we have
-            no control over government processing times, approval decisions, rejection notices, or changes
-            in agency requirements. Processing times vary by state and are subject to change at any time.
-            We cannot guarantee specific turnaround times for state or federal filings.
+            Any testimonials, examples, or client experiences shown on this website are intended for
+            illustrative purposes only.
           </p>
-
-          <h2>Accuracy of Information</h2>
-          <p>
-            We strive to provide accurate, current, and useful information on our website. However, laws,
-            regulations, and filing requirements change frequently and vary by state. We make no warranties
-            about the completeness, accuracy, reliability, or applicability of any information on this
-            site. You should always verify requirements with the appropriate state agency or a qualified
-            licensed professional.
-          </p>
-
-          <h2>Third-Party Links and Referrals</h2>
-          <p>
-            Our website may link to or refer to third-party services, professionals, or organizations. We
-            do not endorse, guarantee, or take responsibility for the services, advice, qualifications, or
-            products of any third party. Any reliance on a third-party referral is at your own discretion
-            and risk.
-          </p>
-
-          <h2>Demo Notifications</h2>
-          <p>
-            This website may display social proof notifications for demonstration and illustrative purposes.
-            These notifications use randomized sample data and do not represent actual real-time client
-            activity or live transactions unless explicitly stated.
-          </p>
-
-          <h2>Anna — AI Receptionist</h2>
-          <p>
-            Anna is an AI receptionist built through Apex Key Group Holdings, Inc. and is used to support
-            client intake for Gantt & Karr Formation Group. Anna does not provide legal advice, notary
-            advice, or make legal decisions. All substantive guidance and decisions are made by licensed
-            or qualified members of our team or our professional network. Gantt & Karr Formation Group
-            remains responsible for all client service and business support decisions.
-          </p>
+          <p>Individual results vary.</p>
+          <p>Past results do not guarantee future outcomes.</p>
 
           <h2>Limitation of Liability</h2>
           <p>
-            To the fullest extent permitted by applicable law, Gantt & Karr Formation Group, its owners,
-            members, team members, and affiliates shall not be liable for any direct, indirect, incidental,
-            special, or consequential damages arising from your use of, or reliance on, information or
-            services provided by this company or website.
+            Under no circumstances shall Gantt & Karr Formation Group, its owners, employees, affiliates,
+            contractors, or representatives be liable for any loss or damages arising from use of this
+            website, information, or services.
+          </p>
+          <p>Use of our website and services is at your own risk.</p>
+
+          <h2>Contact Information</h2>
+          <p>
+            <strong>Gantt & Karr Formation Group</strong><br />
+            Website: <a href="https://www.ganttkarr.com" className="text-secondary hover:underline">www.ganttkarr.com</a><br />
+            Email: <a href="mailto:info@ganttkarr.com" className="text-secondary hover:underline">info@ganttkarr.com</a>
           </p>
 
           <div className="flex flex-wrap gap-4 mt-12 text-sm text-muted-foreground border-t border-border pt-6">
@@ -132,6 +141,7 @@ export default function DisclaimerPage() {
             <Link href="/cookie-policy" className="hover:text-secondary transition-colors">Cookie Policy</Link>
             <Link href="/terms-of-service" className="hover:text-secondary transition-colors">Terms of Service</Link>
             <Link href="/messaging-terms" className="hover:text-secondary transition-colors">Messaging Terms</Link>
+            <Link href="/refund-policy" className="hover:text-secondary transition-colors">Refund Policy</Link>
           </div>
         </div>
       </div>

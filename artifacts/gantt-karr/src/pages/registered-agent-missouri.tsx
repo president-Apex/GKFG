@@ -263,7 +263,7 @@ export default function RegisteredAgentMissouri() {
 
       <section className="py-10 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
-          <Disclaimer />
+          <Disclaimer notice="Registered agent services do not include legal representation, legal advice, or compliance guarantees. Client remains responsible for all legal and compliance obligations." />
         </div>
       </section>
     </>

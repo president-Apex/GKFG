@@ -278,7 +278,7 @@ export default function BOIReporting() {
 
       <section className="py-10 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
-          <Disclaimer />
+          <Disclaimer notice="BOI reporting assistance is administrative and document preparation support only. It does not constitute legal, tax, or financial advice. Consult a licensed attorney regarding your specific compliance obligations." />
         </div>
       </section>
     </>

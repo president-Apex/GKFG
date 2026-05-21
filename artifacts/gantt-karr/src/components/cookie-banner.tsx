@@ -165,8 +165,7 @@ export function CookieBanner() {
                   🍪 Gantt & Karr Formation Group Website Preferences
                 </h2>
                 <p className="text-[13px] text-muted-foreground leading-relaxed">
-                  At Gantt & Karr Formation Group, we use cookies and similar technologies to create a smoother experience for our visitors. Cookies help us remember your preferences, understand website activity, improve performance, support secure forms and appointment scheduling, and provide a better overall experience.
-                  {" "}We respect your privacy and do not sell your personal information. You can manage your preferences at any time.
+                  We use cookies to improve your experience, understand how visitors use our website, and help us provide better support for business formation clients. By clicking Accept, you agree to our use of cookies and similar technologies.
                 </p>
               </div>
             </div>
@@ -194,10 +193,8 @@ export function CookieBanner() {
             </div>
 
             <p className="text-[11px] text-muted-foreground/70 leading-relaxed border-t border-border pt-3">
-              By continuing to use our website, you agree to our use of essential website technologies as outlined in our{" "}
-              <Link href="/privacy-policy" className="text-secondary hover:underline">Privacy Policy</Link>
-              {" "}and{" "}
-              <Link href="/terms-of-service" className="text-secondary hover:underline">Terms of Service</Link>.
+              Gantt & Karr Formation Group respects your privacy. We do not sell your personal information.{" "}
+              <Link href="/privacy-policy" className="text-secondary hover:underline">Review our Privacy Policy for details.</Link>
             </p>
           </div>
         </div>
@@ -278,10 +275,8 @@ export function CookieBanner() {
                 Decline Non-Essential Cookies
               </button>
               <p className="text-[11px] text-muted-foreground/70 leading-relaxed mt-4 text-center">
-                By continuing to use our website, you agree to our use of essential website technologies as outlined in our{" "}
-                <Link href="/privacy-policy" className="text-secondary hover:underline">Privacy Policy</Link>
-                {" "}and{" "}
-                <Link href="/terms-of-service" className="text-secondary hover:underline">Terms of Service</Link>.
+                Gantt & Karr Formation Group respects your privacy. We do not sell your personal information.{" "}
+                <Link href="/privacy-policy" className="text-secondary hover:underline">Review our Privacy Policy for details.</Link>
               </p>
             </div>
           </div>

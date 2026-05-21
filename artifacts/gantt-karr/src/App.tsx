@@ -31,6 +31,8 @@ import TermsOfService from "@/pages/terms-of-service";
 import MessagingTerms from "@/pages/messaging-terms";
 import DisclaimerPage from "@/pages/disclaimer";
 import DocumentUpload from "@/pages/document-upload";
+import RefundPolicy from "@/pages/refund-policy";
+import ServiceAgreement from "@/pages/service-agreement";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -67,6 +69,8 @@ function Router() {
         <Route path="/messaging-terms" component={MessagingTerms} />
         <Route path="/disclaimer" component={DisclaimerPage} />
         <Route path="/documents" component={DocumentUpload} />
+        <Route path="/refund-policy" component={RefundPolicy} />
+        <Route path="/service-agreement" component={ServiceAgreement} />
         <Route component={NotFound} />
       </Switch>
     </Layout>

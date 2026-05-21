@@ -288,7 +288,7 @@ export default function CorporationFiling() {
 
       <section className="py-10 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
-          <Disclaimer />
+          <Disclaimer notice="Entity selection may affect legal and tax outcomes. Consult licensed legal or tax professionals regarding your individual circumstances." />
         </div>
       </section>
     </>

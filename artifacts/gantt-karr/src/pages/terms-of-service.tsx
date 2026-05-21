@@ -25,153 +25,153 @@ export default function TermsOfService() {
           <div className="container mx-auto px-4 max-w-3xl">
             <p className="text-secondary text-sm uppercase tracking-widest mb-3 font-semibold">Legal</p>
             <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary-foreground">Terms of Service</h1>
-            <p className="text-primary-foreground/70 mt-4 text-sm">Last updated: May 2026</p>
+            <p className="text-primary-foreground/70 mt-4 text-sm">Effective Date: May 21, 2026</p>
           </div>
         </div>
 
         <div className="container mx-auto px-4 py-16 max-w-3xl prose prose-slate">
           <p>
-            Please read these Terms of Service ("Terms") carefully before using the website or services
-            offered by Gantt & Karr Formation Group ("Company," "we," "us," or "our"). By accessing our
-            website at ganttkarr.com or engaging our services, you agree to be bound by these Terms. If
-            you do not agree, please do not use our website or services.
+            Welcome to Gantt & Karr Formation Group ("Company," "we," "our," or "us"). By accessing or
+            using our website, services, forms, content, and communications, you agree to these Terms of
+            Service ("Terms"). If you do not agree with these Terms, please discontinue use of our website
+            and services.
           </p>
 
-          <h2>1. Nature of Our Services</h2>
-          <p>
-            Gantt & Karr Formation Group provides business formation assistance, document coordination,
-            notary services, startup guidance, registered agent coordination, EIN application assistance,
-            and related administrative support services.
-          </p>
-          <p>
-            <strong>We are not a law firm, accounting firm, tax advisory firm, or financial advisory firm.
-            We do not provide legal, tax, accounting, investment, or financial advice.</strong> Nothing on
-            this website or communicated by our team constitutes legal or professional advice. You should
-            consult a licensed attorney, CPA, tax professional, or financial advisor for guidance specific
-            to your situation.
-          </p>
-
-          <h2>2. No Attorney-Client Relationship</h2>
-          <p>
-            Use of our website or services does not create an attorney-client relationship, a CPA-client
-            relationship, or any other professional advisory relationship. Any documents we assist in
-            preparing or coordinating are for your review and submission. You are solely responsible for
-            their accuracy, completeness, and legal sufficiency. We strongly encourage you to have any
-            documents reviewed by a licensed professional before filing.
-          </p>
-
-          <h2>3. Eligibility</h2>
-          <p>
-            You must be at least 18 years of age to use our services. By using our website, you represent
-            and warrant that you are of legal age and have the full legal capacity and authority to enter
-            into this agreement.
-          </p>
-
-          <h2>4. Acceptable Use</h2>
-          <p>By using our website and services, you agree not to:</p>
+          <h2>1. Services</h2>
+          <p>Gantt & Karr Formation Group provides business support and administrative services, which may include:</p>
           <ul>
-            <li>Use our services for any unlawful, deceptive, or fraudulent purpose</li>
-            <li>Submit false, inaccurate, or misleading information in any intake form or communication</li>
-            <li>Attempt to access data, systems, or accounts you are not authorized to access</li>
-            <li>Interfere with or disrupt the operation or security of our website</li>
-            <li>Use our services to form or operate entities intended for fraudulent, illegal, or harmful activity</li>
-            <li>Reproduce, sell, or exploit any portion of our services without written permission</li>
+            <li>Business formation assistance</li>
+            <li>Registered agent support</li>
+            <li>Notary-related services</li>
+            <li>Business compliance assistance</li>
+            <li>Referral resources</li>
+            <li>Educational information</li>
+            <li>Administrative support services</li>
+          </ul>
+          <p>Services may be modified, updated, suspended, or discontinued at any time without notice.</p>
+
+          <h2>2. No Legal, Tax, or Financial Advice</h2>
+          <p>
+            Gantt & Karr Formation Group is not a law firm and does not provide legal advice, legal
+            representation, tax advice, accounting advice, or financial advice.
+          </p>
+          <p>
+            Information on this website is provided for general informational and educational purposes only.
+          </p>
+          <p>
+            You should consult licensed attorneys, accountants, tax professionals, or other qualified
+            advisors regarding your specific situation.
+          </p>
+          <p>Use of this website does not create:</p>
+          <ul>
+            <li>Attorney-client relationship</li>
+            <li>Fiduciary relationship</li>
+            <li>Partnership relationship</li>
+            <li>Joint venture relationship</li>
           </ul>
 
-          <h2>5. Payments and Fees</h2>
+          <h2>3. User Responsibilities</h2>
+          <p>By using this website, you agree:</p>
+          <ul>
+            <li>Information you provide is accurate and complete</li>
+            <li>You will not submit false or misleading information</li>
+            <li>You will not use our website for unlawful purposes</li>
+            <li>You will not interfere with website operation or security</li>
+          </ul>
+
+          <h2>4. Payments</h2>
+          <p>Fees for services are disclosed before purchase or engagement.</p>
+          <p>You agree to pay all applicable charges for services requested.</p>
+          <p>Failure to provide required information or documentation may delay processing.</p>
+
+          <h2>5. Refunds</h2>
           <p>
-            Service fees are disclosed prior to engagement and confirmed in writing. Government filing fees,
-            state fees, registered agent fees, and other third-party costs are separate from our service
-            fees and remain your responsibility unless explicitly included in your selected package or
-            confirmed in writing.
+            Refund eligibility is subject to our{" "}
+            <Link href="/refund-policy" className="text-secondary hover:underline">Refund and Cancellation Policy</Link>.
           </p>
           <p>
-            All service fees are non-refundable once work has commenced. If work has not yet begun, please
-            contact us promptly at <a href="mailto:Info@ganttkarr.com" className="text-secondary hover:underline">Info@ganttkarr.com</a> to
-            discuss your options.
+            Government filing fees, third-party fees, state fees, and fees already incurred on your
+            behalf may be non-refundable.
           </p>
 
-          <h2>6. Government Filings and Processing Times</h2>
+          <h2>6. Intellectual Property</h2>
+          <p>All website content including:</p>
+          <ul>
+            <li>Logos</li>
+            <li>Text</li>
+            <li>Graphics</li>
+            <li>Branding</li>
+            <li>Images</li>
+            <li>Documents</li>
+            <li>Website design</li>
+            <li>Materials</li>
+          </ul>
           <p>
-            We assist in coordinating the preparation and submission of documents to government agencies.
-            We have no control over government processing times, approval decisions, rejections, or agency
-            requirements. Processing times vary by state and are subject to change without notice. We
-            cannot guarantee specific turnaround times for state or federal filings.
+            remain property of Gantt & Karr Formation Group and may not be copied, reproduced,
+            distributed, or used without written permission.
           </p>
 
-          <h2>7. Document Submissions</h2>
+          <h2>7. Third-Party Services</h2>
           <p>
-            When you submit documents through our secure portal or via email, you represent that you have
-            the right to share those documents and that they do not violate any applicable law or
-            third-party rights. We will handle your documents in accordance with our{" "}
-            <Link href="/privacy-policy" className="text-secondary hover:underline">Privacy Policy</Link>.
+            Our website may include links to third-party providers, software, scheduling systems, payment
+            processors, referral partners, or external resources.
+          </p>
+          <p>We are not responsible for:</p>
+          <ul>
+            <li>Third-party content</li>
+            <li>Privacy practices</li>
+            <li>Availability</li>
+            <li>Actions or omissions of third parties</li>
+          </ul>
+
+          <h2>8. Limitation of Liability</h2>
+          <p>To the maximum extent permitted by law, Gantt & Karr Formation Group shall not be liable for:</p>
+          <ul>
+            <li>Indirect damages</li>
+            <li>Incidental damages</li>
+            <li>Consequential damages</li>
+            <li>Lost profits</li>
+            <li>Business interruption</li>
+            <li>Data loss</li>
+            <li>Delays caused by government agencies or third parties</li>
+          </ul>
+          <p>Services are provided on an "as-is" and "as-available" basis.</p>
+
+          <h2>9. Indemnification</h2>
+          <p>
+            You agree to defend, indemnify, and hold harmless Gantt & Karr Formation Group, its owners,
+            employees, affiliates, and contractors from claims arising from:
+          </p>
+          <ul>
+            <li>Your use of services</li>
+            <li>Violation of these Terms</li>
+            <li>Misuse of information or materials</li>
+          </ul>
+
+          <h2>10. Governing Law</h2>
+          <p>
+            These Terms shall be governed by the laws of the State of Missouri without regard to
+            conflict-of-law provisions.
           </p>
 
-          <h2>8. Intellectual Property</h2>
+          <h2>11. Changes to Terms</h2>
           <p>
-            All content on this website — including text, graphics, logos, service names, and design — is
-            the property of Gantt & Karr Formation Group or its licensors and is protected by applicable
-            intellectual property laws. You may not reproduce, distribute, modify, or create derivative
-            works without our prior written permission.
+            We reserve the right to modify these Terms at any time. Updated Terms become effective upon
+            posting to our website.
           </p>
 
-          <h2>9. Third-Party Services and Referrals</h2>
+          <h2>12. Contact Information</h2>
           <p>
-            We may refer you to or integrate with third-party services (e.g., registered agent providers,
-            scheduling tools, document platforms, payment processors, or professional partners). We are not
-            responsible for the acts, omissions, quality, or pricing of any third-party service provider.
-            Any referral to a licensed professional does not constitute an endorsement of that professional's
-            specific advice.
-          </p>
-
-          <h2>10. SMS Communications</h2>
-          <p>
-            If you opt in to receive SMS communications, your use of our messaging services is governed by
-            our <Link href="/messaging-terms" className="text-secondary hover:underline">Messaging Terms</Link>.
-            Consent to receive SMS is never a condition of purchase or service.
-          </p>
-
-          <h2>11. Disclaimer of Warranties</h2>
-          <p>
-            Our website and services are provided "as is" and "as available" without warranty of any kind,
-            express or implied. We do not warrant that our services will be error-free, uninterrupted, or
-            that any particular business outcome will result from using our services.
-          </p>
-
-          <h2>12. Limitation of Liability</h2>
-          <p>
-            To the fullest extent permitted by applicable law, Gantt & Karr Formation Group, its owners,
-            members, team members, and affiliates shall not be liable for any indirect, incidental,
-            consequential, special, or punitive damages arising from your use of our services or website,
-            including but not limited to: business losses, filing delays caused by government agencies,
-            rejection of filings, or reliance on any information provided on our website.
-          </p>
-
-          <h2>13. Governing Law and Dispute Resolution</h2>
-          <p>
-            These Terms are governed by the laws of the State of Missouri, without regard to conflict of
-            law provisions. Any disputes shall be resolved in courts of competent jurisdiction located in
-            Missouri. You waive any objection to personal jurisdiction or venue in Missouri.
-          </p>
-
-          <h2>14. Changes to These Terms</h2>
-          <p>
-            We reserve the right to update these Terms at any time. Updated Terms will be posted on this
-            page with a revised "Last updated" date. Continued use of our website or services after changes
-            are posted constitutes your acceptance of the revised Terms.
-          </p>
-
-          <h2>15. Contact</h2>
-          <p>
-            Questions about these Terms? Contact us:<br />
             <strong>Gantt & Karr Formation Group</strong><br />
-            <a href="mailto:Info@ganttkarr.com" className="text-secondary hover:underline">Info@ganttkarr.com</a>
+            Website: <a href="https://www.ganttkarr.com" className="text-secondary hover:underline">www.ganttkarr.com</a><br />
+            Email: <a href="mailto:info@ganttkarr.com" className="text-secondary hover:underline">info@ganttkarr.com</a>
           </p>
 
           <div className="flex flex-wrap gap-4 mt-12 text-sm text-muted-foreground border-t border-border pt-6">
             <Link href="/privacy-policy" className="hover:text-secondary transition-colors">Privacy Policy</Link>
             <Link href="/cookie-policy" className="hover:text-secondary transition-colors">Cookie Policy</Link>
             <Link href="/messaging-terms" className="hover:text-secondary transition-colors">Messaging Terms</Link>
+            <Link href="/refund-policy" className="hover:text-secondary transition-colors">Refund Policy</Link>
             <Link href="/disclaimer" className="hover:text-secondary transition-colors">Disclaimer</Link>
           </div>
         </div>

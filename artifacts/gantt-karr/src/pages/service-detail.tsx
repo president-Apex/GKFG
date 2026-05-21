@@ -5,6 +5,19 @@ import { Link, useParams } from "wouter";
 import { servicesData } from "@/data/services-data";
 import NotFound from "@/pages/not-found";
 
+const serviceNotices: Record<string, string> = {
+  "llc-formation": "We assist with administrative business formation processes. Gantt & Karr Formation Group is not a law firm and does not provide legal advice or legal representation.",
+  "business-formation": "We assist with administrative business formation processes. Gantt & Karr Formation Group is not a law firm and does not provide legal advice or legal representation.",
+  "corporation-filing": "Entity selection may affect legal and tax outcomes. Consult licensed legal or tax professionals regarding your individual circumstances.",
+  "ein-assistance": "EIN assistance services are administrative support only and should not be interpreted as legal, tax, or accounting advice.",
+  "registered-agent": "Registered agent services do not include legal representation, legal advice, or compliance guarantees.",
+  "notary": "Notary services verify identity and signatures and do not constitute legal advice.",
+  "mobile-notary": "Notary services verify identity and signatures and do not constitute legal advice.",
+  "online-notary": "Notary services verify identity and signatures and do not constitute legal advice.",
+  "boi-reporting": "BOI reporting assistance is administrative and document preparation support only. It does not constitute legal, tax, or financial advice.",
+  "operating-agreement": "Operating agreement assistance is document preparation support only and does not constitute legal advice. We strongly recommend review by a licensed attorney.",
+};
+
 export default function ServiceDetail() {
   const { slug } = useParams();
   const service = slug ? servicesData[slug] : null;
@@ -49,7 +62,7 @@ export default function ServiceDetail() {
             </Link>
           </div>
 
-          <Disclaimer />
+          <Disclaimer notice={slug ? serviceNotices[slug] : undefined} />
         </div>
       </section>
     </>
