@@ -1,7 +1,7 @@
 import { SEO } from "@/components/seo";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { CheckCircle, ArrowRight } from "lucide-react";
+import { CheckCircle, ArrowRight, Shield, Users, Star } from "lucide-react";
 import { homePageSchema } from "@/lib/schema";
 
 const coreServices = [
@@ -34,32 +34,56 @@ export default function Home() {
         schema={homePageSchema()}
       />
 
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-primary text-primary-foreground py-28 md:py-36 lg:py-44">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80')] opacity-10 bg-cover bg-center mix-blend-overlay" />
+      {/* Hero — split layout with real team photo */}
+      <section className="relative overflow-hidden bg-primary text-primary-foreground min-h-[92vh] flex items-center">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl">
-            <span className="inline-block py-1.5 px-4 rounded-full bg-secondary/20 text-secondary border border-secondary/30 text-xs font-semibold mb-6 uppercase tracking-widest">
-              Premium Business Setup
-            </span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight mb-6">
-              Build your legacy with confidence.
-            </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl leading-relaxed">
-              Family-led business formation, notary services, and startup support — powered by Anna AI.
-              We handle the setup so you can focus on the vision.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/how-it-works">
-                <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 w-full sm:w-auto h-14 px-8 text-base font-semibold">
-                  Start My Business Setup
-                </Button>
-              </Link>
-              <Link href="/consultation">
-                <Button size="lg" variant="outline" className="border-primary-foreground/25 text-primary-foreground hover:bg-primary-foreground/10 w-full sm:w-auto h-14 px-8 text-base">
-                  Book Free Consultation
-                </Button>
-              </Link>
+          <div className="grid lg:grid-cols-2 gap-12 items-center py-20 lg:py-28">
+            {/* Left — copy */}
+            <div>
+              <span className="inline-block py-1.5 px-4 rounded-full bg-secondary/20 text-secondary border border-secondary/30 text-xs font-semibold mb-6 uppercase tracking-widest">
+                Premium Business Setup
+              </span>
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight mb-6">
+                Build your legacy with confidence.
+              </h1>
+              <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-xl leading-relaxed">
+                Family-led business formation, notary services, and startup support — powered by Anna AI.
+                We handle the setup so you can focus on the vision.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                <Link href="/how-it-works">
+                  <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 w-full sm:w-auto h-14 px-8 text-base font-semibold">
+                    Start My Business Setup
+                  </Button>
+                </Link>
+                <Link href="/consultation">
+                  <Button size="lg" variant="outline" className="border-primary-foreground/25 text-primary-foreground hover:bg-primary-foreground/10 w-full sm:w-auto h-14 px-8 text-base">
+                    Book Free Consultation
+                  </Button>
+                </Link>
+              </div>
+              <div className="flex items-center gap-6 text-sm text-primary-foreground/60">
+                <div className="flex items-center gap-2"><Shield className="h-4 w-4 text-secondary" /><span>Compliance-first</span></div>
+                <div className="flex items-center gap-2"><Users className="h-4 w-4 text-secondary" /><span>Family-led team</span></div>
+                <div className="flex items-center gap-2"><Star className="h-4 w-4 text-secondary" /><span>6 states served</span></div>
+              </div>
+            </div>
+
+            {/* Right — team photo */}
+            <div className="relative lg:flex justify-end hidden">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-secondary/10 rounded-3xl blur-2xl" />
+                <img
+                  src="/gantt-karr/team-photo.png"
+                  alt="Loresa Gantt and Kaileyanne Karr — Gantt & Karr Formation Group"
+                  className="relative rounded-2xl w-full max-w-md object-cover shadow-2xl border border-secondary/20"
+                  style={{ maxHeight: "620px", objectPosition: "top" }}
+                />
+                <div className="absolute -bottom-5 -left-5 bg-card border border-border rounded-xl px-5 py-4 shadow-xl">
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider mb-0.5">Your Business</p>
+                  <p className="font-serif font-bold text-primary text-lg leading-tight">Our Purpose.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -146,36 +170,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Snippet */}
+      {/* About — photo left, copy right */}
       <section className="py-24 bg-background">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="grid lg:grid-cols-2 gap-14 items-center">
+            {/* Photo */}
+            <div className="relative">
+              <div className="absolute -inset-3 bg-secondary/8 rounded-3xl blur-xl" />
+              <img
+                src="/gantt-karr/team-photo.png"
+                alt="Loresa Gantt and Kaileyanne Karr — Founders of Gantt & Karr Formation Group"
+                className="relative rounded-2xl w-full object-cover shadow-xl border border-border"
+                style={{ maxHeight: "560px", objectPosition: "top" }}
+              />
+            </div>
+
+            {/* Copy */}
             <div>
               <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-4">Family-Led</p>
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-5">
-                People you can trust to help you start your business.
+                Real people, standing behind your business from day one.
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-5">
                 Gantt & Karr Formation Group was built by Loresa Gantt and Kaileyanne Karr — a family-led
                 team that believes every entrepreneur deserves professional, affordable startup support
-                without the intimidation of a big law firm.
+                without the intimidation of a big law firm or a faceless online portal.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 We combine personal attention, professional guidance, and AI-powered tools to give you a
                 foundation you can build on with confidence.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/about">
-                  <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">Meet Our Team</Button>
-                </Link>
-                <Link href="/how-it-works">
-                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90">See How It Works</Button>
-                </Link>
-              </div>
-            </div>
-            <div className="bg-muted/50 rounded-2xl border border-border p-8">
-              <h3 className="font-serif font-bold text-xl text-primary mb-6">Why Entrepreneurs Choose G&K</h3>
-              <ul className="space-y-4">
+              <ul className="space-y-3 mb-8">
                 {[
                   "No confusing legal jargon — we speak plain English",
                   "Transparent pricing with no hidden fees",
@@ -189,6 +214,14 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link href="/about">
+                  <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">Meet Our Team</Button>
+                </Link>
+                <Link href="/how-it-works">
+                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90">See How It Works</Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
