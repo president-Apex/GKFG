@@ -30,11 +30,11 @@ export default function HowItWorks() {
   return (
     <>
       <SEO
-        title="How It Works | The Business Formation Process | Gantt & Karr"
-        description="Our four-step process — Consult, Document, Form, Launch — takes the guesswork out of starting your business. See exactly how Gantt & Karr guides you from idea to operating entity."
+        title="How It Works | The Business Formation Process | Gantt Key"
+        description="Our four-step process — Consult, Document, Form, Launch — takes the guesswork out of starting your business. See exactly how Gantt Key guides you from idea to operating entity."
         schema={[
           howToSchema({
-            name: "How to Form a Business with Gantt & Karr Formation Group",
+            name: "How to Form a Business with Gantt Key Formation Group",
             description: "A clear four-step process to form your business, secure your EIN, and launch with confidence.",
             url: "/how-it-works",
             steps: steps.map((s) => ({ name: s.title, text: s.desc })),

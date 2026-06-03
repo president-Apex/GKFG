@@ -21,12 +21,12 @@ export default function Partner() {
   return (
     <>
       <SEO
-        title="Become a Partner | Professional Network | Gantt & Karr"
-        description="Join Gantt & Karr's curated network of attorneys, CPAs, and business experts. Partner with a trusted business formation group serving entrepreneurs across 6 states."
+        title="Become a Partner | Professional Network | Gantt Key"
+        description="Join Gantt Key's curated network of attorneys, CPAs, and business experts. Partner with a trusted business formation group serving entrepreneurs across 6 states."
         schema={[
           webPageSchema({
             url: "/partner",
-            name: "Partner With Gantt & Karr Formation Group",
+            name: "Partner With Gantt Key Formation Group",
             description: "Apply to join our curated professional network of attorneys, CPAs, and business experts supporting entrepreneurs across 6 states.",
             breadcrumbItems: [{ name: "Partner With Us", href: "/partner" }],
           }),
@@ -50,10 +50,10 @@ export default function Partner() {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
-              <h2 className="text-3xl font-serif font-bold text-primary mb-6">Why Partner With Gantt & Karr?</h2>
+              <h2 className="text-3xl font-serif font-bold text-primary mb-6">Why Partner With Gantt Key?</h2>
               <div className="prose prose-lg text-muted-foreground mb-10">
                 <p>
-                  Gantt & Karr Formation Group helps entrepreneurs build a solid foundation. While we handle the formation, notary, and organizational setup, our clients frequently need specialized, licensed advice as they grow.
+                  Gantt Key Formation Group helps entrepreneurs build a solid foundation. While we handle the formation, notary, and organizational setup, our clients frequently need specialized, licensed advice as they grow.
                 </p>
                 <p>
                   We refer our clients to our trusted Professional Network for legal counsel, tax strategy, complex accounting, trademarking, and funding. By partnering with us, you gain access to a stream of serious, prepared entrepreneurs ready to engage professional services.

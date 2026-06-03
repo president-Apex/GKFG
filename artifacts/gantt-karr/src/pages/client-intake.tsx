@@ -8,8 +8,8 @@ import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 const SCHEMA = [
   webPageSchema({
     url: "/client-intake",
-    name: "Client Intake Form | Gantt & Karr Formation Group",
-    description: "Complete the Gantt & Karr Formation Group client intake form to get started with business formation, registered agent, notary, or related services.",
+    name: "Client Intake Form | Gantt Key Formation Group",
+    description: "Complete the Gantt Key Formation Group client intake form to get started with business formation, registered agent, notary, or related services.",
     breadcrumbItems: [{ name: "Client Intake Form", href: "/client-intake" }],
   }),
   breadcrumbSchema([{ name: "Client Intake Form", href: "/client-intake" }]),
@@ -157,7 +157,7 @@ export default function ClientIntake() {
   if (submitted) {
     return (
       <>
-        <SEO title="Client Intake Form | Gantt & Karr Formation Group" description="Submit your client intake form." schema={SCHEMA} />
+        <SEO title="Client Intake Form | Gantt Key Formation Group" description="Submit your client intake form." schema={SCHEMA} />
         <div className="min-h-screen flex items-center justify-center px-4 py-32">
           <div className="max-w-lg text-center space-y-6">
             <div className="w-16 h-16 rounded-full bg-secondary/20 flex items-center justify-center mx-auto">
@@ -188,8 +188,8 @@ export default function ClientIntake() {
   return (
     <>
       <SEO
-        title="Client Intake Form | Gantt & Karr Formation Group"
-        description="Complete the Gantt & Karr Formation Group client intake form to get started with business formation, registered agent, notary, or administrative services."
+        title="Client Intake Form | Gantt Key Formation Group"
+        description="Complete the Gantt Key Formation Group client intake form to get started with business formation, registered agent, notary, or administrative services."
         schema={SCHEMA}
       />
 
@@ -198,7 +198,7 @@ export default function ClientIntake() {
           <p className="text-secondary text-sm uppercase tracking-widest mb-3 font-semibold">Get Started</p>
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary-foreground">Client Intake Form</h1>
           <p className="text-primary-foreground/70 mt-4 max-w-xl leading-relaxed">
-            Complete this form to begin your service journey with Gantt & Karr Formation Group.
+            Complete this form to begin your service journey with Gantt Key Formation Group.
             All fields marked as required help us understand your needs and connect you with the right support.
           </p>
         </div>
@@ -412,13 +412,13 @@ export default function ClientIntake() {
               />
               <CheckboxField
                 id="ack-services"
-                label="I understand that Gantt & Karr Formation Group provides administrative and business support services."
+                label="I understand that Gantt Key Formation Group provides administrative and business support services."
                 checked={ackServices}
                 onChange={setAckServices}
               />
               <CheckboxField
                 id="ack-notlaw"
-                label="I understand that Gantt & Karr Formation Group is not a law firm and does not provide legal advice, tax advice, or legal representation."
+                label="I understand that Gantt Key Formation Group is not a law firm and does not provide legal advice, tax advice, or legal representation."
                 checked={ackNotLaw}
                 onChange={setAckNotLaw}
               />
@@ -438,7 +438,7 @@ export default function ClientIntake() {
                   className="mt-0.5 h-4 w-4 rounded border-border accent-primary flex-shrink-0"
                 />
                 <span className="text-xs text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">
-                  I agree to receive SMS text messages from Gantt & Karr Formation Group regarding my inquiry, appointments, service updates, account notifications, and related communications. Message frequency may vary. Message and data rates may apply. Reply STOP to unsubscribe or HELP for assistance. Consent is not a condition of purchase.{" "}
+                  I agree to receive SMS text messages from Gantt Key Formation Group regarding my inquiry, appointments, service updates, account notifications, and related communications. Message frequency may vary. Message and data rates may apply. Reply STOP to unsubscribe or HELP for assistance. Consent is not a condition of purchase.{" "}
                   <Link href="/privacy-policy" className="text-secondary hover:underline">Privacy Policy</Link>
                   {" "}·{" "}
                   <Link href="/messaging-terms" className="text-secondary hover:underline">Messaging Terms & Conditions</Link>
@@ -464,7 +464,7 @@ export default function ClientIntake() {
             <div className="bg-muted/50 border border-border rounded-xl p-4">
               <p className="text-xs font-semibold text-foreground mb-1">Important Notice</p>
               <p className="text-xs text-muted-foreground leading-relaxed">
-                Gantt & Karr Formation Group is not a law firm and does not provide legal advice, legal representation, tax advice, accounting advice, or financial advice. Information provided is for general informational and administrative purposes only.
+                Gantt Key Formation Group is not a law firm and does not provide legal advice, legal representation, tax advice, accounting advice, or financial advice. Information provided is for general informational and administrative purposes only.
               </p>
             </div>
 

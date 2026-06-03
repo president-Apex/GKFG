@@ -5,8 +5,8 @@ import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 const SCHEMA = [
   webPageSchema({
     url: "/privacy-policy",
-    name: "Privacy Policy | Gantt & Karr Formation Group",
-    description: "Privacy Policy for Gantt & Karr Formation Group. Learn how we collect, use, and protect your personal information.",
+    name: "Privacy Policy | Gantt Key Formation Group",
+    description: "Privacy Policy for Gantt Key Formation Group. Learn how we collect, use, and protect your personal information.",
     breadcrumbItems: [{ name: "Privacy Policy", href: "/privacy-policy" }],
   }),
   breadcrumbSchema([{ name: "Privacy Policy", href: "/privacy-policy" }]),
@@ -16,8 +16,8 @@ export default function PrivacyPolicy() {
   return (
     <>
       <SEO
-        title="Privacy Policy | Gantt & Karr Formation Group"
-        description="Privacy Policy for Gantt & Karr Formation Group. Learn how we collect, use, and protect your personal information when you use our website or services."
+        title="Privacy Policy | Gantt Key Formation Group"
+        description="Privacy Policy for Gantt Key Formation Group. Learn how we collect, use, and protect your personal information when you use our website or services."
         schema={SCHEMA}
       />
       <div className="bg-background min-h-screen">
@@ -31,7 +31,7 @@ export default function PrivacyPolicy() {
 
         <div className="container mx-auto px-4 py-16 max-w-3xl prose prose-slate">
           <p>
-            Welcome to Gantt & Karr Formation Group ("Company," "we," "our," or "us"). We value your
+            Welcome to Gantt Key Formation Group ("Company," "we," "our," or "us"). We value your
             privacy and are committed to protecting your personal information. This Privacy Policy explains
             how we collect, use, protect, and disclose information obtained through our website, forms,
             communications, and services.
@@ -69,7 +69,7 @@ export default function PrivacyPolicy() {
           <h2>3. SMS Communications</h2>
           <p>
             By providing your phone number and opting in, you consent to receive SMS text messages from
-            Gantt & Karr Formation Group, including:
+            Gantt Key Formation Group, including:
           </p>
           <ul>
             <li>Appointment reminders</li>
@@ -145,7 +145,7 @@ export default function PrivacyPolicy() {
           <h2>10. Contact Information</h2>
           <p>
             If you have questions regarding this Privacy Policy, please contact us:<br />
-            <strong>Gantt & Karr Formation Group</strong><br />
+            <strong>Gantt Key Formation Group</strong><br />
             Website: <a href="https://www.ganttkarr.com" className="text-secondary hover:underline">www.ganttkarr.com</a><br />
             Email: <a href="mailto:info@ganttkarr.com" className="text-secondary hover:underline">info@ganttkarr.com</a>
           </p>

@@ -19,7 +19,7 @@ const faqs = [
     a: "A registered agent receives service of process (legal notices and lawsuits), official correspondence from the Missouri Secretary of State, annual report notices, compliance reminders, and other state-required communications. Missing these can result in penalties or loss of good standing.",
   },
   {
-    q: "How does Gantt & Karr help with registered agent services?",
+    q: "How does Gantt Key help with registered agent services?",
     a: "We coordinate professional Missouri registered agent services on your behalf, helping you identify a compliant solution, understand your obligations, and maintain your business's good standing with the state. We handle the coordination so you can focus on running your business.",
   },
 ];
@@ -68,7 +68,7 @@ export default function RegisteredAgentMissouri() {
   return (
     <>
       <SEO
-        title="Missouri Registered Agent Services | Gantt & Karr Formation Group"
+        title="Missouri Registered Agent Services | Gantt Key Formation Group"
         description="Professional Missouri registered agent coordination for LLCs, corporations, and small businesses. Maintain a reliable point of contact for state correspondence and compliance notices."
         schema={[
           serviceSchema({
@@ -244,7 +244,7 @@ export default function RegisteredAgentMissouri() {
             Ready to Set Up Your Missouri Business?
           </h2>
           <p className="text-primary-foreground/80 text-lg mb-10 leading-relaxed">
-            Let Gantt & Karr handle the coordination so your business stays compliant and your personal information stays private.
+            Let Gantt Key handle the coordination so your business stays compliant and your personal information stays private.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/how-it-works">

@@ -9,11 +9,11 @@ export default function FAQ() {
     <>
       <SEO
         title="Frequently Asked Questions — Business Formation & Notary"
-        description="Answers to common questions about LLC formation, corporation filing, EIN assistance, registered agents, notary services, and working with Gantt & Karr Formation Group."
+        description="Answers to common questions about LLC formation, corporation filing, EIN assistance, registered agents, notary services, and working with Gantt Key Formation Group."
         schema={[
           faqSchema([
             { q: "How long does it take to form an LLC?", a: "Processing times vary significantly by state. Some states process filings in a few business days, while others may take several weeks. We offer priority processing options and will give you a clear timeline estimate for your specific state during your consultation." },
-            { q: "Do you provide legal or tax advice?", a: "No. Gantt & Karr Formation Group is a business formation service, not a law firm or CPA firm. We handle the administrative filing and document coordination. For specific legal or tax advice, we connect you with our Professional Network of licensed attorneys and CPAs." },
+            { q: "Do you provide legal or tax advice?", a: "No. Gantt Key Formation Group is a business formation service, not a law firm or CPA firm. We handle the administrative filing and document coordination. For specific legal or tax advice, we connect you with our Professional Network of licensed attorneys and CPAs." },
             { q: "What is a Registered Agent and do I need one?", a: "Yes, almost every state requires a formal business entity to have a Registered Agent. This is a person or service authorized to receive official state correspondence and legal notices on behalf of your business during normal business hours." },
             { q: "Are state filing fees included in your packages?", a: "No, our package prices cover our professional service fees. State filing fees are separate because they vary widely from state to state. We will provide an exact quote that includes your specific state's fees." },
             { q: "What is Anna AI and how does it help?", a: "Anna is our AI Intake Assistant. She helps route your inquiries to our team efficiently and allows you to book consultations 24/7. We also offer services to help you set up a similar AI intake system for your own business to capture leads around the clock." },
@@ -40,7 +40,7 @@ export default function FAQ() {
             <AccordionItem value="item-2">
               <AccordionTrigger className="text-left font-serif text-lg font-bold">Do you provide legal or tax advice?</AccordionTrigger>
               <AccordionContent className="text-muted-foreground text-base">
-                No. Gantt & Karr Formation Group is a business formation service, not a law firm or CPA firm. We handle the administrative filing and document coordination. For specific legal or tax advice, we connect you with our Professional Network of licensed attorneys and CPAs.
+                No. Gantt Key Formation Group is a business formation service, not a law firm or CPA firm. We handle the administrative filing and document coordination. For specific legal or tax advice, we connect you with our Professional Network of licensed attorneys and CPAs.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">

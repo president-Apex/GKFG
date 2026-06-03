@@ -27,11 +27,11 @@ export default function Blog() {
   return (
     <>
       <SEO
-        title="Blog & Insights | Business Formation Guides | Gantt & Karr"
-        description="Expert articles on LLC formation, business compliance, operating agreements, EIN applications, and startup strategy from the Gantt & Karr Formation Group team."
+        title="Blog & Insights | Business Formation Guides | Gantt Key"
+        description="Expert articles on LLC formation, business compliance, operating agreements, EIN applications, and startup strategy from the Gantt Key Formation Group team."
         schema={[
           itemListSchema({
-            name: "Gantt & Karr Formation Group — Blog & Insights",
+            name: "Gantt Key Formation Group — Blog & Insights",
             description: "Expert guides on business formation, compliance, and startup strategy.",
             url: "/blog",
             items: posts.map((p, i) => ({
@@ -56,7 +56,7 @@ export default function Blog() {
             {posts.map((post, i) => (
               <div key={i} className="flex flex-col bg-card border border-border rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="h-48 bg-primary/5 border-b border-border flex items-center justify-center">
-                  <span className="font-serif text-primary/30 text-4xl font-bold">G&K</span>
+                  <span className="font-serif text-primary/30 text-4xl font-bold">GK</span>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-4">

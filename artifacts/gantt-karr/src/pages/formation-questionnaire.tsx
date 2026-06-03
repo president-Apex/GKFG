@@ -8,8 +8,8 @@ import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 const SCHEMA = [
   webPageSchema({
     url: "/formation-questionnaire",
-    name: "Business Formation Questionnaire | Gantt & Karr Formation Group",
-    description: "Complete the Gantt & Karr Formation Group Business Formation Questionnaire to provide the information needed to prepare your business formation documents.",
+    name: "Business Formation Questionnaire | Gantt Key Formation Group",
+    description: "Complete the Gantt Key Formation Group Business Formation Questionnaire to provide the information needed to prepare your business formation documents.",
     breadcrumbItems: [{ name: "Business Formation Questionnaire", href: "/formation-questionnaire" }],
   }),
   breadcrumbSchema([{ name: "Formation Questionnaire", href: "/formation-questionnaire" }]),
@@ -187,7 +187,7 @@ export default function FormationQuestionnaire() {
   if (submitted) {
     return (
       <>
-        <SEO title="Business Formation Questionnaire | Gantt & Karr Formation Group" description="Submit your business formation questionnaire." schema={SCHEMA} />
+        <SEO title="Business Formation Questionnaire | Gantt Key Formation Group" description="Submit your business formation questionnaire." schema={SCHEMA} />
         <div className="min-h-screen flex items-center justify-center px-4 py-32">
           <div className="max-w-lg text-center space-y-6">
             <div className="w-16 h-16 rounded-full bg-secondary/20 flex items-center justify-center mx-auto">
@@ -218,8 +218,8 @@ export default function FormationQuestionnaire() {
   return (
     <>
       <SEO
-        title="Business Formation Questionnaire | Gantt & Karr Formation Group"
-        description="Complete the Business Formation Questionnaire for Gantt & Karr Formation Group to provide the information needed to prepare your business formation documents and filings."
+        title="Business Formation Questionnaire | Gantt Key Formation Group"
+        description="Complete the Business Formation Questionnaire for Gantt Key Formation Group to provide the information needed to prepare your business formation documents and filings."
         schema={SCHEMA}
       />
 
@@ -450,7 +450,7 @@ export default function FormationQuestionnaire() {
             <div className={sectionClass}>
               <span className={sectionBadgeClass}>Section 7</span>
               <h2 className={sectionHeadingClass}>Tax Information</h2>
-              <p className="text-xs text-muted-foreground -mt-2 mb-2 italic">This section is for administrative planning purposes only. Gantt & Karr Formation Group does not provide tax advice.</p>
+              <p className="text-xs text-muted-foreground -mt-2 mb-2 italic">This section is for administrative planning purposes only. Gantt Key Formation Group does not provide tax advice.</p>
 
               <div>
                 <p className={labelClass}>Will employees be hired?</p>
@@ -485,7 +485,7 @@ export default function FormationQuestionnaire() {
               <span className={sectionBadgeClass}>Section 8</span>
               <h2 className={sectionHeadingClass}>Registered Agent Services</h2>
               <div>
-                <p className={labelClass}>Would you like Gantt & Karr Formation Group to serve as your registered agent?</p>
+                <p className={labelClass}>Would you like Gantt Key Formation Group to serve as your registered agent?</p>
                 <div className="flex gap-6 mt-1">
                   <RadioField name="registeredAgent" value="Yes" label="Yes" selected={registeredAgent} onChange={setRegisteredAgent} />
                   <RadioField name="registeredAgent" value="No" label="No" selected={registeredAgent} onChange={setRegisteredAgent} />
@@ -529,13 +529,13 @@ export default function FormationQuestionnaire() {
               />
               <CheckboxField
                 id="ack-services"
-                label="I understand Gantt & Karr Formation Group provides administrative and business support services."
+                label="I understand Gantt Key Formation Group provides administrative and business support services."
                 checked={ackServices}
                 onChange={setAckServices}
               />
               <CheckboxField
                 id="ack-notlaw"
-                label="I understand that Gantt & Karr Formation Group is not a law firm and does not provide legal advice, tax advice, accounting advice, or legal representation."
+                label="I understand that Gantt Key Formation Group is not a law firm and does not provide legal advice, tax advice, accounting advice, or legal representation."
                 checked={ackNotLaw}
                 onChange={setAckNotLaw}
               />
@@ -565,7 +565,7 @@ export default function FormationQuestionnaire() {
             <div className="bg-muted/50 border border-border rounded-xl p-4">
               <p className="text-xs font-semibold text-foreground mb-1">Important Notice</p>
               <p className="text-xs text-muted-foreground leading-relaxed">
-                Gantt & Karr Formation Group is not a law firm and does not provide legal advice, legal representation, tax advice, accounting advice, or financial advice. Information provided is for general informational and administrative purposes only.
+                Gantt Key Formation Group is not a law firm and does not provide legal advice, legal representation, tax advice, accounting advice, or financial advice. Information provided is for general informational and administrative purposes only.
               </p>
             </div>
 

@@ -7,7 +7,7 @@ export function Disclaimer({ notice }: { notice?: string }) {
         </p>
       )}
       <p>
-        Gantt & Karr Formation Group is not a law firm and does not provide legal advice, legal representation, tax advice, accounting advice, or financial advice. Information provided is for general informational and administrative purposes only.
+        Gantt Key Formation Group is not a law firm and does not provide legal advice, legal representation, tax advice, accounting advice, or financial advice. Information provided is for general informational and administrative purposes only.
       </p>
     </div>
   );

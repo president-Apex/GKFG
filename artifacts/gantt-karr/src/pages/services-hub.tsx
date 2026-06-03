@@ -103,7 +103,7 @@ export default function ServicesHub() {
         description="LLC formation, corporation filing, EIN assistance, Missouri registered agent, BOI reporting, notary services, loan signing, and startup packages."
         schema={[
           itemListSchema({
-            name: "Gantt & Karr Business Formation & Notary Services",
+            name: "Gantt Key Business Formation & Notary Services",
             description: "Complete service catalog for business formation, notary, and startup support across 6 states.",
             url: "/services",
             items: featuredServices.map((s) => ({

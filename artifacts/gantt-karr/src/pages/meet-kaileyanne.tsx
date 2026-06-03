@@ -7,11 +7,11 @@ export default function MeetKaileyanne() {
   return (
     <>
       <SEO
-        title="Meet Kaileyanne Karr | Gantt & Karr Formation Group"
-        description="Kaileyanne Karr supports Gantt & Karr Formation Group through client assistance, document coordination, scheduling support, and notary services."
+        title="Meet Kaileyanne Karr | Gantt Key Formation Group"
+        description="Kaileyanne Karr supports Gantt Key Formation Group through client assistance, document coordination, scheduling support, and notary services."
         image={`${SITE_URL}/gantt-karr/kaileyanne-karr.png`}
         schema={[
-          personSchema({ name: "Kaileyanne Karr", jobTitle: "Business Support & Notary Specialist", description: "Kaileyanne Karr supports Gantt & Karr Formation Group through client assistance, document coordination, scheduling support, and notary services.", image: `${SITE_URL}/gantt-karr/kaileyanne-karr.png`, url: `${SITE_URL}/meet-kaileyanne` }),
+          personSchema({ name: "Kaileyanne Karr", jobTitle: "Business Support & Notary Specialist", description: "Kaileyanne Karr supports Gantt Key Formation Group through client assistance, document coordination, scheduling support, and notary services.", image: `${SITE_URL}/gantt-karr/kaileyanne-karr.png`, url: `${SITE_URL}/meet-kaileyanne` }),
           breadcrumbSchema([{ name: "Home", href: "/" }, { name: "About", href: "/about" }, { name: "Meet Kaileyanne Karr", href: "/meet-kaileyanne" }]),
         ]}
       />
@@ -50,14 +50,14 @@ export default function MeetKaileyanne() {
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="space-y-6 text-foreground/80 leading-relaxed text-lg">
             <p>
-              Kaileyanne supports Gantt & Karr Formation Group through client assistance, document
+              Kaileyanne supports Gantt Key Formation Group through client assistance, document
               coordination, scheduling support, and notary services. She works closely with Founder
               Loresa Gantt to help clients feel welcomed, organized, and supported throughout the
               startup process.
             </p>
             <p>
               As she continues building her experience in business formation and entrepreneurship,
-              Kaileyanne brings dedication, warmth, and attention to detail to the Gantt & Karr team.
+              Kaileyanne brings dedication, warmth, and attention to detail to the Gantt Key team.
             </p>
           </div>
 

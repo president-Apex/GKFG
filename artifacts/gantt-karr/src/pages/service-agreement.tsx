@@ -5,8 +5,8 @@ import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 const SCHEMA = [
   webPageSchema({
     url: "/service-agreement",
-    name: "Service Agreement | Gantt & Karr Formation Group",
-    description: "Client Service Agreement for Gantt & Karr Formation Group. Understand the scope of services, responsibilities, fees, and terms before engaging our business formation support.",
+    name: "Service Agreement | Gantt Key Formation Group",
+    description: "Client Service Agreement for Gantt Key Formation Group. Understand the scope of services, responsibilities, fees, and terms before engaging our business formation support.",
     breadcrumbItems: [{ name: "Service Agreement", href: "/service-agreement" }],
   }),
   breadcrumbSchema([{ name: "Service Agreement", href: "/service-agreement" }]),
@@ -16,8 +16,8 @@ export default function ServiceAgreement() {
   return (
     <>
       <SEO
-        title="Service Agreement | Client Agreement | Gantt & Karr Formation Group"
-        description="Client Service Agreement for Gantt & Karr Formation Group. Review scope of services, payment terms, limitations of liability, and client responsibilities before engaging."
+        title="Service Agreement | Client Agreement | Gantt Key Formation Group"
+        description="Client Service Agreement for Gantt Key Formation Group. Review scope of services, payment terms, limitations of liability, and client responsibilities before engaging."
         schema={SCHEMA}
       />
       <div className="bg-background min-h-screen">
@@ -32,17 +32,17 @@ export default function ServiceAgreement() {
 
         <div className="container mx-auto px-4 py-16 max-w-3xl prose prose-slate">
           <p>
-            This Service Agreement ("Agreement") is entered into between Gantt & Karr Formation Group
+            This Service Agreement ("Agreement") is entered into between Gantt Key Formation Group
             ("Company," "we," "our," or "us") and the client ("Client," "you," or "your").
           </p>
           <p>
-            By purchasing, requesting, or using services provided by Gantt & Karr Formation Group, you
+            By purchasing, requesting, or using services provided by Gantt Key Formation Group, you
             agree to the following terms.
           </p>
 
           <h2>1. Scope of Services</h2>
           <p>
-            Gantt & Karr Formation Group may provide administrative and business support services including:
+            Gantt Key Formation Group may provide administrative and business support services including:
           </p>
           <ul>
             <li>LLC formation assistance</li>
@@ -61,7 +61,7 @@ export default function ServiceAgreement() {
 
           <h2>2. No Legal, Tax, or Financial Advice</h2>
           <p>
-            Gantt & Karr Formation Group is not a law firm and does not provide legal representation,
+            Gantt Key Formation Group is not a law firm and does not provide legal representation,
             legal advice, tax advice, accounting advice, or financial advice.
           </p>
           <p>
@@ -94,7 +94,7 @@ export default function ServiceAgreement() {
 
           <h2>4. Filing and Government Processing</h2>
           <p>Government agencies control processing timelines.</p>
-          <p>Gantt & Karr Formation Group cannot guarantee:</p>
+          <p>Gantt Key Formation Group cannot guarantee:</p>
           <ul>
             <li>State approval times</li>
             <li>Filing times</li>
@@ -146,7 +146,7 @@ export default function ServiceAgreement() {
 
           <h2>8. Limitation of Liability</h2>
           <p>
-            To the fullest extent permitted by law, Gantt & Karr Formation Group shall not be liable for:
+            To the fullest extent permitted by law, Gantt Key Formation Group shall not be liable for:
           </p>
           <ul>
             <li>Lost profits</li>
@@ -161,7 +161,7 @@ export default function ServiceAgreement() {
 
           <h2>9. Indemnification</h2>
           <p>
-            Client agrees to defend, indemnify, and hold harmless Gantt & Karr Formation Group and its
+            Client agrees to defend, indemnify, and hold harmless Gantt Key Formation Group and its
             owners, employees, affiliates, contractors, and representatives from claims resulting from:
           </p>
           <ul>
@@ -184,7 +184,7 @@ export default function ServiceAgreement() {
 
           <h2>12. Contact Information</h2>
           <p>
-            <strong>Gantt & Karr Formation Group</strong><br />
+            <strong>Gantt Key Formation Group</strong><br />
             Website: <a href="https://www.ganttkarr.com" className="text-secondary hover:underline">www.ganttkarr.com</a><br />
             Email: <a href="mailto:info@ganttkarr.com" className="text-secondary hover:underline">info@ganttkarr.com</a>
           </p>

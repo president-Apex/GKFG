@@ -7,7 +7,6 @@ import { Layout } from "@/components/layout";
 import Home from "@/pages/home";
 import About from "@/pages/about";
 import MeetTheFounder from "@/pages/meet-the-founder";
-import MeetKaileyanne from "@/pages/meet-kaileyanne";
 import MeetAnna from "@/pages/meet-anna";
 import Contact from "@/pages/contact";
 import Partner from "@/pages/partner";
@@ -47,7 +46,6 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/meet-the-founder" component={MeetTheFounder} />
-        <Route path="/meet-kaileyanne" component={MeetKaileyanne} />
         <Route path="/meet-anna" component={MeetAnna} />
         <Route path="/contact" component={Contact} />
         <Route path="/become-a-partner" component={Partner} />

@@ -18,7 +18,7 @@ const coreServices = [
 ];
 
 const trustPoints = [
-  "Family-led and female-led team",
+  "Woman-owned, founder-led operation",
   "Warm, personal support — not a faceless portal",
   "Transparent pricing — no hidden fees",
   "Clear compliance disclaimers — we tell you what we are and aren't",
@@ -30,7 +30,7 @@ export default function Home() {
     <>
       <SEO
         title="Business Formation, Notary &amp; Startup Support"
-        description="Gantt &amp; Karr Formation Group — family-led LLC formation, corporation filing, notary services, and startup support across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana."
+        description="Gantt Key Formation Group — founder-led LLC formation, corporation filing, notary services, and startup support across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana."
         schema={homePageSchema()}
       />
 
@@ -47,7 +47,7 @@ export default function Home() {
                 Build your legacy with confidence.
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-xl leading-relaxed">
-                Family-led business formation, notary services, and startup support — powered by Anna AI.
+                Founder-led business formation, notary services, and startup support — powered by Anna AI.
                 We handle the setup so you can focus on the vision.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -64,7 +64,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-6 text-sm text-primary-foreground/60">
                 <div className="flex items-center gap-2"><Shield className="h-4 w-4 text-secondary" /><span>Compliance-first</span></div>
-                <div className="flex items-center gap-2"><Users className="h-4 w-4 text-secondary" /><span>Family-led team</span></div>
+                <div className="flex items-center gap-2"><Users className="h-4 w-4 text-secondary" /><span>Founder-led</span></div>
                 <div className="flex items-center gap-2"><Star className="h-4 w-4 text-secondary" /><span>6 states served</span></div>
               </div>
             </div>
@@ -74,8 +74,8 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-secondary/10 rounded-3xl blur-2xl" />
                 <img
-                  src="/gantt-karr/team-photo.png"
-                  alt="Loresa Gantt and Kaileyanne Karr — Gantt & Karr Formation Group"
+                  src="/gantt-karr/loresa-gantt.png"
+                  alt="Loresa Gantt — Founder, Gantt Key Formation Group"
                   className="relative rounded-2xl w-full max-w-md object-cover shadow-2xl border border-secondary/20"
                   style={{ maxHeight: "620px", objectPosition: "top" }}
                 />
@@ -94,7 +94,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center items-center gap-x-0 gap-y-1 text-xs font-semibold text-foreground/70 uppercase tracking-wider">
             {[
-              "Family-Led",
+              "Founder-Led",
               "Serving 6 States",
               "Missouri Registered Agent Services",
               "Secure Client Intake",
@@ -199,8 +199,8 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -inset-3 bg-secondary/8 rounded-3xl blur-xl" />
               <img
-                src="/gantt-karr/team-photo.png"
-                alt="Loresa Gantt and Kaileyanne Karr — Founders of Gantt & Karr Formation Group"
+                src="/gantt-karr/loresa-gantt.png"
+                alt="Loresa Gantt — Founder of Gantt Key Formation Group"
                 className="relative rounded-2xl w-full object-cover shadow-xl border border-border"
                 style={{ maxHeight: "560px", objectPosition: "top" }}
               />
@@ -208,17 +208,17 @@ export default function Home() {
 
             {/* Copy */}
             <div>
-              <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-4">Family-Led</p>
+              <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-4">Founder-Led</p>
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-5">
                 Real people, standing behind your business from day one.
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-5">
-                Gantt & Karr Formation Group was built by Loresa Gantt and Kaileyanne Karr — a family-led
-                team that believes every entrepreneur deserves professional, affordable startup support
-                without the intimidation of a big law firm or a faceless online portal.
+                Gantt Key Formation Group was built by Loresa Gantt — a founder who believes every
+                entrepreneur deserves professional, affordable startup support without the intimidation of
+                a big law firm or a faceless online portal.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                We combine personal attention, professional guidance, and AI-powered tools to give you a
+                I combine personal attention, professional guidance, and AI-powered tools to give you a
                 foundation you can build on with confidence.
               </p>
               <ul className="space-y-3 mb-8">
@@ -264,7 +264,7 @@ export default function Home() {
               </p>
               <p className="text-white/50 text-sm leading-relaxed mb-8">
                 Anna answers first. Our team reviews, supports, and finalizes behind the scenes.
-                Loresa and Kaileyanne are still your trusted human team — Anna just makes sure you
+                Loresa is still your trusted guide behind the scenes — Anna just makes sure you
                 never have to wait.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">

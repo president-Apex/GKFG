@@ -15,13 +15,13 @@ export default function MeetTheFounder() {
   return (
     <>
       <SEO
-        title="Meet Loresa Gantt — Founder & CEO | Gantt & Karr Formation Group"
-        description="Loresa Gantt is the founder and CEO of Gantt & Karr Formation Group. Learn about her mission to bring executive-level precision and warmth to business formation for entrepreneurs across 6 states."
+        title="Meet Loresa Gantt — Founder & CEO | Gantt Key Formation Group"
+        description="Loresa Gantt is the founder and CEO of Gantt Key Formation Group. Learn about her mission to bring executive-level precision and warmth to business formation for entrepreneurs across 6 states."
         schema={[
           personSchema({
             name: "Loresa Gantt",
             jobTitle: "Founder & CEO",
-            description: "Founder of Gantt & Karr Formation Group, providing family-led business formation, notary, and startup support across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana.",
+            description: "Founder of Gantt Key Formation Group, providing founder-led business formation, notary, and startup support across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana.",
             url: `${SITE_URL}/meet-the-founder`,
             image: `${SITE_URL}/loresa-gantt.png`,
           }),
@@ -42,7 +42,7 @@ export default function MeetTheFounder() {
             <div className="relative flex justify-start items-end order-2 lg:order-1">
               <img
                 src="/gantt-karr/loresa-gantt.png"
-                alt="Loresa Gantt — Founder & CEO of Gantt & Karr Formation Group"
+                alt="Loresa Gantt — Founder & CEO of Gantt Key Formation Group"
                 className="w-full max-w-xs md:max-w-sm lg:max-w-md object-cover object-top rounded-t-2xl shadow-2xl"
                 style={{ maxHeight: "600px" }}
               />
@@ -87,7 +87,7 @@ export default function MeetTheFounder() {
           <div className="flex flex-wrap justify-center gap-x-10 gap-y-2 text-secondary-foreground text-xs font-bold uppercase tracking-widest">
             <span>Female Founder</span>
             <span className="opacity-40">·</span>
-            <span>Family-Led</span>
+            <span>Founder-Led</span>
             <span className="opacity-40">·</span>
             <span>Entrepreneur's Advocate</span>
             <span className="opacity-40">·</span>
@@ -104,16 +104,16 @@ export default function MeetTheFounder() {
             {/* Long-form bio — 2 cols */}
             <div className="md:col-span-2 space-y-6 text-muted-foreground leading-relaxed text-base">
               <p>
-                <strong className="text-foreground">Loresa Gantt</strong> founded Gantt & Karr Formation Group with a clear and personal mission: to bring executive-level precision, warmth, and integrity to the business formation process — and to make that process accessible to every entrepreneur, regardless of their background.
+                <strong className="text-foreground">Loresa Gantt</strong> founded Gantt Key Formation Group with a clear and personal mission: to bring executive-level precision, warmth, and integrity to the business formation process — and to make that process accessible to every entrepreneur, regardless of their background.
               </p>
               <p>
                 Loresa recognized early that many founders — particularly women, first-generation business owners, and entrepreneurs from underserved communities — were being failed by a system that felt opaque, cold, and unnecessarily complicated. Too many people were being handed forms without guidance, or turned away by law firm price tags that made professional help feel out of reach.
               </p>
               <p>
-                She built Gantt & Karr to be the answer to that problem. A boutique firm where every client is known by name. Where the process is explained in plain language. Where compliance comes first, always — and where no one is ever made to feel like a burden for asking a question.
+                She built Gantt Key to be the answer to that problem. A boutique firm where every client is known by name. Where the process is explained in plain language. Where compliance comes first, always — and where no one is ever made to feel like a burden for asking a question.
               </p>
               <p>
-                Under Loresa's leadership, the firm has grown into a trusted partner for entrepreneurs across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana — offering LLC formation, corporation filing, EIN assistance, registered agent services, BOI reporting support, notary services, loan signing, and AI-powered intake through Anna AI.
+                Under Loresa's leadership, Gantt Key Formation Group has grown into a trusted partner for entrepreneurs across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana — offering LLC formation, corporation filing, EIN assistance, registered agent services, BOI reporting support, notary services, loan signing, and AI-powered intake through Anna AI.
               </p>
               <p>
                 Loresa leads with what she calls a "feminine executive" energy — deeply polished and highly capable, but never transactional. She believes that the way a firm treats you in the beginning tells you everything about the kind of partner it will be going forward.
@@ -132,7 +132,7 @@ export default function MeetTheFounder() {
                     "Founder & CEO",
                     "Business Formation Specialist",
                     "Entrepreneur & Female Founder",
-                    "Family-Led Business Advocate",
+                    "Woman-Owned Business Advocate",
                     "Serving 6 states & 18+ cities",
                     "Powered by Anna AI",
                   ].map((item) => (
@@ -188,35 +188,12 @@ export default function MeetTheFounder() {
         </div>
       </section>
 
-      {/* Meet Kaileyanne crosslink */}
-      <section className="py-16 bg-background border-t border-border">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="flex flex-col md:flex-row items-center gap-8 bg-muted/40 border border-border rounded-2xl p-8">
-            <img
-              src="/gantt-karr/kaileyanne-karr.png"
-              alt="Kaileyanne Karr — Business Support & Notary Specialist"
-              className="w-24 h-24 rounded-full object-cover object-top border-2 border-secondary/30 flex-shrink-0"
-            />
-            <div className="flex-1 text-center md:text-left">
-              <p className="text-secondary text-xs font-semibold uppercase tracking-widest mb-1">Also on the Team</p>
-              <h3 className="font-serif font-bold text-primary text-xl mb-1">Kaileyanne Karr</h3>
-              <p className="text-sm text-muted-foreground">Business Support & Notary Specialist — bringing warmth, precision, and certified notary expertise to every client engagement.</p>
-            </div>
-            <Link href="/meet-kaileyanne" className="flex-shrink-0">
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground whitespace-nowrap">
-                Meet Kaileyanne <ArrowRight className="h-4 w-4 ml-2" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center max-w-2xl">
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-5">Ready to start your business?</h2>
           <p className="text-primary-foreground/75 text-lg mb-10 leading-relaxed">
-            Book a free consultation with Loresa and the team. Let's build your foundation right — from day one.
+            Book a free consultation with Loresa. Let's build your foundation right — from day one.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/consultation">

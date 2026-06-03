@@ -5,8 +5,8 @@ import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 const SCHEMA = [
   webPageSchema({
     url: "/cookie-policy",
-    name: "Cookie Policy | Gantt & Karr Formation Group",
-    description: "Cookie Policy for Gantt & Karr Formation Group. Learn about the cookies we use, why we use them, and how to manage your preferences.",
+    name: "Cookie Policy | Gantt Key Formation Group",
+    description: "Cookie Policy for Gantt Key Formation Group. Learn about the cookies we use, why we use them, and how to manage your preferences.",
     breadcrumbItems: [{ name: "Cookie Policy", href: "/cookie-policy" }],
   }),
   breadcrumbSchema([{ name: "Cookie Policy", href: "/cookie-policy" }]),
@@ -16,8 +16,8 @@ export default function CookiePolicy() {
   return (
     <>
       <SEO
-        title="Cookie Policy | Gantt & Karr Formation Group"
-        description="Cookie Policy for Gantt & Karr Formation Group. Learn about the cookies we use, why we use them, and how to manage your preferences through our consent tool."
+        title="Cookie Policy | Gantt Key Formation Group"
+        description="Cookie Policy for Gantt Key Formation Group. Learn about the cookies we use, why we use them, and how to manage your preferences through our consent tool."
         schema={SCHEMA}
       />
       <div className="bg-background min-h-screen">
@@ -31,7 +31,7 @@ export default function CookiePolicy() {
 
         <div className="container mx-auto px-4 py-16 max-w-3xl prose prose-slate">
           <p>
-            This Cookie Policy explains how Gantt & Karr Formation Group ("we," "us," or "our") uses
+            This Cookie Policy explains how Gantt Key Formation Group ("we," "us," or "our") uses
             cookies and similar tracking technologies on our website at ganttkarr.com. It should be read
             alongside our <Link href="/privacy-policy" className="text-secondary hover:underline">Privacy Policy</Link>.
           </p>

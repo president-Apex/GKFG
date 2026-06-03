@@ -6,8 +6,8 @@ import { servicesData } from "@/data/services-data";
 import NotFound from "@/pages/not-found";
 
 const serviceNotices: Record<string, string> = {
-  "llc-formation": "We assist with administrative business formation processes. Gantt & Karr Formation Group is not a law firm and does not provide legal advice or legal representation.",
-  "business-formation": "We assist with administrative business formation processes. Gantt & Karr Formation Group is not a law firm and does not provide legal advice or legal representation.",
+  "llc-formation": "We assist with administrative business formation processes. Gantt Key Formation Group is not a law firm and does not provide legal advice or legal representation.",
+  "business-formation": "We assist with administrative business formation processes. Gantt Key Formation Group is not a law firm and does not provide legal advice or legal representation.",
   "corporation-filing": "Entity selection may affect legal and tax outcomes. Consult licensed legal or tax professionals regarding your individual circumstances.",
   "ein-assistance": "EIN assistance services are administrative support only and should not be interpreted as legal, tax, or accounting advice.",
   "registered-agent": "Registered agent services do not include legal representation, legal advice, or compliance guarantees.",

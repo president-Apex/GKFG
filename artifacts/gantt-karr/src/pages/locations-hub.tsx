@@ -7,11 +7,11 @@ export default function LocationsHub() {
   return (
     <>
       <SEO
-        title="Locations Served | Gantt & Karr Formation Group"
-        description="Gantt & Karr Formation Group serves entrepreneurs across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana. Find your city and get local business formation support."
+        title="Locations Served | Gantt Key Formation Group"
+        description="Gantt Key Formation Group serves entrepreneurs across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana. Find your city and get local business formation support."
         schema={[
           itemListSchema({
-            name: "Locations Served by Gantt & Karr Formation Group",
+            name: "Locations Served by Gantt Key Formation Group",
             description: "Business formation, notary, and startup support across key markets in 6 states.",
             url: "/locations",
             items: Object.entries(locationsData).flatMap(([stateSlug, state]) =>

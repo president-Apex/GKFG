@@ -5,8 +5,8 @@ import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 const SCHEMA = [
   webPageSchema({
     url: "/messaging-terms",
-    name: "Messaging Terms & Conditions | Gantt & Karr Formation Group",
-    description: "SMS Terms of Service for Gantt & Karr Formation Group. Opt-in, opt-out, message frequency, and carrier information for our text messaging program.",
+    name: "Messaging Terms & Conditions | Gantt Key Formation Group",
+    description: "SMS Terms of Service for Gantt Key Formation Group. Opt-in, opt-out, message frequency, and carrier information for our text messaging program.",
     breadcrumbItems: [{ name: "Messaging Terms", href: "/messaging-terms" }],
   }),
   breadcrumbSchema([{ name: "Messaging Terms", href: "/messaging-terms" }]),
@@ -16,8 +16,8 @@ export default function MessagingTerms() {
   return (
     <>
       <SEO
-        title="Messaging Terms & Conditions | SMS Terms | Gantt & Karr Formation Group"
-        description="SMS Terms of Service for Gantt & Karr Formation Group. Learn about our text messaging program, how to opt out, and your rights as a recipient."
+        title="Messaging Terms & Conditions | SMS Terms | Gantt Key Formation Group"
+        description="SMS Terms of Service for Gantt Key Formation Group. Learn about our text messaging program, how to opt out, and your rights as a recipient."
         schema={SCHEMA}
       />
       <div className="bg-background min-h-screen">
@@ -32,7 +32,7 @@ export default function MessagingTerms() {
 
         <div className="container mx-auto px-4 py-16 max-w-3xl prose prose-slate">
           <p>
-            Welcome to Gantt & Karr Formation Group. These Messaging Terms & Conditions govern
+            Welcome to Gantt Key Formation Group. These Messaging Terms & Conditions govern
             participation in our SMS/text messaging program.
           </p>
 
@@ -50,7 +50,7 @@ export default function MessagingTerms() {
           <h2>1. SMS Program Description</h2>
           <p>
             By providing your phone number and opting into our messaging program, you agree to receive
-            text messages from Gantt & Karr Formation Group, including but not limited to:
+            text messages from Gantt Key Formation Group, including but not limited to:
           </p>
           <ul>
             <li>Appointment reminders</li>
@@ -118,13 +118,13 @@ export default function MessagingTerms() {
 
           <h2>8. Changes to Messaging Terms</h2>
           <p>
-            Gantt & Karr Formation Group reserves the right to modify these Messaging Terms at any time.
+            Gantt Key Formation Group reserves the right to modify these Messaging Terms at any time.
             Any updates will become effective upon posting to our website.
           </p>
 
           <h2>9. Contact Information</h2>
           <p>
-            <strong>Gantt & Karr Formation Group</strong><br />
+            <strong>Gantt Key Formation Group</strong><br />
             Website: <a href="https://www.ganttkarr.com" className="text-secondary hover:underline">www.ganttkarr.com</a><br />
             Email: <a href="mailto:info@ganttkarr.com" className="text-secondary hover:underline">info@ganttkarr.com</a>
           </p>

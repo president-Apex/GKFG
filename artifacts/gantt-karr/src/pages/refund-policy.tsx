@@ -5,8 +5,8 @@ import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 const SCHEMA = [
   webPageSchema({
     url: "/refund-policy",
-    name: "Refund & Cancellation Policy | Gantt & Karr Formation Group",
-    description: "Refund and cancellation policy for Gantt & Karr Formation Group business formation, notary, and administrative support services.",
+    name: "Refund & Cancellation Policy | Gantt Key Formation Group",
+    description: "Refund and cancellation policy for Gantt Key Formation Group business formation, notary, and administrative support services.",
     breadcrumbItems: [{ name: "Refund Policy", href: "/refund-policy" }],
   }),
   breadcrumbSchema([{ name: "Refund Policy", href: "/refund-policy" }]),
@@ -16,8 +16,8 @@ export default function RefundPolicy() {
   return (
     <>
       <SEO
-        title="Refund & Cancellation Policy | Gantt & Karr Formation Group"
-        description="Refund and cancellation policy for Gantt & Karr Formation Group. Understand refund eligibility, non-refundable items, and how to request a cancellation."
+        title="Refund & Cancellation Policy | Gantt Key Formation Group"
+        description="Refund and cancellation policy for Gantt Key Formation Group. Understand refund eligibility, non-refundable items, and how to request a cancellation."
         schema={SCHEMA}
       />
       <div className="bg-background min-h-screen">
@@ -31,7 +31,7 @@ export default function RefundPolicy() {
 
         <div className="container mx-auto px-4 py-16 max-w-3xl prose prose-slate">
           <p>
-            At Gantt & Karr Formation Group, we are committed to providing quality administrative and
+            At Gantt Key Formation Group, we are committed to providing quality administrative and
             business support services. This Refund & Cancellation Policy explains the terms regarding
             cancellations and refunds for services purchased through our company.
           </p>
@@ -47,7 +47,7 @@ export default function RefundPolicy() {
             <li>Website: <a href="https://www.ganttkarr.com" className="text-secondary hover:underline">www.ganttkarr.com</a></li>
           </ul>
           <p>
-            Cancellation requests are not considered effective until confirmed by Gantt & Karr Formation
+            Cancellation requests are not considered effective until confirmed by Gantt Key Formation
             Group in writing.
           </p>
 
@@ -107,7 +107,7 @@ export default function RefundPolicy() {
 
           <h2>6. Chargebacks</h2>
           <p>
-            Clients agree to contact Gantt & Karr Formation Group before initiating payment disputes or
+            Clients agree to contact Gantt Key Formation Group before initiating payment disputes or
             chargebacks.
           </p>
           <p>
@@ -126,13 +126,13 @@ export default function RefundPolicy() {
 
           <h2>8. Exceptions</h2>
           <p>
-            Gantt & Karr Formation Group reserves the right to review refund requests individually and
+            Gantt Key Formation Group reserves the right to review refund requests individually and
             make decisions at its discretion when unusual circumstances exist.
           </p>
 
           <h2>9. Contact Information</h2>
           <p>
-            <strong>Gantt & Karr Formation Group</strong><br />
+            <strong>Gantt Key Formation Group</strong><br />
             Website: <a href="https://www.ganttkarr.com" className="text-secondary hover:underline">www.ganttkarr.com</a><br />
             Email: <a href="mailto:info@ganttkarr.com" className="text-secondary hover:underline">info@ganttkarr.com</a>
           </p>

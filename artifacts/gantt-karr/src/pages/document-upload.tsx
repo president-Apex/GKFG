@@ -88,13 +88,13 @@ export default function DocumentUpload() {
   return (
     <>
       <SEO
-        title="Secure Document Submission | Gantt & Karr Formation Group"
-        description="Securely submit documents to Gantt & Karr Formation Group for business formation, notary, or compliance services. Encrypted file transfer — no email attachments needed."
+        title="Secure Document Submission | Gantt Key Formation Group"
+        description="Securely submit documents to Gantt Key Formation Group for business formation, notary, or compliance services. Encrypted file transfer — no email attachments needed."
         schema={[
           webPageSchema({
             url: "/documents",
-            name: "Secure Document Submission | Gantt & Karr Formation Group",
-            description: "Securely submit documents to Gantt & Karr Formation Group for your active service engagement.",
+            name: "Secure Document Submission | Gantt Key Formation Group",
+            description: "Securely submit documents to Gantt Key Formation Group for your active service engagement.",
             breadcrumbItems: [{ name: "Document Submission", href: "/documents" }],
           }),
           breadcrumbSchema([{ name: "Document Submission", href: "/documents" }]),
@@ -157,7 +157,7 @@ export default function DocumentUpload() {
             <div className="bg-card border border-border rounded-3xl shadow-xl p-8 md:p-12">
               <h2 className="text-2xl font-serif font-bold mb-2 text-primary">Submit Your Documents</h2>
               <p className="text-sm text-muted-foreground mb-8">
-                Use this form to securely send documents related to your active service with Gantt & Karr Formation Group.
+                Use this form to securely send documents related to your active service with Gantt Key Formation Group.
                 If you don't yet have an active service engagement, please{" "}
                 <Link href="/consultation" className="text-secondary hover:underline">book a consultation first</Link>.
               </p>
@@ -280,7 +280,7 @@ export default function DocumentUpload() {
                       required
                     />
                     <span className="text-xs text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">
-                      <strong className="text-foreground">Required:</strong> I confirm that I have the right to share the documents I am submitting, and I authorize Gantt & Karr Formation Group to use these documents solely for the purpose of fulfilling my requested service. I have read and agree to the{" "}
+                      <strong className="text-foreground">Required:</strong> I confirm that I have the right to share the documents I am submitting, and I authorize Gantt Key Formation Group to use these documents solely for the purpose of fulfilling my requested service. I have read and agree to the{" "}
                       <Link href="/terms-of-service" className="text-secondary hover:underline">Terms of Service</Link>{" "}
                       and{" "}
                       <Link href="/privacy-policy" className="text-secondary hover:underline">Privacy Policy</Link>.

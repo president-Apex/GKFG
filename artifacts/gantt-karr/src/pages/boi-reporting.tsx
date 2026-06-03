@@ -51,11 +51,11 @@ const faqs = [
     a: "Non-compliance can result in significant civil and criminal penalties. However, BOI reporting requirements and enforcement have been subject to legal challenges and regulatory changes. Always verify current requirements with a qualified legal professional.",
   },
   {
-    q: "Does Gantt & Karr provide legal advice on BOI?",
+    q: "Does Gantt Key provide legal advice on BOI?",
     a: "No. We provide general information, document organization support, and coordination assistance. We do not provide legal, tax, or compliance advice. BOI reporting has legal implications — please consult a licensed attorney before submitting any report to FinCEN.",
   },
   {
-    q: "Can Gantt & Karr file my BOI report for me?",
+    q: "Can Gantt Key file my BOI report for me?",
     a: "We provide guidance and document preparation support to help you organize the information you need. The actual submission to FinCEN must be reviewed carefully given the legal nature of the filing. We recommend working with a licensed attorney for the submission itself.",
   },
 ];
@@ -64,7 +64,7 @@ export default function BOIReporting() {
   return (
     <>
       <SEO
-        title="BOI Reporting Assistance | Gantt & Karr Formation Group"
+        title="BOI Reporting Assistance | Gantt Key Formation Group"
         description="BOI Reporting support and Beneficial Ownership Information guidance for LLCs and corporations. General information and document preparation support — not legal advice."
         schema={[
           serviceSchema({ name: "BOI Reporting Assistance", description: "General information and document preparation support for business owners navigating Beneficial Ownership Information (BOI) reporting requirements under the Corporate Transparency Act.", url: `${SITE_URL}/services/boi-reporting`, category: "Business Compliance Support" }),
@@ -73,7 +73,7 @@ export default function BOIReporting() {
             { q: "Who qualifies as a beneficial owner?", a: "A beneficial owner is any individual who directly or indirectly owns or controls at least 25% of a company's ownership interests, or who exercises substantial control over the company — including senior officers." },
             { q: "What are the BOI reporting deadlines?", a: "Deadlines vary based on when your company was formed and current regulatory guidance. Requirements for BOI reporting may change based on regulations and legal updates. Verify current deadlines with a qualified legal professional or at FinCEN.gov." },
             { q: "What happens if I don't file a BOI report?", a: "Non-compliance can result in significant civil and criminal penalties. However, BOI reporting requirements and enforcement have been subject to legal challenges and regulatory changes. Always verify current requirements with a qualified legal professional." },
-            { q: "Does Gantt & Karr provide legal advice on BOI?", a: "No. We provide general information, document organization support, and coordination assistance. We do not provide legal, tax, or compliance advice. BOI reporting has legal implications — please consult a licensed attorney before submitting any report to FinCEN." },
+            { q: "Does Gantt Key provide legal advice on BOI?", a: "No. We provide general information, document organization support, and coordination assistance. We do not provide legal, tax, or compliance advice. BOI reporting has legal implications — please consult a licensed attorney before submitting any report to FinCEN." },
           ]),
           breadcrumbSchema([{ name: "Home", href: "/" }, { name: "Services", href: "/services" }, { name: "BOI Reporting Assistance", href: "/services/boi-reporting" }]),
         ]}

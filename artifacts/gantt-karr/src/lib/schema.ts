@@ -1,11 +1,11 @@
 export const SITE_URL = "https://ganttkarr.com";
-export const SITE_NAME = "Gantt & Karr Formation Group";
+export const SITE_NAME = "Gantt Key Formation Group";
 
 const ORG_BASE = {
   "@type": ["LocalBusiness", "ProfessionalService"],
   "@id": `${SITE_URL}/#organization`,
   name: SITE_NAME,
-  alternateName: ["G&K Formation Group", "Gantt and Karr Formation Group"],
+  alternateName: ["Gantt Key", "Gantt Key Formation"],
   url: SITE_URL,
   logo: {
     "@type": "ImageObject",
@@ -15,7 +15,7 @@ const ORG_BASE = {
   },
   image: `${SITE_URL}/opengraph.jpg`,
   description:
-    "Family-led business formation, notary services, and startup support powered by Anna AI. Serving entrepreneurs across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana.",
+    "Founder-led business formation, notary services, and startup support powered by Anna AI. Serving entrepreneurs across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana.",
   email: "Info@ganttkarr.com",
   telephone: "1-800-GANTT-KARR",
   priceRange: "$$",
@@ -212,7 +212,7 @@ export function annaSoftwareSchema() {
     alternateName: "Anna AI",
     applicationCategory: "BusinessApplication",
     description:
-      "Anna is the AI receptionist supporting Gantt & Karr Formation Group, built through Apex Key Group Holdings, Inc. She answers common questions, routes appointment requests, collects basic intake details, and ensures no client inquiry is missed. Anna does not provide legal advice or make legal decisions.",
+      "Anna is the AI receptionist supporting Gantt Key Formation Group, built through Apex Key Group Holdings, Inc. She answers common questions, routes appointment requests, collects basic intake details, and ensures no client inquiry is missed. Anna does not provide legal advice or make legal decisions.",
     url: `${SITE_URL}/meet-anna`,
     provider: {
       "@type": "Organization",
@@ -383,7 +383,7 @@ export function contactPageSchema() {
     "@id": `${SITE_URL}/contact#webpage`,
     url: `${SITE_URL}/contact`,
     name: `Contact ${SITE_NAME}`,
-    description: "Get in touch with Gantt & Karr Formation Group for business formation, notary, and startup support.",
+    description: "Get in touch with Gantt Key Formation Group for business formation, notary, and startup support.",
     isPartOf: { "@id": `${SITE_URL}/#website` },
     about: { "@id": `${SITE_URL}/#organization` },
     mainEntity: {

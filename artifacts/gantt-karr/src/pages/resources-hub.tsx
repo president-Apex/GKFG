@@ -9,12 +9,12 @@ export default function ResourcesHub() {
   return (
     <>
       <SEO
-        title="Professional Resources Center | Gantt & Karr Formation Group"
+        title="Professional Resources Center | Gantt Key Formation Group"
         description="Find licensed attorneys, CPAs, and business professionals through our curated Professional Resources Center — vetted partners for every stage of your business journey."
         schema={[
           itemListSchema({
             name: "Professional Resources Center",
-            description: "Curated directory of licensed professionals supporting Gantt & Karr clients.",
+            description: "Curated directory of licensed professionals supporting Gantt Key clients.",
             url: "/resources",
             items: resourceTypes.map((type) => ({
               name: resourcesData[type].title,

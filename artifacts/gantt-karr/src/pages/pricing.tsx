@@ -110,7 +110,7 @@ export default function Pricing() {
   return (
     <>
       <SEO
-        title="Pricing & Packages | Gantt & Karr Formation Group"
+        title="Pricing & Packages | Gantt Key Formation Group"
         description="Transparent startup packages from $297. LLC formation, EIN assistance, notary services, and white-glove business setup support."
         schema={[
           offerCatalogSchema({
@@ -295,7 +295,7 @@ export default function Pricing() {
             Not sure which package is right for you?
           </h2>
           <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-            Book a free startup consultation with Loresa or Kaileyanne. We will walk through your goals
+            Book a free startup consultation with Loresa. We will walk through your goals
             and help you choose the best path forward.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

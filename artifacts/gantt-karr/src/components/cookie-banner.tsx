@@ -162,7 +162,7 @@ export function CookieBanner() {
               <Cookie className="h-5 w-5 text-secondary flex-shrink-0 mt-0.5" />
               <div className="flex-1 min-w-0">
                 <h2 className="font-serif font-bold text-foreground text-base mb-2">
-                  🍪 Gantt & Karr Formation Group Website Preferences
+                  🍪 Gantt Key Formation Group Website Preferences
                 </h2>
                 <p className="text-[13px] text-muted-foreground leading-relaxed">
                   We use cookies to improve your experience, understand how visitors use our website, and help us provide better support for business formation clients. By clicking Accept, you agree to our use of cookies and similar technologies.
@@ -193,7 +193,7 @@ export function CookieBanner() {
             </div>
 
             <p className="text-[11px] text-muted-foreground/70 leading-relaxed border-t border-border pt-3">
-              Gantt & Karr Formation Group respects your privacy. We do not sell your personal information.{" "}
+              Gantt Key Formation Group respects your privacy. We do not sell your personal information.{" "}
               <Link href="/privacy-policy" className="text-secondary hover:underline">Review our Privacy Policy for details.</Link>
             </p>
           </div>
@@ -275,7 +275,7 @@ export function CookieBanner() {
                 Decline Non-Essential Cookies
               </button>
               <p className="text-[11px] text-muted-foreground/70 leading-relaxed mt-4 text-center">
-                Gantt & Karr Formation Group respects your privacy. We do not sell your personal information.{" "}
+                Gantt Key Formation Group respects your privacy. We do not sell your personal information.{" "}
                 <Link href="/privacy-policy" className="text-secondary hover:underline">Review our Privacy Policy for details.</Link>
               </p>
             </div>

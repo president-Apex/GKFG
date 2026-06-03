@@ -33,8 +33,8 @@ export function Nav() {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <Link href="/" className="flex flex-col gap-0.5">
-          <span className="font-serif font-bold text-xl tracking-tight text-primary">G&K Formation Group</span>
-          <span className="text-[10px] text-muted-foreground hidden md:inline-block uppercase tracking-wider">Family-Led Business Formation</span>
+          <span className="font-serif font-bold text-xl tracking-tight text-primary">Gantt Key Formation Group</span>
+          <span className="text-[10px] text-muted-foreground hidden md:inline-block uppercase tracking-wider">Founder-Led Business Formation</span>
         </Link>
 
         {/* Desktop Nav */}

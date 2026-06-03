@@ -22,8 +22,8 @@ export default function LocationDetail() {
   return (
     <>
       <SEO
-        title={`Business Formation in ${title} | Gantt & Karr Formation Group`}
-        description={`Business formation assistance, notary services, and startup support in ${title}. LLC formation, EIN assistance, and registered agent services from Gantt & Karr Formation Group.`}
+        title={`Business Formation in ${title} | Gantt Key Formation Group`}
+        description={`Business formation assistance, notary services, and startup support in ${title}. LLC formation, EIN assistance, and registered agent services from Gantt Key Formation Group.`}
         schema={[
           ...(city && resolvedCity && state
             ? [locationSchema({ city: resolvedCity.name, state: stateInfo.name, slug: `${state}/${city}` })]
@@ -69,7 +69,7 @@ export default function LocationDetail() {
               Whether you are launching a new startup, formalizing a side hustle, or structuring an established venture, proper formation is critical. Our team provides dedicated, polished support to entrepreneurs in {title}.
             </p>
             <p>
-              We handle the administrative complexities—from state filings and registered agent coordination to securing your EIN and organizing your operating agreements. With Gantt & Karr, you receive a boutique executive experience tailored to your needs.
+              We handle the administrative complexities—from state filings and registered agent coordination to securing your EIN and organizing your operating agreements. With Gantt Key, you receive a boutique executive experience tailored to your needs.
             </p>
             
             <h3 className="font-serif text-2xl font-bold mt-8">Services available in {title}</h3>

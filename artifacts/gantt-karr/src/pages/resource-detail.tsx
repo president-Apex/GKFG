@@ -72,7 +72,7 @@ export default function ResourceDetail() {
 
           <Disclaimer />
           <div className="mt-4 text-sm text-muted-foreground bg-muted p-4 rounded-lg">
-            <strong>Directory Disclaimer:</strong> Gantt & Karr Formation Group does not guarantee, endorse, or supervise third-party professionals. Listings are informational only. Clients are responsible for independently evaluating any provider.
+            <strong>Directory Disclaimer:</strong> Gantt Key Formation Group does not guarantee, endorse, or supervise third-party professionals. Listings are informational only. Clients are responsible for independently evaluating any provider.
           </div>
         </div>
       </section>

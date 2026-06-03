@@ -29,7 +29,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contact Us"
-        description="Get in touch with Gantt & Karr Formation Group. We're here to support your business journey — reach out with questions about formation, notary, or startup support."
+        description="Get in touch with Gantt Key Formation Group. We're here to support your business journey — reach out with questions about formation, notary, or startup support."
         schema={[
           contactPageSchema(),
           breadcrumbSchema([{ name: "Contact", href: "/contact" }]),
@@ -89,7 +89,7 @@ export default function Contact() {
                       <Link href="/terms-of-service" className="text-secondary hover:underline">Terms of Service</Link>{" "}
                       and{" "}
                       <Link href="/privacy-policy" className="text-secondary hover:underline">Privacy Policy</Link>.
-                      I understand that Gantt & Karr Formation Group is not a law firm and does not provide legal, tax, or financial advice.
+                      I understand that Gantt Key Formation Group is not a law firm and does not provide legal, tax, or financial advice.
                     </span>
                   </label>
 
@@ -102,7 +102,7 @@ export default function Contact() {
                       className="mt-0.5 h-4 w-4 rounded border-border accent-primary flex-shrink-0"
                     />
                     <span className="text-xs text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">
-                      I agree to receive SMS text messages from Gantt & Karr Formation Group regarding my inquiry, appointments, service updates, account notifications, and related communications. Message frequency may vary. Message and data rates may apply. Reply STOP to unsubscribe or HELP for assistance. Consent is not a condition of purchase.{" "}
+                      I agree to receive SMS text messages from Gantt Key Formation Group regarding my inquiry, appointments, service updates, account notifications, and related communications. Message frequency may vary. Message and data rates may apply. Reply STOP to unsubscribe or HELP for assistance. Consent is not a condition of purchase.{" "}
                       <Link href="/privacy-policy" className="text-secondary hover:underline">Privacy Policy</Link>
                       {" "}·{" "}
                       <Link href="/messaging-terms" className="text-secondary hover:underline">Messaging Terms & Conditions</Link>
@@ -113,7 +113,7 @@ export default function Contact() {
                 <div className="bg-muted/50 border border-border rounded-xl p-4">
                   <p className="text-xs font-semibold text-foreground mb-1">Before You Submit</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    Gantt & Karr Formation Group provides business support and administrative services. We do not provide legal representation, legal advice, tax advice, or financial advice.
+                    Gantt Key Formation Group provides business support and administrative services. We do not provide legal representation, legal advice, tax advice, or financial advice.
                   </p>
                 </div>
 

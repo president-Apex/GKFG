@@ -34,7 +34,7 @@ export default function Consultation() {
     <>
       <SEO
         title="Book a Free Startup Consultation"
-        description="Book a free startup consultation with Gantt & Karr Formation Group. Discuss your vision, choose the right business structure, and get a clear launch plan."
+        description="Book a free startup consultation with Gantt Key Formation Group. Discuss your vision, choose the right business structure, and get a clear launch plan."
         schema={[
           serviceSchema({
             name: "Free Startup Consultation",
@@ -121,7 +121,7 @@ export default function Consultation() {
                     required
                   />
                   <span className="text-xs text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">
-                    <strong className="text-foreground">Required:</strong> I understand that Gantt & Karr Formation Group is not a law firm and does not provide legal, tax, accounting, or financial advice. I will consult a licensed professional for advice specific to my situation.{" "}
+                    <strong className="text-foreground">Required:</strong> I understand that Gantt Key Formation Group is not a law firm and does not provide legal, tax, accounting, or financial advice. I will consult a licensed professional for advice specific to my situation.{" "}
                     <Link href="/disclaimer" className="text-secondary hover:underline">Read our Disclaimer</Link>.
                   </span>
                 </label>
@@ -152,7 +152,7 @@ export default function Consultation() {
                     className="mt-0.5 h-4 w-4 rounded border-border accent-primary flex-shrink-0"
                   />
                   <span className="text-xs text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">
-                    I agree to receive SMS text messages from Gantt & Karr Formation Group regarding my inquiry, appointments, service updates, account notifications, and related communications. Message frequency may vary. Message and data rates may apply. Reply STOP to unsubscribe or HELP for assistance. Consent is not a condition of purchase.{" "}
+                    I agree to receive SMS text messages from Gantt Key Formation Group regarding my inquiry, appointments, service updates, account notifications, and related communications. Message frequency may vary. Message and data rates may apply. Reply STOP to unsubscribe or HELP for assistance. Consent is not a condition of purchase.{" "}
                     <Link href="/privacy-policy" className="text-secondary hover:underline">Privacy Policy</Link>
                     {" "}·{" "}
                     <Link href="/messaging-terms" className="text-secondary hover:underline">Messaging Terms & Conditions</Link>

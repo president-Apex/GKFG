@@ -149,7 +149,7 @@ export default function AnnaDemo() {
     // Initial Anna greeting
     setTimeout(() => {
       annaMessage(
-        "Thank you for contacting Gantt & Karr Formation Group. I'm Anna. I can help you get started with formation support, notary services, registered agent information, or attorney referral coordination. What are you trying to accomplish today?"
+        "Thank you for contacting Gantt Key Formation Group. I'm Anna. I can help you get started with formation support, notary services, registered agent information, or attorney referral coordination. What are you trying to accomplish today?"
       );
     }, 400);
   }, []);
@@ -194,7 +194,7 @@ export default function AnnaDemo() {
       case "attorney":
         setStep("attorney-q1");
         annaMessage(
-          "We can help route you toward attorney referral information — however, I want to be transparent: Gantt & Karr Formation Group is not a law firm and does not provide legal advice or legal representation. What type of issue are you trying to get help with?"
+          "We can help route you toward attorney referral information — however, I want to be transparent: Gantt Key Formation Group is not a law firm and does not provide legal advice or legal representation. What type of issue are you trying to get help with?"
         );
         break;
       case "unsure":
@@ -242,7 +242,7 @@ export default function AnnaDemo() {
       case "unsure-q1":
         setStep("lead-capture");
         annaMessage(
-          "That's really helpful — thank you. Let me get your contact details so a member of the Gantt & Karr team can follow up and make sure you get pointed in the right direction."
+          "That's really helpful — thank you. Let me get your contact details so a member of the Gantt Key team can follow up and make sure you get pointed in the right direction."
         );
         break;
       default:
@@ -309,7 +309,7 @@ export default function AnnaDemo() {
         ...prev,
         {
           from: "anna",
-          text: `Thank you, ${leadName}. A member of the Gantt & Karr Formation Group team will review your information and contact you with the appropriate next step. We look forward to supporting you!`,
+          text: `Thank you, ${leadName}. A member of the Gantt Key Formation Group team will review your information and contact you with the appropriate next step. We look forward to supporting you!`,
         },
       ]);
       setStep("done");
@@ -329,7 +329,7 @@ export default function AnnaDemo() {
     setContext({});
     setTimeout(() => {
       annaMessage(
-        "Thank you for contacting Gantt & Karr Formation Group. I'm Anna. I can help you get started with formation support, notary services, registered agent information, or attorney referral coordination. What are you trying to accomplish today?"
+        "Thank you for contacting Gantt Key Formation Group. I'm Anna. I can help you get started with formation support, notary services, registered agent information, or attorney referral coordination. What are you trying to accomplish today?"
       );
     }, 400);
   }
@@ -363,8 +363,8 @@ export default function AnnaDemo() {
   return (
     <>
       <SEO
-        title="Anna Demo — 24/7 AI Formation Intake | Gantt & Karr Formation Group"
-        description="Try Anna, Gantt & Karr's AI intake assistant. See how Anna answers questions about LLC formation, EIN assistance, registered agent services, and notary support — 24/7."
+        title="Anna Demo — 24/7 AI Formation Intake | Gantt Key Formation Group"
+        description="Try Anna, Gantt Key's AI intake assistant. See how Anna answers questions about LLC formation, EIN assistance, registered agent services, and notary support — 24/7."
       />
 
       {/* Page wrapper */}
@@ -416,7 +416,7 @@ export default function AnnaDemo() {
                 </div>
                 <div>
                   <p className="text-white font-semibold text-sm leading-tight">Anna</p>
-                  <p className="text-white/50 text-xs">AI Intake Assistant · Gantt & Karr Formation Group</p>
+                  <p className="text-white/50 text-xs">AI Intake Assistant · Gantt Key Formation Group</p>
                 </div>
                 <div className="ml-auto flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
@@ -560,7 +560,7 @@ export default function AnnaDemo() {
                         style={{ background: palette.accent }}
                       >
                         {leadSubmitting ? "Submitting…" : (
-                          <><Send className="h-4 w-4" /> Submit to Gantt & Karr Team</>
+                          <><Send className="h-4 w-4" /> Submit to Gantt Key Team</>
                         )}
                       </button>
                     </form>
@@ -656,7 +656,7 @@ export default function AnnaDemo() {
               <div className="rounded-2xl border bg-white shadow-sm p-5 space-y-3" style={{ borderColor: palette.border }}>
                 <p className="text-sm font-semibold" style={{ color: palette.annaHead }}>Prefer to speak with the team?</p>
                 <p className="text-xs leading-relaxed" style={{ color: palette.mutedText }}>
-                  Anna is your first point of contact. Loresa and Kaileyanne review every inquiry and follow up personally.
+                  Anna is your first point of contact. Loresa reviews every inquiry and follows up personally.
                 </p>
                 <Link href="/consultation">
                   <span
@@ -680,7 +680,7 @@ export default function AnnaDemo() {
                 <p className="text-xs font-semibold mb-1" style={{ color: palette.annaHead }}>Powered by</p>
                 <p className="text-xs font-bold" style={{ color: palette.accent }}>Apex Key Group Holdings, Inc.</p>
                 <p className="text-xs mt-2 leading-relaxed" style={{ color: palette.mutedText }}>
-                  Anna is an AI intake assistant. Gantt & Karr Formation Group is responsible for all client service decisions.
+                  Anna is an AI intake assistant. Gantt Key Formation Group is responsible for all client service decisions.
                 </p>
               </div>
             </div>
@@ -693,7 +693,7 @@ export default function AnnaDemo() {
           >
             <p className="text-xs leading-relaxed" style={{ color: palette.mutedText }}>
               <strong style={{ color: palette.annaHead }}>Compliance Notice:</strong>{" "}
-              Gantt & Karr Formation Group is not a law firm and does not provide legal advice, tax advice, financial advice, or legal representation. Information collected through this demo is for intake and routing purposes only. This is a simulated demonstration of Anna's intake capabilities.
+              Gantt Key Formation Group is not a law firm and does not provide legal advice, tax advice, financial advice, or legal representation. Information collected through this demo is for intake and routing purposes only. This is a simulated demonstration of Anna's intake capabilities.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-3 text-xs" style={{ color: palette.mutedText }}>
               <a href="/gantt-karr/privacy-policy" className="hover:underline">Privacy Policy</a>

@@ -5,8 +5,8 @@ import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 const SCHEMA = [
   webPageSchema({
     url: "/terms-of-service",
-    name: "Terms of Service | Gantt & Karr Formation Group",
-    description: "Terms of Service governing use of the Gantt & Karr Formation Group website and services.",
+    name: "Terms of Service | Gantt Key Formation Group",
+    description: "Terms of Service governing use of the Gantt Key Formation Group website and services.",
     breadcrumbItems: [{ name: "Terms of Service", href: "/terms-of-service" }],
   }),
   breadcrumbSchema([{ name: "Terms of Service", href: "/terms-of-service" }]),
@@ -16,8 +16,8 @@ export default function TermsOfService() {
   return (
     <>
       <SEO
-        title="Terms of Service | Gantt & Karr Formation Group"
-        description="Terms of Service governing use of the Gantt & Karr Formation Group website and services. Read before using our business formation, notary, or startup support services."
+        title="Terms of Service | Gantt Key Formation Group"
+        description="Terms of Service governing use of the Gantt Key Formation Group website and services. Read before using our business formation, notary, or startup support services."
         schema={SCHEMA}
       />
       <div className="bg-background min-h-screen">
@@ -31,14 +31,14 @@ export default function TermsOfService() {
 
         <div className="container mx-auto px-4 py-16 max-w-3xl prose prose-slate">
           <p>
-            Welcome to Gantt & Karr Formation Group ("Company," "we," "our," or "us"). By accessing or
+            Welcome to Gantt Key Formation Group ("Company," "we," "our," or "us"). By accessing or
             using our website, services, forms, content, and communications, you agree to these Terms of
             Service ("Terms"). If you do not agree with these Terms, please discontinue use of our website
             and services.
           </p>
 
           <h2>1. Services</h2>
-          <p>Gantt & Karr Formation Group provides business support and administrative services, which may include:</p>
+          <p>Gantt Key Formation Group provides business support and administrative services, which may include:</p>
           <ul>
             <li>Business formation assistance</li>
             <li>Registered agent support</li>
@@ -52,7 +52,7 @@ export default function TermsOfService() {
 
           <h2>2. No Legal, Tax, or Financial Advice</h2>
           <p>
-            Gantt & Karr Formation Group is not a law firm and does not provide legal advice, legal
+            Gantt Key Formation Group is not a law firm and does not provide legal advice, legal
             representation, tax advice, accounting advice, or financial advice.
           </p>
           <p>
@@ -107,7 +107,7 @@ export default function TermsOfService() {
             <li>Materials</li>
           </ul>
           <p>
-            remain property of Gantt & Karr Formation Group and may not be copied, reproduced,
+            remain property of Gantt Key Formation Group and may not be copied, reproduced,
             distributed, or used without written permission.
           </p>
 
@@ -125,7 +125,7 @@ export default function TermsOfService() {
           </ul>
 
           <h2>8. Limitation of Liability</h2>
-          <p>To the maximum extent permitted by law, Gantt & Karr Formation Group shall not be liable for:</p>
+          <p>To the maximum extent permitted by law, Gantt Key Formation Group shall not be liable for:</p>
           <ul>
             <li>Indirect damages</li>
             <li>Incidental damages</li>
@@ -139,7 +139,7 @@ export default function TermsOfService() {
 
           <h2>9. Indemnification</h2>
           <p>
-            You agree to defend, indemnify, and hold harmless Gantt & Karr Formation Group, its owners,
+            You agree to defend, indemnify, and hold harmless Gantt Key Formation Group, its owners,
             employees, affiliates, and contractors from claims arising from:
           </p>
           <ul>
@@ -162,7 +162,7 @@ export default function TermsOfService() {
 
           <h2>12. Contact Information</h2>
           <p>
-            <strong>Gantt & Karr Formation Group</strong><br />
+            <strong>Gantt Key Formation Group</strong><br />
             Website: <a href="https://www.ganttkarr.com" className="text-secondary hover:underline">www.ganttkarr.com</a><br />
             Email: <a href="mailto:info@ganttkarr.com" className="text-secondary hover:underline">info@ganttkarr.com</a>
           </p>

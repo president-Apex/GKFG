@@ -20,7 +20,7 @@ const capabilities = [
   {
     icon: Calendar,
     title: "Routes Appointment Requests",
-    body: "She directs clients to the right next step with our team — whether that's booking a consultation, completing an intake form, or reaching Loresa or Kaileyanne directly.",
+    body: "She directs clients to the right next step with our team — whether that's booking a consultation, completing an intake form, or reaching Loresa directly.",
   },
   {
     icon: Zap,
@@ -40,34 +40,34 @@ const capabilities = [
   {
     icon: Shield,
     title: "Compliant by Design",
-    body: "Anna is trained to clearly communicate that Gantt & Karr Formation Group is not a law firm and does not provide legal, tax, or financial advice — every interaction is transparent.",
+    body: "Anna is trained to clearly communicate that Gantt Key Formation Group is not a law firm and does not provide legal, tax, or financial advice — every interaction is transparent.",
   },
 ];
 
 const FAQS = [
   {
     q: "What is Anna and who built her?",
-    a: "Anna is an AI receptionist supporting Gantt & Karr Formation Group, built through Apex Key Group Holdings, Inc. She is designed to answer common questions, route appointment requests, collect basic intake details, and ensure no client inquiry is missed.",
+    a: "Anna is an AI receptionist supporting Gantt Key Formation Group, built through Apex Key Group Holdings, Inc. She is designed to answer common questions, route appointment requests, collect basic intake details, and ensure no client inquiry is missed.",
   },
   {
     q: "Does Anna provide legal or notary advice?",
-    a: "No. Anna does not provide legal advice, notary advice, or make legal decisions of any kind. She helps direct clients to the right next step with the Gantt & Karr team. All substantive guidance comes from Loresa, Kaileyanne, or a licensed professional in our network.",
+    a: "No. Anna does not provide legal advice, notary advice, or make legal decisions of any kind. She helps direct clients to the right next step with the Gantt Key team. All substantive guidance comes from Loresa or a licensed professional in our network.",
   },
   {
     q: "Is Anna available 24/7?",
     a: "Yes. Anna is available around the clock to respond to inquiries, collect intake information, and route requests to the appropriate team member — so no inquiry goes unanswered regardless of business hours.",
   },
   {
-    q: "Who is responsible for client service — Anna or Gantt & Karr?",
-    a: "Gantt & Karr Formation Group remains fully responsible for all client service, appointment handling, and business support decisions. Anna is a support tool that helps ensure clients reach the right person promptly.",
+    q: "Who is responsible for client service — Anna or Gantt Key?",
+    a: "Gantt Key Formation Group remains fully responsible for all client service, appointment handling, and business support decisions. Anna is a support tool that helps ensure clients reach the right person promptly.",
   },
   {
     q: "Can I speak with a real person instead of Anna?",
-    a: "Absolutely. Anna's job is to connect you with our team — not replace them. After interacting with Anna, you will be routed to Loresa, Kaileyanne, or another team member for your consultation.",
+    a: "Absolutely. Anna's job is to connect you with our team — not replace them. After interacting with Anna, you will be routed to Loresa for your consultation.",
   },
   {
     q: "What is Apex Key Group Holdings, Inc.?",
-    a: "Apex Key Group Holdings, Inc. is the technology infrastructure company behind Anna. Gantt & Karr Formation Group is your trusted service provider — Apex powers the technology that helps us serve you better. As Anna scales, she will also support other businesses within the Apex ecosystem.",
+    a: "Apex Key Group Holdings, Inc. is the technology infrastructure company behind Anna. Gantt Key Formation Group is your trusted service provider — Apex powers the technology that helps us serve you better. As Anna scales, she will also support other businesses within the Apex ecosystem.",
   },
 ];
 
@@ -75,8 +75,8 @@ const ANNA_SCHEMA = [
   annaSoftwareSchema(),
   webPageSchema({
     url: "/meet-anna",
-    name: "Meet Anna — Your 24/7 Formation Intake Assistant | Gantt & Karr Formation Group",
-    description: "Anna is Gantt & Karr's AI intake assistant, built through Apex Key Group Holdings, Inc. She answers questions, routes appointments, and captures intake details 24/7.",
+    name: "Meet Anna — Your 24/7 Formation Intake Assistant | Gantt Key Formation Group",
+    description: "Anna is Gantt Key's AI intake assistant, built through Apex Key Group Holdings, Inc. She answers questions, routes appointments, and captures intake details 24/7.",
     breadcrumbItems: [{ name: "Meet Anna", href: "/meet-anna" }],
   }),
   faqSchema(FAQS),
@@ -122,8 +122,8 @@ export default function MeetAnna() {
   return (
     <>
       <SEO
-        title="Meet Anna — Your 24/7 Formation Intake Assistant | Gantt & Karr Formation Group"
-        description="Anna is Gantt & Karr's AI intake assistant, built through Apex Key Group Holdings, Inc. She answers questions, routes appointments, and starts your intake process 24/7 — so you never have to wait."
+        title="Meet Anna — Your 24/7 Formation Intake Assistant | Gantt Key Formation Group"
+        description="Anna is Gantt Key's AI intake assistant, built through Apex Key Group Holdings, Inc. She answers questions, routes appointments, and starts your intake process 24/7 — so you never have to wait."
         schema={ANNA_SCHEMA}
       />
 
@@ -133,7 +133,7 @@ export default function MeetAnna() {
         <div className="absolute right-0 top-0 bottom-0 w-full lg:w-[55%]">
           <img
             src="/gantt-karr/anna-ai.png"
-            alt="Anna — Gantt & Karr AI Intake Assistant, built by Apex Key Group Holdings, Inc."
+            alt="Anna — Gantt Key AI Intake Assistant, built by Apex Key Group Holdings, Inc."
             className="h-full w-full object-cover object-center opacity-80"
           />
         </div>
@@ -233,7 +233,7 @@ export default function MeetAnna() {
               </div>
             </div>
             <div className="bg-[#1e1b2e] rounded-xl rounded-bl-sm px-4 py-3 text-sm text-white/80 leading-relaxed mb-4">
-              "Thank you for contacting Gantt & Karr Formation Group. I'm Anna. What are you trying to accomplish today?"
+              "Thank you for contacting Gantt Key Formation Group. I'm Anna. What are you trying to accomplish today?"
             </div>
             <div className="flex flex-wrap gap-2">
               {["Start an LLC", "Get an EIN", "Need notary help", "Not sure yet"].map((opt) => (
@@ -252,22 +252,22 @@ export default function MeetAnna() {
         </div>
       </section>
 
-      {/* ── Anna Inside G&K ── */}
+      {/* ── Anna Inside Gantt Key ── */}
       <section className="py-20 bg-muted/40 border-y border-border">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div>
-              <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-4">Inside G&K</p>
+              <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-4">Inside Gantt Key</p>
               <h2 className="font-serif text-3xl font-bold text-primary mb-5">
-                Your seamless first step into the Gantt & Karr experience.
+                Your seamless first step into the Gantt Key Formation Group experience.
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-5">
-                When you reach out to Gantt & Karr, Anna is your first point of contact. She answers common
+                When you reach out to Gantt Key, Anna is your first point of contact. She answers common
                 questions about our services, collects your basic intake details, and routes your request to
                 the right team member — all without you having to wait for business hours.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                By the time you connect with Loresa or Kaileyanne, Anna has already made sure they have the
+                By the time you connect with Loresa, Anna has already made sure she has the
                 context they need to make your consultation focused and productive. Anna does not give legal
                 or notary advice — she simply helps you reach the right person at the right time.
               </p>
@@ -322,7 +322,7 @@ export default function MeetAnna() {
             <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-3">Get in Touch</p>
             <h2 className="font-serif text-3xl font-bold text-primary mb-3">Prefer to reach the team directly?</h2>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Send us a message and Loresa or Kaileyanne will follow up personally.
+              Send us a message and Loresa will follow up personally.
             </p>
           </div>
 
@@ -365,7 +365,7 @@ export default function MeetAnna() {
 
               <div className="bg-muted/50 border border-border rounded-xl p-3">
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Gantt & Karr Formation Group is not a law firm and does not provide legal advice, tax advice, or financial advice. Information is for administrative and general informational purposes only.
+                  Gantt Key Formation Group is not a law firm and does not provide legal advice, tax advice, or financial advice. Information is for administrative and general informational purposes only.
                 </p>
               </div>
 
@@ -383,7 +383,7 @@ export default function MeetAnna() {
           <p className="text-xs text-muted-foreground">
             Anna is provided through{" "}
             <strong className="text-foreground">Apex Key Group Holdings, Inc.</strong>{" "}
-            Gantt & Karr Formation Group remains responsible for client service, appointment handling, and business support decisions.
+            Gantt Key Formation Group remains responsible for client service, appointment handling, and business support decisions.
           </p>
           <Disclaimer />
         </div>

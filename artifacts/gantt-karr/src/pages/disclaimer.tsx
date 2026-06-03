@@ -5,8 +5,8 @@ import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 const SCHEMA = [
   webPageSchema({
     url: "/disclaimer",
-    name: "Disclaimer | Gantt & Karr Formation Group",
-    description: "Gantt & Karr Formation Group is not a law firm and does not provide legal, tax, accounting, or financial advice. Read our full disclaimer.",
+    name: "Disclaimer | Gantt Key Formation Group",
+    description: "Gantt Key Formation Group is not a law firm and does not provide legal, tax, accounting, or financial advice. Read our full disclaimer.",
     breadcrumbItems: [{ name: "Disclaimer", href: "/disclaimer" }],
   }),
   breadcrumbSchema([{ name: "Disclaimer", href: "/disclaimer" }]),
@@ -16,8 +16,8 @@ export default function DisclaimerPage() {
   return (
     <>
       <SEO
-        title="Disclaimer | Gantt & Karr Formation Group"
-        description="Gantt & Karr Formation Group is not a law firm and does not provide legal, tax, accounting, or financial advice. We provide business formation assistance and administrative support services."
+        title="Disclaimer | Gantt Key Formation Group"
+        description="Gantt Key Formation Group is not a law firm and does not provide legal, tax, accounting, or financial advice. We provide business formation assistance and administrative support services."
         schema={SCHEMA}
       />
       <div className="bg-background min-h-screen">
@@ -31,7 +31,7 @@ export default function DisclaimerPage() {
 
         <div className="container mx-auto px-4 py-16 max-w-3xl prose prose-slate">
           <p>
-            The information provided by Gantt & Karr Formation Group ("Company," "we," "our," or "us")
+            The information provided by Gantt Key Formation Group ("Company," "we," "our," or "us")
             on this website, through communications, forms, consultations, social media, text messages,
             emails, and services is for general informational and educational purposes only.
           </p>
@@ -43,11 +43,11 @@ export default function DisclaimerPage() {
 
           <h2>Not a Law Firm</h2>
           <p>
-            Gantt & Karr Formation Group is not a law firm and does not provide legal representation,
+            Gantt Key Formation Group is not a law firm and does not provide legal representation,
             legal advice, legal opinions, or legal services.
           </p>
           <p>
-            No information provided by Gantt & Karr Formation Group should be interpreted as legal advice.
+            No information provided by Gantt Key Formation Group should be interpreted as legal advice.
           </p>
           <p>Use of our website, forms, communications, or services does not establish:</p>
           <ul>
@@ -59,7 +59,7 @@ export default function DisclaimerPage() {
           <p>If legal guidance is needed, we encourage you to consult a licensed attorney.</p>
 
           <h2>No Tax, Financial, or Accounting Advice</h2>
-          <p>Information provided by Gantt & Karr Formation Group does not constitute:</p>
+          <p>Information provided by Gantt Key Formation Group does not constitute:</p>
           <ul>
             <li>Tax advice</li>
             <li>Accounting advice</li>
@@ -99,7 +99,7 @@ export default function DisclaimerPage() {
 
           <h2>Attorney Referral Notice</h2>
           <p>
-            Gantt & Karr Formation Group may provide referrals to independent attorneys or legal
+            Gantt Key Formation Group may provide referrals to independent attorneys or legal
             professionals for your convenience.
           </p>
           <p>We do not:</p>
@@ -123,7 +123,7 @@ export default function DisclaimerPage() {
 
           <h2>Limitation of Liability</h2>
           <p>
-            Under no circumstances shall Gantt & Karr Formation Group, its owners, employees, affiliates,
+            Under no circumstances shall Gantt Key Formation Group, its owners, employees, affiliates,
             contractors, or representatives be liable for any loss or damages arising from use of this
             website, information, or services.
           </p>
@@ -131,7 +131,7 @@ export default function DisclaimerPage() {
 
           <h2>Contact Information</h2>
           <p>
-            <strong>Gantt & Karr Formation Group</strong><br />
+            <strong>Gantt Key Formation Group</strong><br />
             Website: <a href="https://www.ganttkarr.com" className="text-secondary hover:underline">www.ganttkarr.com</a><br />
             Email: <a href="mailto:info@ganttkarr.com" className="text-secondary hover:underline">info@ganttkarr.com</a>
           </p>
