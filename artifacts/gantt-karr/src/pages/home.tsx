@@ -9,9 +9,9 @@ const coreServices = [
   { title: "Corporation Filing Assistance", slug: "corporation-filing", desc: "Articles of Incorporation and filing coordination" },
   { title: "EIN Application Assistance", slug: "ein-assistance", desc: "Federal Tax ID — required for banking and hiring" },
   { title: "Missouri Registered Agent", slug: "registered-agent", desc: "Reliable state correspondence and compliance support", badge: "MO Only" },
-  { title: "Online Notary Services", slug: "online-notary", desc: "Remote notarization from anywhere", badge: "Coming Soon" },
-  { title: "Mobile Notary Services", slug: "mobile-notary", desc: "We come to your location", badge: "Coming Soon" },
-  { title: "Loan Signing Services", slug: "loan-signing", desc: "Certified signing agent for closings and refinances", badge: "Coming Soon" },
+  { title: "Mobile Notary Services", slug: "mobile-notary", desc: "Convenient notarization at your home, office, hospital, care facility, or mutually agreed-upon location.", badge: "Coming Soon" },
+  { title: "Online Notary Services", slug: "online-notary", desc: "Secure remote online notarization for clients who prefer a virtual appointment experience.", badge: "Coming Soon" },
+  { title: "Loan Signing Services", slug: "loan-signing", desc: "Professional loan signing for buyers, sellers, lenders, title companies, and real estate professionals.", badge: "Coming Soon" },
   { title: "Startup Packages", slug: "launch-packages", desc: "Bundled services from $297 to get you started" },
   { title: "Anna AI Intake", slug: "anna-ai-intake", desc: "AI-powered client intake and consultation booking" },
 ];
