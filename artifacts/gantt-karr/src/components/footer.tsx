@@ -1,8 +1,57 @@
 import { Link } from "wouter";
 
+const testimonials = [
+  {
+    quote: "Loresa walked me through everything. Filed same week, EIN in hand before my bank appointment.",
+    name: "Marcus T.",
+    location: "Kansas City MO",
+    service: "LLC Formation Client",
+  },
+  {
+    quote: "I had no idea where to start. Anna collected all my info and Loresa had my documents ready in two days.",
+    name: "Priya S.",
+    location: "Scottsdale AZ",
+    service: "Startup Package Client",
+  },
+  {
+    quote: "Professional, fast, and they actually explained what everything meant. No legal jargon.",
+    name: "Deon W.",
+    location: "Atlanta GA",
+    service: "Corporation Filing Client",
+  },
+];
+
 export function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground pt-16 pb-8">
+    <>
+      {/* Testimonial strip — above footer */}
+      <section className="bg-muted/50 border-t border-border py-16">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-10">
+            <p className="text-secondary text-xs font-bold uppercase tracking-widest mb-2">Client Stories</p>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary">What Our Clients Say</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {testimonials.map((t) => (
+              <div
+                key={t.name}
+                className="bg-white rounded-2xl shadow-md p-7 flex flex-col border-l-[3px]"
+                style={{ borderLeftColor: "#C9A84C" }}
+              >
+                <p className="text-gray-600 leading-relaxed mb-6 flex-grow text-sm">
+                  "{t.quote}"
+                </p>
+                <div>
+                  <p className="font-bold text-sm" style={{ color: "#1a2f4e" }}>{t.name}, {t.location}</p>
+                  <p className="text-xs text-gray-400 mt-0.5">{t.service}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-primary text-primary-foreground pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="space-y-4">
@@ -68,5 +117,6 @@ export function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }

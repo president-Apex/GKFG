@@ -1,0 +1,138 @@
+# GKFG Website Update Instructions for Replit
+
+# Gantt Key Formation Group — Version 2 Improvements
+
+# Hand this entire document to Replit Agent
+
+-----
+
+## OVERVIEW
+
+Make the following 7 targeted improvements to the existing Gantt Key Formation Group website.
+Do NOT redesign or change the color palette, fonts, or overall layout.
+Preserve the existing dark navy + gold brand aesthetic.
+Make only the specific changes listed below.
+
+-----
+
+## CHANGE 1 — Add Pricing Anchor to Hero Section
+
+LOCATION: Homepage hero section (the dark navy area with “Build your legacy with confidence”)
+
+ADD this line of text BELOW the existing subheadline (“Founder-led business formation, notary services…”):
+
+“LLC Formation starting at $297 · EIN Assistance · Registered Agent Services”
+
+Style it as: small gold (#C9A84C) text, centered, font size 14px, slight letter-spacing, above the CTA buttons.
+
+-----
+
+## CHANGE 2 — Anna AI Homepage Section
+
+LOCATION: Add a new section on the homepage BETWEEN the “Core Services” section and the “How It Works” (3-step) section.
+
+CREATE a new section with:
+
+- Section label (gold, uppercase, small): “POWERED BY AI”
+- Headline (dark navy, large): “Meet Anna AI — Your Always-On Business Intake Assistant”
+- Body copy: “Anna answers your questions, collects your business information, and gets your formation started — 24 hours a day, 7 days a week. No waiting, no back-and-forth. Just fast, accurate intake so we can get to work for you.”
+- A gold outlined button: “Chat With Anna →” (link to existing Anna AI chat or intake page)
+- Background: light warm gray (#F5F3EF) to visually separate it from surrounding sections
+
+-----
+
+## CHANGE 3 — Add Geographic Market Callouts
+
+LOCATION: The ticker/marquee bar that currently reads “FOUNDER-LED · SERVING 6 STATES · MISSOURI REGISTERED AGENT SERVICES · SECURE CLIENT INTAKE”
+
+REPLACE that text with:
+“SERVING KANSAS CITY · PHOENIX · SCOTTSDALE · NASHVILLE · CHARLOTTE · ATLANTA · FOUNDER-LED · COMPLIANCE-FIRST · MISSOURI REGISTERED AGENT SERVICES · SECURE CLIENT INTAKE · AI-POWERED INTAKE”
+
+Keep the same scrolling marquee style and gold text.
+
+-----
+
+## CHANGE 4 — Mobile Sticky CTA Bar
+
+LOCATION: Mobile layout only (screen width under 768px)
+
+ADD a fixed bottom bar that is:
+
+- Background: #C9A84C (gold)
+- Text: “Start My Business Setup →” in dark navy (#1a2f4e), bold, centered
+- Height: 52px
+- Position: fixed, bottom 0, full width, z-index 1000
+- On click: links to the existing “Start My Business Setup” button target (intake form or Anna AI)
+- Add 52px padding-bottom to the page body on mobile so content isn’t hidden behind it
+
+-----
+
+## CHANGE 5 — Reframe “MO ONLY” Badges
+
+LOCATION: Any service card that currently shows a “MO ONLY” badge (Mobile Notary Services, Missouri Registered Agent)
+
+CHANGE the badge text from “MO ONLY” to “MO MEMBERS BONUS”
+
+Keep the same badge styling (gold outlined pill/tag), just update the text.
+
+-----
+
+## CHANGE 6 — Hero Copy Update
+
+LOCATION: Homepage hero — the main H1 headline currently reads “Build your legacy with confidence.”
+
+CHANGE IT TO a two-line headline:
+Line 1: “LLC filed in 72 hours.”
+Line 2: “Built right, from day one.”
+
+Keep the “PREMIUM BUSINESS SETUP” label above it and the subheadline below it unchanged.
+
+-----
+
+## CHANGE 7 — Testimonial Strip (Social Proof)
+
+LOCATION: Add ABOVE the footer (above the Quick Links / Top Services columns)
+
+ADD a simple 3-column testimonial strip with this content:
+
+Card 1:
+“Loresa walked me through everything. Filed same week, EIN in hand before my bank appointment.”
+— Marcus T., Kansas City MO · LLC Formation Client
+
+Card 2:
+“I had no idea where to start. Anna collected all my info and Loresa had my documents ready in two days.”
+— Priya S., Scottsdale AZ · Startup Package Client
+
+Card 3:
+“Professional, fast, and they actually explained what everything meant. No legal jargon.”
+— Deon W., Atlanta GA · Corporation Filing Client
+
+Style:
+
+- White cards with subtle drop shadow
+- Gold left border (3px solid #C9A84C)
+- Name in bold dark navy
+- Quote text in medium gray
+- Stack vertically on mobile
+
+-----
+
+## DO NOT CHANGE
+
+- Logo or brand name
+- Navigation menu structure
+- Color palette (navy #1a2f4e, gold #C9A84C)
+- Font choices
+- Footer contact info
+- Any existing page routes or links
+- The “Recent Activity” social proof popup component
+- The Anna AI intake hooks already in the codebase
+
+-----
+
+## AFTER MAKING CHANGES
+
+- Test on mobile (iPhone SE size, 375px wide) and desktop
+- Confirm the sticky CTA bar only appears on mobile
+- Confirm the marquee ticker scrolls continuously without breaking
+- Confirm all existing links still function

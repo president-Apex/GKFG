@@ -23,7 +23,7 @@ const formationServices: { title: string; slug: string; desc: string; badge?: st
     title: "Missouri Registered Agent",
     slug: "registered-agent",
     desc: "Professional point of contact for state correspondence and compliance notices.",
-    badge: "Missouri Only",
+    badge: "MO Members Bonus",
   },
   {
     title: "Startup Packages",

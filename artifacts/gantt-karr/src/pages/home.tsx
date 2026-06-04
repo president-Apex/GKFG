@@ -1,14 +1,14 @@
 import { SEO } from "@/components/seo";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { CheckCircle, ArrowRight, Shield, Users, Star } from "lucide-react";
+import { CheckCircle, ArrowRight, Shield, Users, Star, Bot } from "lucide-react";
 import { homePageSchema } from "@/lib/schema";
 
 const coreServices = [
   { title: "LLC Formation Assistance", slug: "llc-formation", desc: "State filing coordination and document support" },
   { title: "Corporation Filing Assistance", slug: "corporation-filing", desc: "Articles of Incorporation and filing coordination" },
   { title: "EIN Application Assistance", slug: "ein-assistance", desc: "Federal Tax ID — required for banking and hiring" },
-  { title: "Missouri Registered Agent", slug: "registered-agent", desc: "Reliable state correspondence and compliance support", badge: "MO Only" },
+  { title: "Missouri Registered Agent", slug: "registered-agent", desc: "Reliable state correspondence and compliance support", badge: "MO Members Bonus" },
   { title: "Mobile Notary Services", slug: "mobile-notary", desc: "Convenient notarization at your home, office, hospital, care facility, or mutually agreed-upon location.", badge: "Coming Soon" },
   { title: "Online Notary Services", slug: "online-notary", desc: "Secure remote online notarization for clients who prefer a virtual appointment experience.", badge: "Coming Soon" },
   { title: "Loan Signing Services", slug: "loan-signing", desc: "Professional loan signing for buyers, sellers, lenders, title companies, and real estate professionals.", badge: "Coming Soon" },
@@ -22,6 +22,20 @@ const trustPoints = [
   "Transparent pricing — no hidden fees",
   "Clear compliance disclaimers — we tell you what we are and aren't",
   "Serving entrepreneurs across 6 states",
+];
+
+const marqueeItems = [
+  "Serving Kansas City",
+  "Phoenix",
+  "Scottsdale",
+  "Nashville",
+  "Charlotte",
+  "Atlanta",
+  "Founder-Led",
+  "Compliance-First",
+  "Missouri Registered Agent Services",
+  "Secure Client Intake",
+  "AI-Powered Intake",
 ];
 
 export default function Home() {
@@ -42,12 +56,18 @@ export default function Home() {
               <span className="inline-block py-1.5 px-4 rounded-full bg-secondary/20 text-secondary border border-secondary/30 text-xs font-semibold mb-6 uppercase tracking-widest">
                 Premium Business Setup
               </span>
+              {/* Change 6 — updated headline */}
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight mb-6">
-                Build your legacy with confidence.
+                LLC filed in 72 hours.<br />
+                Built right, from day one.
               </h1>
-              <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-xl leading-relaxed">
+              <p className="text-lg md:text-xl text-primary-foreground/80 mb-4 max-w-xl leading-relaxed">
                 Founder-led business formation, notary services, and startup support — powered by Anna AI.
                 We handle the setup so you can focus on the vision.
+              </p>
+              {/* Change 1 — pricing anchor */}
+              <p className="text-sm tracking-wide mb-8 max-w-xl" style={{ color: "#C9A84C" }}>
+                LLC Formation starting at $297 · EIN Assistance · Registered Agent Services
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <Link href="/how-it-works">
@@ -88,21 +108,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Strip — immediately under hero */}
-      <section className="bg-secondary/10 border-b border-secondary/20 py-3.5">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center items-center gap-x-0 gap-y-1 text-xs font-semibold text-foreground/70 uppercase tracking-wider">
-            {[
-              "Founder-Led",
-              "Serving 6 States",
-              "Missouri Registered Agent Services",
-              "Secure Client Intake",
-            ].map((item, i, arr) => (
-              <span key={item} className="flex items-center">
-                <span className="hover:text-secondary transition-colors">{item}</span>
-                {i < arr.length - 1 && (
-                  <span className="mx-4 text-secondary/50">•</span>
-                )}
+      {/* Change 3 — scrolling marquee ticker */}
+      <section className="bg-secondary/10 border-b border-secondary/20 py-3 overflow-hidden">
+        <div className="flex whitespace-nowrap">
+          <div className="animate-marquee inline-flex shrink-0">
+            {[...marqueeItems, ...marqueeItems].map((item, i) => (
+              <span key={i} className="inline-flex items-center">
+                <span className="text-[11px] font-bold uppercase tracking-widest px-5" style={{ color: "#C9A84C" }}>
+                  {item}
+                </span>
+                <span className="text-secondary/40 text-xs">·</span>
               </span>
             ))}
           </div>
@@ -123,7 +138,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Value Prop */}
+      {/* Value Prop / How It Works */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-4">Our Approach</p>
@@ -187,6 +202,32 @@ export default function Home() {
               </Button>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Change 2 — Anna AI highlight section */}
+      <section className="py-24" style={{ background: "#F5F3EF" }}>
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest mb-4" style={{ color: "#C9A84C" }}>
+            Powered by AI
+          </p>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6" style={{ color: "#1a2f4e" }}>
+            Meet Anna AI — Your Always-On Business Intake Assistant
+          </h2>
+          <p className="text-lg leading-relaxed mb-10 max-w-2xl mx-auto text-gray-600">
+            Anna answers your questions, collects your business information, and gets your formation started — 24 hours a day, 7 days a week. No waiting, no back-and-forth. Just fast, accurate intake so we can get to work for you.
+          </p>
+          <Link href="/services/anna-ai-intake">
+            <button
+              className="inline-flex items-center gap-2 font-semibold px-8 py-3.5 rounded-xl border-2 transition-colors text-sm cursor-pointer"
+              style={{ borderColor: "#C9A84C", color: "#C9A84C", background: "transparent" }}
+              onMouseOver={(e) => { (e.currentTarget as HTMLButtonElement).style.background = "#C9A84C"; (e.currentTarget as HTMLButtonElement).style.color = "#1a2f4e"; }}
+              onMouseOut={(e) => { (e.currentTarget as HTMLButtonElement).style.background = "transparent"; (e.currentTarget as HTMLButtonElement).style.color = "#C9A84C"; }}
+            >
+              <Bot className="h-4 w-4" />
+              Chat With Anna →
+            </button>
+          </Link>
         </div>
       </section>
 

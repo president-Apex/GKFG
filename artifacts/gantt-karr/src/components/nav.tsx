@@ -17,7 +17,7 @@ const keyServices = [
   { label: "LLC Formation Assistance", href: "/services/llc-formation" },
   { label: "Corporation Filing Assistance", href: "/services/corporation-filing" },
   { label: "EIN Application Assistance", href: "/services/ein-assistance" },
-  { label: "Missouri Registered Agent", href: "/services/registered-agent", badge: "MO Only" },
+  { label: "Missouri Registered Agent", href: "/services/registered-agent", badge: "MO Members Bonus" },
   { label: "Mobile Notary Services", href: "/services/mobile-notary", badge: "Coming Soon" },
   { label: "Online Notary Services", href: "/services/online-notary", badge: "Coming Soon" },
   { label: "Loan Signing Services", href: "/services/loan-signing", badge: "Coming Soon" },
