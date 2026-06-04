@@ -121,6 +121,9 @@ export function Nav() {
             <Link href="/pricing">
               <Button variant="ghost" size="sm" className="hidden xl:inline-flex text-foreground/70 hover:text-foreground">Pricing</Button>
             </Link>
+            <Link href="/founding-partners">
+              <Button variant="ghost" size="sm" className="hidden xl:inline-flex text-foreground/70 hover:text-foreground">Partners</Button>
+            </Link>
             <Link href="/consultation">
               <Button variant="ghost" size="sm" className="hidden xl:inline-flex">Book Consultation</Button>
             </Link>
@@ -164,6 +167,7 @@ export function Nav() {
                 </div>
 
                 <Link href="/pricing" onClick={() => setIsOpen(false)} className="text-lg font-medium">Pricing</Link>
+                <Link href="/founding-partners" onClick={() => setIsOpen(false)} className="text-lg font-medium">Partners</Link>
                 <Link href="/contact" onClick={() => setIsOpen(false)} className="text-lg font-medium">Contact</Link>
 
                 <div className="mt-6 flex flex-col gap-3">

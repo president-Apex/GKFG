@@ -1,0 +1,496 @@
+# GKFG COMPLETE REPLIT HANDOFF
+
+## Two Deliverables: (1) Founding Partner Program Page + (2) Full Pricing Page
+
+## All copy, structure, and logic ready to build
+
+-----
+
+# ═══════════════════════════════════════
+
+# DELIVERABLE 1: FOUNDING PARTNER PROGRAM
+
+# Page: /founding-partners
+
+# ═══════════════════════════════════════
+
+## YOUR INSTINCT IS RIGHT — LEAD WITH VALUE, NOT MONEY
+
+The partner program is built on three things:
+
+1. Warm client introductions (actual revenue for them)
+1. Visibility and credibility (logo on GKFG site, featured listing)
+1. Collaborative growth (co-branded events, joint content)
+
+NO referral fees. NO cash commissions. NO revenue sharing.
+Reason: CPAs, attorneys, and licensed bankers have ethics rules around referral compensation.
+Leading with fees can end a conversation before it starts.
+Leading with “I’ll send you clients” opens every door.
+
+-----
+
+## PAGE STRUCTURE: /founding-partners
+
+-----
+
+### SECTION 1 — HERO
+
+Background: Dark navy (#1a2f4e)
+Gold label (uppercase, small): “FOUNDING PARTNER PROGRAM”
+
+Headline (white, large serif):
+“Become a Founding Partner of the KC Metro’s Premier Business Formation Hub.”
+
+Subheadline (muted, medium):
+“We help entrepreneurs form their business. Then we hand them directly to you.
+Limited to 20 founding partners. 5 spots per category.”
+
+CTA Button (gold): “Apply for Founding Partner Status →”
+Secondary text (small, muted): “No fees. No commissions. Just referrals.”
+
+-----
+
+### SECTION 2 — WHAT IS THE FOUNDING PARTNER PROGRAM?
+
+Background: Off-white (#F5F3EF)
+Section label (gold): “THE CONCEPT”
+
+Headline (navy): “You send us entrepreneurs. We send you clients.”
+
+Body copy:
+“Gantt Key Formation Group exists to help entrepreneurs launch with confidence — LLC formation, EIN assistance, notary services, registered agent, and more. But our job doesn’t stop at the paperwork.
+
+Every business we form needs a CPA, an insurance agent, a banker, an attorney, and a payroll provider. Rather than sending clients to random online directories, we send them directly to our vetted Founding Partners.
+
+That means every entrepreneur who comes through our doors becomes a warm introduction to you — not a cold lead, a personal referral from a trusted formation partner.”
+
+-----
+
+### SECTION 3 — FOUNDING PARTNER BENEFITS (5 cards)
+
+Background: Light gray (#F0EEE9)
+Headline: “What You Get as a Founding Partner”
+Subheadline: “This is what it means to be part of the GKFG ecosystem.”
+
+Card 1 — “Priority Referral Listing”
+Icon: Star
+Body: “Every new GKFG client receives a curated welcome packet with our vetted partner recommendations. You’re in that packet — by name, with your contact info and a personal introduction from Loresa.”
+
+Card 2 — “Featured on Our Website”
+Icon: Globe
+Body: “Your logo, name, and firm are featured on our dedicated Partners page — visible to every entrepreneur who visits GKFG online. Lifetime placement for Founding Partners.”
+
+Card 3 — “Partner Spotlight”
+Icon: Megaphone
+Body: “Each quarter, one Founding Partner is featured in our email newsletter and social content. Your expertise, your story, your firm — introduced to our growing client base.”
+
+Card 4 — “Co-Branded Events & Content”
+Icon: Users
+Body: “Joint webinars, LinkedIn Lives, and workshops with your firm and GKFG. Example: ‘LLC vs. S-Corp: What Every KC Business Owner Needs to Know.’ Both of us get leads.”
+
+Card 5 — “Direct Client Introductions”
+Icon: Handshake
+Body: “When a client asks us ‘who should I use for taxes / insurance / banking / legal?’ — we introduce them to you personally. Not a list. A warm handoff.”
+
+-----
+
+### SECTION 4 — FOUNDING PARTNER CATEGORIES + SPOTS AVAILABLE
+
+Background: Dark navy (#1a2f4e)
+Gold label: “LIMITED AVAILABILITY”
+Headline (white): “Only 20 Founding Partners. 5 Per Category.”
+
+Display as a grid of 5 category cards:
+
+Card 1: CPAs & Tax Professionals
+Spots remaining: 5 of 5
+“For CPAs and tax advisors serving small business owners and entrepreneurs.”
+
+Card 2: Commercial Insurance Agents
+Spots remaining: 5 of 5
+“For independent insurance agents serving new and growing businesses.”
+
+Card 3: Business Bankers & SBA Lenders
+Spots remaining: 5 of 5
+“For community bankers, credit unions, and SBA lenders working with startups.”
+
+Card 4: Business Attorneys
+Spots remaining: 5 of 5
+“For solo and small-firm attorneys in business law, estate planning, and asset protection.”
+
+Card 5: Payroll Providers
+Spots remaining: 5 of 5
+“For payroll and HR service providers supporting small teams and growing businesses.”
+
+Small text below grid: “Once all 5 spots in a category are filled, that category closes. Standard partner status will be available after launch.”
+
+NOTE FOR REPLIT: The “Spots remaining” numbers should be manually editable by Loresa as spots fill. Build as a simple text field that can be updated in the CMS/admin. Start all at “5 of 5 available.”
+
+-----
+
+### SECTION 5 — WHAT WE OFFER CLIENTS (Why Partners Want In)
+
+Background: White
+Headline (navy): “Every Client We Form Needs Your Services.”
+Subheadline: “Here’s what a typical GKFG client looks like when they come through our doors:”
+
+Show as a simple timeline or checklist:
+
+Week 1: LLC or Corporation filed ← GKFG
+Week 1: EIN obtained ← GKFG
+Week 1–2: Operating agreement notarized ← GKFG
+Week 2: → Needs a business bank account ← YOUR BANKING PARTNER
+Week 2: → Needs a CPA for quarterly taxes ← YOUR CPA PARTNER
+Week 2: → Needs general liability insurance ← YOUR INSURANCE PARTNER
+Week 3: → Needs payroll setup ← YOUR PAYROLL PARTNER
+Month 2+: → Needs business attorney for contracts ← YOUR LEGAL PARTNER
+
+Closing line: “We don’t just form businesses — we launch them. And you’re part of the launch.”
+
+-----
+
+### SECTION 6 — COLLABORATIVE EVENTS
+
+Background: Light gold (#F5EDD5)
+Label (navy, uppercase): “GROW TOGETHER”
+Headline: “Co-Branded Events That Generate Leads for Both of Us.”
+
+Body:
+“As a Founding Partner, you’ll have the opportunity to co-host educational workshops and online events with GKFG. These events are free to attend for entrepreneurs, generate press and social content, and position both of us as trusted resources in the KC metro.”
+
+Event Ideas (display as cards):
+
+- “LLC vs. S-Corp: What Every KC Business Owner Needs to Know” (GKFG + CPA Partner)
+- “Protect Your Business From Day One: Insurance for New Entrepreneurs” (GKFG + Insurance Partner)
+- “How to Get Your Business Bankable in 30 Days” (GKFG + Banking Partner)
+- “Legal Foundations: What Every LLC Owner Should Have in Place” (GKFG + Attorney Partner)
+- “Hire Your First Employee Right: Payroll for New Business Owners” (GKFG + Payroll Partner)
+
+-----
+
+### SECTION 7 — APPLICATION FORM
+
+Background: Dark navy
+Headline (white): “Apply for Founding Partner Status”
+Subheadline (muted): “Tell us about your firm. We’ll follow up within 2 business days.”
+
+Form fields (connect to Anna AI or GHL pipeline):
+
+- Full Name *
+- Firm / Company Name *
+- Category (dropdown: CPA / Insurance / Banking / Attorney / Payroll) *
+- Phone *
+- Email *
+- Website
+- City / State *
+- How many entrepreneur/startup clients do you typically serve per year? (dropdown: <10 / 10-25 / 25-50 / 50+)
+- Brief note about your firm (optional, 200 chars max)
+- Submit Button (gold): “Apply Now →”
+
+Below form (small text):
+“Founding Partner status is reviewed and confirmed by Loresa Gantt personally.
+All partners are vetted to ensure they’re a fit for our clients.
+No fees. No commissions. No obligations beyond showing up for your clients.”
+
+-----
+
+### SECTION 8 — INTERNAL PARTNER OUTREACH SCRIPT
+
+### (NOT on the website — for Loresa’s use only)
+
+Subject line: “Founding Partner Invitation — Gantt Key Formation Group”
+
+“Hi [First Name],
+
+I’m Loresa Gantt, founder of Gantt Key Formation Group. We help entrepreneurs in the KC metro — and across 7 states — with LLC formations, EIN assistance, registered agent services, and notary work.
+
+I’m building a small, curated group of Founding Partners — professionals I trust to take care of the clients we form. There are only 5 spots per category, and I’d love for you to be one of them.
+
+Here’s what it looks like: every entrepreneur we help is introduced directly to our Founding Partners for the services we don’t provide — accounting, insurance, banking, legal, and payroll. Not a list. A personal introduction from me.
+
+In return, I’d love to be the formation resource you recommend when your clients ask, ‘Who helps with LLCs and business paperwork?’
+
+Would you be open to a 15-minute call to see if we’re a fit?
+
+I have openings Tuesday at 10:00 AM or Thursday at 2:00 PM CST.
+
+— Loresa Gantt
+Founder, Gantt Key Formation Group
+ganttkarr.com | (816) xxx-xxxx”
+
+-----
+
+# ═══════════════════════════════════════
+
+# DELIVERABLE 2: FULL PRICING PAGE
+
+# Page: /pricing
+
+# ═══════════════════════════════════════
+
+## PAGE NOTES FOR REPLIT:
+
+- Brand colors: navy #1a2f4e, gold #C9A84C, off-white #F5F3EF
+- No walk-in / in-office pricing — REMOVE entirely
+- Services are: Mobile (we travel to client) or Remote/RON (video)
+- All appointments booked through Anna AI
+- Badge: “MOST POPULAR” on Business Launch Bundle
+- Badge: “BEST VALUE” on Annual Retainer
+- Badge: “MO & KS EXCLUSIVE” on mobile services (those require physical presence in MO or KS)
+
+-----
+
+## PRICING PAGE STRUCTURE
+
+-----
+
+### HERO SECTION
+
+Background: Dark navy
+Gold label: “TRANSPARENT PRICING”
+Headline (white): “Every service. Every price. No surprises.”
+Subheadline (muted): “We disclose all fees before we start — always. Book via Anna AI 24/7.”
+
+Trust bar below headline (gold icons + white text):
+✓ No hidden fees  ·  ✓ Disclosed before every appointment  ·  ✓ Anna AI books 24/7  ·  ✓ 7 states served
+
+-----
+
+### SECTION 1 — BUSINESS FORMATION SERVICES
+
+Label: “FORM YOUR BUSINESS”
+Headline: “Formation & Startup Services”
+
+Table or card layout:
+
+|Service                                   |Price  |Notes                                                                    |
+|------------------------------------------|-------|-------------------------------------------------------------------------|
+|LLC Formation Assistance                  |$297   |State filing coordination + document support. State filing fees separate.|
+|Corporation (S-Corp or C-Corp) Filing     |$347   |Articles of incorporation + coordination                                 |
+|EIN Application Assistance                |$75    |Federal Tax ID — required for banking and hiring                         |
+|Operating Agreement (notarized)           |$125   |Drafted to your state + notarized by GKFG                                |
+|DBA / Assumed Name Filing                 |$97    |+ state filing fees                                                      |
+|BOI Reporting Assistance                  |$97    |Beneficial Ownership Information document support                        |
+|Missouri Registered Agent Service         |$149/yr|MO & KS EXCLUSIVE badge                                                  |
+|Business Name Search + Availability Report|$49    |Prior to filing — save time and money                                    |
+
+BUNDLE CALLOUT (highlighted card, gold border):
+★ MOST POPULAR
+**LLC Launch Complete Package — $397**
+Includes: LLC filing coordination + EIN assistance + Operating Agreement (notarized) + Registered Agent (1st year)
+Save $249 vs. purchasing separately
+CTA: “Get Started →”
+
+-----
+
+### SECTION 2 — NOTARY SERVICES
+
+Label: “NOTARY SERVICES”
+Headline: “Mobile · Online · Loan Signing”
+Subheadline: “Serving MO, KS, AZ, TN, NC, GA, and MT. All appointments scheduled in advance via Anna AI.”
+
+#### 2A — REMOTE ONLINE NOTARIZATION (RON)
+
+|Service                                   |Price                      |Notes                                         |
+|------------------------------------------|---------------------------|----------------------------------------------|
+|RON — Single document (1 signature)       |$25                        |Via secure video call. Signer can be anywhere.|
+|RON — Additional signatures (same session)|$15 each                   |                                              |
+|RON — Multi-party session (2+ signers)    |$25 + $15/additional signer|                                              |
+|RON — Expedited (under 2 hours)           |+$25                       |Same-day rush                                 |
+|RON — After hours (6pm–9pm)               |+$20                       |                                              |
+|RON — Weekend                             |+$25                       |                                              |
+
+Note for GA clients (display as small callout box):
+“Georgia clients: RON is performed under our Missouri commission and is valid in Georgia under interstate recognition law.”
+
+#### 2B — MOBILE NOTARY (MO & KS EXCLUSIVE badge)
+
+|Service                              |Price       |Notes                        |
+|-------------------------------------|------------|-----------------------------|
+|Mobile Notary — 0–10 miles           |$65         |Includes up to 3 signatures  |
+|Mobile Notary — 11–25 miles          |$85         |Includes up to 3 signatures  |
+|Mobile Notary — 26–40 miles          |$110        |                             |
+|Mobile Notary — 40+ miles            |Custom quote|Book via Anna AI             |
+|Additional signatures (after first 3)|$10 each    |                             |
+|After-hours (6pm–9pm)                |+$30        |                             |
+|Weekend / Holiday                    |+$40        |                             |
+|Same-day / Rush (under 4 hrs notice) |+$50        |                             |
+|Hospital / Care Facility             |+$25        |                             |
+|Correctional Facility                |+$50        |Advance coordination required|
+|Document printing (per page)         |$0.25/page  |                             |
+
+#### 2C — LOAN SIGNING AGENT (MO & KS EXCLUSIVE badge)
+
+|Service                            |Price   |Notes                        |
+|-----------------------------------|--------|-----------------------------|
+|Purchase Closing                   |$150    |Within 20-mile radius        |
+|Refinance Signing                  |$125    |Within 20-mile radius        |
+|Reverse Mortgage                   |$175    |Complex package              |
+|HELOC / Home Equity                |$125    |                             |
+|Seller’s Package Only              |$100    |                             |
+|Hybrid eClosing                    |$150    |                             |
+|Construction Loan Closing          |$175    |                             |
+|Distance surcharge (21–40 miles)   |+$35    |                             |
+|Distance surcharge (41–60 miles)   |+$60    |                             |
+|After-hours                        |+$40    |                             |
+|Weekend / Holiday                  |+$50    |                             |
+|Same-day Rush (under 4 hrs)        |+$75    |                             |
+|Scanback                           |+$25    |Scan + email complete package|
+|Second signer (same location)      |+$25    |                             |
+|No-Show / Late Cancel (under 2 hrs)|$50 flat|Non-refundable               |
+
+-----
+
+### SECTION 3 — SPECIALTY NOTARY SERVICES
+
+Label: “SPECIALTY SERVICES”
+Headline: “Specialized Notarizations”
+
+|Service                           |Price           |Notes                         |
+|----------------------------------|----------------|------------------------------|
+|Power of Attorney (notarization)  |$45             |Includes document walkthrough |
+|Healthcare Directive / Living Will|$45             |Handled with care             |
+|Trust Document Notarization       |$65             |Multi-page, complex           |
+|Apostille Coordination            |$75 + state fees|For international document use|
+|I-9 Employment Verification       |$35/employee    |For small business HR         |
+|Vehicle Title Notarization        |$25             |                              |
+|Affidavit Notarization            |$25             |                              |
+|Promissory Note Notarization      |$35             |                              |
+|Immigration Document Notarization |$45             |                              |
+|Certified Copy (per page)         |$5/page         |State minimum $3              |
+
+-----
+
+### SECTION 4 — BUSINESS BUNDLES
+
+Label: “BUNDLES — SAVE MORE”
+Headline: “Everything Your Business Needs to Launch Right.”
+
+Bundle 1 (MOST POPULAR badge, gold border):
+**Business Launch Notary Bundle — $147**
+
+- Notarization of up to 3 business documents
+- Operating agreement, EIN letter, bank resolution
+- RON or scheduled mobile
+- 30-day follow-up discount (15% off next notarization)
+
+Bundle 2:
+**LLC Formation + Notary Complete — $397**
+
+- LLC state filing coordination
+- EIN application assistance
+- Operating agreement notarization
+- Bank resolution letter notarization
+- Missouri Registered Agent (1st year)
+
+Bundle 3:
+**Corporate Closing Package — $297**
+
+- Articles of dissolution notarization
+- Transfer of ownership document notarization
+- Up to 5 signature notarizations
+- RON available
+
+Bundle 4 (BEST VALUE badge, green border):
+**Annual Notary Retainer — $497/year**
+
+- Up to 20 notarizations per year
+- RON or mobile
+- Priority same-day scheduling
+- 10% off loan signings
+- Ideal for: Real estate investors, landlords, active LLCs
+
+-----
+
+### SECTION 5 — ADDITIONAL SERVICES
+
+Label: “MORE WAYS WE HELP”
+Headline: “Additional Business Services”
+
+|Service                                          |Price      |Notes                          |
+|-------------------------------------------------|-----------|-------------------------------|
+|Startup Consultation (30 min)                    |FREE       |Book via Anna AI               |
+|Business Structure Review                        |$97        |LLC vs S-Corp + entity analysis|
+|Annual Report Reminder + Filing Coordination     |$75/yr     |Never miss a deadline          |
+|Operating Agreement Update / Amendment           |$97        |For existing LLCs              |
+|Registered Agent Service — AZ / TN / NC / GA / MT|Coming Soon|Other states launching         |
+
+-----
+
+### SECTION 6 — PRICING FAQ
+
+Headline: “Pricing Questions? We’ve Got Answers.”
+
+Q: Are there any hidden fees?
+A: Never. We disclose every fee before your appointment begins — it’s our compliance promise and it’s the law. What you see here is what you pay.
+
+Q: Are state filing fees included?
+A: No — state fees are separate and passed through at cost. For example, Missouri LLC filing is $50. We’ll always tell you the exact state fee before you commit.
+
+Q: Do you charge extra for same-day service?
+A: Yes — rush fees apply for appointments booked with less than 4 hours notice. All rush fees are listed above.
+
+Q: Can I book online without calling anyone?
+A: Yes. Anna AI handles all bookings 24/7. You don’t have to talk to a person to get started.
+
+Q: Do you come to me, or do I come to you?
+A: We come to you (mobile) or meet you online (RON). There is no in-person office.
+
+Q: Do you serve all 7 states equally?
+A: Mobile services are currently available in Missouri and Kansas. RON serves all 7 states. Loan signing is available in MO and KS. Additional states coming as commissions are added.
+
+Q: What forms of payment do you accept?
+A: All major credit/debit cards, Zelle, and Venmo Business. Payment is collected at time of booking for RON and at appointment for mobile.
+
+-----
+
+### SECTION 7 — BOTTOM CTA
+
+Background: Dark navy
+Headline (white): “Ready to get started?”
+Subheadline (muted): “Anna AI is available 24/7 to book your appointment or start your formation.”
+
+Two buttons:
+
+- Primary (gold): “Start My Business Setup →”
+- Secondary (outlined white): “Book a Notary Appointment →”
+
+Compliance note (tiny text, bottom):
+“Gantt Key Formation Group is not a law firm and does not provide legal advice. We are a document preparation and notary services company. State filing fees are separate from our service fees and are passed through at cost.”
+
+-----
+
+## DESIGN NOTES FOR REPLIT
+
+1. Pricing tables: Use alternating row shading (white / very light gray #FAFAFA) for readability
+1. Service names: Bold navy
+1. Prices: Bold gold (#C9A84C)
+1. Notes column: Regular weight, muted gray
+1. Section headers: Gold label + navy headline (match existing site pattern)
+1. All “+ amounts” (add-ons): Display in a slightly smaller font, slightly indented
+1. Badges:
+- “MOST POPULAR”: Gold background, navy text, rounded pill
+- “BEST VALUE”: Green (#4CAF7C) background, white text, rounded pill
+- “MO & KS EXCLUSIVE”: Gold outline, gold text (same style as current MO ONLY — just new text)
+1. Mobile: All tables collapse to card stack on screens under 768px
+1. Sticky “Book Now” bar on mobile (gold, fixed bottom) — same as homepage instruction
+1. Anna AI intake link on every CTA
+
+-----
+
+## NAVIGATION UPDATE FOR REPLIT
+
+Add “Partners” and “Pricing” to the main navigation menu:
+
+Current nav (assumed): Home · About · Services · How It Works · FAQ
+Updated nav: Home · About · Services · Pricing · Partners · FAQ
+
+Or add under a “Work With Us” dropdown:
+
+- Pricing
+- Founding Partners
+- Book an Appointment
+
+-----
+
+*Prepared for Replit by Loresa Gantt — Gantt Key Formation Group — June 2026 — Confidential*

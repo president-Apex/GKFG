@@ -37,6 +37,7 @@ import ServiceAgreement from "@/pages/service-agreement";
 import ClientIntake from "@/pages/client-intake";
 import FormationQuestionnaire from "@/pages/formation-questionnaire";
 import AnnaDemo from "@/pages/anna-demo";
+import FoundingPartners from "@/pages/founding-partners";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -79,6 +80,7 @@ function Router() {
         <Route path="/client-intake" component={ClientIntake} />
         <Route path="/formation-questionnaire" component={FormationQuestionnaire} />
         <Route path="/anna-demo" component={AnnaDemo} />
+        <Route path="/founding-partners" component={FoundingPartners} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
