@@ -22,7 +22,6 @@ import ServiceDetail from "@/pages/service-detail";
 import ResourceDetail from "@/pages/resource-detail";
 import LocationDetail from "@/pages/location-detail";
 import CorporationFiling from "@/pages/corporation-filing";
-import BOIReporting from "@/pages/boi-reporting";
 import RegisteredAgentMissouri from "@/pages/registered-agent-missouri";
 import MobileNotary from "@/pages/mobile-notary";
 import OnlineNotary from "@/pages/online-notary";
@@ -61,7 +60,6 @@ function Router() {
         <Route path="/resources" component={ResourcesHub} />
         <Route path="/locations" component={LocationsHub} />
         <Route path="/services/corporation-filing" component={CorporationFiling} />
-        <Route path="/services/boi-reporting" component={BOIReporting} />
         <Route path="/services/registered-agent" component={RegisteredAgentMissouri} />
         <Route path="/services/mobile-notary" component={MobileNotary} />
         <Route path="/services/online-notary" component={OnlineNotary} />

@@ -26,11 +26,6 @@ const featuredServices: { title: string; slug: string; desc: string; badge?: str
     badge: "Missouri Only",
   },
   {
-    title: "BOI Reporting Assistance",
-    slug: "boi-reporting",
-    desc: "General information and document organization support for Beneficial Ownership Information reporting.",
-  },
-  {
     title: "Online Notary Services",
     slug: "online-notary",
     desc: "Remote online notarization from anywhere — subject to state availability.",
@@ -40,7 +35,7 @@ const featuredServices: { title: string; slug: string; desc: string; badge?: str
     title: "Mobile Notary Services",
     slug: "mobile-notary",
     desc: "We come to your location for professional, convenient document notarization.",
-    badge: "Missouri Only",
+    badge: "Coming Soon",
   },
   {
     title: "Loan Signing Services",
@@ -102,7 +97,7 @@ export default function ServicesHub() {
     <>
       <SEO
         title="Our Services | Business Formation, Notary & Startup Support"
-        description="LLC formation, corporation filing, EIN assistance, Missouri registered agent, BOI reporting, notary services, loan signing, and startup packages."
+        description="LLC formation, corporation filing, EIN assistance, Missouri registered agent, notary services, loan signing, and startup packages."
         schema={[
           itemListSchema({
             name: "Gantt Key Business Formation & Notary Services",

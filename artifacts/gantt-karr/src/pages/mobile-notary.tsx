@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/seo";
 import { Disclaimer } from "@/components/disclaimer";
 import {
-  MapPin, CheckCircle, Clock, FileText, ShieldCheck, Phone, Calendar, Users
+  MapPin, CheckCircle, Clock, FileText, ShieldCheck, Phone, Calendar, Users, Bell
 } from "lucide-react";
 import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/schema";
 
@@ -117,8 +117,8 @@ export default function MobileNotary() {
   return (
     <>
       <SEO
-        title="Mobile Notary Services in Missouri | Gantt Key Formation Group"
-        description="Professional mobile notary services in Missouri. We travel to your home, office, or other location for document notarization — business formation, affidavits, power of attorney, and more. Not legal advice."
+        title="Mobile Notary Services (Coming Soon) | Gantt Key Formation Group"
+        description="Mobile notary services coming soon to Gantt Key Formation Group. We'll travel to your home, office, or other location for document notarization — business formation, affidavits, power of attorney, and more."
         schema={[
           serviceSchema({
             name: "Mobile Notary Services",
@@ -141,47 +141,46 @@ export default function MobileNotary() {
             &larr; Back to Services
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-5">
-            <span className="text-[10px] font-bold uppercase tracking-widest bg-secondary/20 text-secondary border border-secondary/30 rounded-full px-3 py-1">
-              Active Service
-            </span>
-            <span className="text-[10px] font-bold uppercase tracking-widest bg-white/10 text-white/70 border border-white/20 rounded-full px-3 py-1">
-              Missouri Only
+            <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest bg-secondary/20 text-secondary border border-secondary/30 rounded-full px-3 py-1">
+              <span className="inline-block h-1.5 w-1.5 rounded-full bg-secondary animate-pulse" />
+              Coming Soon
             </span>
           </div>
           <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Mobile Notary Services
           </h1>
-          <p className="text-xl text-primary-foreground/80 leading-relaxed max-w-3xl mb-10">
+          <p className="text-xl text-primary-foreground/80 leading-relaxed max-w-3xl mb-4">
             Professional document notarization at your location — home, office, medical facility, or anywhere across Missouri. We come to you, so you can focus on what matters most.
           </p>
+          <p className="text-primary-foreground/60 text-sm mb-10 max-w-2xl leading-relaxed">
+            This service is currently in development. Join our interest list to be notified when mobile notary appointments become available.
+          </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/client-intake">
+            <Link href="/contact">
               <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 h-13 px-8 font-semibold">
-                Request Appointment
+                <Bell className="h-4 w-4 mr-2" />
+                Join the Interest List
               </Button>
             </Link>
-            <Link href="/contact">
+            <Link href="/consultation">
               <Button size="lg" variant="outline" className="border-primary-foreground/25 text-primary-foreground hover:bg-primary-foreground/10 h-13 px-8">
-                Ask a Question
+                Book a Free Consultation
               </Button>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Availability callout */}
-      <section className="bg-secondary py-5">
+      {/* Coming soon callout */}
+      <section className="bg-secondary/10 border-b border-secondary/20 py-5">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <MapPin className="h-5 w-5 text-secondary-foreground/70 flex-shrink-0" />
-              <p className="text-secondary-foreground text-sm font-semibold">
-                Currently serving Missouri — contact us to confirm availability in your city or county.
-              </p>
-            </div>
+            <p className="text-sm text-foreground/70">
+              <strong className="text-foreground">Not ready yet —</strong> but the information below gives you a clear picture of what to expect when we launch.
+            </p>
             <Link href="/contact">
-              <span className="text-secondary-foreground text-xs font-bold uppercase tracking-wider hover:underline cursor-pointer">
-                Check Availability &rarr;
+              <span className="text-secondary text-xs font-bold uppercase tracking-wider hover:underline cursor-pointer">
+                Join the Interest List &rarr;
               </span>
             </Link>
           </div>
@@ -310,21 +309,22 @@ export default function MobileNotary() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-muted/40 border-t border-border">
+      <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 max-w-3xl text-center">
-          <h2 className="font-serif text-3xl font-bold text-primary mb-4">Ready to schedule your notarization?</h2>
-          <p className="text-muted-foreground mb-8 leading-relaxed">
-            Contact us to confirm availability in your area, get a transparent quote, and book your appointment. We'll come to you.
+          <Bell className="h-10 w-10 text-secondary mx-auto mb-6" />
+          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-5">Interested in Mobile Notary?</h2>
+          <p className="text-primary-foreground/75 text-lg mb-10 leading-relaxed max-w-xl mx-auto">
+            Join our interest list and we'll notify you as soon as mobile notary appointments are available in your area.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/client-intake">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 h-13 px-8 font-semibold">
-                Request an Appointment
+            <Link href="/contact">
+              <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 h-14 px-8 text-base font-semibold">
+                Join the Interest List
               </Button>
             </Link>
-            <Link href="/contact">
-              <Button size="lg" variant="outline" className="border-border h-13 px-8">
-                Contact Us
+            <Link href="/consultation">
+              <Button size="lg" variant="outline" className="border-primary-foreground/25 text-primary-foreground hover:bg-primary-foreground/10 h-14 px-8 text-base">
+                Book a Free Consultation
               </Button>
             </Link>
           </div>
@@ -334,7 +334,7 @@ export default function MobileNotary() {
       {/* Disclaimer */}
       <section className="py-12 bg-background border-t border-border">
         <div className="container mx-auto px-4 max-w-4xl">
-          <Disclaimer notice="Mobile notary services verify the identity of signers and witness document signatures in accordance with Missouri notary law. Notarization does not constitute legal advice, legal representation, or legal review of your documents. Gantt Key Formation Group is not a law firm. For legal guidance regarding your documents, please consult a licensed attorney." />
+          <Disclaimer notice="Mobile notary services verify the identity of signers and witness document signatures in accordance with applicable state law. Notarization does not constitute legal advice, legal representation, or legal review of your documents. Gantt Key Formation Group is not a law firm. This service is not yet available. Information on this page describes planned future service offerings and is subject to change. For legal guidance regarding your documents, please consult a licensed attorney." />
         </div>
       </section>
     </>
