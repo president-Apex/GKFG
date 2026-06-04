@@ -22,12 +22,12 @@ export default function Partner() {
     <>
       <SEO
         title="Become a Partner | Professional Network | Gantt Key"
-        description="Join Gantt Key's curated network of attorneys, CPAs, and business experts. Partner with a trusted business formation group serving entrepreneurs across 6 states."
+        description="Join Gantt Key's curated network of attorneys, CPAs, and business experts. Partner with a trusted business formation group serving entrepreneurs across 7 states."
         schema={[
           webPageSchema({
             url: "/partner",
             name: "Partner With Gantt Key Formation Group",
-            description: "Apply to join our curated professional network of attorneys, CPAs, and business experts supporting entrepreneurs across 6 states.",
+            description: "Apply to join our curated professional network of attorneys, CPAs, and business experts supporting entrepreneurs across 7 states.",
             breadcrumbItems: [{ name: "Partner With Us", href: "/partner" }],
           }),
           breadcrumbSchema([{ name: "Partner With Us", href: "/partner" }]),

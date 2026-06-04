@@ -23,7 +23,7 @@ const formationServices: { title: string; slug: string; desc: string; badge?: st
     title: "Missouri Registered Agent",
     slug: "registered-agent",
     desc: "Professional point of contact for state correspondence and compliance notices.",
-    badge: "MO Members Bonus",
+    badge: "MO & KS Exclusive",
   },
   {
     title: "Startup Packages",
@@ -123,7 +123,7 @@ export default function ServicesHub() {
         schema={[
           itemListSchema({
             name: "Gantt Key Business Formation & Notary Services",
-            description: "Complete service catalog for business formation, notary, and startup support across 6 states.",
+            description: "Complete service catalog for business formation, notary, and startup support across 7 states.",
             url: "/services",
             items: allServices.map((s) => ({
               name: s.title,

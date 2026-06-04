@@ -12,7 +12,7 @@ export default function LocationsHub() {
         schema={[
           itemListSchema({
             name: "Locations Served by Gantt Key Formation Group",
-            description: "Business formation, notary, and startup support across key markets in 6 states.",
+            description: "Business formation, notary, and startup support across key markets in 7 states.",
             url: "/locations",
             items: Object.entries(locationsData).flatMap(([stateSlug, state]) =>
               state.cities.map((citySlug) => ({

@@ -8,7 +8,7 @@ const coreServices = [
   { title: "LLC Formation Assistance", slug: "llc-formation", desc: "State filing coordination and document support" },
   { title: "Corporation Filing Assistance", slug: "corporation-filing", desc: "Articles of Incorporation and filing coordination" },
   { title: "EIN Application Assistance", slug: "ein-assistance", desc: "Federal Tax ID — required for banking and hiring" },
-  { title: "Missouri Registered Agent", slug: "registered-agent", desc: "Reliable state correspondence and compliance support", badge: "MO Members Bonus" },
+  { title: "Missouri Registered Agent", slug: "registered-agent", desc: "Reliable state correspondence and compliance support", badge: "MO & KS Exclusive" },
   { title: "Mobile Notary Services", slug: "mobile-notary", desc: "Convenient notarization at your home, office, hospital, care facility, or mutually agreed-upon location.", badge: "Coming Soon" },
   { title: "Online Notary Services", slug: "online-notary", desc: "Secure remote online notarization for clients who prefer a virtual appointment experience.", badge: "Coming Soon" },
   { title: "Loan Signing Services", slug: "loan-signing", desc: "Professional loan signing for buyers, sellers, lenders, title companies, and real estate professionals.", badge: "Coming Soon" },
@@ -21,21 +21,36 @@ const trustPoints = [
   "Warm, personal support — not a faceless portal",
   "Transparent pricing — no hidden fees",
   "Clear compliance disclaimers — we tell you what we are and aren't",
-  "Serving entrepreneurs across 6 states",
+  "Serving entrepreneurs across 7 states",
 ];
 
 const marqueeItems = [
   "Serving Kansas City",
+  "Liberty",
+  "Overland Park",
+  "Shawnee",
   "Phoenix",
   "Scottsdale",
+  "Chandler",
+  "Gilbert",
+  "Mesa",
+  "Tempe",
   "Nashville",
+  "Franklin",
+  "Murfreesboro",
   "Charlotte",
+  "Concord",
+  "Huntersville",
   "Atlanta",
+  "Alpharetta",
+  "Marietta",
+  "Missoula",
+  "Bozeman",
   "Founder-Led",
   "Compliance-First",
-  "Missouri Registered Agent Services",
-  "Secure Client Intake",
-  "AI-Powered Intake",
+  "Anna AI Powered",
+  "Same-Day Available",
+  "7 States Served",
 ];
 
 export default function Home() {
@@ -84,7 +99,7 @@ export default function Home() {
               <div className="flex items-center gap-6 text-sm text-primary-foreground/60">
                 <div className="flex items-center gap-2"><Shield className="h-4 w-4 text-secondary" /><span>Compliance-first</span></div>
                 <div className="flex items-center gap-2"><Users className="h-4 w-4 text-secondary" /><span>Founder-led</span></div>
-                <div className="flex items-center gap-2"><Star className="h-4 w-4 text-secondary" /><span>6 states served</span></div>
+                <div className="flex items-center gap-2"><Star className="h-4 w-4 text-secondary" /><span>7 states served</span></div>
               </div>
             </div>
 
@@ -267,7 +282,7 @@ export default function Home() {
                   "Transparent pricing with no hidden fees",
                   "Compliance-first — we always disclose what we are and aren't",
                   "Powered by Anna AI for faster intake and follow-up",
-                  "Serving 6 states and 18+ cities",
+                  "Serving 7 states and 20+ cities",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0 mt-0.5" />

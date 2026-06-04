@@ -42,7 +42,7 @@ export default function About() {
     <>
       <SEO
         title="About | Gantt Key Formation Group"
-        description="Gantt Key Formation Group — founded and led by Loresa Gantt. Business formation, notary services, and startup support for entrepreneurs across 6 states."
+        description="Gantt Key Formation Group — founded and led by Loresa Gantt. Business formation, notary services, and startup support for entrepreneurs across 7 states."
         schema={[
           organizationSchema(),
           breadcrumbSchema([
@@ -124,7 +124,7 @@ export default function About() {
             </div>
             <div className="space-y-5 text-muted-foreground leading-relaxed">
               <p>
-                Today, Gantt Key Formation Group serves entrepreneurs across six states — Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana — offering LLC formation, corporation filing, EIN assistance, notary services, registered agent support, BOI reporting guidance, and AI-powered client intake through Anna AI.
+                Today, Gantt Key Formation Group serves entrepreneurs across seven states — Missouri, Kansas, Arizona, Tennessee, North Carolina, Georgia, and Montana — offering LLC formation, corporation filing, EIN assistance, notary services, registered agent support, BOI reporting guidance, and AI-powered client intake through Anna AI.
               </p>
               <p>
                 I'm particularly proud of my commitment to first-generation business owners, female founders, and anyone who's been told the system is too complicated to navigate on their own. It isn't — and I'll prove it.

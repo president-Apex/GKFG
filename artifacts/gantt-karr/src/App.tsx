@@ -38,6 +38,8 @@ import ClientIntake from "@/pages/client-intake";
 import FormationQuestionnaire from "@/pages/formation-questionnaire";
 import AnnaDemo from "@/pages/anna-demo";
 import FoundingPartners from "@/pages/founding-partners";
+import StatesHub from "@/pages/states-hub";
+import StatePage from "@/pages/state-page";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -81,6 +83,8 @@ function Router() {
         <Route path="/formation-questionnaire" component={FormationQuestionnaire} />
         <Route path="/anna-demo" component={AnnaDemo} />
         <Route path="/founding-partners" component={FoundingPartners} />
+        <Route path="/states" component={StatesHub} />
+        <Route path="/states/:slug" component={StatePage} />
         <Route component={NotFound} />
       </Switch>
     </Layout>

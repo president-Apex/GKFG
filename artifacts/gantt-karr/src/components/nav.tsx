@@ -17,7 +17,7 @@ const keyServices = [
   { label: "LLC Formation Assistance", href: "/services/llc-formation" },
   { label: "Corporation Filing Assistance", href: "/services/corporation-filing" },
   { label: "EIN Application Assistance", href: "/services/ein-assistance" },
-  { label: "Missouri Registered Agent", href: "/services/registered-agent", badge: "MO Members Bonus" },
+  { label: "Missouri Registered Agent", href: "/services/registered-agent", badge: "MO & KS Exclusive" },
   { label: "Mobile Notary Services", href: "/services/mobile-notary", badge: "Coming Soon" },
   { label: "Online Notary Services", href: "/services/online-notary", badge: "Coming Soon" },
   { label: "Loan Signing Services", href: "/services/loan-signing", badge: "Coming Soon" },
@@ -74,6 +74,35 @@ export function Nav() {
                       ))}
                     </ul>
                   </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>States</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid w-[320px] gap-1 p-4">
+                    {[
+                      { name: "Missouri", slug: "missouri", region: "Kansas City Metro — Home State" },
+                      { name: "Kansas", slug: "kansas", region: "KC Metro & Johnson County" },
+                      { name: "Arizona", slug: "arizona", region: "Phoenix & Scottsdale" },
+                      { name: "Tennessee", slug: "tennessee", region: "Nashville Metro" },
+                      { name: "North Carolina", slug: "north-carolina", region: "Charlotte Metro" },
+                      { name: "Georgia", slug: "georgia", region: "Atlanta Metro" },
+                      { name: "Montana", slug: "montana", region: "Statewide + Out-of-State Investors" },
+                    ].map((s) => (
+                      <li key={s.slug}>
+                        <Link href={`/states/${s.slug}`} className="block p-2 hover:bg-muted rounded-md text-sm">
+                          <div className="font-medium">{s.name}</div>
+                          <div className="text-muted-foreground text-xs mt-0.5">{s.region}</div>
+                        </Link>
+                      </li>
+                    ))}
+                    <li className="border-t border-border mt-1 pt-1">
+                      <Link href="/states" className="block p-2 hover:bg-muted rounded-md text-sm font-semibold text-secondary">
+                        View All 7 States →
+                      </Link>
+                    </li>
+                  </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
@@ -167,6 +196,7 @@ export function Nav() {
                 </div>
 
                 <Link href="/pricing" onClick={() => setIsOpen(false)} className="text-lg font-medium">Pricing</Link>
+                <Link href="/states" onClick={() => setIsOpen(false)} className="text-lg font-medium">States</Link>
                 <Link href="/founding-partners" onClick={() => setIsOpen(false)} className="text-lg font-medium">Partners</Link>
                 <Link href="/contact" onClick={() => setIsOpen(false)} className="text-lg font-medium">Contact</Link>
 
