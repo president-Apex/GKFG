@@ -22,7 +22,8 @@ const SERVICES = [
   "EIN Assistance",
   "Business Compliance Assistance",
   "Mobile Notary Services",
-  "Online Notary Services",
+  "Online Notary Services (Coming Soon)",
+  "Loan Signing Services (Coming Soon)",
   "Business Consultation",
   "Other",
 ];

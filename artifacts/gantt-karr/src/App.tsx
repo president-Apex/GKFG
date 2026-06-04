@@ -24,6 +24,9 @@ import LocationDetail from "@/pages/location-detail";
 import CorporationFiling from "@/pages/corporation-filing";
 import BOIReporting from "@/pages/boi-reporting";
 import RegisteredAgentMissouri from "@/pages/registered-agent-missouri";
+import MobileNotary from "@/pages/mobile-notary";
+import OnlineNotary from "@/pages/online-notary";
+import LoanSigning from "@/pages/loan-signing";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import CookiePolicy from "@/pages/cookie-policy";
 import TermsOfService from "@/pages/terms-of-service";
@@ -60,6 +63,9 @@ function Router() {
         <Route path="/services/corporation-filing" component={CorporationFiling} />
         <Route path="/services/boi-reporting" component={BOIReporting} />
         <Route path="/services/registered-agent" component={RegisteredAgentMissouri} />
+        <Route path="/services/mobile-notary" component={MobileNotary} />
+        <Route path="/services/online-notary" component={OnlineNotary} />
+        <Route path="/services/loan-signing" component={LoanSigning} />
         <Route path="/services/:slug" component={ServiceDetail} />
         <Route path="/resources/:type" component={ResourceDetail} />
         <Route path="/locations/:state/:city" component={LocationDetail} />

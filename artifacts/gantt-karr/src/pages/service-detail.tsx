@@ -13,7 +13,8 @@ const serviceNotices: Record<string, string> = {
   "registered-agent": "Registered agent services do not include legal representation, legal advice, or compliance guarantees.",
   "notary": "Notary services verify identity and signatures and do not constitute legal advice.",
   "mobile-notary": "Notary services verify identity and signatures and do not constitute legal advice.",
-  "online-notary": "Notary services verify identity and signatures and do not constitute legal advice.",
+  "online-notary": "Notary services verify identity and signatures and do not constitute legal advice. This service is not yet available.",
+  "loan-signing": "Loan signing services facilitate the execution of loan document packages and do not constitute legal advice or legal representation. This service is not yet available.",
   "boi-reporting": "BOI reporting assistance is administrative and document preparation support only. It does not constitute legal, tax, or financial advice.",
   "operating-agreement": "Operating agreement assistance is document preparation support only and does not constitute legal advice. We strongly recommend review by a licensed attorney.",
 };

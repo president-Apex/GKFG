@@ -34,6 +34,7 @@ const featuredServices: { title: string; slug: string; desc: string; badge?: str
     title: "Online Notary Services",
     slug: "online-notary",
     desc: "Remote online notarization from anywhere — subject to state availability.",
+    badge: "Coming Soon",
   },
   {
     title: "Mobile Notary Services",
@@ -45,6 +46,7 @@ const featuredServices: { title: string; slug: string; desc: string; badge?: str
     title: "Loan Signing Services",
     slug: "loan-signing",
     desc: "Certified signing agent for real estate closings, mortgage, and loan document packages.",
+    badge: "Coming Soon",
   },
   {
     title: "Startup Packages",
@@ -123,7 +125,7 @@ export default function ServicesHub() {
           <h1 className="font-serif text-4xl md:text-5xl font-bold mb-5 text-primary-foreground">Comprehensive Setup Services</h1>
           <p className="text-primary-foreground/75 text-lg leading-relaxed">
             Everything you need to form, structure, and launch your business with confidence — handled
-            by a family-led team that treats every client like their own.
+            by a founder-led team that treats every client with personal, professional care.
           </p>
         </div>
       </div>
