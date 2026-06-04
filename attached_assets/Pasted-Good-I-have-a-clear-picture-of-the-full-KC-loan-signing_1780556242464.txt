@@ -1,0 +1,185 @@
+Good — I have a clear picture of the full KC loan signing ecosystem. Here’s everything, organized cleanly for Replit and for your own outreach.
+
+The Short Answer First
+
+There are 4 types of clients who hire loan signing agents in MO/KS. You need to be registered with or known to all 4:
+
+	1.	National signing platforms (Snapdocs, SigningOrder, etc.) — they dispatch you automatically
+	2.	Local title companies — they hire notaries directly for their closings
+	3.	Mortgage lenders and brokers — they need signings for their borrowers
+	4.	Real estate investors — they close deals constantly and need fast, reliable notaries
+
+The Local KC Title Companies to Contact Directly
+
+These are the companies doing closings in your backyard right now. Secured Title of Kansas City has been providing title and escrow services since 1947 with locations in Fairway, Kansas City, Leawood, Lee’s Summit, Olathe, Shawnee, and Wyandotte ￼ — seven offices across both sides of the metro. One relationship here = signings from all seven locations.
+
+Origin Title KC serves realtors, consumers, lenders, and investors throughout the greater KC area including Blue Springs, Independence, Leawood, Lee’s Summit, Raytown, Shawnee, and Saint Joseph. ￼
+
+Continental Title Company serves the Kansas City and St. Louis region — their Overland Park office specifically. ￼
+
+Alpha Title Guaranty, Inc. provides loan closing, closing agents, escrow, loan document preparation, title searches, title insurance, and notary services for both commercial and residential real estate including conventional, VA, FHA, Fannie Mae, and construction loans. ￼
+
+Old Republic Title Company of Kansas City — listed as top-rated on Yelp for both KC and Independence.
+
+First American Title — national company with strong KC presence across both states.
+
+Stewart Title KC has partnered on real estate transactions in both Kansas and Missouri covering Cass, Clay, Clinton, Jackson, and Platte Counties in Missouri and Johnson, Leavenworth, and Wyandotte Counties in Kansas. ￼ Their territory is your exact service area.
+
+Chicago Title — KC area presence, currently relocated (noted in Yelp reviews).
+
+Platinum Title KC — top-rated on Overland Park Yelp, multiple reviewer “has done 6 closings with them.”
+
+Coffelt Land Title — consistently reviewed on Overland Park Yelp for buyer and seller closings.
+
+The Local Mortgage Lenders to Contact
+
+Metropolitan Mortgage Corporation (NMLS #227722) is licensed in both Kansas and Missouri, serves Jackson, Clay, Platte, and Cass Counties, and does cash-out refinances, rate-and-term refis, and purchase loans across the entire bi-state metro. ￼ Every single loan they close needs a signing agent.
+
+North Oak Investment — lends only in the KC metro for residential rehab projects, covering 10 Missouri counties including Jackson, Clay, Platte, Wyandotte, Leavenworth, Johnson, and Cass. ￼ Hard money loans close fast and constantly.
+
+Minnow Loan — Columbia-based but active in KC, specializes in bridge loans, rehab, fix and flip, and construction. Fast-close loans = urgent signing needs.
+
+The Real Estate Investor Market
+
+This is your most overlooked loan signing client. Fix-and-flip investors in KC use hard money loans that need to close fast ￼ — they can’t wait three days for a platform to dispatch someone. They need a notary they can text at 4pm for a 6pm closing.
+
+How to reach them:
+
+	•	Join KC real estate investor Facebook groups (search “Kansas City Real Estate Investors”)
+	•	Join the Kansas City REIA (Real Estate Investors Association) — kcreia.com
+	•	Attend local wholesaler meetups — these happen monthly in KC
+	•	Post in r/KansasCity and r/realestateinvesting offering fast-close signing services
+
+Your pitch to investors: “I’m a dual MO/KS certified notary signing agent available same day and evenings. If your hard money deal needs to close fast, call me.”
+
+The Replit Page: /loan-signing
+
+Here’s exactly what to tell Replit to build:
+
+PAGE: /loan-signing
+SEO Title: Loan Signing Agent Kansas City | MO & KS | Same Day | GKFG
+Meta: Certified notary signing agent serving title companies, mortgage lenders, and real estate investors across the KC metro in Missouri and Kansas. Same-day and after-hours available.
+
+HERO
+Label (gold): “LOAN SIGNING AGENT · MO & KS”
+Headline: “Your KC Metro Signing Agent — Both Sides of the State Line.”
+Subheadline: “Certified notary signing agent serving title companies, mortgage lenders, and real estate investors across Missouri and Kansas. Available same day, evenings, and weekends.”
+Primary CTA (gold): “Request a Signing →”
+Secondary CTA (outlined): “Add Me to Your Signing Rotation →”
+
+Trust bar: “NNA Certified · MO & KS Commissioned · E&O Insured · Background Checked · Same-Day Available”
+
+SECTION: Who We Work With (3 columns)
+
+Column 1 — Title Companies
+Icon: Building
+“We work directly with title companies for purchase closings, refinances, and seller packages. We understand your timelines, return docs same day, and never miss a signature.”
+
+Column 2 — Mortgage Lenders & Brokers
+Icon: Dollar sign
+“Need a reliable signing agent for your borrowers? We serve the entire KC metro in both MO and KS. Add us to your notary rotation — we’re available until 9pm.”
+
+Column 3 — Real Estate Investors
+Icon: Home
+“Fix and flip? Wholesale? Hard money closing? We close fast. Same-day assignments accepted. Text or call for urgent signings — we pick up.”
+
+SECTION: Signing Services & Pricing
+
+Display as clean table or card grid:
+
+
+
+|Service                       |Price   |Notes          |
+|------------------------------|--------|---------------|
+|Purchase Closing              |$150    |Within 20 miles|
+|Refinance Signing             |$125    |Within 20 miles|
+|Reverse Mortgage              |$175    |Complex package|
+|HELOC / Home Equity           |$125    |               |
+|Seller’s Package              |$100    |               |
+|Construction Loan Closing     |$175    |               |
+|Hybrid eClosing               |$150    |               |
+|Distance surcharge 21–40 miles|+$35    |               |
+|Distance surcharge 41–60 miles|+$60    |               |
+|After-hours (6pm–9pm)         |+$40    |               |
+|Weekend / Holiday             |+$50    |               |
+|Same-day Rush (under 4 hrs)   |+$75    |               |
+|Scanback                      |+$25    |               |
+|No-Show / Cancel under 2 hrs  |$50 flat|Non-refundable |
+
+SECTION: Title Companies We Serve
+
+Display as a clean badge/logo grid (no logos needed — just names in navy pills):
+
+Secured Title of Kansas City · Origin Title KC · Continental Title · Alpha Title Guaranty
+Old Republic Title KC · First American Title · Stewart Title KC · Platinum Title KC
+Coffelt Land Title · Chicago Title KC
+
+Below the grid:
+“Don’t see your company? We work with all title companies in the KC metro. Contact us to be added to our roster.”
+
+SECTION: Signing Platforms We’re Listed On
+
+Display as badge grid:
+Snapdocs · SigningOrder · NotaryDash · ZigSig · Amrock · ServiceLink · Proof · NotaryCafe · NotaryRotary · 123Notary · SigningAgent.com
+
+SECTION: Credentials
+
+Display as checklist cards:
+✅ NNA Certified Notary Signing Agent
+✅ Missouri Notary Commission — Active
+✅ Kansas Notary Commission — Active
+✅ Errors & Omissions Insurance — $25,000 minimum
+✅ NNA Background Check — Current
+✅ Electronic journal — compliant with MO and KS law
+✅ Dual laser printer + scanner
+✅ FedEx/UPS same-day drop-off available
+
+SECTION: Service Area
+
+“We cover the entire KC metro on both sides of the state line.”
+
+MO Counties: Jackson · Clay · Platte · Cass · Ray
+KS Counties: Johnson · Wyandotte · Leavenworth · Miami
+
+City list (display as small text badges):
+Kansas City MO · Liberty · Independence · Lee’s Summit · Blue Springs · Raytown · Gladstone
+Overland Park · Shawnee · Olathe · Lenexa · Leawood · Prairie Village · Merriam
+
+SECTION: Add Me to Your Rotation (B2B Form)
+
+Headline: “Title Companies & Lenders: Add GKFG to Your Signing Roster”
+
+Form fields:
+
+	•	Company Name
+	•	Your Name
+	•	Title / Role
+	•	Email
+	•	Phone
+	•	Counties you cover most
+	•	Preferred contact method (email / text / platform)
+	•	Submit → “Add Me to Your Roster →” (gold button)
+
+This form feeds into GHL as a new “Title Partner” pipeline stage, separate from client leads.
+
+SECTION: For Real Estate Investors
+
+Separate callout box (different background — maybe warm gray):
+Headline: “Investors: Need a Fast Close? We’re Ready.”
+Body: “Hard money loans, wholesale deals, and fix-and-flip closings move fast. We accept same-day assignments, work evenings, and serve both MO and KS. If your deal is closing tonight, call us.”
+CTA: “Text or Call for Same-Day Signing →” (links to phone number)
+
+BOTTOM CTA
+“Ready to work together?”
+Two buttons:
+
+	•	“Request a Signing Appointment →” (Anna AI intake)
+	•	“Add Me to Your Rotation →” (scroll to B2B form above)
+
+One more thing for your outreach this week:
+
+The fastest way to get your first title company relationship isn’t email — it’s showing up. Call Secured Title’s Shawnee or Leawood office, ask for the closing coordinator, and say:
+
+“Hi, I’m Loresa Gantt with Gantt Key Formation Group. I’m a dual-commissioned MO and KS notary signing agent, NNA certified with E&O insurance. I cover the entire KC metro and I’m available evenings and weekends. Can I send you my credentials to be added to your signing pool?”
+
+That call takes 3 minutes. Do it for five title companies this week. That’s your loan signing business.

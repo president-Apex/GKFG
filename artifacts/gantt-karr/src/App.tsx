@@ -83,6 +83,7 @@ function Router() {
         <Route path="/formation-questionnaire" component={FormationQuestionnaire} />
         <Route path="/anna-demo" component={AnnaDemo} />
         <Route path="/founding-partners" component={FoundingPartners} />
+        <Route path="/loan-signing" component={LoanSigning} />
         <Route path="/states" component={StatesHub} />
         <Route path="/states/:slug" component={StatePage} />
         <Route component={NotFound} />

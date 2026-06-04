@@ -20,7 +20,7 @@ const keyServices = [
   { label: "Missouri Registered Agent", href: "/services/registered-agent", badge: "MO & KS Exclusive" },
   { label: "Mobile Notary Services", href: "/services/mobile-notary", badge: "Coming Soon" },
   { label: "Online Notary Services", href: "/services/online-notary", badge: "Coming Soon" },
-  { label: "Loan Signing Services", href: "/services/loan-signing", badge: "Coming Soon" },
+  { label: "Loan Signing Services", href: "/loan-signing", badge: "MO & KS Exclusive" },
   { label: "Startup Packages", href: "/services/launch-packages" },
   { label: "Anna AI Intake", href: "/services/anna-ai-intake" },
 ];
