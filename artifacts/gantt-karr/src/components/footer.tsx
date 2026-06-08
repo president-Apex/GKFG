@@ -99,8 +99,9 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 mt-8">
-          <div className="text-xs text-primary-foreground/60 mb-6 leading-relaxed max-w-4xl">
-            <strong>Disclaimer:</strong> Gantt Key Formation Group is not a law firm and does not provide legal advice, legal representation, tax advice, accounting advice, or financial advice. Information provided is for general informational and administrative purposes only.
+          <div className="text-xs text-primary-foreground/60 mb-6 leading-relaxed max-w-4xl space-y-1.5">
+            <p><strong className="text-primary-foreground/80">Disclaimer:</strong> I am not an attorney licensed to practice law in this state. I am not allowed to draft legal records or give advice on legal matters.</p>
+            <p>Gantt Key Formation Group is not a law firm and does not provide legal advice, legal representation, tax advice, accounting advice, or financial advice. Information provided is for general informational and administrative purposes only.</p>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 text-xs text-primary-foreground/50">
             <p>&copy; {new Date().getFullYear()} Gantt Key Formation Group. All rights reserved.</p>
