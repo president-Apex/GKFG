@@ -40,7 +40,7 @@ export default function MessagingTerms() {
             <p className="text-sm font-semibold text-foreground mb-3">Quick Reference</p>
             <ul className="text-sm text-muted-foreground space-y-1.5 list-none">
               <li>• <strong className="text-foreground">Opt-out:</strong> Reply <strong className="text-foreground">STOP</strong> to any message</li>
-              <li>• <strong className="text-foreground">Help:</strong> Reply <strong className="text-foreground">HELP</strong> or email <a href="mailto:info@ganttkarr.com" className="text-secondary hover:underline">info@ganttkarr.com</a></li>
+              <li>• <strong className="text-foreground">Help:</strong> Reply <strong className="text-foreground">HELP</strong> or email <a href="mailto:info@ganttformation.com" className="text-secondary hover:underline">info@ganttformation.com</a></li>
               <li>• <strong className="text-foreground">Rates:</strong> Message and data rates may apply</li>
               <li>• <strong className="text-foreground">Consent:</strong> Not a condition of purchase</li>
               <li>• <strong className="text-foreground">Your number:</strong> Never sold or shared for marketing</li>
@@ -94,8 +94,8 @@ export default function MessagingTerms() {
           <p><strong>HELP</strong></p>
           <p>You may also contact us at:</p>
           <ul>
-            <li>Website: <a href="https://www.ganttkarr.com" className="text-secondary hover:underline">www.ganttkarr.com</a></li>
-            <li>Email: <a href="mailto:info@ganttkarr.com" className="text-secondary hover:underline">info@ganttkarr.com</a></li>
+            <li>Website: <a href="https://www.ganttformation.com" className="text-secondary hover:underline">www.ganttformation.com</a></li>
+            <li>Email: <a href="mailto:info@ganttformation.com" className="text-secondary hover:underline">info@ganttformation.com</a></li>
           </ul>
 
           <h2>6. Carrier Disclaimer</h2>
@@ -125,8 +125,8 @@ export default function MessagingTerms() {
           <h2>9. Contact Information</h2>
           <p>
             <strong>Gantt Key Formation Group</strong><br />
-            Website: <a href="https://www.ganttkarr.com" className="text-secondary hover:underline">www.ganttkarr.com</a><br />
-            Email: <a href="mailto:info@ganttkarr.com" className="text-secondary hover:underline">info@ganttkarr.com</a>
+            Website: <a href="https://www.ganttformation.com" className="text-secondary hover:underline">www.ganttformation.com</a><br />
+            Email: <a href="mailto:info@ganttformation.com" className="text-secondary hover:underline">info@ganttformation.com</a>
           </p>
 
           <div className="flex flex-wrap gap-4 mt-12 text-sm text-muted-foreground border-t border-border pt-6">

@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "iPzRB_S3a0vsx__zVk99C"
+uri = "file://public/images/abstract-gold.png"
+type = "image"
+title = "Luxury navy gold abstract background"
+
+[[generated]]
+id = "LK97Qaw4WACtKBD4fvUJh"
+uri = "file://public/images/office-texture.png"
+type = "image"
+title = "Luxury office background blur"
+
+[[generated]]
+id = "AYDmpR_v-42EunnZVm3JN"
+uri = "file://public/images/states-map.png"
+type = "image"
+title = "Minimalist US map gold dots"

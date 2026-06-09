@@ -137,7 +137,7 @@ export default function Contact() {
                     <Mail className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="text-xs font-semibold text-secondary mb-1 uppercase tracking-wider">Email</h4>
-                      <a href="mailto:Info@ganttkarr.com" className="text-lg hover:text-secondary transition-colors">Info@ganttkarr.com</a>
+                      <a href="mailto:Info@ganttformation.com" className="text-lg hover:text-secondary transition-colors">Info@ganttformation.com</a>
                     </div>
                   </div>
 

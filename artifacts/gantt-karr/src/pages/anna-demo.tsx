@@ -699,7 +699,7 @@ export default function AnnaDemo() {
               <a href="/gantt-karr/privacy-policy" className="hover:underline">Privacy Policy</a>
               <a href="/gantt-karr/terms-of-service" className="hover:underline">Terms of Service</a>
               <a href="/gantt-karr/disclaimer" className="hover:underline">Disclaimer</a>
-              <span>info@ganttkarr.com</span>
+              <span>info@ganttformation.com</span>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-export const SITE_URL = "https://ganttkarr.com";
+export const SITE_URL = "https://ganttformation.com";
 export const SITE_NAME = "Gantt Key Formation Group";
 
 const ORG_BASE = {
@@ -16,7 +16,7 @@ const ORG_BASE = {
   image: `${SITE_URL}/opengraph.jpg`,
   description:
     "Founder-led business formation, notary services, and startup support powered by Anna AI. Serving entrepreneurs across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana.",
-  email: "Info@ganttkarr.com",
+  email: "Info@ganttformation.com",
   telephone: "1-800-GANTT-KARR",
   priceRange: "$$",
   address: {
@@ -103,9 +103,9 @@ const ORG_BASE = {
     "Startup Consulting",
   ],
   sameAs: [
-    "https://www.facebook.com/ganttkarr",
-    "https://www.instagram.com/ganttkarr",
-    "https://www.linkedin.com/company/ganttkarr",
+    "https://www.facebook.com/ganttformation",
+    "https://www.instagram.com/ganttformation",
+    "https://www.linkedin.com/company/ganttformation",
   ],
 };
 
@@ -393,7 +393,7 @@ export function contactPageSchema() {
         {
           "@type": "ContactPoint",
           contactType: "customer service",
-          email: "Info@ganttkarr.com",
+          email: "Info@ganttformation.com",
           availableLanguage: "English",
           areaServed: ["US"],
         },

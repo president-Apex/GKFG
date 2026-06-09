@@ -163,8 +163,8 @@ export default function TermsOfService() {
           <h2>12. Contact Information</h2>
           <p>
             <strong>Gantt Key Formation Group</strong><br />
-            Website: <a href="https://www.ganttkarr.com" className="text-secondary hover:underline">www.ganttkarr.com</a><br />
-            Email: <a href="mailto:info@ganttkarr.com" className="text-secondary hover:underline">info@ganttkarr.com</a>
+            Website: <a href="https://www.ganttformation.com" className="text-secondary hover:underline">www.ganttformation.com</a><br />
+            Email: <a href="mailto:info@ganttformation.com" className="text-secondary hover:underline">info@ganttformation.com</a>
           </p>
 
           <div className="flex flex-wrap gap-4 mt-12 text-sm text-muted-foreground border-t border-border pt-6">

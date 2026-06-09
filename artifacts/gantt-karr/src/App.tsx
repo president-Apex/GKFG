@@ -41,6 +41,7 @@ import FoundingPartners from "@/pages/founding-partners";
 import StatesHub from "@/pages/states-hub";
 import StatePage from "@/pages/state-page";
 import NotFound from "@/pages/not-found";
+import PromoVideo from "@/pages/promo-video";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +49,7 @@ function Router() {
   return (
     <Layout>
       <Switch>
+        <Route path="/video" component={PromoVideo} />
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/meet-the-founder" component={MeetTheFounder} />
