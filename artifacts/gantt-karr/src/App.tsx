@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Layout } from "@/components/layout";
+import { useAnalyticsTracker } from "@/hooks/use-analytics-tracker";
 
 import Home from "@/pages/home";
 import About from "@/pages/about";
@@ -42,10 +43,12 @@ import StatesHub from "@/pages/states-hub";
 import StatePage from "@/pages/state-page";
 import NotFound from "@/pages/not-found";
 import PromoVideo from "@/pages/promo-video";
+import AnalyticsDashboard from "@/pages/analytics-dashboard";
 
 const queryClient = new QueryClient();
 
 function Router() {
+  useAnalyticsTracker();
   return (
     <Layout>
       <Switch>
@@ -88,6 +91,7 @@ function Router() {
         <Route path="/loan-signing" component={LoanSigning} />
         <Route path="/states" component={StatesHub} />
         <Route path="/states/:slug" component={StatePage} />
+        <Route path="/analytics" component={AnalyticsDashboard} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
