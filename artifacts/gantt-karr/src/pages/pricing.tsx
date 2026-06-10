@@ -5,66 +5,63 @@ import { CheckCircle, ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 import { breadcrumbSchema } from "@/lib/schema";
 
-// ─── Badge components ─────────────────────────────────────────────────────
+const NAVY = "#1a2f4e";
+const GOLD = "#C9A84C";
+const GREEN = "#4CAF7C";
+
 function BadgeMostPopular() {
   return (
-    <span className="inline-block text-[10px] font-bold uppercase tracking-wider rounded-full px-2.5 py-0.5" style={{ background: "#C9A84C", color: "#1a2f4e" }}>
+    <span className="inline-block text-[10px] font-bold uppercase tracking-wider rounded-full px-2.5 py-0.5" style={{ background: GOLD, color: NAVY }}>
       Most Popular
     </span>
   );
 }
 function BadgeBestValue() {
   return (
-    <span className="inline-block text-[10px] font-bold uppercase tracking-wider rounded-full px-2.5 py-0.5 text-white" style={{ background: "#4CAF7C" }}>
+    <span className="inline-block text-[10px] font-bold uppercase tracking-wider rounded-full px-2.5 py-0.5 text-white" style={{ background: GREEN }}>
       Best Value
     </span>
   );
 }
 function BadgeMoKs() {
   return (
-    <span className="inline-block text-[10px] font-bold uppercase tracking-wider rounded-full px-2.5 py-0.5 border" style={{ borderColor: "#C9A84C", color: "#C9A84C" }}>
-      MO &amp; KS Exclusive
-    </span>
-  );
-}
-function BadgeComingSoon() {
-  return (
-    <span className="inline-block text-[10px] font-bold uppercase tracking-wider rounded-full px-2.5 py-0.5 border border-gray-300 text-gray-400">
-      Coming Soon
+    <span className="inline-block text-[10px] font-bold uppercase tracking-wider rounded-full px-2.5 py-0.5 border" style={{ borderColor: GOLD, color: GOLD }}>
+      MO &amp; KS Only
     </span>
   );
 }
 
-// ─── Pricing table row ────────────────────────────────────────────────────
 function PricingRow({
   service, price, note, addon, alt,
 }: {
-  service: string;
-  price: string;
-  note?: string;
-  addon?: boolean;
-  alt?: boolean;
+  service: string; price: string; note?: string; addon?: boolean; alt?: boolean;
 }) {
   return (
     <div className={`grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] gap-1 sm:gap-4 px-5 py-4 rounded-xl ${alt ? "" : "bg-[#FAFAFA]"} border border-gray-100`}>
-      <p className={`font-semibold text-sm leading-snug ${addon ? "pl-3 text-gray-600 font-normal text-xs" : ""}`} style={addon ? {} : { color: "#1a2f4e" }}>
+      <p className={`font-semibold text-sm leading-snug ${addon ? "pl-3 text-gray-600 font-normal text-xs" : ""}`} style={addon ? {} : { color: NAVY }}>
         {addon ? `+ ${service}` : service}
       </p>
-      <p className="font-bold text-sm whitespace-nowrap" style={{ color: "#C9A84C" }}>{price}</p>
+      <p className="font-bold text-sm whitespace-nowrap" style={{ color: GOLD }}>{price}</p>
       {note && <p className="text-xs text-gray-400 leading-snug">{note}</p>}
     </div>
   );
 }
 
-// ─── FAQ item ─────────────────────────────────────────────────────────────
+function SectionHeader({ eyebrow, title, subtitle }: { eyebrow: string; title: string; subtitle?: string }) {
+  return (
+    <div className="mb-10">
+      <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: GOLD }}>{eyebrow}</p>
+      <h2 className="font-serif text-2xl md:text-3xl font-bold" style={{ color: NAVY }}>{title}</h2>
+      {subtitle && <p className="text-gray-500 text-sm mt-2">{subtitle}</p>}
+    </div>
+  );
+}
+
 function FaqItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
   return (
     <div className="border border-border rounded-2xl overflow-hidden">
-      <button
-        onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-muted/40 transition-colors"
-      >
+      <button onClick={() => setOpen(!open)} className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-muted/40 transition-colors">
         <span className="font-semibold text-sm text-foreground">{q}</span>
         {open ? <ChevronUp className="h-4 w-4 text-secondary flex-shrink-0" /> : <ChevronDown className="h-4 w-4 text-secondary flex-shrink-0" />}
       </button>
@@ -78,12 +75,13 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 }
 
 const faqs = [
-  { q: "Are there any hidden fees?", a: "Never. We disclose every fee before your appointment begins — it's our compliance promise and it's the law. What you see here is what you pay." },
-  { q: "Are state filing fees included?", a: "No — state fees are separate and passed through at cost. For example, Missouri LLC filing is $50. We'll always tell you the exact state fee before you commit." },
-  { q: "Do you charge extra for same-day service?", a: "Yes — rush fees apply for appointments booked with less than 4 hours notice. All rush fees are listed above." },
+  { q: "Are there any hidden fees?", a: "Never. We disclose every fee before your service begins — it's our commitment and it's the law. What you see here is what you pay." },
+  { q: "Are state filing fees included in formation prices?", a: "No — state fees are separate and passed through at cost. For example, Missouri LLC filing is $50. We will always tell you the exact state fee before you commit." },
+  { q: "Do you charge extra for same-day service?", a: "Yes — rush fees apply for appointments booked with less than 4 hours notice. All rush fees are clearly listed on this page." },
   { q: "Can I book online without calling anyone?", a: "Yes. Anna AI handles all bookings 24/7. You don't have to talk to a person to get started." },
-  { q: "Do you come to me, or do I come to you?", a: "We come to you (mobile) or meet you online (RON). There is no in-person office." },
-  { q: "Do you serve all 7 states equally?", a: "Mobile services are currently available in Missouri and Kansas. RON serves all 7 states. Loan signing is available in MO and KS. Additional states coming as commissions are added." },
+  { q: "What's included in the Registered Agent service?", a: "You get a professional address for state correspondence, immediate forwarding of official notices, and compliance reminders based on your plan tier." },
+  { q: "What is BOI Compliance Watch?", a: "As of 2026, BOI reporting is NOT currently required for US-formed companies. Our BOI Compliance Watch monitors FinCEN rule changes and notifies you immediately if it becomes required. If filing becomes required, we file for you at no additional charge." },
+  { q: "Do you serve all 7 states equally?", a: "Mobile notary is Missouri and Kansas only. RON serves 20 states. Business formation services are available in all 7 states and beyond. Loan signing is MO and KS." },
   { q: "What forms of payment do you accept?", a: "All major credit/debit cards, Zelle, and Venmo Business. Payment is collected at time of booking for RON and at appointment for mobile." },
 ];
 
@@ -92,307 +90,333 @@ export default function Pricing() {
     <>
       <SEO
         title="Pricing | Business Formation & Notary Services"
-        description="Full transparent pricing for Gantt Key Formation Group — LLC formation from $297, RON notarization from $25, mobile notary, loan signing, and startup bundles. No hidden fees."
+        description="Full transparent pricing for Gantt Key Formation Group — LLC formation from $597, RON from $35, mobile notary, loan signing, dissolution, amendments, and startup bundles. No hidden fees."
         schema={[breadcrumbSchema([{ name: "Pricing", href: "/pricing" }])]}
       />
 
       {/* Hero */}
       <section className="bg-primary text-primary-foreground pt-28 pb-16">
         <div className="container mx-auto px-4 text-center max-w-3xl">
-          <p className="text-secondary text-xs font-bold uppercase tracking-widest mb-4">Transparent Pricing</p>
+          <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: GOLD }}>Transparent Pricing</p>
           <h1 className="font-serif text-4xl md:text-5xl font-bold mb-5 text-white">
             Every service. Every price. No surprises.
           </h1>
           <p className="text-primary-foreground/65 text-lg mb-10 leading-relaxed">
-            We disclose all fees before we start — always. Book via Anna AI 24/7.
+            All fees disclosed before we start — always. Book via Anna AI 24/7.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-primary-foreground/75">
-            {["No hidden fees", "Disclosed before every appointment", "Anna AI books 24/7", "7 states served"].map((item) => (
+            {["No hidden fees", "State fees disclosed upfront", "Anna AI books 24/7", "Formation · Notary · Compliance"].map((item) => (
               <span key={item} className="flex items-center gap-2">
-                <CheckCircle className="h-3.5 w-3.5 text-secondary" />{item}
+                <CheckCircle className="h-3.5 w-3.5" style={{ color: GOLD }} />{item}
               </span>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 1 — Business Formation */}
+      {/* ── 1. FORMATION ────────────────────────────────────────────────── */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <p className="text-secondary text-xs font-bold uppercase tracking-widest mb-2">Form Your Business</p>
-          <h2 className="font-serif text-2xl md:text-3xl font-bold mb-10" style={{ color: "#1a2f4e" }}>Formation & Startup Services</h2>
-
+          <SectionHeader eyebrow="Form Your Business" title="Formation Services" subtitle="All prices include document preparation, filing coordination, and delivery. State filing fees are separate." />
           <div className="space-y-2 mb-10">
             {[
-              { service: "LLC Formation Assistance", price: "$297", note: "State filing coordination + document support. State filing fees separate." },
-              { service: "Corporation (S-Corp or C-Corp) Filing", price: "$347", note: "Articles of incorporation + coordination", alt: true },
-              { service: "EIN Application Assistance", price: "$75", note: "Federal Tax ID — required for banking and hiring" },
-              { service: "Operating Agreement (notarized)", price: "$125", note: "Drafted to your state + notarized by GKFG", alt: true },
-              { service: "DBA / Assumed Name Filing", price: "$97", note: "+ state filing fees" },
-              { service: "BOI Reporting Assistance", price: "$97", note: "Beneficial Ownership Information document support", alt: true },
-              { service: "Missouri Registered Agent Service", price: "$149/yr", note: "Missouri & Kansas clients" },
-              { service: "Business Name Search + Availability Report", price: "$49", note: "Prior to filing — save time and money", alt: true },
+              { service: "LLC Formation (single state)", price: "$597", note: "Articles of Organization, Operating Agreement, EIN guidance, registered agent coordination, document delivery" },
+              { service: "LLC Formation Package", price: "$797", note: "Everything above + DBA registration + compliance calendar", alt: true },
+              { service: "S-Corp Election (Form 2553)", price: "$297", note: "Form preparation, filing guidance, confirmation tracking" },
+              { service: "Corporation Formation (C-Corp or S-Corp)", price: "$797", note: "Articles of Incorporation, bylaws template, EIN guidance, registered agent", alt: true },
+              { service: "Non-Profit Formation", price: "$997", note: "Articles of Incorporation, bylaws, EIN, initial 1023 prep guidance" },
+              { service: "Series LLC Formation", price: "$897", note: "Master LLC + first series setup, operating agreement, EIN guidance", alt: true },
+              { service: "Multi-Member LLC Formation", price: "$697", note: "Articles of Organization, multi-member operating agreement, EIN guidance" },
+              { service: "Foreign Entity Registration (expand to new state)", price: "$397 + state fee", note: "Certificate of Authority filing, registered agent in new state", alt: true },
             ].map((row) => <PricingRow key={row.service} {...row} />)}
           </div>
 
-          {/* Bundle callout */}
-          <div className="rounded-2xl border-2 p-7" style={{ borderColor: "#C9A84C", background: "#FFFDF7" }}>
+          {/* Starter Bundle callout */}
+          <div className="rounded-2xl border-2 p-7" style={{ borderColor: GOLD, background: "#FFFDF7" }}>
             <div className="flex items-start justify-between gap-4 flex-wrap mb-4">
               <div>
                 <div className="mb-2"><BadgeMostPopular /></div>
-                <h3 className="font-serif text-xl font-bold" style={{ color: "#1a2f4e" }}>LLC Launch Complete Package</h3>
+                <h3 className="font-serif text-xl font-bold" style={{ color: NAVY }}>Starter Business Package</h3>
               </div>
-              <p className="text-3xl font-bold" style={{ color: "#C9A84C" }}>$397</p>
+              <p className="text-3xl font-bold" style={{ color: GOLD }}>$797</p>
             </div>
             <ul className="space-y-2 mb-6">
-              {[
-                "LLC filing coordination",
-                "EIN application assistance",
-                "Operating agreement (notarized)",
-                "Missouri Registered Agent — 1st year included",
-              ].map((item) => (
+              {["LLC formation", "EIN application", "Operating Agreement", "Registered Agent — 1st year included"].map((item) => (
                 <li key={item} className="flex items-center gap-2.5 text-sm text-gray-700">
-                  <CheckCircle className="h-4 w-4 flex-shrink-0" style={{ color: "#C9A84C" }} />
-                  {item}
+                  <CheckCircle className="h-4 w-4 flex-shrink-0" style={{ color: GOLD }} />{item}
                 </li>
               ))}
             </ul>
-            <p className="text-xs text-gray-400 mb-5">Save $249 vs. purchasing separately.</p>
-            <Link href="/services/anna-ai-intake">
-              <span className="inline-block font-semibold px-7 py-3 rounded-xl text-sm cursor-pointer transition-colors" style={{ background: "#C9A84C", color: "#1a2f4e" }}>
-                Get Started →
+            <p className="text-xs text-gray-400 mb-5">State filing fees separate. See full packages below.</p>
+            <Link href="/formation-questionnaire">
+              <span className="inline-block font-semibold px-7 py-3 rounded-xl text-sm cursor-pointer transition-colors" style={{ background: GOLD, color: NAVY }}>
+                Start My Formation →
               </span>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Section 2 — Notary Services */}
+      {/* ── 2. DISSOLUTION ──────────────────────────────────────────────── */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 max-w-4xl">
-          <p className="text-secondary text-xs font-bold uppercase tracking-widest mb-2">Notary Services</p>
-          <h2 className="font-serif text-2xl md:text-3xl font-bold mb-3" style={{ color: "#1a2f4e" }}>Mobile · Online · Loan Signing</h2>
-          <p className="text-gray-500 text-sm mb-14">Serving MO, KS, AZ, TN, NC, GA, and MT. All appointments scheduled in advance via Anna AI.</p>
-
-          {/* 2A — RON */}
-          <div className="mb-14">
-            <h3 className="font-bold text-lg mb-6" style={{ color: "#1a2f4e" }}>Remote Online Notarization (RON)</h3>
-            <div className="space-y-2 mb-6">
-              {[
-                { service: "Single document (1 signature)", price: "$25", note: "Via secure video call. Signer can be anywhere." },
-                { service: "Additional signatures (same session)", price: "$15 each", note: "", alt: true },
-                { service: "Multi-party session (2+ signers)", price: "$25 + $15/additional", note: "" },
-                { service: "Expedited (under 2 hours)", price: "+$25", note: "Same-day rush", addon: true, alt: true },
-                { service: "After hours (6pm–9pm)", price: "+$20", note: "", addon: true },
-                { service: "Weekend", price: "+$25", note: "", addon: true, alt: true },
-              ].map((row) => <PricingRow key={row.service} {...row} />)}
-            </div>
-            <div className="rounded-xl border border-blue-100 bg-blue-50/50 px-5 py-4 text-xs text-gray-500 leading-relaxed">
-              <strong className="text-gray-700">Georgia clients:</strong> RON is performed under our Missouri commission and is valid in Georgia under interstate recognition law.
-            </div>
-          </div>
-
-          {/* 2B — Mobile Notary */}
-          <div className="mb-14">
-            <div className="flex flex-wrap items-center gap-3 mb-6">
-              <h3 className="font-bold text-lg" style={{ color: "#1a2f4e" }}>Mobile Notary</h3>
-              <BadgeMoKs />
-            </div>
-            <div className="space-y-2">
-              {[
-                { service: "0–10 miles", price: "$65", note: "Includes up to 3 signatures" },
-                { service: "11–25 miles", price: "$85", note: "Includes up to 3 signatures", alt: true },
-                { service: "26–40 miles", price: "$110", note: "" },
-                { service: "40+ miles", price: "Custom quote", note: "Book via Anna AI", alt: true },
-                { service: "Additional signatures (after first 3)", price: "$10 each", note: "", addon: true },
-                { service: "After-hours (6pm–9pm)", price: "+$30", note: "", addon: true, alt: true },
-                { service: "Weekend / Holiday", price: "+$40", note: "", addon: true },
-                { service: "Same-day / Rush (under 4 hrs notice)", price: "+$50", note: "", addon: true, alt: true },
-                { service: "Hospital / Care Facility", price: "+$25", note: "", addon: true },
-                { service: "Correctional Facility", price: "+$50", note: "Advance coordination required", addon: true, alt: true },
-                { service: "Document printing (per page)", price: "$0.25/page", note: "", addon: true },
-              ].map((row) => <PricingRow key={row.service} {...row} />)}
-            </div>
-          </div>
-
-          {/* 2C — Loan Signing */}
-          <div>
-            <div className="flex flex-wrap items-center gap-3 mb-6">
-              <h3 className="font-bold text-lg" style={{ color: "#1a2f4e" }}>Loan Signing Agent</h3>
-              <BadgeMoKs />
-            </div>
-            <div className="space-y-2">
-              {[
-                { service: "Purchase Closing", price: "$150", note: "Within 20-mile radius" },
-                { service: "Refinance Signing", price: "$125", note: "Within 20-mile radius", alt: true },
-                { service: "Reverse Mortgage", price: "$175", note: "Complex package" },
-                { service: "HELOC / Home Equity", price: "$125", note: "", alt: true },
-                { service: "Seller's Package Only", price: "$100", note: "" },
-                { service: "Hybrid eClosing", price: "$150", note: "", alt: true },
-                { service: "Construction Loan Closing", price: "$175", note: "" },
-                { service: "Distance surcharge (21–40 miles)", price: "+$35", note: "", addon: true, alt: true },
-                { service: "Distance surcharge (41–60 miles)", price: "+$60", note: "", addon: true },
-                { service: "After-hours", price: "+$40", note: "", addon: true, alt: true },
-                { service: "Weekend / Holiday", price: "+$50", note: "", addon: true },
-                { service: "Same-day Rush (under 4 hrs)", price: "+$75", note: "", addon: true, alt: true },
-                { service: "Scanback", price: "+$25", note: "Scan + email complete package", addon: true },
-                { service: "Second signer (same location)", price: "+$25", note: "", addon: true, alt: true },
-                { service: "No-Show / Late Cancel (under 2 hrs)", price: "$50 flat", note: "Non-refundable" },
-              ].map((row) => <PricingRow key={row.service} {...row} />)}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3 — Specialty Notary */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <p className="text-secondary text-xs font-bold uppercase tracking-widest mb-2">Specialty Services</p>
-          <h2 className="font-serif text-2xl md:text-3xl font-bold mb-10" style={{ color: "#1a2f4e" }}>Specialized Notarizations</h2>
+          <SectionHeader eyebrow="Close Your Business" title="Dissolution Services" subtitle="State fees are separate and passed through at cost." />
           <div className="space-y-2">
             {[
-              { service: "Power of Attorney (notarization)", price: "$45", note: "Includes document walkthrough" },
-              { service: "Healthcare Directive / Living Will", price: "$45", note: "Handled with care", alt: true },
-              { service: "Trust Document Notarization", price: "$65", note: "Multi-page, complex" },
-              { service: "Apostille Coordination", price: "$75 + state fees", note: "For international document use", alt: true },
-              { service: "I-9 Employment Verification", price: "$35/employee", note: "For small business HR" },
-              { service: "Vehicle Title Notarization", price: "$25", note: "", alt: true },
-              { service: "Affidavit Notarization", price: "$25", note: "" },
-              { service: "Promissory Note Notarization", price: "$35", note: "", alt: true },
-              { service: "Immigration Document Notarization", price: "$45", note: "" },
-              { service: "Certified Copy (per page)", price: "$5/page", note: "State minimum $3", alt: true },
+              { service: "Articles of Dissolution (single state)", price: "$197 + state fee", note: "Document preparation, state filing coordination, confirmation delivery" },
+              { service: "Dissolution + Final Annual Report", price: "$297 + state fee", note: "Everything above + final annual report filing", alt: true },
+              { service: "Multi-Entity Dissolution Package (up to 3 entities)", price: "$497 + state fees", note: "All documentation handled" },
+              { service: "Voluntary Dissolution with Wind-Down Checklist", price: "$397", note: "Dissolution filing + EIN closure, bank account closure, contract termination, license cancellation checklist", alt: true },
             ].map((row) => <PricingRow key={row.service} {...row} />)}
           </div>
         </div>
       </section>
 
-      {/* Section 4 — Bundles */}
+      {/* ── 3. AMENDMENTS ───────────────────────────────────────────────── */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <SectionHeader eyebrow="Update Your Business" title="Amendment Services" subtitle="Need to change your name, address, members, or agent? We handle it." />
+          <div className="space-y-2">
+            {[
+              { service: "Articles of Amendment (name change, address, member change)", price: "$197 + state fee", note: "" },
+              { service: "Operating Agreement Amendment", price: "$147", note: "", alt: true },
+              { service: "Ownership Transfer / Member Change", price: "$297 + state fee", note: "Amendment filing + updated operating agreement" },
+              { service: "Registered Agent Change", price: "$97 + state fee", note: "", alt: true },
+            ].map((row) => <PricingRow key={row.service} {...row} />)}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 4. ANNUAL COMPLIANCE ────────────────────────────────────────── */}
       <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <SectionHeader eyebrow="Stay Compliant" title="Annual Compliance Services" subtitle="Keep your business in good standing year after year." />
+          <div className="space-y-2">
+            {[
+              { service: "Registered Agent Service", price: "$99/entity/year", note: "Professional state correspondence address" },
+              { service: "Registered Agent + Compliance Reminders", price: "$149/entity/year", note: "Agent service + proactive deadline alerts", alt: true },
+              { service: "Registered Agent + Annual Report Filing", price: "$197/entity/year", note: "Full-service annual compliance" },
+              { service: "Annual Report Filing (standalone)", price: "$147/entity + state fee", note: "", alt: true },
+              { service: "Compliance Calendar Setup", price: "$147 one-time", note: "Custom deadlines mapped to your entities and states" },
+              { service: "BOI Compliance Watch", price: "$47/entity/year", note: "Monitors FinCEN rule changes — if filing becomes required, we file at no additional charge. NOT currently required (2026).", alt: true },
+            ].map((row) => <PricingRow key={row.service} {...row} />)}
+          </div>
+          <div className="mt-6 rounded-xl border border-amber-100 bg-amber-50/60 px-5 py-4 text-xs text-gray-600 leading-relaxed">
+            <strong className="text-gray-800">BOI Reporting Note:</strong> As of 2026, Beneficial Ownership Information (BOI) reporting is <strong>not currently required</strong> for US-formed companies following a federal court ruling. Our Compliance Watch keeps you informed and handles filing the moment it becomes required.
+          </div>
+        </div>
+      </section>
+
+      {/* ── 5. DOCUMENT SERVICES ────────────────────────────────────────── */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <SectionHeader eyebrow="Documents & Paperwork" title="Document Services" subtitle="Individual documents, agreements, and filings prepared professionally." />
+          <div className="space-y-2">
+            {[
+              { service: "Operating Agreement (standalone)", price: "$125", note: "" },
+              { service: "Custom Operating Agreement", price: "$247", note: "Tailored to your entity structure and state", alt: true },
+              { service: "Corporate Bylaws", price: "$197", note: "" },
+              { service: "Partnership Agreement", price: "$247", note: "", alt: true },
+              { service: "Non-Disclosure Agreement (NDA)", price: "$97", note: "" },
+              { service: "Independent Contractor Agreement", price: "$97", note: "", alt: true },
+              { service: "Service Agreement / Client Contract", price: "$147", note: "" },
+              { service: "EIN Application Service", price: "$97", note: "Federal Tax ID — required for banking and hiring", alt: true },
+              { service: "Seller's Permit Application", price: "$97 + state fee", note: "" },
+              { service: "State Tax ID Application", price: "$97", note: "", alt: true },
+              { service: "Business License Research (by state/city)", price: "$147", note: "" },
+              { service: "Business Name Availability Search (3 states)", price: "$47", note: "Before you file — save time and money", alt: true },
+              { service: "Certified Copy of Articles", price: "$47", note: "" },
+              { service: "Digital Document Vault (1 year)", price: "$97", note: "Secure storage for all your business documents", alt: true },
+              { service: "Annual Compliance Review Call (30 min)", price: "$97", note: "" },
+              { service: "Rush Document Preparation", price: "+$75", note: "Add to any service", addon: true, alt: true },
+            ].map((row) => <PricingRow key={row.service} {...row} />)}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 6. DBA SERVICES ─────────────────────────────────────────────── */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <SectionHeader eyebrow="Doing Business As" title="DBA Services" subtitle="Register, renew, or expand your trade names across states." />
+          <div className="space-y-2">
+            {[
+              { service: "DBA Registration (single state)", price: "$197 + state fee", note: "" },
+              { service: "DBA + Operating Agreement Amendment", price: "$297 + state fee", note: "", alt: true },
+              { service: "DBA Renewal", price: "$97 + state fee", note: "" },
+              { service: "Multi-DBA Package (3 DBAs)", price: "$497 + state fees", note: "Best value for multiple brand names", alt: true },
+            ].map((row) => <PricingRow key={row.service} {...row} />)}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 7. PACKAGES ─────────────────────────────────────────────────── */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
-          <p className="text-secondary text-xs font-bold uppercase tracking-widest mb-2">Bundles — Save More</p>
-          <h2 className="font-serif text-2xl md:text-3xl font-bold mb-12" style={{ color: "#1a2f4e" }}>Everything Your Business Needs to Launch Right.</h2>
+          <SectionHeader eyebrow="Bundles — Save More" title="Complete Business Packages" subtitle="Everything your business needs — formation, compliance, and launch — bundled at one price." />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Bundle 1 — Most Popular */}
-            <div className="rounded-2xl border-2 p-7 bg-white" style={{ borderColor: "#C9A84C" }}>
-              <div className="flex items-start justify-between gap-3 flex-wrap mb-4">
+            {/* Starter */}
+            <div className="rounded-2xl border-2 p-7 bg-white" style={{ borderColor: GOLD }}>
+              <div className="flex items-start justify-between gap-3 flex-wrap mb-1">
                 <BadgeMostPopular />
-                <p className="text-2xl font-bold" style={{ color: "#C9A84C" }}>$147</p>
+                <p className="text-2xl font-bold" style={{ color: GOLD }}>$797</p>
               </div>
-              <h3 className="font-serif text-lg font-bold mb-4" style={{ color: "#1a2f4e" }}>Business Launch Notary Bundle</h3>
+              <h3 className="font-serif text-lg font-bold mb-4 mt-2" style={{ color: NAVY }}>Starter Business Package</h3>
               <ul className="space-y-2">
-                {[
-                  "Notarization of up to 3 business documents",
-                  "Operating agreement, EIN letter, bank resolution",
-                  "RON or scheduled mobile",
-                  "30-day follow-up discount (15% off next notarization)",
-                ].map((item) => (
+                {["LLC formation", "EIN application", "Operating Agreement", "Registered Agent — 1st year"].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: "#C9A84C" }} />{item}
+                    <CheckCircle className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: GOLD }} />{item}
                   </li>
                 ))}
               </ul>
             </div>
 
-            {/* Bundle 2 */}
+            {/* Business Builder */}
             <div className="rounded-2xl border border-border p-7 bg-white">
-              <div className="flex items-start justify-between gap-3 flex-wrap mb-4">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-transparent">—</span>
-                <p className="text-2xl font-bold" style={{ color: "#C9A84C" }}>$397</p>
+              <div className="flex items-start justify-between gap-3 flex-wrap mb-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: NAVY }}>Business Builder</span>
+                <p className="text-2xl font-bold" style={{ color: GOLD }}>$1,197</p>
               </div>
-              <h3 className="font-serif text-lg font-bold mb-4" style={{ color: "#1a2f4e" }}>LLC Formation + Notary Complete</h3>
+              <h3 className="font-serif text-lg font-bold mb-4 mt-2" style={{ color: NAVY }}>Business Builder Package</h3>
               <ul className="space-y-2">
-                {[
-                  "LLC state filing coordination",
-                  "EIN application assistance",
-                  "Operating agreement notarization",
-                  "Bank resolution letter notarization",
-                  "Missouri Registered Agent (1st year)",
-                ].map((item) => (
+                {["Everything in Starter", "DBA registration", "S-Corp election filing"].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: "#C9A84C" }} />{item}
+                    <CheckCircle className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: GOLD }} />{item}
                   </li>
                 ))}
               </ul>
             </div>
 
-            {/* Bundle 3 */}
-            <div className="rounded-2xl border border-border p-7 bg-white">
-              <div className="flex items-start justify-between gap-3 flex-wrap mb-4">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-transparent">—</span>
-                <p className="text-2xl font-bold" style={{ color: "#C9A84C" }}>$297</p>
-              </div>
-              <h3 className="font-serif text-lg font-bold mb-4" style={{ color: "#1a2f4e" }}>Corporate Closing Package</h3>
-              <ul className="space-y-2">
-                {[
-                  "Articles of dissolution notarization",
-                  "Transfer of ownership document notarization",
-                  "Up to 5 signature notarizations",
-                  "RON available",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: "#C9A84C" }} />{item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Bundle 4 — Best Value */}
-            <div className="rounded-2xl border-2 p-7 bg-white" style={{ borderColor: "#4CAF7C" }}>
-              <div className="flex items-start justify-between gap-3 flex-wrap mb-4">
+            {/* Full Launch */}
+            <div className="rounded-2xl border-2 p-7 bg-white" style={{ borderColor: GREEN }}>
+              <div className="flex items-start justify-between gap-3 flex-wrap mb-1">
                 <BadgeBestValue />
-                <p className="text-2xl font-bold" style={{ color: "#C9A84C" }}>$497/yr</p>
+                <p className="text-2xl font-bold" style={{ color: GOLD }}>$1,597</p>
               </div>
-              <h3 className="font-serif text-lg font-bold mb-4" style={{ color: "#1a2f4e" }}>Annual Notary Retainer</h3>
-              <ul className="space-y-2 mb-4">
+              <h3 className="font-serif text-lg font-bold mb-4 mt-2" style={{ color: NAVY }}>Full Launch Package</h3>
+              <ul className="space-y-2">
                 {[
-                  "Up to 20 notarizations per year",
-                  "RON or mobile",
-                  "Priority same-day scheduling",
-                  "10% off all loan signings",
+                  "Everything in Business Builder",
+                  "Annual report filing",
+                  "Compliance calendar setup",
+                  "BOI Compliance Watch — 1st year",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: "#4CAF7C" }} />{item}
+                    <CheckCircle className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: GREEN }} />{item}
                   </li>
                 ))}
               </ul>
-              <p className="text-xs text-gray-400">Ideal for: Real estate investors, landlords, active LLCs</p>
+            </div>
+
+            {/* Entity Cleanup */}
+            <div className="rounded-2xl border border-border p-7 bg-white">
+              <div className="flex items-start justify-between gap-3 flex-wrap mb-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: NAVY }}>Cleanup &amp; Repair</span>
+                <p className="text-2xl font-bold" style={{ color: GOLD }}>$997</p>
+              </div>
+              <h3 className="font-serif text-lg font-bold mb-4 mt-2" style={{ color: NAVY }}>Entity Cleanup Package</h3>
+              <ul className="space-y-2">
+                {[
+                  "Amendment filing",
+                  "Operating Agreement update",
+                  "Registered agent update",
+                  "Compliance review",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2.5 text-sm text-gray-600">
+                    <CheckCircle className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: GOLD }} />{item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Multi-Entity */}
+            <div className="rounded-2xl border border-border p-7 bg-white md:col-span-2">
+              <div className="flex items-start justify-between gap-3 flex-wrap mb-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: NAVY }}>Multiple Entities</span>
+                <p className="text-2xl font-bold" style={{ color: GOLD }}>$1,497</p>
+              </div>
+              <h3 className="font-serif text-lg font-bold mb-4 mt-2" style={{ color: NAVY }}>Multi-Entity Package — 3 Entities</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                {["3 LLC formations", "3 EIN applications", "3 Operating Agreements", "3 Registered Agent services — 1st year each", "Ideal for investors and holding structures", ""].map((item, i) => item ? (
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-600 list-none">
+                    <CheckCircle className="h-4 w-4 flex-shrink-0 mt-0.5" style={{ color: GOLD }} />{item}
+                  </li>
+                ) : null)}
+              </div>
             </div>
           </div>
 
-          <div className="text-center mt-12">
-            <Link href="/services/anna-ai-intake">
-              <span className="inline-block font-semibold px-8 py-4 rounded-xl text-sm cursor-pointer transition-colors" style={{ background: "#C9A84C", color: "#1a2f4e" }}>
-                Book via Anna AI →
+          <div className="text-center mt-10">
+            <Link href="/formation-questionnaire">
+              <span className="inline-block font-semibold px-8 py-4 rounded-xl text-sm cursor-pointer transition-colors" style={{ background: GOLD, color: NAVY }}>
+                Start My Formation →
               </span>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Section 5 — Additional Services */}
-      <section className="py-20 bg-white">
+      {/* ── 8. NOTARY — MOBILE ──────────────────────────────────────────── */}
+      <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 max-w-4xl">
-          <p className="text-secondary text-xs font-bold uppercase tracking-widest mb-2">More Ways We Help</p>
-          <h2 className="font-serif text-2xl md:text-3xl font-bold mb-10" style={{ color: "#1a2f4e" }}>Additional Business Services</h2>
-          <div className="space-y-2">
-            <PricingRow service="Startup Consultation (30 min)" price="FREE" note="Book via Anna AI" />
-            <PricingRow service="Business Structure Review" price="$97" note="LLC vs S-Corp + entity analysis" alt />
-            <PricingRow service="Annual Report Reminder + Filing Coordination" price="$75/yr" note="Never miss a deadline" />
-            <PricingRow service="Operating Agreement Update / Amendment" price="$97" note="For existing LLCs" alt />
-            <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] gap-1 sm:gap-4 px-5 py-4 rounded-xl border border-gray-100 bg-[#FAFAFA]">
-              <p className="font-semibold text-sm leading-snug" style={{ color: "#1a2f4e" }}>Registered Agent — AZ / TN / NC / GA / MT</p>
-              <div><BadgeComingSoon /></div>
-              <p className="text-xs text-gray-400 leading-snug">Other states launching soon</p>
+          <SectionHeader eyebrow="Notary Services" title="Mobile · Online · Loan Signing" subtitle="All appointments scheduled via Anna AI. Attorney disclaimer applies." />
+
+          <div className="mb-14">
+            <div className="flex flex-wrap items-center gap-3 mb-6">
+              <h3 className="font-bold text-lg" style={{ color: NAVY }}>Mobile Notary</h3>
+              <BadgeMoKs />
             </div>
+            <div className="space-y-2">
+              {[
+                { service: "General Mobile Notary — flat rate", price: "$75", note: "Includes first signature" },
+                { service: "Per additional signature", price: "$5/signature", note: "Missouri state maximum", alt: true, addon: true },
+                { service: "Travel beyond 20 miles", price: "$0.67/mile", note: "Round-trip mileage beyond 20-mile radius", addon: true },
+                { service: "After-hours / Weekend", price: "+$50", note: "Standard rate + surcharge", addon: true, alt: true },
+                { service: "Rush / Same-Day (under 4 hrs notice)", price: "+$75", note: "", addon: true },
+              ].map((row) => <PricingRow key={row.service} {...row} />)}
+            </div>
+          </div>
+
+          {/* RON */}
+          <div className="mb-14">
+            <div className="flex flex-wrap items-center gap-3 mb-2">
+              <h3 className="font-bold text-lg" style={{ color: NAVY }}>Remote Online Notarization (RON)</h3>
+            </div>
+            <p className="text-sm text-gray-500 mb-6">Serving all 20 RON-authorized states. Performed from Missouri. 100% legal and valid. Real credentialed notary — not an automated queue.</p>
+            <div className="space-y-2">
+              {[
+                { service: "Single Document RON", price: "$35/document", note: "Secure video session, electronic notarization, digital delivery" },
+                { service: "After-hours / Weekend", price: "+$50", note: "Surcharge on top of standard rate", addon: true, alt: true },
+                { service: "Rush / Same-Day", price: "+$75", note: "", addon: true },
+              ].map((row) => <PricingRow key={row.service} {...row} />)}
+            </div>
+            <div className="mt-5 rounded-xl border border-blue-100 bg-blue-50/50 px-5 py-4 text-xs text-gray-500 leading-relaxed">
+              <strong className="text-gray-700">Note:</strong> RON is performed under our Missouri commission and is valid in all 20 states under interstate recognition law. Signer can be located anywhere within those states.
+            </div>
+          </div>
+
+          {/* Loan Signing */}
+          <div>
+            <div className="flex flex-wrap items-center gap-3 mb-6">
+              <h3 className="font-bold text-lg" style={{ color: NAVY }}>Loan Signing Agent</h3>
+              <BadgeMoKs />
+            </div>
+            <div className="space-y-2">
+              {[
+                { service: "Loan Signing (standard)", price: "$125–$150", note: "Full loan package signing, lender coordination, same-day scan back" },
+                { service: "After-hours / Weekend", price: "+$50", note: "Surcharge on top of standard rate", addon: true, alt: true },
+                { service: "Rush / Same-Day (under 4 hrs)", price: "+$75", note: "", addon: true },
+              ].map((row) => <PricingRow key={row.service} {...row} />)}
+            </div>
+            <p className="text-xs text-gray-400 mt-4">For detailed loan signing pricing by package type, visit the <Link href="/loan-signing"><span className="underline cursor-pointer">Loan Signing page</span></Link>.</p>
           </div>
         </div>
       </section>
 
-      {/* Section 6 — FAQ */}
-      <section className="py-20 bg-muted/30">
+      {/* ── 9. FAQ ──────────────────────────────────────────────────────── */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="font-serif text-2xl md:text-3xl font-bold mb-10 text-center" style={{ color: "#1a2f4e" }}>
+          <h2 className="font-serif text-2xl md:text-3xl font-bold mb-10 text-center" style={{ color: NAVY }}>
             Pricing Questions? We've Got Answers.
           </h2>
           <div className="space-y-3">
@@ -401,7 +425,7 @@ export default function Pricing() {
         </div>
       </section>
 
-      {/* Section 7 — Bottom CTA */}
+      {/* ── 10. CTA ─────────────────────────────────────────────────────── */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center max-w-2xl">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">Ready to get started?</h2>
@@ -409,27 +433,18 @@ export default function Pricing() {
             Anna AI is available 24/7 to book your appointment or start your formation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Link href="/how-it-works">
-              <span className="inline-block font-bold px-8 py-4 rounded-xl text-sm cursor-pointer transition-colors" style={{ background: "#C9A84C", color: "#1a2f4e" }}>
-                Start My Business Setup →
+            <Link href="/formation-questionnaire">
+              <span className="inline-block font-semibold px-8 py-4 rounded-xl text-sm cursor-pointer transition-colors" style={{ background: GOLD, color: NAVY }}>
+                Start My Formation →
               </span>
             </Link>
-            <Link href="/services/anna-ai-intake">
-              <span className="inline-block font-semibold px-8 py-4 rounded-xl text-sm cursor-pointer border border-white/25 text-white hover:bg-white/10 transition-colors">
-                Book a Notary Appointment →
+            <Link href="/consultation">
+              <span className="inline-block font-semibold px-8 py-4 rounded-xl text-sm cursor-pointer text-white border border-white/30 hover:bg-white/10 transition-colors">
+                Book Free Consultation
               </span>
             </Link>
           </div>
-          <p className="text-primary-foreground/35 text-xs max-w-lg mx-auto leading-relaxed">
-            Gantt Key Formation Group is not a law firm and does not provide legal advice. We are a document preparation and notary services company. State filing fees are separate from our service fees and are passed through at cost.
-          </p>
-        </div>
-      </section>
-
-      {/* Disclaimer */}
-      <section className="py-10 bg-background border-t border-border">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <Disclaimer notice="Gantt Key Formation Group is not a law firm and does not provide legal advice, legal representation, tax advice, or financial advice. Notarization does not constitute legal review of document contents. State filing fees are separate from our service fees and are passed through at cost. All prices listed are for our document preparation and notary services only." />
+          <Disclaimer />
         </div>
       </section>
     </>

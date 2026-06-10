@@ -1,81 +1,173 @@
 import { SEO } from "@/components/seo";
 import { Link } from "wouter";
-import { Bell, CheckCircle } from "lucide-react";
+import { CheckCircle, FileText, Shield, RefreshCw, BookOpen, Tag, Building2 } from "lucide-react";
 import { itemListSchema, breadcrumbSchema } from "@/lib/schema";
 
-const formationServices: { title: string; slug: string; desc: string; badge?: string }[] = [
+const NAVY = "#1a2f4e";
+const GOLD = "#C9A84C";
+
+const formationServices: { title: string; slug: string; desc: string; price: string; badge?: string }[] = [
   {
-    title: "LLC Formation Assistance",
+    title: "LLC Formation",
     slug: "llc-formation",
-    desc: "Start your business structure properly with state filing coordination and document support.",
+    desc: "Articles of Organization, Operating Agreement, EIN guidance, registered agent coordination, and document delivery.",
+    price: "from $597",
   },
   {
-    title: "Corporation Filing Assistance",
+    title: "Corporation Formation",
     slug: "corporation-filing",
-    desc: "Articles of Incorporation preparation and state filing coordination for growing businesses.",
+    desc: "C-Corp or S-Corp Articles of Incorporation, bylaws template, EIN guidance, and registered agent.",
+    price: "from $797",
   },
   {
-    title: "EIN Application Assistance",
-    slug: "ein-assistance",
-    desc: "Secure your federal Tax ID number — required for banking, hiring, and business credibility.",
+    title: "Non-Profit Formation",
+    slug: "non-profit-formation",
+    desc: "Articles of Incorporation, bylaws, EIN application, and initial 1023 prep guidance.",
+    price: "$997",
   },
   {
-    title: "Missouri Registered Agent",
-    slug: "registered-agent",
-    desc: "Professional point of contact for state correspondence and compliance notices.",
-    badge: "MO & KS Exclusive",
+    title: "Series LLC Formation",
+    slug: "series-llc",
+    desc: "Master LLC plus first series setup, operating agreement, and EIN guidance.",
+    price: "$897",
   },
   {
-    title: "Startup Packages",
-    slug: "launch-packages",
-    desc: "Bundled formation and setup services designed to get your business off the ground quickly.",
+    title: "S-Corp Election (Form 2553)",
+    slug: "scorp-election",
+    desc: "Form preparation, filing guidance, and confirmation tracking for your S-Corp tax election.",
+    price: "$297",
   },
   {
-    title: "Anna AI Intake",
-    slug: "anna-ai-intake",
-    desc: "Automate client intake, consultations, and lead capture with our AI assistant Anna.",
+    title: "Foreign Entity Registration",
+    slug: "foreign-entity",
+    desc: "Expand your existing entity into a new state. Certificate of Authority filing and registered agent in the new state.",
+    price: "$397 + state fee",
+    badge: "Multi-State",
   },
 ];
 
-const notaryServices: { title: string; slug: string; desc: string }[] = [
+const notaryServices: { title: string; slug: string; desc: string; price: string; badge?: string }[] = [
   {
-    title: "Mobile Notary Services",
+    title: "Mobile Notary",
     slug: "mobile-notary",
-    desc: "Convenient notarization services at your home, office, hospital, care facility, or mutually agreed-upon location.",
+    desc: "Convenient notarization at your home, office, hospital, or care facility. We come to you.",
+    price: "from $75",
+    badge: "MO & KS Only",
   },
   {
-    title: "Online Notary Services",
+    title: "Remote Online Notarization",
     slug: "online-notary",
-    desc: "Secure remote online notarization services designed for clients who prefer a virtual appointment experience.",
+    desc: "Secure video-based notarization from anywhere. Real credentialed notary — not an automated queue.",
+    price: "$35/document",
+    badge: "20 States",
   },
   {
-    title: "Loan Signing Services",
+    title: "Loan Signing Agent",
     slug: "loan-signing",
-    desc: "Professional loan signing services for buyers, sellers, lenders, title companies, and real estate professionals.",
+    desc: "Full loan package signings for lenders, title companies, and real estate professionals. Same-day scan back available.",
+    price: "$125–$150",
+    badge: "MO & KS Only",
   },
 ];
 
-const additionalServices: { title: string; slug: string; desc: string; badge?: string }[] = [
-  { title: "Business Formation Assistance", slug: "business-formation", desc: "General formation support for various entity types" },
-  { title: "Operating Agreement Support", slug: "operating-agreement", desc: "Internal structure documentation for your LLC" },
-  { title: "Business Name Search Guidance", slug: "business-name-search", desc: "Clear your desired name before filing" },
-  { title: "Business Address & Mailbox Guidance", slug: "business-address", desc: "Professional physical presence without a physical office" },
-  { title: "Document Preparation Support", slug: "document-preparation", desc: "Professional handling of your critical paperwork" },
-  { title: "Document Organization Support", slug: "document-organization", desc: "Structure your business files for success" },
-  { title: "Startup Compliance Checklist", slug: "startup-compliance", desc: "Stay on the right side of regulations from day one" },
-  { title: "Startup Consultation", slug: "startup-consultation", desc: "Strategic advice for founders — discuss your vision" },
-  { title: "Entrepreneur Support Services", slug: "entrepreneur-support", desc: "Ongoing operational support as you grow" },
-  { title: "Website & Digital Launch Guidance", slug: "website-digital-launch", desc: "Establish your initial digital footprint" },
-  { title: "Business Phone & Intake Setup", slug: "business-phone-intake", desc: "Professional communications setup" },
-  { title: "Google Business Profile Setup Guidance", slug: "google-business-profile", desc: "Establish your local search presence" },
-  { title: "Startup Systems & Operations Support", slug: "startup-systems", desc: "Optimize your internal workflows from day one" },
+const complianceServices: { title: string; slug: string; desc: string; price: string }[] = [
+  {
+    title: "Registered Agent Service",
+    slug: "registered-agent",
+    desc: "Professional state correspondence address with immediate forwarding of official notices.",
+    price: "from $99/yr",
+  },
+  {
+    title: "Annual Report Filing",
+    slug: "annual-report",
+    desc: "We handle your annual report on your behalf so you never miss a state deadline.",
+    price: "$147 + state fee",
+  },
+  {
+    title: "Compliance Calendar Setup",
+    slug: "compliance-calendar",
+    desc: "Custom deadline calendar mapped to your entities and states. Never miss a filing again.",
+    price: "$147 one-time",
+  },
+  {
+    title: "BOI Compliance Watch",
+    slug: "boi-reporting",
+    desc: "Monitor FinCEN rule changes. If BOI reporting becomes required, we file for you at no extra charge.",
+    price: "$47/entity/yr",
+  },
 ];
 
-function ServiceCard({ title, slug, desc, badge }: { title: string; slug: string; desc: string; badge?: string }) {
+const documentServices: { title: string; slug: string; desc: string; price: string }[] = [
+  {
+    title: "Operating Agreement",
+    slug: "operating-agreement",
+    desc: "Standard or fully custom — drafted for your state and entity structure.",
+    price: "$125–$247",
+  },
+  {
+    title: "EIN Application Service",
+    slug: "ein-assistance",
+    desc: "Federal Tax ID required for banking, hiring, and business credibility.",
+    price: "$97",
+  },
+  {
+    title: "Amendments & Updates",
+    slug: "amendments",
+    desc: "Name change, address update, member change, or ownership transfer filings.",
+    price: "from $97",
+  },
+  {
+    title: "DBA Registration",
+    slug: "dba-registration",
+    desc: "Register, renew, or expand your trade name across one or multiple states.",
+    price: "from $197 + state fee",
+  },
+  {
+    title: "Business Agreements",
+    slug: "business-agreements",
+    desc: "NDAs, contractor agreements, service contracts, partnership agreements, and bylaws.",
+    price: "from $97",
+  },
+  {
+    title: "Dissolution Services",
+    slug: "dissolution",
+    desc: "Close your business properly with Articles of Dissolution and a wind-down checklist.",
+    price: "from $197 + state fee",
+  },
+];
+
+const packageDeals: { title: string; price: string; includes: string[] }[] = [
+  {
+    title: "Starter Business Package",
+    price: "$797",
+    includes: ["LLC formation", "EIN application", "Operating Agreement", "Registered Agent — 1st year"],
+  },
+  {
+    title: "Business Builder Package",
+    price: "$1,197",
+    includes: ["Everything in Starter", "DBA registration", "S-Corp election filing"],
+  },
+  {
+    title: "Full Launch Package",
+    price: "$1,597",
+    includes: ["Everything in Business Builder", "Annual report filing", "Compliance calendar", "BOI Compliance Watch — 1st year"],
+  },
+  {
+    title: "Multi-Entity Package (3 entities)",
+    price: "$1,497",
+    includes: ["3 LLC formations", "3 EINs", "3 Operating Agreements", "3 Registered Agents — 1st year"],
+  },
+];
+
+function ServiceCard({
+  title, slug, desc, price, badge,
+}: {
+  title: string; slug: string; desc: string; price: string; badge?: string;
+}) {
   return (
     <Link href={`/services/${slug}`}>
       <div className="block group p-6 rounded-2xl border border-border bg-card hover:border-secondary hover:shadow-md transition-all h-full flex flex-col cursor-pointer">
-        <div className="flex items-start justify-between gap-2 mb-2">
+        <div className="flex items-start justify-between gap-2 mb-1">
           <h3 className="font-semibold text-base text-foreground group-hover:text-primary transition-colors leading-snug">{title}</h3>
           {badge && (
             <span className="flex-shrink-0 text-[9px] font-bold uppercase tracking-wider bg-secondary/15 text-secondary border border-secondary/20 rounded-full px-2 py-0.5 leading-tight">
@@ -83,6 +175,7 @@ function ServiceCard({ title, slug, desc, badge }: { title: string; slug: string
             </span>
           )}
         </div>
+        <p className="text-xs font-semibold mb-3" style={{ color: GOLD }}>{price}</p>
         <p className="text-sm text-muted-foreground flex-grow leading-relaxed">{desc}</p>
         <div className="mt-5 text-secondary text-sm font-medium flex items-center">
           Learn More <span className="ml-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
@@ -92,38 +185,32 @@ function ServiceCard({ title, slug, desc, badge }: { title: string; slug: string
   );
 }
 
-function NotaryCard({ title, slug, desc }: { title: string; slug: string; desc: string }) {
+function SectionHeading({ icon: Icon, label, title }: { icon: React.ElementType; label: string; title: string }) {
   return (
-    <Link href={`/services/${slug}`}>
-      <div className="block group p-6 rounded-2xl border border-secondary/25 bg-card hover:border-secondary hover:shadow-md transition-all h-full flex flex-col cursor-pointer">
-        <div className="flex items-start justify-between gap-2 mb-2">
-          <h3 className="font-semibold text-base text-foreground group-hover:text-primary transition-colors leading-snug">{title}</h3>
-          <span className="inline-flex items-center gap-1 flex-shrink-0 text-[9px] font-bold uppercase tracking-wider bg-secondary/15 text-secondary border border-secondary/20 rounded-full px-2 py-0.5 leading-tight">
-            <span className="inline-block h-1 w-1 rounded-full bg-secondary animate-pulse" />
-            Coming Soon
-          </span>
-        </div>
-        <p className="text-sm text-muted-foreground flex-grow leading-relaxed">{desc}</p>
-        <div className="mt-5 text-secondary text-sm font-medium flex items-center">
-          Learn More <span className="ml-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
-        </div>
+    <div className="flex items-start gap-3 mb-10">
+      <div className="mt-1 p-2 rounded-lg" style={{ background: `${GOLD}20` }}>
+        <Icon className="h-5 w-5" style={{ color: GOLD }} />
       </div>
-    </Link>
+      <div>
+        <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: GOLD }}>{label}</p>
+        <h2 className="font-serif text-2xl font-bold" style={{ color: NAVY }}>{title}</h2>
+      </div>
+    </div>
   );
 }
 
 export default function ServicesHub() {
-  const allServices = [...formationServices, ...notaryServices];
+  const allServices = [...formationServices, ...notaryServices, ...complianceServices, ...documentServices];
 
   return (
     <>
       <SEO
-        title="Our Services | Business Formation, Notary & Startup Support"
-        description="LLC formation, corporation filing, EIN assistance, Missouri registered agent, mobile notary, online notary, loan signing, and startup packages from Gantt Key Formation Group."
+        title="Our Services | Business Formation, Notary & Compliance"
+        description="LLC formation from $597, RON notarization $35/document, mobile notary, loan signing, registered agent, dissolution, amendments, DBA, and compliance services from Gantt Key Formation Group."
         schema={[
           itemListSchema({
             name: "Gantt Key Business Formation & Notary Services",
-            description: "Complete service catalog for business formation, notary, and startup support across 7 states.",
+            description: "Complete service catalog for business formation, notary, and compliance across multiple states.",
             url: "/services",
             items: allServices.map((s) => ({
               name: s.title,
@@ -138,87 +225,90 @@ export default function ServicesHub() {
       {/* Hero */}
       <div className="bg-primary text-primary-foreground pt-28 pb-16">
         <div className="container mx-auto px-4 text-center max-w-3xl">
-          <p className="text-secondary text-sm font-semibold uppercase tracking-widest mb-4">What We Do</p>
-          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-5 text-primary-foreground">Comprehensive Setup Services</h1>
-          <p className="text-primary-foreground/75 text-lg leading-relaxed">
-            Everything you need to form, structure, and launch your business with confidence — handled
-            by a founder-led team that treats every client with personal, professional care.
+          <p className="text-sm font-semibold uppercase tracking-widest mb-4" style={{ color: GOLD }}>What We Do</p>
+          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-5 text-primary-foreground">
+            Formation. Compliance. Notary.
+          </h1>
+          <p className="text-primary-foreground/75 text-lg leading-relaxed mb-8">
+            Everything you need to form, protect, and grow your business — handled by a founder who treats every client like the only one.
           </p>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-primary-foreground/70">
+            {["LLC · Corp · Non-Profit", "20-State RON", "Mobile Notary MO/KS", "Dissolution & Amendments", "Annual Compliance"].map((item) => (
+              <span key={item} className="flex items-center gap-2">
+                <CheckCircle className="h-3.5 w-3.5" style={{ color: GOLD }} />{item}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* Core Formation Services */}
+      {/* Formation Services */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="flex items-center gap-3 mb-10">
-            <CheckCircle className="h-5 w-5 text-secondary" />
-            <h2 className="font-serif text-2xl font-bold text-primary">Business Formation Services</h2>
-          </div>
+          <SectionHeading icon={Building2} label="Start Your Business" title="Business Formation Services" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {formationServices.map((s) => (
-              <ServiceCard key={s.slug} {...s} />
-            ))}
+            {formationServices.map((s) => <ServiceCard key={s.slug} {...s} />)}
           </div>
         </div>
       </section>
 
-      {/* Notary & Signing Services */}
+      {/* Notary Services */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 max-w-7xl">
-
-          {/* Section header */}
-          <div className="flex items-center gap-3 mb-8">
-            <Bell className="h-5 w-5 text-secondary" />
-            <h2 className="font-serif text-2xl font-bold text-primary">Notary &amp; Signing Services</h2>
-          </div>
-
-          {/* Launch banner */}
-          <div className="rounded-2xl border border-secondary/30 bg-primary text-primary-foreground p-8 mb-8 flex flex-col md:flex-row md:items-center gap-6">
-            <div className="flex-1">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest bg-secondary/20 text-secondary border border-secondary/30 rounded-full px-3 py-1">
-                  <span className="inline-block h-1.5 w-1.5 rounded-full bg-secondary animate-pulse" />
-                  Launching Soon
-                </span>
-              </div>
-              <h3 className="font-serif text-xl md:text-2xl font-bold text-primary-foreground mb-2">
-                Notary Division Launching Soon
-              </h3>
-              <p className="text-primary-foreground/75 text-sm leading-relaxed max-w-2xl">
-                Gantt Key Formation Group is expanding its services to include Mobile Notary, Online Notary, and Loan
-                Signing Services. Join our waitlist to be notified when appointments become available.
-              </p>
-            </div>
-            <div className="flex-shrink-0">
-              <Link href="/contact">
-                <span className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold px-7 py-3.5 rounded-xl transition-colors text-sm cursor-pointer whitespace-nowrap">
-                  <Bell className="h-4 w-4" />
-                  Join the Waitlist
-                </span>
-              </Link>
-            </div>
-          </div>
-
-          {/* Three notary cards */}
+          <SectionHeading icon={CheckCircle} label="Notary & Signing" title="Notary & Signing Services" />
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            {notaryServices.map((s) => (
-              <NotaryCard key={s.slug} {...s} />
-            ))}
+            {notaryServices.map((s) => <ServiceCard key={s.slug} {...s} />)}
           </div>
         </div>
       </section>
 
-      {/* Additional Services */}
+      {/* Annual Compliance */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="mb-10">
-            <h2 className="font-serif text-2xl font-bold text-primary mb-2">Additional Support Services</h2>
-            <p className="text-muted-foreground">More ways we can help you build a stronger business foundation.</p>
+          <SectionHeading icon={Shield} label="Stay Compliant" title="Annual Compliance Services" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {complianceServices.map((s) => <ServiceCard key={s.slug} {...s} />)}
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-            {additionalServices.map((s) => (
-              <ServiceCard key={s.slug} {...s} />
+        </div>
+      </section>
+
+      {/* Document & Amendment Services */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <SectionHeading icon={FileText} label="Documents & Changes" title="Document & Amendment Services" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {documentServices.map((s) => <ServiceCard key={s.slug} {...s} />)}
+          </div>
+        </div>
+      </section>
+
+      {/* Package Deals */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <SectionHeading icon={Tag} label="Bundles — Save More" title="Complete Business Packages" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
+            {packageDeals.map((pkg) => (
+              <div key={pkg.title} className="rounded-2xl border border-border bg-white p-6 hover:border-secondary hover:shadow-md transition-all">
+                <div className="flex items-start justify-between gap-3 mb-4">
+                  <h3 className="font-serif font-bold text-base leading-snug" style={{ color: NAVY }}>{pkg.title}</h3>
+                  <span className="text-xl font-bold flex-shrink-0" style={{ color: GOLD }}>{pkg.price}</span>
+                </div>
+                <ul className="space-y-1.5">
+                  {pkg.includes.map((item) => (
+                    <li key={item} className="flex items-center gap-2 text-sm text-gray-600">
+                      <CheckCircle className="h-3.5 w-3.5 flex-shrink-0" style={{ color: GOLD }} />{item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
+          </div>
+          <div className="text-center">
+            <Link href="/pricing">
+              <span className="inline-block font-semibold px-8 py-3.5 rounded-xl text-sm cursor-pointer transition-colors" style={{ background: GOLD, color: NAVY }}>
+                View Full Pricing →
+              </span>
+            </Link>
           </div>
         </div>
       </section>
@@ -227,12 +317,19 @@ export default function ServicesHub() {
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center max-w-2xl">
           <h2 className="font-serif text-3xl font-bold text-primary-foreground mb-4">Not sure where to start?</h2>
-          <p className="text-primary-foreground/75 mb-8">Book a free consultation and we will help you choose the right services for your goals.</p>
-          <Link href="/consultation">
-            <span className="inline-block bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold px-8 py-3.5 rounded-lg transition-colors text-sm cursor-pointer">
-              Book a Free Consultation
-            </span>
-          </Link>
+          <p className="text-primary-foreground/75 mb-8 leading-relaxed">Book a free consultation and we will help you choose the right services for your goals.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/consultation">
+              <span className="inline-block font-semibold px-8 py-3.5 rounded-lg transition-colors text-sm cursor-pointer" style={{ background: GOLD, color: NAVY }}>
+                Book a Free Consultation
+              </span>
+            </Link>
+            <Link href="/pricing">
+              <span className="inline-block font-semibold px-8 py-3.5 rounded-lg transition-colors text-sm cursor-pointer text-white border border-white/30 hover:bg-white/10">
+                View All Pricing
+              </span>
+            </Link>
+          </div>
         </div>
       </section>
     </>
