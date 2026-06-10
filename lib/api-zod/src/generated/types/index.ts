@@ -6,6 +6,8 @@
  * OpenAPI spec version: 0.1.0
  */
 
+export * from './analyticsAuthInput';
+export * from './analyticsAuthResult';
 export * from './analyticsEventInput';
 export * from './analyticsSummary';
 export * from './healthStatus';

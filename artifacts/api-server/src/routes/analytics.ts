@@ -1,4 +1,4 @@
-import { Router, type IRouter } from "express";
+import { Router, type IRouter, type Request, type Response, type NextFunction } from "express";
 import { UAParser } from "ua-parser-js";
 import { db, visitorSessionsTable, pageViewsTable } from "@workspace/db";
 import { eq, sql, gte, count, desc } from "drizzle-orm";
@@ -6,9 +6,36 @@ import { lookupIp } from "../lib/ip-intelligence";
 import {
   TrackAnalyticsEventBody,
   ListAnalyticsSessionsQueryParams,
+  AuthenticateAnalyticsBody,
 } from "@workspace/api-zod";
 
 const router: IRouter = Router();
+
+function requireAnalyticsAuth(req: Request, res: Response, next: NextFunction): void {
+  const expected = process.env["ANALYTICS_PASSWORD"];
+  if (!expected) {
+    res.status(503).json({ error: "Analytics password not configured." });
+    return;
+  }
+  const auth = req.headers["authorization"] ?? "";
+  const provided = auth.startsWith("Bearer ") ? auth.slice(7) : "";
+  if (provided !== expected) {
+    res.status(401).json({ error: "Unauthorized" });
+    return;
+  }
+  next();
+}
+
+router.post("/analytics/auth", (req, res): void => {
+  const parsed = AuthenticateAnalyticsBody.safeParse(req.body);
+  if (!parsed.success) {
+    res.status(400).json({ error: parsed.error.message });
+    return;
+  }
+  const expected = process.env["ANALYTICS_PASSWORD"];
+  const ok = !!expected && parsed.data.password === expected;
+  res.json({ ok });
+});
 
 function getClientIp(req: import("express").Request): string {
   const forwarded = req.headers["x-forwarded-for"];
@@ -89,7 +116,7 @@ router.post("/analytics/event", async (req, res): Promise<void> => {
   res.json({ ok: true });
 });
 
-router.get("/analytics/summary", async (req, res): Promise<void> => {
+router.get("/analytics/summary", requireAnalyticsAuth, async (req, res): Promise<void> => {
   const now = new Date();
   const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const startOfWeek = new Date(startOfDay);
@@ -220,7 +247,7 @@ router.get("/analytics/summary", async (req, res): Promise<void> => {
   });
 });
 
-router.get("/analytics/sessions", async (req, res): Promise<void> => {
+router.get("/analytics/sessions", requireAnalyticsAuth, async (req, res): Promise<void> => {
   const rawParams = ListAnalyticsSessionsQueryParams.safeParse(req.query);
   const limit = rawParams.success ? (rawParams.data.limit ?? 50) : 50;
   const offset = rawParams.success ? (rawParams.data.offset ?? 0) : 0;

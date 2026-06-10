@@ -20,6 +20,8 @@ import type {
 } from '@tanstack/react-query';
 
 import type {
+  AnalyticsAuthInput,
+  AnalyticsAuthResult,
   AnalyticsEventInput,
   AnalyticsSummary,
   HealthStatus,
@@ -117,6 +119,77 @@ export function useHealthCheck<TData = Awaited<ReturnType<typeof healthCheck>>, 
 
 
 
+
+export const getAuthenticateAnalyticsUrl = () => {
+
+
+
+
+  return `/api/analytics/auth`
+}
+
+/**
+ * @summary Validate analytics dashboard password
+ */
+export const authenticateAnalytics = async (analyticsAuthInput: AnalyticsAuthInput, options?: RequestInit): Promise<AnalyticsAuthResult> => {
+
+  return customFetch<AnalyticsAuthResult>(getAuthenticateAnalyticsUrl(),
+  {
+    ...options,
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', ...options?.headers },
+    body: JSON.stringify(
+      analyticsAuthInput,)
+  }
+);}
+
+
+
+
+export const getAuthenticateAnalyticsMutationOptions = <TError = ErrorType<unknown>,
+    TContext = unknown>(options?: { mutation?:UseMutationOptions<Awaited<ReturnType<typeof authenticateAnalytics>>, TError,{data: BodyType<AnalyticsAuthInput>}, TContext>, request?: SecondParameter<typeof customFetch>}
+): UseMutationOptions<Awaited<ReturnType<typeof authenticateAnalytics>>, TError,{data: BodyType<AnalyticsAuthInput>}, TContext> => {
+
+const mutationKey = ['authenticateAnalytics'];
+const {mutation: mutationOptions, request: requestOptions} = options ?
+      options.mutation && 'mutationKey' in options.mutation && options.mutation.mutationKey ?
+      options
+      : {...options, mutation: {...options.mutation, mutationKey}}
+      : {mutation: { mutationKey, }, request: undefined};
+
+
+
+
+      const mutationFn: MutationFunction<Awaited<ReturnType<typeof authenticateAnalytics>>, {data: BodyType<AnalyticsAuthInput>}> = (props) => {
+          const {data} = props ?? {};
+
+          return  authenticateAnalytics(data,requestOptions)
+        }
+
+
+
+
+
+
+  return  { mutationFn, ...mutationOptions }}
+
+    export type AuthenticateAnalyticsMutationResult = NonNullable<Awaited<ReturnType<typeof authenticateAnalytics>>>
+    export type AuthenticateAnalyticsMutationBody = BodyType<AnalyticsAuthInput>
+    export type AuthenticateAnalyticsMutationError = ErrorType<unknown>
+
+    /**
+ * @summary Validate analytics dashboard password
+ */
+export const useAuthenticateAnalytics = <TError = ErrorType<unknown>,
+    TContext = unknown>(options?: { mutation?:UseMutationOptions<Awaited<ReturnType<typeof authenticateAnalytics>>, TError,{data: BodyType<AnalyticsAuthInput>}, TContext>, request?: SecondParameter<typeof customFetch>}
+ ): UseMutationResult<
+        Awaited<ReturnType<typeof authenticateAnalytics>>,
+        TError,
+        {data: BodyType<AnalyticsAuthInput>},
+        TContext
+      > => {
+      return useMutation(getAuthenticateAnalyticsMutationOptions(options));
+    }
 
 export const getTrackAnalyticsEventUrl = () => {
 

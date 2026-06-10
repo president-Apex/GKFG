@@ -27,6 +27,25 @@ paths:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
 
+  /analytics/auth:
+    post:
+      operationId: authenticateAnalytics
+      tags: [analytics]
+      summary: Validate analytics dashboard password
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AnalyticsAuthInput"
+      responses:
+        "200":
+          description: Auth result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AnalyticsAuthResult"
+
   /analytics/event:
     post:
       operationId: trackAnalyticsEvent
@@ -94,6 +113,20 @@ components:
           type: string
       required:
         - status
+
+    AnalyticsAuthInput:
+      type: object
+      required: [password]
+      properties:
+        password:
+          type: string
+
+    AnalyticsAuthResult:
+      type: object
+      required: [ok]
+      properties:
+        ok:
+          type: boolean
 
     AnalyticsEventInput:
       type: object

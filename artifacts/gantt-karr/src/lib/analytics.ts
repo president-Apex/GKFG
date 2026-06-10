@@ -44,8 +44,7 @@ export function trackPageView(path: string): void {
     duration,
   };
 
-  const base = import.meta.env.BASE_URL.replace(/\/$/, "");
-  fetch(`${base}/api/analytics/event`, {
+  fetch(`/api/analytics/event`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload),

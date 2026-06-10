@@ -9,6 +9,14 @@ export interface HealthStatus {
   status: string;
 }
 
+export interface AnalyticsAuthInput {
+  password: string;
+}
+
+export interface AnalyticsAuthResult {
+  ok: boolean;
+}
+
 export interface AnalyticsEventInput {
   sessionId: string;
   path: string;

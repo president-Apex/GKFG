@@ -18,6 +18,18 @@ export const HealthCheckResponse = zod.object({
 
 
 /**
+ * @summary Validate analytics dashboard password
+ */
+export const AuthenticateAnalyticsBody = zod.object({
+  "password": zod.string()
+})
+
+export const AuthenticateAnalyticsResponse = zod.object({
+  "ok": zod.boolean()
+})
+
+
+/**
  * @summary Track a page view event
  */
 export const TrackAnalyticsEventBody = zod.object({
