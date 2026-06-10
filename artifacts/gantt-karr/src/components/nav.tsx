@@ -12,6 +12,7 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import { allStates } from "@/data/states";
 
 const keyServices = [
   { label: "LLC Formation Assistance", href: "/services/llc-formation" },
@@ -80,29 +81,28 @@ export function Nav() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>States</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[320px] gap-1 p-4">
-                    {[
-                      { name: "Missouri", slug: "missouri", region: "Kansas City Metro — Home State" },
-                      { name: "Kansas", slug: "kansas", region: "KC Metro & Johnson County" },
-                      { name: "Arizona", slug: "arizona", region: "Phoenix & Scottsdale" },
-                      { name: "Tennessee", slug: "tennessee", region: "Nashville Metro" },
-                      { name: "North Carolina", slug: "north-carolina", region: "Charlotte Metro" },
-                      { name: "Georgia", slug: "georgia", region: "Atlanta Metro" },
-                      { name: "Montana", slug: "montana", region: "Statewide + Out-of-State Investors" },
-                    ].map((s) => (
-                      <li key={s.slug}>
-                        <Link href={`/states/${s.slug}`} className="block p-2 hover:bg-muted rounded-md text-sm">
-                          <div className="font-medium">{s.name}</div>
-                          <div className="text-muted-foreground text-xs mt-0.5">{s.region}</div>
-                        </Link>
-                      </li>
-                    ))}
-                    <li className="border-t border-border mt-1 pt-1">
-                      <Link href="/states" className="block p-2 hover:bg-muted rounded-md text-sm font-semibold text-secondary">
-                        View All 7 States →
-                      </Link>
-                    </li>
-                  </ul>
+                  <div className="w-[560px] p-4">
+                    <Link
+                      href="/states"
+                      className="block font-semibold text-primary hover:text-secondary transition-colors text-sm mb-4 pb-3 border-b border-border"
+                    >
+                      View All {allStates.length} States &rarr;
+                    </Link>
+                    <ul className="grid grid-cols-2 gap-x-4 gap-y-1">
+                      {allStates.map((s) => (
+                        <li key={s.slug}>
+                          <Link href={`/states/${s.slug}`} className="flex items-center justify-between gap-2 p-2 hover:bg-muted rounded-md text-sm">
+                            <span className="font-medium text-foreground/80">{s.name}</span>
+                            {s.showMoKsBadge && (
+                              <span className="text-[9px] font-bold uppercase tracking-wider bg-secondary/15 text-secondary border border-secondary/20 rounded-full px-1.5 py-0.5 flex-shrink-0">
+                                Home
+                              </span>
+                            )}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
 

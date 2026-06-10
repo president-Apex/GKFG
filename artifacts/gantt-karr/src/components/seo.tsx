@@ -3,7 +3,7 @@ import { useLocation } from "wouter";
 import { SITE_URL, SITE_NAME } from "@/lib/schema";
 
 const DEFAULT_DESCRIPTION =
-  "Gantt Key Formation Group — founder-led business formation, notary services, and startup support across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana.";
+  "Gantt Key Formation Group — founder-led business formation, notary services, and startup support across 20 states.";
 const DEFAULT_IMAGE = `${SITE_URL}/gantt-karr/opengraph.jpg`;
 
 interface SEOProps {

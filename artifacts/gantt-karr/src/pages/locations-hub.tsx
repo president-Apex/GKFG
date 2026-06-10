@@ -8,11 +8,11 @@ export default function LocationsHub() {
     <>
       <SEO
         title="Locations Served | Gantt Key Formation Group"
-        description="Gantt Key Formation Group serves entrepreneurs across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana. Find your city and get local business formation support."
+        description="Gantt Key Formation Group serves entrepreneurs across 20 states. Find your city and get local business formation support."
         schema={[
           itemListSchema({
             name: "Locations Served by Gantt Key Formation Group",
-            description: "Business formation, notary, and startup support across key markets in 7 states.",
+            description: "Business formation, notary, and startup support across key markets in 20 states.",
             url: "/locations",
             items: Object.entries(locationsData).flatMap(([stateSlug, state]) =>
               state.cities.map((citySlug) => ({

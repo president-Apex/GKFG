@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/schema";
 
-const SITE_URL = "https://ganttformation.com";
+const SITE_URL = "https://ganttformationgroup.com";
 
 const faqs = [
   {

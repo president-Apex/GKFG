@@ -1,4 +1,4 @@
-export const SITE_URL = "https://ganttformation.com";
+export const SITE_URL = "https://ganttformationgroup.com";
 export const SITE_NAME = "Gantt Key Formation Group";
 
 const ORG_BASE = {
@@ -15,8 +15,8 @@ const ORG_BASE = {
   },
   image: `${SITE_URL}/opengraph.jpg`,
   description:
-    "Founder-led business formation, notary services, and startup support powered by Anna AI. Serving entrepreneurs across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana.",
-  email: "Info@ganttformation.com",
+    "Founder-led business formation, notary services, and startup support powered by Anna AI. Serving entrepreneurs across 20 states with LLC formation, EIN assistance, registered agent, and remote online notarization.",
+  email: "Info@ganttformationgroup.com",
   telephone: "1-800-GANTT-KARR",
   priceRange: "$$",
   address: {
@@ -62,29 +62,35 @@ const ORG_BASE = {
   },
   areaServed: [
     { "@type": "State", name: "Missouri" },
+    { "@type": "State", name: "Kansas" },
     { "@type": "State", name: "Arizona" },
+    { "@type": "State", name: "Tennessee" },
     { "@type": "State", name: "North Carolina" },
     { "@type": "State", name: "Georgia" },
-    { "@type": "State", name: "Tennessee" },
-    { "@type": "State", name: "Montana" },
+    { "@type": "State", name: "Texas" },
+    { "@type": "State", name: "Florida" },
+    { "@type": "State", name: "Colorado" },
+    { "@type": "State", name: "Virginia" },
+    { "@type": "State", name: "Maryland" },
+    { "@type": "State", name: "Indiana" },
+    { "@type": "State", name: "Iowa" },
+    { "@type": "State", name: "Kentucky" },
+    { "@type": "State", name: "Michigan" },
+    { "@type": "State", name: "Minnesota" },
+    { "@type": "State", name: "Nevada" },
+    { "@type": "State", name: "New Mexico" },
+    { "@type": "State", name: "Ohio" },
+    { "@type": "State", name: "South Carolina" },
     { "@type": "City", name: "Kansas City", containedInPlace: { "@type": "State", name: "Missouri" } },
     { "@type": "City", name: "Liberty", containedInPlace: { "@type": "State", name: "Missouri" } },
-    { "@type": "City", name: "St. Louis", containedInPlace: { "@type": "State", name: "Missouri" } },
+    { "@type": "City", name: "Overland Park", containedInPlace: { "@type": "State", name: "Kansas" } },
     { "@type": "City", name: "Phoenix", containedInPlace: { "@type": "State", name: "Arizona" } },
-    { "@type": "City", name: "Scottsdale", containedInPlace: { "@type": "State", name: "Arizona" } },
-    { "@type": "City", name: "Chandler", containedInPlace: { "@type": "State", name: "Arizona" } },
-    { "@type": "City", name: "Charlotte", containedInPlace: { "@type": "State", name: "North Carolina" } },
-    { "@type": "City", name: "Raleigh", containedInPlace: { "@type": "State", name: "North Carolina" } },
-    { "@type": "City", name: "Durham", containedInPlace: { "@type": "State", name: "North Carolina" } },
-    { "@type": "City", name: "Atlanta", containedInPlace: { "@type": "State", name: "Georgia" } },
-    { "@type": "City", name: "Alpharetta", containedInPlace: { "@type": "State", name: "Georgia" } },
-    { "@type": "City", name: "Savannah", containedInPlace: { "@type": "State", name: "Georgia" } },
     { "@type": "City", name: "Nashville", containedInPlace: { "@type": "State", name: "Tennessee" } },
-    { "@type": "City", name: "Franklin", containedInPlace: { "@type": "State", name: "Tennessee" } },
-    { "@type": "City", name: "Knoxville", containedInPlace: { "@type": "State", name: "Tennessee" } },
-    { "@type": "City", name: "Bozeman", containedInPlace: { "@type": "State", name: "Montana" } },
-    { "@type": "City", name: "Billings", containedInPlace: { "@type": "State", name: "Montana" } },
-    { "@type": "City", name: "Missoula", containedInPlace: { "@type": "State", name: "Montana" } },
+    { "@type": "City", name: "Charlotte", containedInPlace: { "@type": "State", name: "North Carolina" } },
+    { "@type": "City", name: "Atlanta", containedInPlace: { "@type": "State", name: "Georgia" } },
+    { "@type": "City", name: "Austin", containedInPlace: { "@type": "State", name: "Texas" } },
+    { "@type": "City", name: "Miami", containedInPlace: { "@type": "State", name: "Florida" } },
+    { "@type": "City", name: "Denver", containedInPlace: { "@type": "State", name: "Colorado" } },
   ],
   knowsAbout: [
     "LLC Formation",
@@ -124,7 +130,7 @@ export function websiteSchema() {
     name: SITE_NAME,
     url: SITE_URL,
     description:
-      "Family-led business formation, notary, and startup support across 6 states.",
+      "Family-led business formation, notary, and startup support across 20 states.",
     potentialAction: {
       "@type": "SearchAction",
       target: {
@@ -150,7 +156,7 @@ export function homePageSchema() {
       url: SITE_URL,
       name: `${SITE_NAME} — Business Formation & Notary Services`,
       description:
-        "Family-led business formation, notary services, and startup support across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana.",
+        "Family-led business formation, notary services, and startup support across 20 states, including Missouri, Kansas, Arizona, Tennessee, North Carolina, Georgia, Texas, and Florida.",
       isPartOf: { "@id": `${SITE_URL}/#website` },
       about: { "@id": `${SITE_URL}/#organization` },
       speakable: {
@@ -264,7 +270,9 @@ export function serviceSchema(params: {
   statesServed?: string[];
 }) {
   const states = params.statesServed ?? [
-    "Missouri", "Arizona", "North Carolina", "Georgia", "Tennessee", "Montana",
+    "Missouri", "Kansas", "Arizona", "Tennessee", "North Carolina", "Georgia",
+    "Texas", "Florida", "Colorado", "Virginia", "Maryland", "Indiana", "Iowa",
+    "Kentucky", "Michigan", "Minnesota", "Nevada", "New Mexico", "Ohio", "South Carolina",
   ];
   return {
     "@context": "https://schema.org",
@@ -393,7 +401,7 @@ export function contactPageSchema() {
         {
           "@type": "ContactPoint",
           contactType: "customer service",
-          email: "Info@ganttformation.com",
+          email: "Info@ganttformationgroup.com",
           availableLanguage: "English",
           areaServed: ["US"],
         },

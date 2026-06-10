@@ -75,7 +75,7 @@ const comparison = [
 const faqs = [
   {
     q: "What states do you assist with corporation filings?",
-    a: "We currently assist with corporation filings across several states including Missouri, Arizona, North Carolina, Tennessee, Georgia, and Montana. Contact us to confirm availability for your specific state.",
+    a: "We currently assist with corporation filings across all 20 states we serve, including Missouri, Kansas, Arizona, Tennessee, North Carolina, and Georgia. Contact us to confirm availability for your specific state.",
   },
   {
     q: "What is the difference between a C-Corp and an S-Corp?",
@@ -102,9 +102,9 @@ export default function CorporationFiling() {
         title="Corporation Filing Assistance | Gantt Key Formation Group"
         description="Professional corporation filing assistance for entrepreneurs and growing businesses. We coordinate your Articles of Incorporation, state filing, and post-formation support."
         schema={[
-          serviceSchema({ name: "Corporation Filing Assistance", description: "Professional support for forming a corporation. We coordinate Articles of Incorporation, state filing, and post-formation documentation across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana.", url: `${SITE_URL}/services/corporation-filing`, category: "Business Formation Service" }),
+          serviceSchema({ name: "Corporation Filing Assistance", description: "Professional support for forming a corporation. We coordinate Articles of Incorporation, state filing, and post-formation documentation across all 20 states we serve.", url: `${SITE_URL}/services/corporation-filing`, category: "Business Formation Service" }),
           faqSchema([
-            { q: "What states do you assist with corporation filings?", a: "We currently assist with corporation filings across several states including Missouri, Arizona, North Carolina, Tennessee, Georgia, and Montana. Contact us to confirm availability for your specific state." },
+            { q: "What states do you assist with corporation filings?", a: "We currently assist with corporation filings across all 20 states we serve, including Missouri, Kansas, Arizona, Tennessee, North Carolina, and Georgia. Contact us to confirm availability for your specific state." },
             { q: "What is the difference between a C-Corp and an S-Corp?", a: "A C-Corporation is the default corporate structure subject to corporate income tax. An S-Corporation is a tax election made with the IRS that allows income and losses to pass through to shareholders' personal tax returns, avoiding double taxation." },
             { q: "Do I need a registered agent for my corporation?", a: "Yes. Every corporation is required to maintain a registered agent with a physical address in the state of formation. We offer Missouri registered agent coordination as part of our services." },
             { q: "Is corporation formation right for my business?", a: "Corporations are often best for businesses that plan to raise investment capital, issue stock to employees, or eventually go public. We can discuss your goals during a free consultation." },

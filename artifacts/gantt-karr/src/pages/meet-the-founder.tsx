@@ -16,12 +16,12 @@ export default function MeetTheFounder() {
     <>
       <SEO
         title="Meet Loresa Gantt — Founder & CEO | Gantt Key Formation Group"
-        description="Loresa Gantt is the founder and CEO of Gantt Key Formation Group. Learn about her mission to bring executive-level precision and warmth to business formation for entrepreneurs across 7 states."
+        description="Loresa Gantt is the founder and CEO of Gantt Key Formation Group. Learn about her mission to bring executive-level precision and warmth to business formation for entrepreneurs across 20 states."
         schema={[
           personSchema({
             name: "Loresa Gantt",
             jobTitle: "Founder & CEO",
-            description: "Founder of Gantt Key Formation Group, providing founder-led business formation, notary, and startup support across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana.",
+            description: "Founder of Gantt Key Formation Group, providing founder-led business formation, notary, and startup support across 20 states.",
             url: `${SITE_URL}/meet-the-founder`,
             image: `${SITE_URL}/loresa-gantt.png`,
           }),
@@ -91,7 +91,7 @@ export default function MeetTheFounder() {
             <span className="opacity-40">·</span>
             <span>Entrepreneur's Advocate</span>
             <span className="opacity-40">·</span>
-            <span>7 States Served</span>
+            <span>20 States Served</span>
           </div>
         </div>
       </section>
@@ -113,7 +113,7 @@ export default function MeetTheFounder() {
                 She built Gantt Key to be the answer to that problem. A boutique firm where every client is known by name. Where the process is explained in plain language. Where compliance comes first, always — and where no one is ever made to feel like a burden for asking a question.
               </p>
               <p>
-                Under Loresa's leadership, Gantt Key Formation Group has grown into a trusted partner for entrepreneurs across Missouri, Kansas, Arizona, Tennessee, North Carolina, Georgia, and Montana — offering LLC formation, corporation filing, EIN assistance, registered agent services, BOI reporting support, notary services, loan signing, and AI-powered intake through Anna AI.
+                Under Loresa's leadership, Gantt Key Formation Group has grown into a trusted partner for entrepreneurs across 20 states — including Missouri, Kansas, Arizona, Tennessee, North Carolina, and Georgia — offering LLC formation, corporation filing, EIN assistance, registered agent services, BOI reporting support, notary services, loan signing, and AI-powered intake through Anna AI.
               </p>
               <p>
                 Loresa leads with what she calls a "feminine executive" energy — deeply polished and highly capable, but never transactional. She believes that the way a firm treats you in the beginning tells you everything about the kind of partner it will be going forward.
@@ -133,7 +133,7 @@ export default function MeetTheFounder() {
                     "Business Formation Specialist",
                     "Entrepreneur & Female Founder",
                     "Woman-Owned Business Advocate",
-                    "Serving 7 states & 20+ cities",
+                    "Serving 20 states nationwide",
                     "Powered by Anna AI",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2.5">

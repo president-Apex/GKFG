@@ -170,7 +170,7 @@ export default function ClientIntake() {
             </p>
             <p className="text-sm text-muted-foreground">
               Questions? Email us at{" "}
-              <a href="mailto:info@ganttformation.com" className="text-secondary hover:underline">info@ganttformation.com</a>
+              <a href="mailto:info@ganttformationgroup.com" className="text-secondary hover:underline">info@ganttformationgroup.com</a>
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
               <Link href="/services">

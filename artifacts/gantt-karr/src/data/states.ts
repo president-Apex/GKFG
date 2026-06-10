@@ -1,14 +1,11 @@
-export type ServiceStatus = "available" | "coming-soon" | "by-request" | "late-2026";
-
-export interface StateService {
-  name: string;
-  status: ServiceStatus;
-  note?: string;
-}
-
-export interface StateReason {
-  title: string;
-  body: string;
+export interface StateFilingFees {
+  llcFormation: string;
+  annualReport: string;
+  dbaFee: string;
+  foreignLlc: string;
+  nameReservation: string;
+  gkfgStarterFee: string;
+  totalStarter: string;
 }
 
 export interface StateFaq {
@@ -16,31 +13,29 @@ export interface StateFaq {
   a: string;
 }
 
-export interface StateTestimonial {
-  quote: string;
-  attribution: string;
-}
-
 export interface StateData {
   slug: string;
   name: string;
+  abbr: string;
   region: string;
+  accentColor: string;
   seoTitle: string;
   metaDescription: string;
-  heroLabel: string;
-  heroHeadline: string;
   heroSubheadline: string;
-  heroCta: string;
-  trustBar: string[];
-  cities: string[];
-  citiesNote: string;
-  services: StateService[];
-  filingFacts: string[];
-  callout: string;
-  reasons: StateReason[];
-  testimonial: StateTestimonial;
-  faqs: StateFaq[];
-  accentColor: string;
+  fees: StateFilingFees;
+  /** GKFG provides registered agent service directly (Missouri only). */
+  registeredAgent: boolean;
+  /** In-person mobile notary available (MO & KS only). */
+  mobileNotary: boolean;
+  /** Loan signing agent available (MO & KS only). */
+  loanSigning: boolean;
+  /** Headline marketing point — rendered as the state callout. */
+  keySellingPoint: string;
+  /** Honest operational/compliance note for the state. */
+  specialNote: string;
+  /** Slugs of 2–3 related states for cross-linking. */
+  neighbors: string[];
+  /** Marks the MO/KS home-market pair. */
   showMoKsBadge?: boolean;
 }
 
@@ -48,383 +43,591 @@ const stateList: StateData[] = [
   {
     slug: "missouri",
     name: "Missouri",
-    region: "Kansas City Metro",
-    seoTitle: "LLC Formation & Notary Services in Missouri | Gantt Key Formation Group",
-    metaDescription: "Founded in Liberty, MO — GKFG helps Missouri entrepreneurs form LLCs, get EINs, and notarize documents. Same-day mobile notary and RON available across the KC metro and statewide.",
-    heroLabel: "HOME STATE · MISSOURI",
-    heroHeadline: "Missouri's Formation + Notary Team — Right in Your Backyard.",
-    heroSubheadline: "From Liberty to Kansas City, Lee's Summit to St. Louis, we handle your LLC, EIN, registered agent, and notary — all in one place.",
-    heroCta: "Start My Missouri LLC →",
-    trustBar: ["$50 MO Filing Fee", "Same-Day RON Available", "Mobile Notary KC Metro", "Missouri Registered Agent"],
-    cities: [
-      "Kansas City", "Liberty", "Lee's Summit", "Independence", "Blue Springs", "Raytown",
-      "Overland Park KS", "Shawnee KS", "Olathe KS", "Lenexa KS", "Leawood KS",
-      "St. Louis", "Springfield", "Columbia", "Jefferson City", "Joplin", "O'Fallon",
-    ],
-    citiesNote: "Mobile notary available in-person in the KC metro and Liberty area. RON (online notarization) available statewide and in all 7 states we serve.",
-    services: [
-      { name: "LLC Formation", status: "available", note: "$50 MO state filing fee (separate)" },
-      { name: "S-Corp / C-Corp Filing", status: "available" },
-      { name: "EIN Assistance", status: "available" },
-      { name: "Operating Agreement (notarized)", status: "available" },
-      { name: "DBA / Assumed Name", status: "available" },
-      { name: "BOI Reporting", status: "available" },
-      { name: "Missouri Registered Agent", status: "available", note: "MO & KS Exclusive" },
-      { name: "Mobile Notary — KC Metro", status: "available", note: "MO & KS Exclusive" },
-      { name: "Remote Online Notarization (RON)", status: "available", note: "Statewide + all 7 states" },
-      { name: "Loan Signing Agent", status: "available", note: "MO & KS Exclusive" },
-      { name: "Startup Consultation (free)", status: "available" },
-    ],
-    filingFacts: [
-      "State filing fee: $50 (Articles of Organization)",
-      "Processing time: 1–3 business days online",
-      "Annual report: NOT required (Missouri has no annual report for LLCs)",
-      "Registered agent: Required — must have MO address",
-      "Operating agreement: Not legally required but strongly recommended",
-    ],
-    callout: "Missouri is one of the most affordable states to form an LLC. No annual report, $50 filing fee, and quick online processing. We handle all of it.",
-    reasons: [
-      { title: "We're here.", body: "GKFG is founded and operated in Liberty, MO. We are your neighbors. We understand Missouri's 1% KC earnings tax, cross-border MO/KS business issues, and the Northland business community." },
-      { title: "Mobile + Online.", body: "We hold active Missouri AND Kansas notary commissions. We can come to you in the KC metro, or meet you online via RON from anywhere in the state." },
-      { title: "One stop.", body: "We file your LLC, get your EIN, notarize your documents, and serve as your registered agent. No juggling multiple vendors. One call, one team." },
-    ],
-    testimonial: {
-      quote: "Loresa filed my LLC in two days and was at my kitchen table to notarize my operating agreement the same week. I didn't have to go anywhere or figure anything out. Worth every dollar.",
-      attribution: "Marcus T., Kansas City MO · LLC Formation + Mobile Notary",
-    },
-    faqs: [
-      { q: "How long does it take to form an LLC in Missouri?", a: "Most Missouri LLCs are processed within 1–3 business days when filed online. We handle the filing and notify you the moment it's active." },
-      { q: "Does Missouri require an annual report for LLCs?", a: "No — Missouri is one of the few states with no annual LLC report requirement. Your LLC stays active as long as your registered agent information is current." },
-      { q: "Can you notarize documents after business hours?", a: "Yes. Mobile notary is available until 9pm Monday–Saturday. RON (online) is available 24/7 through Anna AI booking." },
-      { q: "Do you serve the Kansas side of Kansas City?", a: "Yes. We hold active notary commissions in both Missouri and Kansas. We cover the entire KC metro on both sides of the state line." },
-    ],
+    abbr: "MO",
+    region: "Kansas City Metro — Home State",
     accentColor: "#C9A84C",
+    seoTitle: "Missouri LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Missouri LLC with GKFG — our home state. $50 state filing fee, no annual report, registered agent, mobile notary, and RON across the KC metro and statewide.",
+    heroSubheadline:
+      "Missouri is our home. From Liberty to Kansas City, we handle your LLC, EIN, registered agent, and notary — all in one place, with same-day mobile notary across the metro.",
+    fees: {
+      llcFormation: "$50 online ($105 by mail)",
+      annualReport: "None — Missouri has no annual report",
+      dbaFee: "$7 (renews every 5 years)",
+      foreignLlc: "$105",
+      nameReservation: "$25",
+      gkfgStarterFee: "$297",
+      totalStarter: "$347",
+    },
+    registeredAgent: true,
+    mobileNotary: true,
+    loanSigning: true,
+    keySellingPoint:
+      "Missouri is one of only four states with no annual LLC report or fee. Form once, maintain it for free — combined with a $50 filing fee, it's one of the most affordable states in the country.",
+    specialNote:
+      "Missouri is GKFG's home state. We're founded and operated in Liberty, MO, and serve the entire Kansas City metro in person.",
+    neighbors: ["kansas", "iowa", "kentucky"],
     showMoKsBadge: true,
   },
   {
     slug: "kansas",
     name: "Kansas",
+    abbr: "KS",
     region: "KC Metro & Johnson County",
-    seoTitle: "LLC Formation & Notary Services in Kansas | Gantt Key Formation Group",
-    metaDescription: "GKFG serves Kansas entrepreneurs with LLC formation, EIN assistance, mobile notary, and RON in Overland Park, Shawnee, Olathe, and across Johnson County.",
-    heroLabel: "KANSAS · KC METRO & JOHNSON COUNTY",
-    heroHeadline: "Serving Both Sides of the State Line — Missouri and Kansas.",
-    heroSubheadline: "One team, two states. We hold active notary commissions in both Missouri and Kansas — making us the only formation firm in the KC metro that covers the whole metro.",
-    heroCta: "Start My Kansas LLC →",
-    trustBar: ["$165 KS Filing Fee", "Mobile Notary Johnson County", "RON Available", "MO & KS Commission Held"],
-    cities: [
-      "Overland Park", "Shawnee", "Olathe", "Lenexa", "Leawood", "Prairie Village",
-      "Merriam", "Mission", "Roeland Park", "Fairway", "Westwood", "De Soto",
-      "Gardner", "Spring Hill", "Edgerton", "Lansing", "Leavenworth",
-    ],
-    citiesNote: "Mobile notary available in-person throughout Johnson County and the KS side of the KC metro. RON available for Kansas clients statewide.",
-    services: [
-      { name: "LLC Formation (Kansas)", status: "available", note: "$165 KS state filing fee (separate)" },
-      { name: "S-Corp / C-Corp Filing", status: "available" },
-      { name: "EIN Assistance", status: "available" },
-      { name: "Operating Agreement (notarized)", status: "available" },
-      { name: "DBA Filing", status: "available" },
-      { name: "BOI Reporting", status: "available" },
-      { name: "Kansas Registered Agent", status: "coming-soon" },
-      { name: "Mobile Notary — Johnson County", status: "available", note: "MO & KS Exclusive" },
-      { name: "Remote Online Notarization (RON)", status: "available", note: "Must be physically in KS for KS RON" },
-      { name: "Loan Signing Agent", status: "available", note: "MO & KS Exclusive" },
-    ],
-    filingFacts: [
-      "State filing fee: $165 (Articles of Organization)",
-      "Processing time: 2–5 business days online",
-      "Annual report: Required — due by April 15 each year, $55 fee",
-      "Registered agent: Required — must have KS address",
-      "Cross-border note: Many KC businesses operate in both MO and KS — we can form in both",
-    ],
-    callout: "Kansas LLCs require an annual report (Missouri does not). We'll remind you every year so you never fall out of good standing.",
-    reasons: [
-      { title: "We cross the state line.", body: "Most formation services are Missouri-only. We hold an active Kansas notary commission and physically serve Johnson County. Drive to Overland Park? We're already there." },
-      { title: "We understand the cross-border business.", body: "Operating in both MO and KS creates layered tax obligations. We connect you with our CPA partners who specialize in exactly this situation." },
-      { title: "Same team, same trust.", body: "You don't need a different vendor on each side of State Line Road. GKFG is your one contact for formation, notary, and registered agent in both states." },
-    ],
-    testimonial: {
-      quote: "I run my business out of Overland Park and needed documents notarized on a Thursday evening. Loresa was there within an hour. Didn't have to cross into Missouri or find a new notary.",
-      attribution: "Priya S., Overland Park KS · Mobile Notary + Operating Agreement",
-    },
-    faqs: [
-      { q: "Is Kansas LLC formation more expensive than Missouri?", a: "Yes — Kansas charges $165 vs. Missouri's $50. Kansas also requires an annual report ($55/year). We'll keep you informed of all costs upfront." },
-      { q: "Can you notarize documents for Kansas clients online?", a: "Yes, using our Kansas RON commission. For Kansas RON sessions, we must be physically in Kansas during the notarization — which we are, regularly." },
-      { q: "I'm already formed in Missouri — do I need a Kansas LLC too?", a: "Not necessarily. If you're operating in Kansas, you may only need to register your MO LLC as a foreign entity in KS (called a Certificate of Authority). We can advise you on the right path." },
-    ],
     accentColor: "#C9A84C",
+    seoTitle: "Kansas LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Kansas LLC with GKFG. We hold active Missouri and Kansas notary commissions and serve Overland Park, Shawnee, Olathe, and all of Johnson County.",
+    heroSubheadline:
+      "One team, both sides of the state line. We hold active notary commissions in Missouri and Kansas — covering the whole KC metro for formation, mobile notary, and RON.",
+    fees: {
+      llcFormation: "$160",
+      annualReport: "$55 / year",
+      dbaFee: "$35",
+      foreignLlc: "$165",
+      nameReservation: "$35",
+      gkfgStarterFee: "$297",
+      totalStarter: "$457",
+    },
+    registeredAgent: false,
+    mobileNotary: true,
+    loanSigning: true,
+    keySellingPoint:
+      "Kansas is a low-regulation state with a straightforward formation process — a strong choice for the many KC businesses that operate across the MO/KS border.",
+    specialNote:
+      "Kansas City spans both states, so many GKFG clients operate in both MO and KS. We provide registered agent service through a vetted Kansas partner referral.",
+    neighbors: ["missouri", "colorado", "iowa"],
     showMoKsBadge: true,
   },
   {
     slug: "arizona",
     name: "Arizona",
+    abbr: "AZ",
     region: "Phoenix Metro",
-    seoTitle: "LLC Formation & Notary Services in Arizona | Gantt Key Formation Group",
-    metaDescription: "GKFG helps Arizona entrepreneurs in Phoenix, Scottsdale, Chandler, Gilbert, and Mesa form LLCs, get EINs, and access RON notarization. Formation + notary in one place.",
-    heroLabel: "ARIZONA · PHOENIX METRO",
-    heroHeadline: "Phoenix and Scottsdale Entrepreneurs — We're Building Here Too.",
-    heroSubheadline: "GKFG is expanding to Arizona. Get your LLC formed, EIN secured, and documents notarized — online or in person — before the crowd catches on.",
-    heroCta: "Start My Arizona LLC →",
-    trustBar: ["$50 AZ Filing Fee", "No Annual Report Required", "RON Available", "Formation + Notary"],
-    cities: [
-      "Phoenix", "Scottsdale", "Chandler", "Gilbert", "Mesa", "Tempe",
-      "Glendale", "Peoria", "Surprise", "Buckeye", "Goodyear", "Avondale",
-      "Paradise Valley", "Fountain Hills", "Queen Creek", "Cave Creek",
-    ],
-    citiesNote: "RON (online notarization) available now for all Arizona clients. Mobile notary launching in the Phoenix/Scottsdale metro in late 2026.",
-    services: [
-      { name: "LLC Formation (Arizona)", status: "available", note: "$50 AZ state filing + publication fee" },
-      { name: "S-Corp / C-Corp Filing", status: "available" },
-      { name: "EIN Assistance", status: "available" },
-      { name: "Operating Agreement (notarized)", status: "available", note: "Via RON" },
-      { name: "DBA Filing", status: "available" },
-      { name: "BOI Reporting", status: "available" },
-      { name: "Arizona Statutory Agent", status: "coming-soon" },
-      { name: "Mobile Notary — Phoenix Metro", status: "late-2026" },
-      { name: "Remote Online Notarization (RON)", status: "available", note: "Available now, statewide" },
-      { name: "Loan Signing Agent", status: "late-2026" },
-    ],
-    filingFacts: [
-      "State filing fee: $50 (one of the lowest nationally)",
-      "Publication requirement: Required within 60 days — $60–$300 for newspaper publication",
-      "EXCEPTION: Not required if your statutory agent is in Maricopa or Pima County",
-      "No annual report required (like Missouri — saves money every year)",
-      "No franchise tax",
-      "Processing time: 1–2 business days online",
-    ],
-    callout: "Arizona requires newspaper publication for new LLCs — UNLESS your statutory agent is in Maricopa or Pima County. We'll navigate this with you so you don't pay unnecessarily.",
-    reasons: [
-      { title: "We're coming to you.", body: "GKFG's founder is relocating to Scottsdale in December 2026. RON is available to all Arizona clients now. Mobile notary and in-person services launch in the Phoenix metro when we arrive." },
-      { title: "We know the publication trap.", body: "Most Arizona entrepreneurs are blindsided by the publication requirement. We surface it upfront and help you avoid unnecessary costs." },
-      { title: "One of the lowest-cost states to stay in business.", body: "No annual report, no franchise tax, $50 filing fee. We set you up right the first time so you keep more of what you earn." },
-    ],
-    testimonial: {
-      quote: "I needed my operating agreement notarized online before opening my business bank account. GKFG got it done in the same day over video. Didn't have to leave Scottsdale.",
-      attribution: "David P., Scottsdale AZ · RON + EIN Assistance",
-    },
-    faqs: [
-      { q: "What is Arizona's publication requirement?", a: "New Arizona LLCs must publish a notice of formation in a local newspaper for three consecutive weeks within 60 days of formation. This costs $60–$300 depending on the publication. If your statutory agent has a Maricopa or Pima County address, this requirement is waived. We explain this clearly before you pay anything." },
-      { q: "Can I get notarized documents online from Arizona?", a: "Yes — RON is available now. Your documents are notarized via secure video call and delivered electronically." },
-      { q: "When will in-person mobile notary be available in Phoenix?", a: "We're building toward full mobile service in the Phoenix/Scottsdale metro in late 2026. Sign up for early access via Anna AI and we'll notify you the moment we launch." },
-    ],
     accentColor: "#D97706",
+    seoTitle: "Arizona LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Arizona LLC with GKFG. $50 filing fee, no annual report, and RON available statewide for Phoenix, Scottsdale, Chandler, Gilbert, and Mesa entrepreneurs.",
+    heroSubheadline:
+      "Phoenix and Scottsdale entrepreneurs — get your LLC formed, EIN secured, and documents notarized online. One of the lowest-cost states to start and stay in business.",
+    fees: {
+      llcFormation: "$50",
+      annualReport: "None — Arizona has no annual report",
+      dbaFee: "$10",
+      foreignLlc: "$150",
+      nameReservation: "$10",
+      gkfgStarterFee: "$297",
+      totalStarter: "$347",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "Arizona has no annual report fee — one of the most affordable states for long-term LLC maintenance, with the same low ongoing cost as Missouri.",
+    specialNote:
+      "Arizona requires newspaper publication for new LLCs unless your statutory agent is in Maricopa or Pima County. We surface this upfront so you don't overpay.",
+    neighbors: ["new-mexico", "nevada", "colorado"],
   },
   {
     slug: "tennessee",
     name: "Tennessee",
+    abbr: "TN",
     region: "Nashville Metro",
-    seoTitle: "LLC Formation & Notary Services in Tennessee | Gantt Key Formation Group",
-    metaDescription: "GKFG helps Nashville, Franklin, and Murfreesboro entrepreneurs form LLCs, get EINs, and access same-day RON notarization. Formation and notary in one place.",
-    heroLabel: "TENNESSEE · NASHVILLE METRO",
-    heroHeadline: "Nashville Is Booming. Your Business Should Be Too.",
-    heroSubheadline: "Tennessee entrepreneurs get more with GKFG — LLC formation, EIN assistance, notary services, and online RON. No law firm fees. No faceless portals. Just real support.",
-    heroCta: "Start My Tennessee LLC →",
-    trustBar: ["$300 TN Filing Fee", "No State Income Tax", "RON Available", "Formation + Notary"],
-    cities: [
-      "Nashville", "Franklin", "Murfreesboro", "Brentwood", "Spring Hill",
-      "Smyrna", "Hendersonville", "Clarksville", "Gallatin", "Lebanon",
-      "Nolensville", "Mt. Juliet", "Goodlettsville", "Antioch",
-    ],
-    citiesNote: "RON (online notarization) available now for all Tennessee clients. Mobile notary available by appointment in the greater Nashville metro.",
-    services: [
-      { name: "LLC Formation (Tennessee)", status: "available", note: "$300 TN state filing fee (separate)" },
-      { name: "S-Corp / C-Corp Filing", status: "available" },
-      { name: "EIN Assistance", status: "available" },
-      { name: "Operating Agreement (notarized)", status: "available" },
-      { name: "DBA Filing", status: "available" },
-      { name: "BOI Reporting", status: "available" },
-      { name: "Remote Online Notarization (RON)", status: "available", note: "Up to $25/session" },
-      { name: "Loan Signing Agent", status: "by-request", note: "Contact Anna AI" },
-      { name: "Startup Consultation (free)", status: "available" },
-    ],
-    filingFacts: [
-      "State filing fee: $300 (higher than most — plan for it)",
-      "Processing time: 3–5 business days online",
-      "Annual report: Required — due by April 1 each year, $300 fee",
-      "No state income tax on wages (major advantage for business owners)",
-      "Franchise & Excise Tax: LLCs doing business in TN may owe this — consult a TN CPA",
-    ],
-    callout: "Tennessee has no state income tax on wages — a major reason entrepreneurs are flooding into Nashville. But the Franchise & Excise Tax catches many new business owners off guard. We'll make sure you know what's coming before you file.",
-    reasons: [
-      { title: "Nashville is our kind of market.", body: "Music City's entrepreneurial explosion means thousands of new businesses forming every year. We serve creative professionals, healthcare entrepreneurs, contractors, and service businesses — all at GKFG's transparent flat rates." },
-      { title: "RON is active.", body: "Tennessee was one of the first states to authorize RON (2019). We can notarize your documents online same-day from anywhere in the state." },
-      { title: "No legal jargon.", body: "TN entrepreneurs often get tripped up by the Franchise & Excise Tax, annual report fees, and the $300 filing cost. We explain everything before you commit." },
-    ],
-    testimonial: {
-      quote: "I was starting a healthcare consulting practice in Nashville and needed an LLC fast. GKFG had it filed in three days and my operating agreement notarized online the same afternoon.",
-      attribution: "Nicole M., Nashville TN · RON + LLC Formation",
-    },
-    faqs: [
-      { q: "Why is Tennessee's filing fee so high?", a: "Tennessee charges $300 to file an LLC — one of the highest in the country. It also charges $300 annually to renew. We always disclose this before you start so there are no surprises." },
-      { q: "What is Tennessee's Franchise & Excise Tax?", a: "Tennessee LLCs doing business in the state owe both a franchise tax (based on net worth) and an excise tax (based on net earnings). This is separate from the filing fee and is managed through your annual tax filings. We connect you with our Tennessee CPA partners who handle this." },
-      { q: "Can I get documents notarized online in Tennessee?", a: "Yes — Tennessee has full RON authorization. Online notarizations through GKFG are available same-day and up to $25 per session." },
-    ],
     accentColor: "#166534",
+    seoTitle: "Tennessee LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Tennessee LLC with GKFG. Serving Nashville, Franklin, and Murfreesboro with LLC formation, EIN assistance, and same-day RON. No state income tax.",
+    heroSubheadline:
+      "Nashville is booming. Tennessee entrepreneurs get more with GKFG — LLC formation, EIN assistance, and online RON, with full transparency on TN's higher fees.",
+    fees: {
+      llcFormation: "$325",
+      annualReport: "$310 / year",
+      dbaFee: "$20",
+      foreignLlc: "$300",
+      nameReservation: "$20",
+      gkfgStarterFee: "$297",
+      totalStarter: "$622",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "Tennessee has no personal income tax and is one of the fastest-growing business markets in the country, anchored by Nashville's explosive growth.",
+    specialNote:
+      "Tennessee's filing and annual fees are higher than most states — budget about $310/year for ongoing compliance. LLCs may also owe Franchise & Excise Tax; we connect you with TN CPA partners.",
+    neighbors: ["georgia", "north-carolina", "kentucky"],
   },
   {
     slug: "north-carolina",
     name: "North Carolina",
+    abbr: "NC",
     region: "Charlotte Metro",
-    seoTitle: "LLC Formation & Notary Services in North Carolina | Gantt Key Formation Group",
-    metaDescription: "GKFG serves Charlotte, Concord, Huntersville, and the greater NC area with LLC formation, EIN assistance, and RON online notarization. Transparent pricing, no surprises.",
-    heroLabel: "NORTH CAROLINA · CHARLOTTE METRO",
-    heroHeadline: "Charlotte's Growing Fast. Your LLC Should Be Ready.",
-    heroSubheadline: "North Carolina entrepreneurs — GKFG files your LLC, secures your EIN, and notarizes your documents online. Flat-rate pricing with no hidden fees.",
-    heroCta: "Start My North Carolina LLC →",
-    trustBar: ["$128 NC Filing Fee", "79.5% Business Survival Rate", "RON Available", "Formation + Notary"],
-    cities: [
-      "Charlotte", "Concord", "Huntersville", "Mooresville", "Gastonia",
-      "Matthews", "Monroe", "Kannapolis", "Rock Hill SC", "Indian Trail",
-      "Pineville", "Mint Hill", "Cornelius", "Davidson", "Waxhaw",
-    ],
-    citiesNote: "RON available now for all NC clients. Mobile notary by appointment in the Charlotte metro.",
-    services: [
-      { name: "LLC Formation (NC)", status: "available", note: "$128 NC state filing fee (separate)" },
-      { name: "S-Corp / C-Corp Filing", status: "available" },
-      { name: "EIN Assistance", status: "available" },
-      { name: "Operating Agreement (notarized)", status: "available" },
-      { name: "DBA Filing", status: "available" },
-      { name: "BOI Reporting", status: "available" },
-      { name: "Remote Online Notarization (RON)", status: "available", note: "Up to $25/signature" },
-      { name: "Loan Signing Agent", status: "by-request" },
-      { name: "Startup Consultation (free)", status: "available" },
-    ],
-    filingFacts: [
-      "State filing fee: $128 (Articles of Organization)",
-      "Processing time: 3–5 business days",
-      "Annual report: Required — due by April 15, $202 fee",
-      "Business survival rate: 79.5% — among the highest in the country",
-      "NC was CNBC's #1 Top State for Business (2023)",
-      "Corporate tax rate: 2.25% (dropping annually through 2030)",
-    ],
-    callout: "North Carolina has a 79.5% small business survival rate — one of the highest in the country. Starting here is already a smart move. We make sure you start it right.",
-    reasons: [
-      { title: "Charlotte is our kind of city.", body: "Nearly 40,000 net new jobs added in 2025–2026, outpacing Nashville, Atlanta, and Austin. New businesses are forming daily. GKFG is ready for all of them." },
-      { title: "We know NC's RON rules.", body: "NC charges up to $25/signature for RON — among the highest in the country. We price to the market, not the minimum, and deliver premium service." },
-      { title: "We always advise on travel.", body: "NC requires mileage-based travel fees to be agreed in writing before any mobile notary visit. We handle that paperwork automatically." },
-    ],
-    testimonial: {
-      quote: "I launched a consulting firm in Charlotte and needed documents notarized before my first client signed. GKFG did the whole thing over video in 20 minutes.",
-      attribution: "Amanda S., Charlotte NC · RON + Operating Agreement",
-    },
-    faqs: [
-      { q: "How much does it cost to form an LLC in North Carolina?", a: "North Carolina charges $128 to file your Articles of Organization, plus $202 per year for the annual report. We always give you the full cost picture upfront." },
-      { q: "Can wills or trusts be notarized online in NC?", a: "No — North Carolina prohibits RON for wills, trusts, advance healthcare directives, and absentee ballots. All other documents can be notarized online." },
-      { q: "Do you serve South Carolina clients from Charlotte?", a: "We can serve SC clients via RON using our Missouri commission. For in-person mobile notary in SC, contact us for availability." },
-    ],
     accentColor: "#1D4ED8",
+    seoTitle: "North Carolina LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your North Carolina LLC with GKFG. Serving Charlotte, Concord, and Huntersville with LLC formation, EIN assistance, and RON. Transparent, flat-rate pricing.",
+    heroSubheadline:
+      "Charlotte is growing fast. GKFG files your LLC, secures your EIN, and notarizes your documents online — flat-rate pricing with no hidden fees.",
+    fees: {
+      llcFormation: "$125",
+      annualReport: "$200 / year",
+      dbaFee: "$26",
+      foreignLlc: "$250",
+      nameReservation: "$30",
+      gkfgStarterFee: "$297",
+      totalStarter: "$422",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "North Carolina is one of the Southeast's fastest-growing business states, with Charlotte ranking as a top financial-services hub and one of the highest small-business survival rates in the country.",
+    specialNote:
+      "North Carolina's annual report is due April 15 each year. We file it for you so you never fall out of good standing.",
+    neighbors: ["south-carolina", "georgia", "virginia"],
   },
   {
     slug: "georgia",
     name: "Georgia",
+    abbr: "GA",
     region: "Atlanta Metro",
-    seoTitle: "LLC Formation & Notary Services in Georgia | Gantt Key Formation Group",
-    metaDescription: "GKFG helps Atlanta, Alpharetta, and Marietta entrepreneurs form LLCs, get EINs, and access notary services. Georgia's RON gap? We've got a compliant solution.",
-    heroLabel: "GEORGIA · ATLANTA METRO",
-    heroHeadline: "Atlanta Entrepreneurs — Launch Compliant, Launch Confident.",
-    heroSubheadline: "Georgia's booming startup scene deserves a formation partner who knows the rules. GKFG handles your LLC, EIN, notary, and more — with full transparency on Georgia's unique requirements.",
-    heroCta: "Start My Georgia LLC →",
-    trustBar: ["$100 GA Filing Fee", "Formation + Notary", "Compliance-First", "Atlanta + Suburbs"],
-    cities: [
-      "Atlanta", "Alpharetta", "Marietta", "Roswell", "Sandy Springs",
-      "Smyrna", "Kennesaw", "Woodstock", "Canton", "Duluth",
-      "Peachtree City", "Newnan", "Stockbridge", "Decatur", "Johns Creek",
-    ],
-    citiesNote: "RON for Georgia clients is performed via our Missouri commission under interstate recognition law. All RON notarizations are valid in Georgia. Mobile notary by appointment in the Atlanta metro.",
-    services: [
-      { name: "LLC Formation (Georgia)", status: "available", note: "$100 GA state filing fee (separate)" },
-      { name: "S-Corp / C-Corp Filing", status: "available" },
-      { name: "EIN Assistance", status: "available" },
-      { name: "Operating Agreement (notarized)", status: "available", note: "In-person or via RON (see note)" },
-      { name: "DBA Filing", status: "available" },
-      { name: "BOI Reporting", status: "available" },
-      { name: "Remote Online Notarization (RON)", status: "available", note: "Via MO commission — valid in GA" },
-      { name: "Loan Signing Agent", status: "by-request", note: "Atlanta metro" },
-      { name: "Startup Consultation (free)", status: "available" },
-    ],
-    filingFacts: [
-      "State filing fee: $100 (Articles of Organization)",
-      "Processing time: 7–10 business days (longer than most states)",
-      "Annual registration: Required — due April 1, $50 fee",
-      "RON status: Georgia does NOT have its own RON law (as of 2026)",
-      "HOWEVER: Georgia recognizes RON performed under another state's law",
-      "GKFG performs Georgia RON via our Missouri commission, valid under GA interstate recognition statutes",
-      "Fee cap: $2/notarial act — GKFG travel and service fees are disclosed and charged separately",
-    ],
-    callout: "Georgia doesn't have its own RON law — but that doesn't mean you can't get documents notarized online. Georgia recognizes notarizations performed under Missouri's RON law. GKFG uses our Missouri commission to serve Georgia clients online, fully legally.",
-    reasons: [
-      { title: "We solved the Georgia RON problem.", body: "Most notaries tell Georgia clients 'we can't do that online.' GKFG does — legally — using Missouri interstate recognition. We're one of the only formation firms who know and offer this." },
-      { title: "Atlanta's startup ecosystem is exploding.", body: "Fintech, logistics, health tech — Georgia is one of the fastest-growing states for new businesses. We're here for all of them." },
-      { title: "Compliance-first, always.", body: "Georgia's $2/act notary cap and annual registration requirements trip up new businesses. We surface every cost before you commit." },
-    ],
-    testimonial: {
-      quote: "I didn't know online notarization was even possible in Georgia. GKFG explained the interstate recognition law and had my docs notarized over video the same afternoon. Legitimate, compliant, and fast.",
-      attribution: "Carla K., Atlanta GA · RON + LLC Formation",
+    accentColor: "#B45309",
+    seoTitle: "Georgia LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Georgia LLC with GKFG. Serving Atlanta, Alpharetta, and Marietta with LLC formation, EIN assistance, and compliant RON notarization via interstate recognition.",
+    heroSubheadline:
+      "Atlanta entrepreneurs — launch compliant, launch confident. GKFG handles your LLC, EIN, and notary with full transparency on Georgia's unique requirements.",
+    fees: {
+      llcFormation: "$100",
+      annualReport: "$50 / year",
+      dbaFee: "$25",
+      foreignLlc: "$225",
+      nameReservation: "$25",
+      gkfgStarterFee: "$297",
+      totalStarter: "$397",
     },
-    faqs: [
-      { q: "Can documents be notarized online in Georgia?", a: "Georgia doesn't have its own RON law, but it recognizes notarizations performed under another state's law. GKFG performs your RON using our Missouri commission — fully valid in Georgia under O.C.G.A. §§ 44-2-21 and related statutes. Always confirm with your receiving party that they accept electronically notarized documents." },
-      { q: "How long does Georgia LLC formation take?", a: "Georgia processes online filings in 7–10 business days — longer than most states. Plan accordingly, especially if you need your LLC active before signing a contract or opening a bank account." },
-      { q: "What is Georgia's annual registration fee?", a: "Georgia LLCs must file an annual registration by April 1 each year and pay a $50 fee. Missing this can result in administrative dissolution." },
-    ],
-    accentColor: "#B91C1C",
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "Georgia is a major Southeast hub for business formation. Atlanta is one of the top markets in the country for small-business growth.",
+    specialNote:
+      "Georgia does not have its own RON law, but recognizes RON performed under another state's law. GKFG performs Georgia RON via our Missouri commission, valid under GA interstate recognition statutes.",
+    neighbors: ["tennessee", "florida", "south-carolina"],
   },
   {
-    slug: "montana",
-    name: "Montana",
-    region: "Missoula · Bozeman · Statewide",
-    seoTitle: "LLC Formation & Notary Services in Montana | Gantt Key Formation Group",
-    metaDescription: "GKFG helps Montana entrepreneurs and out-of-state investors form Montana LLCs, get EINs, and access RON notarization online. $35 filing fee. No sales tax.",
-    heroLabel: "MONTANA · MISSOULA · BOZEMAN · STATEWIDE",
-    heroHeadline: "The $35 LLC State — Set Up Right Before the Rules Change.",
-    heroSubheadline: "Montana's low filing fee, no sales tax, and privacy-friendly laws make it one of the smartest states to form a business. GKFG handles your Montana LLC from anywhere in the country.",
-    heroCta: "Start My Montana LLC →",
-    trustBar: ["$35 MT Filing Fee", "No Sales Tax", "RON Available", "Out-of-State Investors Welcome"],
-    cities: [
-      "Missoula", "Bozeman", "Billings", "Great Falls", "Helena",
-      "Kalispell", "Whitefish", "Butte", "Havre", "Livingston",
-      "Big Fork", "Flathead Valley", "Bozeman Suburbs", "Gallatin Valley",
-    ],
-    citiesNote: "Montana formation is available to clients nationwide — you do not need to be a Montana resident to form a Montana LLC. RON available for all Montana clients online.",
-    services: [
-      { name: "LLC Formation (Montana)", status: "available", note: "$35 MT state filing fee — lowest nationally" },
-      { name: "S-Corp / C-Corp Filing", status: "available" },
-      { name: "EIN Assistance", status: "available" },
-      { name: "Operating Agreement (notarized)", status: "available" },
-      { name: "DBA Filing", status: "available" },
-      { name: "BOI Reporting", status: "available", note: "Domestic MT LLCs currently exempt" },
-      { name: "Remote Online Notarization (RON)", status: "available", note: "MT RON available — \"reasonable fee\"" },
-      { name: "RIN (Remote Ink Notarization)", status: "available", note: "Paper documents signed remotely" },
-      { name: "Startup Consultation (free)", status: "available" },
-    ],
-    filingFacts: [
-      "State filing fee: $35 (lowest in the country)",
-      "Processing time: 5–6 business days standard (expedited 24-hr for +$20)",
-      "Annual report: Required — due April 15, $20 fee ($35 if late)",
-      "No statewide sales tax (major advantage for product businesses)",
-      "BOI status: As of March 2025, domestic MT LLCs are EXEMPT from BOI reporting",
-      "Montana LLC popular with: real estate investors, out-of-state entrepreneurs, RV/vehicle registrations",
-    ],
-    callout: "Montana LLCs are popular with out-of-state investors and entrepreneurs for their low fees, no sales tax, and privacy protections. We form Montana LLCs for clients in all 50 states.",
-    reasons: [
-      { title: "We serve Montana clients nationwide.", body: "You don't need to live in Montana to form a Montana LLC. GKFG handles everything remotely for investors and entrepreneurs across the country who want Montana's advantages." },
-      { title: "RON and RIN both available.", body: "Montana uniquely offers both RON (electronic docs) and RIN (Remote Ink Notarization for paper documents). We're equipped for both." },
-      { title: "We know the real cost.", body: "$35 to file + $20/year annual report. That's it. No franchise tax. No hidden fees. We give you the full picture." },
-    ],
-    testimonial: {
-      quote: "I'm a real estate investor in Kansas City and needed a Montana LLC for a vehicle. GKFG handled the whole thing remotely — filing, EIN, operating agreement — without me leaving my house.",
-      attribution: "Real Estate Investor Client · Montana LLC Formation",
+    slug: "texas",
+    name: "Texas",
+    abbr: "TX",
+    region: "Austin · Dallas · Houston",
+    accentColor: "#BE123C",
+    seoTitle: "Texas LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Texas LLC with GKFG. No state income tax and no annual fee for most LLCs. Serving Austin, Dallas, Houston, and San Antonio with formation and RON.",
+    heroSubheadline:
+      "Texas has no state income tax and no annual LLC fee for most businesses. GKFG files your LLC and handles your EIN, notary, and compliance.",
+    fees: {
+      llcFormation: "$310",
+      annualReport: "$0 for most LLCs (under $2.47M revenue)",
+      dbaFee: "$25",
+      foreignLlc: "$750",
+      nameReservation: "$40",
+      gkfgStarterFee: "$297",
+      totalStarter: "$607",
     },
-    faqs: [
-      { q: "Do I need to live in Montana to form a Montana LLC?", a: "No. Non-residents can form Montana LLCs. You must have a Montana registered agent with a physical address. GKFG can assist with the formation and connect you with registered agent services." },
-      { q: "Why do people form Montana LLCs if they don't live there?", a: "Montana's $35 filing fee, no sales tax, and privacy-friendly statutes make it appealing for real estate investors, vehicle registrations, and out-of-state entrepreneurs who want low ongoing costs." },
-      { q: "Is RON available for Montana documents?", a: "Yes — Montana has authorized RON since 2019. Montana also allows RIN (Remote Ink Notarization) for clients who need wet ink signatures on paper documents notarized remotely." },
-    ],
-    accentColor: "#065F46",
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "Texas has no state income tax and no annual LLC fee for most businesses. A higher formation fee but near-zero ongoing costs make it excellent for long-term operations.",
+    specialNote:
+      "Foreign qualification in Texas costs $750 — the highest of all 20 GKFG states. We alert clients before filing if you're registering an out-of-state company.",
+    neighbors: ["new-mexico", "florida", "colorado"],
+  },
+  {
+    slug: "florida",
+    name: "Florida",
+    abbr: "FL",
+    region: "Miami · Orlando · Tampa",
+    accentColor: "#0D9488",
+    seoTitle: "Florida LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Florida LLC with GKFG. No state income tax and a massive consumer market. Serving Miami, Orlando, and Tampa with formation, EIN assistance, and RON.",
+    heroSubheadline:
+      "Florida has no state income tax and one of the largest consumer markets in the country. GKFG handles your LLC, EIN, notary, and annual filings.",
+    fees: {
+      llcFormation: "$155",
+      annualReport: "$139 / year",
+      dbaFee: "$50",
+      foreignLlc: "$125",
+      nameReservation: "$25",
+      gkfgStarterFee: "$297",
+      totalStarter: "$452",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "Florida has no state income tax and is one of the most popular states in the country for business formation, with a massive and growing consumer market.",
+    specialNote:
+      "Florida's annual report is due May 1 each year, with a steep late fee after the deadline. We track and file it for you.",
+    neighbors: ["georgia", "south-carolina", "texas"],
+  },
+  {
+    slug: "colorado",
+    name: "Colorado",
+    abbr: "CO",
+    region: "Denver Metro",
+    accentColor: "#2563EB",
+    seoTitle: "Colorado LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Colorado LLC with GKFG. One of the lowest annual fees in the country at just $10/year. Serving Denver, Boulder, and Colorado Springs with formation and RON.",
+    heroSubheadline:
+      "Colorado has one of the lowest annual fees in the country. GKFG files your LLC and handles your EIN, notary, and ongoing compliance.",
+    fees: {
+      llcFormation: "$50",
+      annualReport: "$10 / year",
+      dbaFee: "$20",
+      foreignLlc: "$100",
+      nameReservation: "$25",
+      gkfgStarterFee: "$297",
+      totalStarter: "$347",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "Colorado has one of the lowest annual report fees in the country at just $10/year — extremely affordable for long-term maintenance, with a $50 filing fee to match.",
+    specialNote:
+      "As of July 1, 2025, Colorado requires registered agents to verify state residency. Clients must use a Colorado-based registered agent; we coordinate this through a vetted partner referral.",
+    neighbors: ["kansas", "new-mexico", "arizona"],
+  },
+  {
+    slug: "virginia",
+    name: "Virginia",
+    abbr: "VA",
+    region: "Northern Virginia & DC Metro",
+    accentColor: "#1E40AF",
+    seoTitle: "Virginia LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Virginia LLC with GKFG. Strong market for government contracting and professional services. Serving Northern Virginia, Richmond, and the DC metro with RON.",
+    heroSubheadline:
+      "Virginia anchors the DC metro and a massive government-contracting sector. GKFG files your LLC and handles your EIN, notary, and compliance.",
+    fees: {
+      llcFormation: "$104",
+      annualReport: "$50 / year",
+      dbaFee: "$10",
+      foreignLlc: "$100",
+      nameReservation: "$10",
+      gkfgStarterFee: "$297",
+      totalStarter: "$401",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "Virginia is home to the DC metro and Northern Virginia's technology and government-contracting sector — a strong market for professional-services businesses.",
+    specialNote:
+      "Virginia's annual registration fee is due by the last day of your LLC's anniversary month. We track the date and file on time.",
+    neighbors: ["maryland", "north-carolina", "tennessee"],
+  },
+  {
+    slug: "maryland",
+    name: "Maryland",
+    abbr: "MD",
+    region: "Baltimore & DC Suburbs",
+    accentColor: "#9333EA",
+    seoTitle: "Maryland LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Maryland LLC with GKFG. Ideal for government contractors and federal-facing businesses near DC. Serving Baltimore and the DC suburbs with formation and RON.",
+    heroSubheadline:
+      "Maryland's proximity to Washington DC makes it ideal for government contractors and federal-facing businesses. GKFG handles your LLC, EIN, and notary.",
+    fees: {
+      llcFormation: "$100",
+      annualReport: "$300 / year",
+      dbaFee: "$25",
+      foreignLlc: "$100",
+      nameReservation: "$25",
+      gkfgStarterFee: "$297",
+      totalStarter: "$397",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "Maryland's proximity to Washington DC makes it ideal for government contractors, consultants, and federal-facing businesses.",
+    specialNote:
+      "Maryland has one of the higher annual report fees at $300/year. We make sure you budget for it and never miss the deadline.",
+    neighbors: ["virginia", "ohio", "north-carolina"],
+  },
+  {
+    slug: "indiana",
+    name: "Indiana",
+    abbr: "IN",
+    region: "Indianapolis Metro",
+    accentColor: "#0891B2",
+    seoTitle: "Indiana LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Indiana LLC with GKFG. Biennial reporting means you file only every two years. Serving Indianapolis, Fort Wayne, and Carmel with formation and RON.",
+    heroSubheadline:
+      "Indiana's biennial report means less paperwork — you file only every two years. GKFG handles your LLC, EIN, notary, and compliance.",
+    fees: {
+      llcFormation: "$90",
+      annualReport: "$30 every 2 years (biennial)",
+      dbaFee: "$30",
+      foreignLlc: "$90",
+      nameReservation: "$20",
+      gkfgStarterFee: "$297",
+      totalStarter: "$387",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "Indiana's biennial report means you only file every two years, cutting your ongoing administrative burden in half. A very business-friendly state.",
+    specialNote:
+      "Indiana's report is biennial — filed every two years, not annually. We track the cycle so you stay in good standing.",
+    neighbors: ["ohio", "michigan", "kentucky"],
+  },
+  {
+    slug: "iowa",
+    name: "Iowa",
+    abbr: "IA",
+    region: "Des Moines Metro",
+    accentColor: "#CA8A04",
+    seoTitle: "Iowa LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Iowa LLC with GKFG. One of the lowest DBA fees in the country at just $5. Serving Des Moines, Cedar Rapids, and Davenport with formation and RON.",
+    heroSubheadline:
+      "Iowa is one of the most affordable states for multi-brand businesses. GKFG files your LLC and handles your EIN, notary, and compliance.",
+    fees: {
+      llcFormation: "$50",
+      annualReport: "$45 every 2 years (biennial)",
+      dbaFee: "$5",
+      foreignLlc: "$100",
+      nameReservation: "$10",
+      gkfgStarterFee: "$297",
+      totalStarter: "$347",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "Iowa has one of the lowest DBA fees in the country at just $5 — extremely affordable for businesses running multiple brands, with a $50 filing fee to match.",
+    specialNote:
+      "Iowa's report is biennial, due April 1 in odd-numbered years. We track the cycle and file for you.",
+    neighbors: ["missouri", "minnesota", "kansas"],
+  },
+  {
+    slug: "kentucky",
+    name: "Kentucky",
+    abbr: "KY",
+    region: "Louisville & Lexington",
+    accentColor: "#15803D",
+    seoTitle: "Kentucky LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Kentucky LLC with GKFG — the lowest formation fee of all 20 states at just $40. Serving Louisville, Lexington, and Bowling Green with formation and RON.",
+    heroSubheadline:
+      "Kentucky has the lowest formation fee of all 20 GKFG states. GKFG files your LLC and handles your EIN, notary, and ongoing compliance.",
+    fees: {
+      llcFormation: "$40",
+      annualReport: "$15 / year",
+      dbaFee: "$20",
+      foreignLlc: "$90",
+      nameReservation: "$15",
+      gkfgStarterFee: "$297",
+      totalStarter: "$337",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "Kentucky has the lowest LLC formation fee of all 20 GKFG states at just $40. With a $15 annual fee, it's one of the most affordable states for long-term operations.",
+    specialNote:
+      "Your total first-year cost with GKFG in Kentucky is just $337 — the most affordable in the entire GKFG portfolio.",
+    neighbors: ["tennessee", "ohio", "indiana"],
+  },
+  {
+    slug: "michigan",
+    name: "Michigan",
+    abbr: "MI",
+    region: "Detroit Metro",
+    accentColor: "#4338CA",
+    seoTitle: "Michigan LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Michigan LLC with GKFG — the lowest foreign LLC fee of all 20 states at just $50. Serving Detroit, Grand Rapids, and Ann Arbor with formation and RON.",
+    heroSubheadline:
+      "Michigan is ideal for out-of-state businesses expanding in, with the lowest foreign qualification fee of all 20 GKFG states. GKFG handles your LLC, EIN, and notary.",
+    fees: {
+      llcFormation: "$50",
+      annualReport: "$25 / year",
+      dbaFee: "$10",
+      foreignLlc: "$50",
+      nameReservation: "$25",
+      gkfgStarterFee: "$297",
+      totalStarter: "$347",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "Michigan has the lowest foreign LLC qualification fee of all 20 GKFG states at just $50 — ideal for out-of-state businesses expanding into Michigan.",
+    specialNote:
+      "Michigan's annual statement is due February 15 each year. We track the date and file it for you.",
+    neighbors: ["indiana", "ohio", "minnesota"],
+  },
+  {
+    slug: "minnesota",
+    name: "Minnesota",
+    abbr: "MN",
+    region: "Minneapolis–St. Paul",
+    accentColor: "#047857",
+    seoTitle: "Minnesota LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Minnesota LLC with GKFG. No annual report fee for LLCs. Serving Minneapolis, St. Paul, and Rochester with formation, EIN assistance, and RON.",
+    heroSubheadline:
+      "Minnesota has no annual report fee for LLCs — zero ongoing state costs after formation. GKFG handles your LLC, EIN, notary, and compliance.",
+    fees: {
+      llcFormation: "$155",
+      annualReport: "None — Minnesota has no annual fee",
+      dbaFee: "$30",
+      foreignLlc: "$155",
+      nameReservation: "$35",
+      gkfgStarterFee: "$297",
+      totalStarter: "$452",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "Minnesota has no annual report fee for LLCs. A higher formation fee but zero ongoing state costs make it very affordable over the long term.",
+    specialNote:
+      "No annual renewal fee is required after formation, though an informational annual renewal must be filed to keep the LLC active. We handle it for you.",
+    neighbors: ["iowa", "michigan", "missouri"],
+  },
+  {
+    slug: "nevada",
+    name: "Nevada",
+    abbr: "NV",
+    region: "Las Vegas & Reno",
+    accentColor: "#6D28D9",
+    seoTitle: "Nevada LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Nevada LLC with GKFG. Strong privacy protections and no state corporate income tax. Serving Las Vegas, Reno, and Henderson with formation and RON.",
+    heroSubheadline:
+      "Nevada offers strong privacy protections and no state corporate income tax — popular for holding companies and asset protection. GKFG handles your LLC, EIN, and notary.",
+    fees: {
+      llcFormation: "$75 + $200 state business license",
+      annualReport: "$350 / year (combined)",
+      dbaFee: "$20",
+      foreignLlc: "$325",
+      nameReservation: "$25",
+      gkfgStarterFee: "$297",
+      totalStarter: "$572",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "Nevada has strong privacy protections and no state corporate income tax or franchise tax — popular for holding companies and asset-protection strategies.",
+    specialNote:
+      "Nevada has higher ongoing costs than most states at $350/year. It's best suited for clients with specific privacy or asset-protection needs rather than cost-conscious startups.",
+    neighbors: ["arizona", "colorado", "new-mexico"],
+  },
+  {
+    slug: "new-mexico",
+    name: "New Mexico",
+    abbr: "NM",
+    region: "Albuquerque & Santa Fe",
+    accentColor: "#C2410C",
+    seoTitle: "New Mexico LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your New Mexico LLC with GKFG. No annual report and strong privacy — no public member disclosure. Serving Albuquerque and Santa Fe with formation and RON.",
+    heroSubheadline:
+      "New Mexico has no annual report and strong privacy — member names are not required in public filings. GKFG handles your LLC, EIN, notary, and compliance.",
+    fees: {
+      llcFormation: "$50",
+      annualReport: "None — New Mexico has no annual fee",
+      dbaFee: "$10",
+      foreignLlc: "$100",
+      nameReservation: "$20",
+      gkfgStarterFee: "$297",
+      totalStarter: "$347",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "New Mexico is one of only four states with no annual LLC report or fee — and it offers strong privacy, with no requirement to list member names in public filings.",
+    specialNote:
+      "New Mexico is an underrated choice for privacy-conscious owners — no public member disclosure is required, and there's no annual report to file.",
+    neighbors: ["arizona", "texas", "colorado"],
+  },
+  {
+    slug: "ohio",
+    name: "Ohio",
+    abbr: "OH",
+    region: "Columbus · Cleveland · Cincinnati",
+    accentColor: "#B91C1C",
+    seoTitle: "Ohio LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your Ohio LLC with GKFG. No annual report fee and a central logistics location. Serving Columbus, Cleveland, and Cincinnati with formation and RON.",
+    heroSubheadline:
+      "Ohio has no annual report fee and a central location that makes it a strong logistics hub. GKFG handles your LLC, EIN, notary, and compliance.",
+    fees: {
+      llcFormation: "$99",
+      annualReport: "None — Ohio has no annual report",
+      dbaFee: "$39",
+      foreignLlc: "$99",
+      nameReservation: "$39",
+      gkfgStarterFee: "$297",
+      totalStarter: "$396",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "Ohio has no annual report fee — one of only four states nationwide with zero ongoing LLC costs. Very affordable for long-term business maintenance.",
+    specialNote:
+      "Ohio's central location makes it a strong logistics and distribution hub, with no annual report to file or pay.",
+    neighbors: ["indiana", "michigan", "kentucky"],
+  },
+  {
+    slug: "south-carolina",
+    name: "South Carolina",
+    abbr: "SC",
+    region: "Charleston & Greenville",
+    accentColor: "#0E7490",
+    seoTitle: "South Carolina LLC Formation Services | Gantt Key Formation Group",
+    metaDescription:
+      "Form your South Carolina LLC with GKFG. No annual LLC fee and minimal ongoing compliance. Serving Charleston, Greenville, and Columbia with formation and RON.",
+    heroSubheadline:
+      "South Carolina has no annual LLC fee and minimal ongoing compliance. GKFG files your LLC and handles your EIN, notary, and filings.",
+    fees: {
+      llcFormation: "$110",
+      annualReport: "None — no annual LLC fee",
+      dbaFee: "$10",
+      foreignLlc: "$110",
+      nameReservation: "$10",
+      gkfgStarterFee: "$297",
+      totalStarter: "$407",
+    },
+    registeredAgent: false,
+    mobileNotary: false,
+    loanSigning: false,
+    keySellingPoint:
+      "South Carolina has no annual LLC fee. Combined with a relatively low formation cost, it's an excellent Southeast option for minimal ongoing compliance.",
+    specialNote:
+      "South Carolina requires an informational annual filing, but it carries no fee. We handle it for you.",
+    neighbors: ["north-carolina", "georgia", "florida"],
   },
 ];
 
+export const allStates: StateData[] = stateList;
+
 export const stateData: Record<string, StateData> = Object.fromEntries(
-  stateList.map((s) => [s.slug, s])
+  stateList.map((s) => [s.slug, s]),
 );
 
-export const allStates = stateList;
+export const stateCount = stateList.length;

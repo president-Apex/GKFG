@@ -5,7 +5,7 @@ import { Disclaimer } from "@/components/disclaimer";
 import { Monitor, CheckCircle, Clock, ShieldCheck, Globe, Bell } from "lucide-react";
 import { serviceSchema, breadcrumbSchema } from "@/lib/schema";
 
-const SITE_URL = "https://ganttformation.com";
+const SITE_URL = "https://ganttformationgroup.com";
 
 const whatToExpect = [
   {

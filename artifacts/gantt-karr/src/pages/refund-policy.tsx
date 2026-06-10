@@ -43,8 +43,8 @@ export default function RefundPolicy() {
           </p>
           <p>Cancellation requests may be submitted through:</p>
           <ul>
-            <li>Email: <a href="mailto:info@ganttformation.com" className="text-secondary hover:underline">info@ganttformation.com</a></li>
-            <li>Website: <a href="https://www.ganttformation.com" className="text-secondary hover:underline">www.ganttformation.com</a></li>
+            <li>Email: <a href="mailto:info@ganttformationgroup.com" className="text-secondary hover:underline">info@ganttformationgroup.com</a></li>
+            <li>Website: <a href="https://www.ganttformationgroup.com" className="text-secondary hover:underline">www.ganttformationgroup.com</a></li>
           </ul>
           <p>
             Cancellation requests are not considered effective until confirmed by Gantt Key Formation
@@ -133,8 +133,8 @@ export default function RefundPolicy() {
           <h2>9. Contact Information</h2>
           <p>
             <strong>Gantt Key Formation Group</strong><br />
-            Website: <a href="https://www.ganttformation.com" className="text-secondary hover:underline">www.ganttformation.com</a><br />
-            Email: <a href="mailto:info@ganttformation.com" className="text-secondary hover:underline">info@ganttformation.com</a>
+            Website: <a href="https://www.ganttformationgroup.com" className="text-secondary hover:underline">www.ganttformationgroup.com</a><br />
+            Email: <a href="mailto:info@ganttformationgroup.com" className="text-secondary hover:underline">info@ganttformationgroup.com</a>
           </p>
 
           <div className="flex flex-wrap gap-4 mt-12 text-sm text-muted-foreground border-t border-border pt-6">

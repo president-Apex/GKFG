@@ -32,7 +32,7 @@ export default function CookiePolicy() {
         <div className="container mx-auto px-4 py-16 max-w-3xl prose prose-slate">
           <p>
             This Cookie Policy explains how Gantt Key Formation Group ("we," "us," or "our") uses
-            cookies and similar tracking technologies on our website at ganttformation.com. It should be read
+            cookies and similar tracking technologies on our website at ganttformationgroup.com. It should be read
             alongside our <Link href="/privacy-policy" className="text-secondary hover:underline">Privacy Policy</Link>.
           </p>
 
@@ -137,7 +137,7 @@ export default function CookiePolicy() {
           <h2>Contact Us</h2>
           <p>
             Questions about our use of cookies or your privacy rights?<br />
-            <a href="mailto:Info@ganttformation.com" className="text-secondary hover:underline">Info@ganttformation.com</a>
+            <a href="mailto:Info@ganttformationgroup.com" className="text-secondary hover:underline">Info@ganttformationgroup.com</a>
           </p>
 
           <div className="flex flex-wrap gap-4 mt-12 text-sm text-muted-foreground border-t border-border pt-6">

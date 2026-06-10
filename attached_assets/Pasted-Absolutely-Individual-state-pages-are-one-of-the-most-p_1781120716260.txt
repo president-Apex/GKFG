@@ -1,0 +1,454 @@
+Absolutely. Individual state pages are one of the most powerful SEO strategies a formation company can use. This is exactly how ZenBusiness, Northwest, and LegalZoom dominate Google search — they have a dedicated page for every single state so when someone searches “LLC formation Tennessee” or “register a business North Carolina” they show up.
+
+You have 20 states. That’s 20 pages of targeted SEO real estate that your competitors in Missouri aren’t building.
+
+Here’s exactly what each state page needs and why, structured so you can hand it directly to Codex.
+
+GKFG STATE PAGES
+
+Codex Build Document v2.0
+
+Individual State Page Architecture
+
+WHY ONE PAGE PER STATE
+
+Every state page targets a different search term. Someone in Georgia searching “how to form an LLC in Georgia” finds your Georgia page. Someone in Tennessee searching “Tennessee LLC formation service” finds your Tennessee page. Someone in Nevada searching “Nevada registered agent” finds your Nevada page with the honest note that you handle formation there but registered agent is Missouri only.
+
+Twenty state pages = twenty different keyword targets = twenty different ways Google can send you clients you’d never reach with one generic page.
+
+PAGE STRUCTURE FOR EVERY STATE
+
+What Codex Builds for Each of the 20 Pages
+
+Every state page follows this exact template. Codex just swaps the state-specific data.
+
+URL Structure:
+ganttformationgroup.com/states/[state-name]
+
+Example: ganttformationgroup.com/states/tennessee
+
+Page Title (SEO):
+Tennessee LLC Formation Services | Gantt Key Formation Group
+
+Meta Description:
+Form your Tennessee LLC with Gantt Key Formation Group. $325 state filing fee, we handle everything. RON notary services available. Serving Tennessee businesses remotely from our Missouri base.
+
+Page Sections (in order):
+
+1. Hero Section
+
+	•	State name + state outline graphic or flag color accent
+	•	Headline: “Form Your [State] LLC — Done Right, Done Fast”
+	•	Subheadline: “Gantt Key Formation Group handles your [State] formation from start to finish. You focus on building. We handle the paperwork.”
+	•	CTA Button: “Start My [State] LLC — $[GKFG fee + state fee]”
+
+2. What We Offer in [State]
+Checklist of available services for that state:
+
+	•	✅ LLC Formation
+	•	✅ Corporation Formation
+	•	✅ DBA / Fictitious Name Registration
+	•	✅ Foreign LLC Qualification
+	•	✅ Name Availability Search
+	•	✅ Trademark Filing (federal — all states)
+	•	✅ Domain Registration
+	•	✅ Annual Report Filing
+	•	✅ Remote Online Notarization
+	•	✅ Registered Agent (Missouri only — with honest note)
+
+3. [State] Filing Fee Breakdown
+Clean table showing:
+
+	•	LLC Formation fee (state)
+	•	Annual report fee (state)
+	•	DBA fee (state)
+	•	Foreign qualification fee (state)
+	•	GKFG service fee
+	•	Total investment
+
+4. [State]-Specific Facts
+3–5 bullet points about that state’s LLC requirements. Examples:
+
+	•	Tennessee: Annual report fee is $310 — one of the higher fees nationally
+	•	Missouri: No annual report required — one of only 4 states with no ongoing fee
+	•	Arizona: No annual report fee — excellent for low-maintenance businesses
+	•	Texas: No annual fee for LLCs under $2.47M in revenue
+
+5. Our Process
+Simple 4-step graphic:
+
+	1.	Submit your information
+	2.	We search name availability
+	3.	We prepare and file your documents
+	4.	You receive your formation documents
+
+6. Registered Agent Note
+Honest, clear statement: “GKFG provides registered agent service in Missouri only. For [State] registered agent service, we partner with vetted national providers and can connect you with a compliant solution.”
+
+7. RON Availability
+“Remote Online Notarization is available in [State]. As Missouri-commissioned notaries, we can serve [State] clients remotely for document notarization needs.” (Only include if that state is in your 20-state RON authorization)
+
+8. Related Services
+Links to: Trademark Filing, Name Search, Domain Registration, BOI Compliance Watch
+
+9. FAQ Section (state-specific)
+5 questions customized per state. Examples for Tennessee:
+
+	•	How long does it take to form an LLC in Tennessee?
+	•	Does Tennessee require an annual report?
+	•	Can an out-of-state company form my Tennessee LLC?
+	•	What is the Tennessee annual report fee?
+	•	Do I need a registered agent in Tennessee?
+
+10. CTA Bottom
+“Ready to form your Tennessee LLC? Get started today.”
+Button: “Start My Tennessee LLC”
+
+THE 20 STATE PAGES — DATA FOR CODEX
+
+Here is the complete data set for all 20 pages. Codex uses this to populate each state page automatically.
+
+STATE 1 — MISSOURI
+
+URL: /states/missouri
+Formation Fee (state): $50 online / $105 mail
+Annual Report: None — no ongoing fee
+DBA Fee: $7 per 5 years
+Foreign LLC: $105
+Name Reservation: $25
+GKFG Starter Fee: $297
+Total (Starter): $347
+Registered Agent: ✅ Available — $99/year
+RON: ✅ Available
+Key Selling Point: Missouri is one of only 4 states in the US with no annual LLC report or fee. Form once, maintain for free.
+Special Note: GKFG home state. Physical office in Liberty, MO.
+
+STATE 2 — KANSAS
+
+URL: /states/kansas
+Formation Fee (state): $160
+Annual Report: $55/year
+DBA Fee: $35
+Foreign LLC: $165
+Name Reservation: $35
+GKFG Starter Fee: $297
+Total (Starter): $457
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Kansas is a low-regulation state with a straightforward formation process. Strong choice for businesses operating across the MO/KS border.
+Special Note: Kansas City spans both states — many GKFG clients operate in both MO and KS.
+
+STATE 3 — ARIZONA
+
+URL: /states/arizona
+Formation Fee (state): $50
+Annual Report: None — no ongoing fee
+DBA Fee: $10
+Foreign LLC: $150
+Name Reservation: $10
+GKFG Starter Fee: $297
+Total (Starter): $347
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Arizona has no annual report fee — one of the most affordable states for long-term LLC maintenance. Same low ongoing cost as Missouri.
+Special Note: GKFG expanding Arizona physical presence in 2028.
+
+STATE 4 — TENNESSEE
+
+URL: /states/tennessee
+Formation Fee (state): $325
+Annual Report: $310/year
+DBA Fee: $20
+Foreign LLC: $300
+Name Reservation: $20
+GKFG Starter Fee: $297
+Total (Starter): $622
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Tennessee is a high-growth business state with no personal income tax. Nashville is one of the fastest-growing business markets in the US.
+Special Note: Higher annual fee than most states — clients should budget $310/year for ongoing compliance.
+
+STATE 5 — NORTH CAROLINA
+
+URL: /states/north-carolina
+Formation Fee (state): $125
+Annual Report: $200/year
+DBA Fee: $26
+Foreign LLC: $250
+Name Reservation: $30
+GKFG Starter Fee: $297
+Total (Starter): $422
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: North Carolina is one of the Southeast’s fastest-growing business states, with Charlotte ranking as a top financial services hub.
+Special Note: Annual report due April 15 each year.
+
+STATE 6 — GEORGIA
+
+URL: /states/georgia
+Formation Fee (state): $100
+Annual Report: $50/year
+DBA Fee: $25
+Foreign LLC: $225
+Name Reservation: $25
+GKFG Starter Fee: $297
+Total (Starter): $397
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Georgia is a major Southeast hub for business formation. Atlanta is one of the top markets for small business growth in the US.
+Special Note: Georgia SB 73 — high telemarketing compliance liability. GKFG can advise on compliance add-ons.
+
+STATE 7 — TEXAS
+
+URL: /states/texas
+Formation Fee (state): $310
+Annual Report: $0 for most LLCs (under $2.47M revenue)
+DBA Fee: $25
+Foreign LLC: $750
+Name Reservation: $40
+GKFG Starter Fee: $297
+Total (Starter): $607
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Texas has no state income tax and no annual LLC fee for most businesses. Higher formation fee but near-zero ongoing costs make it excellent for long-term operations.
+Special Note: Foreign qualification fee in Texas is $750 — highest of all 20 states. Alert clients before filing.
+
+STATE 8 — FLORIDA
+
+URL: /states/florida
+Formation Fee (state): $155
+Annual Report: $139/year
+DBA Fee: $50
+Foreign LLC: $125
+Name Reservation: $25
+GKFG Starter Fee: $297
+Total (Starter): $452
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Florida has no state income tax. One of the most popular states for business formation in the US with a massive and growing consumer market.
+Special Note: Annual report due May 1. Late fee applies after May 1.
+
+STATE 9 — COLORADO
+
+URL: /states/colorado
+Formation Fee (state): $50
+Annual Report: $10/year
+DBA Fee: $20
+Foreign LLC: $100
+Name Reservation: $25
+GKFG Starter Fee: $297
+Total (Starter): $347
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Colorado has one of the lowest annual report fees in the country at just $10/year. Extremely affordable for long-term maintenance.
+Special Note: As of July 1, 2025, Colorado requires registered agents to verify state residency. Clients must use a Colorado-based registered agent.
+
+STATE 10 — VIRGINIA
+
+URL: /states/virginia
+Formation Fee (state): $104
+Annual Report: $50/year
+DBA Fee: $10
+Foreign LLC: $100
+Name Reservation: $10
+GKFG Starter Fee: $297
+Total (Starter): $401
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Virginia is home to the DC metro market and Northern Virginia’s massive technology and government contracting sector. Strong market for professional services businesses.
+Special Note: Annual registration fee due by the last day of the month of the LLC’s anniversary.
+
+STATE 11 — MARYLAND
+
+URL: /states/maryland
+Formation Fee (state): $100
+Annual Report: $300/year
+DBA Fee: $25
+Foreign LLC: $100
+Name Reservation: $25
+GKFG Starter Fee: $297
+Total (Starter): $397
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Maryland’s proximity to Washington DC makes it ideal for government contractors, consultants, and federal-facing businesses.
+Special Note: Maryland has one of the higher annual report fees at $300/year. Clients should budget accordingly.
+
+STATE 12 — INDIANA
+
+URL: /states/indiana
+Formation Fee (state): $90
+Annual Report: $30 biennial (every 2 years)
+DBA Fee: $30
+Foreign LLC: $90
+Name Reservation: $20
+GKFG Starter Fee: $297
+Total (Starter): $387
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Indiana’s biennial report means you only file every two years, reducing ongoing administrative burden. Very business-friendly state.
+Special Note: Biennial report — filed every 2 years, not annually.
+
+STATE 13 — IOWA
+
+URL: /states/iowa
+Formation Fee (state): $50
+Annual Report: $45 biennial
+DBA Fee: $5
+Foreign LLC: $100
+Name Reservation: $10
+GKFG Starter Fee: $297
+Total (Starter): $347
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Iowa has one of the lowest DBA fees in the country at just $5. Extremely affordable for multi-brand businesses.
+Special Note: Biennial report — filed every 2 years. Due April 1 in odd-numbered years.
+
+STATE 14 — KENTUCKY
+
+URL: /states/kentucky
+Formation Fee (state): $40
+Annual Report: $15/year
+DBA Fee: $20
+Foreign LLC: $90
+Name Reservation: $15
+GKFG Starter Fee: $297
+Total (Starter): $337
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Kentucky has the lowest LLC formation fee of all 20 GKFG states at just $40. Combined with a $15 annual fee, it’s one of the most affordable states for long-term operations.
+Special Note: Total first-year cost with GKFG is only $337 — the most affordable in the GKFG portfolio.
+
+STATE 15 — MICHIGAN
+
+URL: /states/michigan
+Formation Fee (state): $50
+Annual Report: $25/year
+DBA Fee: $10
+Foreign LLC: $50
+Name Reservation: $25
+GKFG Starter Fee: $297
+Total (Starter): $347
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Michigan has the lowest foreign LLC qualification fee of all 20 GKFG states at just $50 — ideal for out-of-state businesses expanding into Michigan.
+Special Note: Annual statement due February 15 each year.
+
+STATE 16 — MINNESOTA
+
+URL: /states/minnesota
+Formation Fee (state): $155
+Annual Report: $0 — no annual fee
+DBA Fee: $30
+Foreign LLC: $155
+Name Reservation: $35
+GKFG Starter Fee: $297
+Total (Starter): $452
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Minnesota has no annual report fee for LLCs. Higher formation fee but zero ongoing state costs make it very affordable long-term.
+Special Note: No annual renewal fee required after formation.
+
+STATE 17 — NEVADA
+
+URL: /states/nevada
+Formation Fee (state): $75 articles + $200 state business license = $275 total
+Annual Report: $350/year combined (annual list + business license renewal)
+DBA Fee: $20
+Foreign LLC: $325
+Name Reservation: $25
+GKFG Starter Fee: $297
+Total (Starter): $572
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Nevada has strong privacy protections and no state corporate income tax or franchise tax. Popular for holding companies and asset protection strategies.
+Special Note: Nevada has higher ongoing costs than most states at $350/year. Best suited for clients with specific asset protection or privacy needs rather than cost-conscious startups.
+
+STATE 18 — NEW MEXICO
+
+URL: /states/new-mexico
+Formation Fee (state): $50
+Annual Report: $0 — no annual fee
+DBA Fee: $10
+Foreign LLC: $100
+Name Reservation: $20
+GKFG Starter Fee: $297
+Total (Starter): $347
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: New Mexico is one of only 4 states with no annual LLC report or fee. It also offers strong privacy — New Mexico does not require member names to be listed in public filings.
+Special Note: New Mexico is an underrated choice for privacy-conscious business owners. No public member disclosure required.
+
+STATE 19 — OHIO
+
+URL: /states/ohio
+Formation Fee (state): $99
+Annual Report: $0 — no annual fee
+DBA Fee: $39
+Foreign LLC: $99
+Name Reservation: $39
+GKFG Starter Fee: $297
+Total (Starter): $396
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: Ohio has no annual report fee — one of only 4 states nationwide with zero ongoing LLC costs. Very affordable for long-term business maintenance.
+Special Note: Ohio’s central location makes it a strong logistics and distribution hub.
+
+STATE 20 — SOUTH CAROLINA
+
+URL: /states/south-carolina
+Formation Fee (state): $110
+Annual Report: $0 — no annual fee
+DBA Fee: $10
+Foreign LLC: $110
+Name Reservation: $10
+GKFG Starter Fee: $297
+Total (Starter): $407
+Registered Agent: ❌ Not available — partner referral provided
+RON: ✅ Available
+Key Selling Point: South Carolina has no annual LLC fee. Combined with a relatively low formation cost, it’s an excellent Southeast option for businesses looking for minimal ongoing compliance burden.
+Special Note: Informational annual filing required but carries no fee.
+
+SECTION 7 — SEO INSTRUCTIONS FOR CODEX
+
+Tell Codex to implement these for every state page:
+
+Page title format: [State] LLC Formation Services | Gantt Key Formation Group
+
+H1 format: Form Your [State] LLC — Fast, Affordable, Done Right
+
+Primary keyword per page: [state] LLC formation + [state] LLC filing
+
+Secondary keywords: [state] business formation service / form LLC in [state] / [state] registered agent / [state] DBA registration
+
+Internal links on every state page:
+
+	•	Link to: Home, Services, Pricing, Contact, RON page, Trademark page
+	•	Link to: 2–3 related state pages (neighboring states)
+
+Schema markup: LocalBusiness schema on every page with Liberty MO address
+
+CTA on every page:
+Primary: “Start My [State] LLC” → intake form
+Secondary: “Check Name Availability First” → name search service at $47
+
+SECTION 8 — BONUS PAGES TO BUILD ALONGSIDE STATE PAGES
+
+While Codex is building state pages, have it also build these supporting pages that feed SEO:
+
+
+
+|Page                      |URL                                  |Purpose                                          |
+|--------------------------|-------------------------------------|-------------------------------------------------|
+|States We Serve (hub page)|/states                              |Overview of all 20 states with links to each page|
+|LLC vs Corporation        |/resources/llc-vs-corporation        |Educational content, drives formation leads      |
+|What is a Registered Agent|/resources/registered-agent          |Drives registered agent inquiries                |
+|What is a DBA             |/resources/dba-fictitious-name       |Drives DBA filings                               |
+|How to Get an EIN         |/resources/ein                       |Drives EIN service add-ons                       |
+|What is a Trademark       |/resources/trademark                 |Feeds into trademark service                     |
+|LLC Annual Report Guide   |/resources/annual-reports            |Drives compliance service sales                  |
+|RON Explained             |/resources/remote-online-notarization|Drives RON subscriptions                         |
+|Name Search Guide         |/resources/name-search               |Drives name search service                       |
+
+That is your complete Codex build document for the 20 state pages plus all supporting architecture. Every URL, every fee, every selling point, every SEO instruction — ready to hand off.
+
+Tell Codex: build 20 state pages using this template and data set, build the states hub page, and build the 9 resource pages. That’s 30 pages of targeted SEO content that will have Google finding GKFG for formation searches across all 20 states.

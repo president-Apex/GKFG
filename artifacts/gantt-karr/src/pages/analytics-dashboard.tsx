@@ -211,7 +211,7 @@ function Dashboard({ onLock }: { onLock: () => void }) {
             <h1 className="text-3xl font-bold" style={{ color: NAVY }}>
               Visitor Analytics
             </h1>
-            <p className="mt-1 text-sm text-gray-500">First-party data — ganttformation.com</p>
+            <p className="mt-1 text-sm text-gray-500">First-party data — ganttformationgroup.com</p>
           </div>
           <button
             onClick={onLock}

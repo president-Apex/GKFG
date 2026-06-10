@@ -44,7 +44,7 @@ export function Scene4() {
           animate={phase >= 2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          Serving <span className="text-[#C9A84C] italic">7 states</span> across the US.
+          Serving <span className="text-[#C9A84C] italic">20 states</span> across the US.
         </motion.h2>
 
         <motion.div 

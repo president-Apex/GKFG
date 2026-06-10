@@ -1,0 +1,259 @@
+Let me pull the current filing fees for all 20 of your RON states so every number is accurate before I build this out for Codex.
+
+I now have everything I need. Here is your complete, Codex-ready document with every service, every price, every state, every fee. Clean and structured so Codex can build it directly into your GKFG website.
+
+GANTT KEY FORMATION GROUP
+
+Complete Services, Pricing & State Fee Reference
+
+Codex Build Document v1.0
+
+SECTION 1 — SERVICE PACKAGES
+
+PACKAGE 1 — STARTER FORMATION
+
+“Get Legal Fast”
+Best for: Solo entrepreneurs, first-time business owners, simple single-member LLCs
+
+Includes:
+
+	•	Name availability search (Missouri SOS database)
+	•	Articles of Organization preparation and filing
+	•	Operating Agreement (basic template)
+	•	EIN obtainment
+	•	Welcome packet with next steps
+
+GKFG Service Fee: $297
++ State filing fee (passed through at cost — see Section 3)
+Total example (Missouri): $347
+
+PACKAGE 2 — FORMATION PLUS
+
+“Build It Right”
+Best for: Multi-member LLCs, businesses planning to hire, businesses needing banking setup
+
+Includes everything in Starter, plus:
+
+	•	Multi-State Name Availability Search (up to 3 states)
+	•	Custom Operating Agreement
+	•	Banking resolution letter
+	•	S-Corp election guidance
+	•	30-day email support
+
+GKFG Service Fee: $497
++ State filing fee (passed through at cost)
+Total example (Missouri): $547
+
+PACKAGE 3 — BRAND PROTECTION BUNDLE
+
+“Own Your Name Everywhere”
+Best for: Businesses launching publicly, e-commerce brands, anyone going to market
+
+Includes everything in Formation Plus, plus:
+
+	•	Premium Brand Clearance Search (state + USPTO + domain + social handles)
+	•	Trademark filing preparation (1 class, USPTO fee separate)
+	•	Domain registration (.com)
+	•	60-day email support
+
+GKFG Service Fee: $797
++ State filing fee (passed through at cost)
++ USPTO trademark fee: $350/class (passed through at cost)
+Total example (Missouri, 1 trademark class): $1,197
+
+PACKAGE 4 — ENTERPRISE FORMATION
+
+“Full Ecosystem Setup”
+Best for: Multi-entity setups, investors, established businesses expanding
+
+Includes everything in Brand Protection Bundle, plus:
+
+	•	Formation in up to 2 states
+	•	DBA/Fictitious Name registration
+	•	Registered Agent service (Missouri, 1 year)
+	•	Compliance calendar setup
+	•	90-day priority support
+
+GKFG Service Fee: $1,297
++ All applicable state filing fees (passed through at cost)
++ USPTO trademark fee if applicable
+
+SECTION 2 — À LA CARTE SERVICES
+
+NAME SEARCHES
+
+
+
+|Service                           |Price   |What’s Included                                       |
+|----------------------------------|--------|------------------------------------------------------|
+|Basic State Name Search           |$47     |Single state SOS database check                       |
+|Multi-State Name Search           |$97     |Up to 5 states simultaneously                         |
+|USPTO Trademark Search            |$97     |Federal trademark database clearance check            |
+|Domain Availability Check         |$27     |.com / .net / .org / .co availability                 |
+|Social Handle Check               |$27     |Facebook, Instagram, TikTok, LinkedIn, X              |
+|**Premium Brand Clearance Bundle**|**$197**|**All of the above — state + USPTO + domain + social**|
+
+FORMATION SERVICES
+
+
+
+|Service                                 |GKFG Fee|State Fee (add-on)|
+|----------------------------------------|--------|------------------|
+|LLC Formation (single state)            |$247    |See Section 3     |
+|Corporation Formation (single state)    |$297    |See Section 3     |
+|Non-Profit Formation                    |$397    |See Section 3     |
+|Foreign LLC Qualification (out-of-state)|$247    |See Section 3     |
+|DBA / Fictitious Name Registration      |$147    |See Section 3     |
+|Name Reservation                        |$97     |See Section 3     |
+|Amendment Filing                        |$147    |See Section 3     |
+|Dissolution / Articles of Termination   |$247    |See Section 3     |
+|Reinstatement                           |$297    |See Section 3     |
+
+TRADEMARK SERVICES
+
+|Service                          |GKFG Fee|USPTO Fee (add-on)|
+|---------------------------------|--------|------------------|
+|Trademark Search + 1 Class Filing|$497    |$350/class        |
+|Trademark Search + 2 Class Filing|$597    |$700 (2 × $350)   |
+|Trademark Search + 3 Class Filing|$697    |$1,050 (3 × $350) |
+|Trademark Monitoring (annual)    |$197/yr |$0                |
+|Office Action Response           |$397    |$0                |
+|Statement of Use Filing          |$197    |$150 (USPTO fee)  |
+
+Note to client: USPTO fees are government fees paid directly to the US Patent and Trademark Office and are separate from GKFG service fees. Current USPTO base fee is $350 per class of goods or services as of January 18, 2025.
+
+DOMAIN & DIGITAL SERVICES
+
+
+
+|Service                              |Price |Notes                                           |
+|-------------------------------------|------|------------------------------------------------|
+|Domain Registration (1 year)         |$47   |.com included, pass-through + service fee       |
+|Domain + Privacy Protection          |$67   |Keeps owner info private                        |
+|Domain + Google Workspace Email Setup|$147  |1 professional email address configured         |
+|Annual Domain Renewal Management     |$37/yr|We handle renewals so you never lose your domain|
+|Social Media Handle Claiming         |$97   |Secure your handles across 5 platforms          |
+
+REGISTERED AGENT SERVICES
+
+Missouri Only
+
+
+
+|Service                             |Price |Notes                                              |
+|------------------------------------|------|---------------------------------------------------|
+|Registered Agent — Annual           |$99/yr|Missouri entities only, physical Liberty MO address|
+|Registered Agent — 2 Year           |$179  |Save $19                                           |
+|Registered Agent — 3 Year           |$249  |Save $48                                           |
+|Registered Agent Transfer (incoming)|$49   |Switch from another provider to GKFG               |
+|Certificate of Good Standing        |$37   |Includes state fee ($10) + GKFG retrieval fee      |
+
+COMPLIANCE & ONGOING SERVICES
+
+
+
+|Service                           |Price |Notes                                  |
+|----------------------------------|------|---------------------------------------|
+|Annual Report Filing              |$97   |GKFG fee + state fee passed through    |
+|BOI Compliance Watch              |$47/yr|Monitoring add-on per entity           |
+|Operating Agreement (custom draft)|$197  |Custom to your structure               |
+|Operating Agreement (amendment)   |$97   |Update existing agreement              |
+|EIN Obtainment                    |$97   |We handle IRS SS-4 filing              |
+|S-Corp Election (Form 2553)       |$147  |Preparation and filing guidance        |
+|Business License Research         |$97   |State and local requirements identified|
+
+NOTARY & RON SERVICES
+
+
+
+|Service                                      |Price       |Notes                                      |
+|---------------------------------------------|------------|-------------------------------------------|
+|In-Person Notary (per document)              |$10         |Missouri statutory maximum per notarization|
+|Remote Online Notarization — Consumer        |$35/document|Available in 20 states from Missouri base  |
+|Remote Online Notarization — Business Session|$75/session |Business documents, multi-document sessions|
+|RON Subscription — Starter                   |$97/month   |Up to 5 RON sessions/month                 |
+|RON Subscription — Professional              |$197/month  |Up to 15 RON sessions/month                |
+|RON Subscription — Business                  |$397/month  |Unlimited RON sessions/month               |
+|Loan Signing — Standard                      |$150        |Notarized loan package                     |
+|Loan Signing — Hybrid/eSign                  |$175        |Split signing packages                     |
+
+SECTION 3 — STATE FILING FEES REFERENCE TABLE
+
+All 20 GKFG Service States
+
+These are government fees paid directly to each state — passed through to client at exact cost. No markup.
+
+Filing fees sourced from state Secretary of State offices. ￼
+
+|State             |LLC Formation              |Annual Report Fee        |DBA/Fictitious Name|Foreign LLC Qualification|Notes                                       |
+|------------------|---------------------------|-------------------------|-------------------|-------------------------|--------------------------------------------|
+|**Missouri**      |$50 online / $105 mail     |**$0 — no annual report**|$7 per 5 years     |$105                     |GKFG home state. Registered Agent available.|
+|**Kansas**        |$160                       |$55/year                 |$35                |$165                     |Annual report required                      |
+|**Arizona**       |$50                        |**$0 — no annual report**|$10                |$150                     |No annual fee — great for clients           |
+|**Tennessee**     |$325                       |$310/year                |$20                |$300                     |Higher fees — note to clients               |
+|**North Carolina**|$125                       |$200/year                |$26                |$250                     |Annual report required                      |
+|**Georgia**       |$100                       |$50/year                 |$25                |$225                     |Annual report required                      |
+|**Texas**         |$310                       |**$0 for most LLCs**     |$25                |$750                     |No annual fee under $2.47M revenue          |
+|**Florida**       |$155                       |$139/year                |$50                |$125                     |Annual report required                      |
+|**Colorado**      |$50                        |$10/year                 |$20                |$100                     |Very affordable                             |
+|**Virginia**      |$104                       |$50/year                 |$10                |$100                     |Annual report required                      |
+|**Maryland**      |$100                       |$300/year                |$25                |$100                     |Higher annual fee — note to clients         |
+|**Indiana**       |$90                        |$30 biennial             |$30                |$90                      |Biennial report                             |
+|**Iowa**          |$50                        |$45 biennial             |$5                 |$100                     |Biennial report                             |
+|**Kentucky**      |$40                        |$15/year                 |$20                |$90                      |Lowest formation fee                        |
+|**Michigan**      |$50                        |$25/year                 |$10                |$50                      |Very affordable                             |
+|**Minnesota**     |$155                       |**$0**                   |$30                |$155                     |No annual report fee                        |
+|**Nevada**        |$75 + $200 business license|$350/year combined       |$20                |$325                     |Higher ongoing costs                        |
+|**New Mexico**    |$50                        |**$0 — no annual report**|$10                |$100                     |No annual fee                               |
+|**Ohio**          |$99                        |**$0 — no annual report**|$39                |$99                      |No annual fee                               |
+|**South Carolina**|$110                       |**$0**                   |$10                |$110                     |No annual fee                               |
+
+SECTION 4 — QUICK REFERENCE PRICING CARD
+
+For Anna and Paige AI Agents — Sales Conversations
+
+Someone asks: “How much to form an LLC?”
+Starter Package starts at $297 + state fee. Missouri total = $347. Most popular is Formation Plus at $497 + state fee.
+
+Someone asks: “Can you check if my business name is available?”
+Basic State Search is $47. Want full protection across state, trademark, domain, and social? Premium Brand Clearance Bundle is $197 and covers everything.
+
+Someone asks: “Do I need a trademark?”
+If you’re selling publicly, going on Amazon, or building a brand — yes. We handle the full process starting at $497 service fee + $350 USPTO fee per class = $847 all-in for one class.
+
+Someone asks: “What’s a registered agent?”
+It’s the person who receives legal and government documents for your business. Required in every state. GKFG provides registered agent service in Missouri for $99/year.
+
+Someone asks: “Can you help in my state?”
+GKFG prepares and files formations in all 20 states: Missouri, Kansas, Arizona, Tennessee, North Carolina, Georgia, Texas, Florida, Colorado, Virginia, Maryland, Indiana, Iowa, Kentucky, Michigan, Minnesota, Nevada, New Mexico, Ohio, and South Carolina. Registered agent service is available in Missouri only.
+
+SECTION 5 — IMPORTANT CLIENT DISCLOSURES
+
+Include on all service pages and intake forms
+
+	•	State filing fees are government fees paid directly to each state’s Secretary of State office. They are separate from GKFG service fees and are passed through to clients at exact cost with no markup.
+	•	USPTO trademark fees are government fees paid directly to the United States Patent and Trademark Office. Current base fee is $350 per class of goods or services as of January 18, 2025.
+	•	GKFG provides document preparation and filing services. GKFG is not a law firm and does not provide legal advice. For legal advice specific to your situation, consult a licensed attorney.
+	•	Registered agent service is available in Missouri only. GKFG does not provide registered agent service in other states.
+	•	RON (Remote Online Notarization) services are available in the 20 states where Missouri notaries are authorized to serve remote signers.
+	•	Annual report fees and filing deadlines vary by state and entity type. Clients are responsible for maintaining compliance in their state of registration. GKFG offers compliance monitoring as an add-on service.
+	•	BOI (Beneficial Ownership Information) reporting is no longer required for US-formed companies as of 2026. GKFG offers BOI Compliance Watch as an optional monitoring add-on at $47/entity/year.
+
+SECTION 6 — REVENUE SUMMARY FOR INTERNAL USE
+
+Average revenue per new formation client:
+
+|Scenario                               |Revenue        |
+|---------------------------------------|---------------|
+|Basic Missouri LLC only                |$347           |
+|Formation Plus + Registered Agent      |$645/yr ongoing|
+|Brand Protection Bundle + Trademark    |$1,547         |
+|Enterprise Package + Trademark + Domain|$1,844+        |
+|RON Subscription (Professional, annual)|$2,364/yr      |
+
+KeyStone registered agent cross-billing:
+Every entity formed = $99/year recurring invoiced from KeyStone to the client entity.
+
+That is your complete Codex-ready document. Every service defined, every price set, every state fee researched and verified, every disclosure written, and every AI agent script included so Anna and Paige know exactly what to say.
+
+Hand this to Codex and tell it to build the GKFG services and pricing pages from Section 1 through Section 6. It has everything it needs.

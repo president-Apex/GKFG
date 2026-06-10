@@ -3,43 +3,13 @@ import { SEO } from "@/components/seo";
 import { CheckCircle } from "lucide-react";
 import { allStates } from "@/data/states";
 
-const stateDetails: Record<string, { cities: string[]; services: string[] }> = {
-  missouri: {
-    cities: ["Kansas City", "Liberty", "Lee's Summit"],
-    services: ["LLC + Mobile Notary", "RON", "Registered Agent"],
-  },
-  kansas: {
-    cities: ["Overland Park", "Shawnee", "Olathe"],
-    services: ["LLC + Mobile Notary", "RON", "Loan Signing"],
-  },
-  arizona: {
-    cities: ["Phoenix", "Scottsdale", "Chandler"],
-    services: ["LLC Formation", "RON", "Mobile Coming 2026"],
-  },
-  tennessee: {
-    cities: ["Nashville", "Franklin", "Murfreesboro"],
-    services: ["LLC Formation", "RON"],
-  },
-  "north-carolina": {
-    cities: ["Charlotte", "Concord", "Huntersville"],
-    services: ["LLC Formation", "RON"],
-  },
-  georgia: {
-    cities: ["Atlanta", "Alpharetta", "Marietta"],
-    services: ["LLC Formation", "RON (via MO commission)"],
-  },
-  montana: {
-    cities: ["Missoula", "Bozeman", "Billings"],
-    services: ["LLC Formation", "RON", "RIN — nationwide"],
-  },
-};
-
 export default function StatesHub() {
+  const stateNames = allStates.map((s) => s.name).join(", ");
   return (
     <>
       <SEO
-        title="Business Formation & Notary Services — 7 States | Gantt Key Formation Group"
-        description="GKFG serves entrepreneurs in Missouri, Kansas, Arizona, Tennessee, North Carolina, Georgia, and Montana with LLC formation, EIN assistance, notary services, and more."
+        title={`Business Formation & Notary Services — ${allStates.length} States | Gantt Key Formation Group`}
+        description={`GKFG serves entrepreneurs in ${allStates.length} states with LLC formation, corporation filing, EIN assistance, registered agent, and remote online notarization. Transparent, flat-rate pricing.`}
       />
 
       {/* Hero */}
@@ -47,10 +17,10 @@ export default function StatesHub() {
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <p className="text-secondary text-xs font-bold uppercase tracking-widest mb-4">Where We Serve</p>
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-white mb-5">
-            7 States. One Team. One Standard of Excellence.
+            {allStates.length} States. One Team. One Standard of Excellence.
           </h1>
           <p className="text-primary-foreground/65 text-lg leading-relaxed">
-            From Kansas City to Phoenix, Nashville to Atlanta — GKFG delivers founder-led formation and notary services you can trust.
+            From Kansas City to Phoenix, Nashville to Atlanta, Austin to Miami — GKFG delivers founder-led formation and notary services you can trust, with remote online notarization available in every state.
           </p>
         </div>
       </section>
@@ -60,47 +30,43 @@ export default function StatesHub() {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {allStates.map((state) => {
-              const details = stateDetails[state.slug];
+              const highlights = [
+                `${state.fees.llcFormation} filing fee`,
+                state.fees.annualReport.toLowerCase().startsWith("none") || state.fees.annualReport.startsWith("$0")
+                  ? "No annual report"
+                  : `Annual: ${state.fees.annualReport}`,
+                state.registeredAgent ? "Registered Agent + RON" : "RON available",
+              ];
               return (
                 <Link key={state.slug} href={`/states/${state.slug}`}>
                   <div className="group rounded-2xl border border-border hover:border-secondary/50 hover:shadow-md transition-all cursor-pointer p-6 h-full flex flex-col bg-white">
-                    {/* State accent dot */}
                     <div className="flex items-center gap-2.5 mb-4">
                       <div className="w-3 h-3 rounded-full flex-shrink-0" style={{ background: state.accentColor }} />
                       <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground">{state.region}</p>
                     </div>
 
-                    <h2 className="font-serif text-xl font-bold mb-3 group-hover:text-secondary transition-colors" style={{ color: "#1a2f4e" }}>
+                    <h2 className="font-serif text-xl font-bold mb-4 group-hover:text-secondary transition-colors" style={{ color: "#1a2f4e" }}>
                       {state.name}
                     </h2>
 
-                    {/* Cities */}
-                    <div className="flex flex-wrap gap-1.5 mb-4">
-                      {details?.cities.map((city) => (
-                        <span key={city} className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
-                          {city}
-                        </span>
-                      ))}
-                    </div>
-
-                    {/* Services */}
                     <ul className="space-y-1.5 flex-grow mb-5">
-                      {details?.services.map((svc) => (
-                        <li key={svc} className="flex items-center gap-2 text-xs text-gray-600">
+                      {highlights.map((item) => (
+                        <li key={item} className="flex items-center gap-2 text-xs text-gray-600">
                           <CheckCircle className="h-3 w-3 flex-shrink-0" style={{ color: state.accentColor }} />
-                          {svc}
+                          {item}
                         </li>
                       ))}
                     </ul>
 
                     <p className="text-xs font-semibold group-hover:text-secondary transition-colors mt-auto" style={{ color: state.accentColor }}>
-                      Learn More →
+                      View {state.name} →
                     </p>
                   </div>
                 </Link>
               );
             })}
           </div>
+          <p className="sr-only">States served: {stateNames}.</p>
         </div>
       </section>
 

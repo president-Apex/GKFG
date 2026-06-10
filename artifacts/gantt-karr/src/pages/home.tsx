@@ -21,7 +21,7 @@ const trustPoints = [
   "Warm, personal support — not a faceless portal",
   "Transparent pricing — no hidden fees",
   "Clear compliance disclaimers — we tell you what we are and aren't",
-  "Serving entrepreneurs across 7 states",
+  "Serving entrepreneurs across 20 states",
 ];
 
 const marqueeItems = [
@@ -50,7 +50,7 @@ const marqueeItems = [
   "Compliance-First",
   "Anna AI Powered",
   "Same-Day Available",
-  "7 States Served",
+  "20 States Served",
 ];
 
 export default function Home() {
@@ -58,7 +58,7 @@ export default function Home() {
     <>
       <SEO
         title="Business Formation, Notary &amp; Startup Support"
-        description="Gantt Key Formation Group — founder-led LLC formation, corporation filing, notary services, and startup support across Missouri, Arizona, North Carolina, Georgia, Tennessee, and Montana."
+        description="Gantt Key Formation Group — founder-led LLC formation, corporation filing, notary services, and startup support across 20 states."
         schema={homePageSchema()}
       />
 
@@ -99,7 +99,7 @@ export default function Home() {
               <div className="flex items-center gap-6 text-sm text-primary-foreground/60">
                 <div className="flex items-center gap-2"><Shield className="h-4 w-4 text-secondary" /><span>Compliance-first</span></div>
                 <div className="flex items-center gap-2"><Users className="h-4 w-4 text-secondary" /><span>Founder-led</span></div>
-                <div className="flex items-center gap-2"><Star className="h-4 w-4 text-secondary" /><span>7 states served</span></div>
+                <div className="flex items-center gap-2"><Star className="h-4 w-4 text-secondary" /><span>20 states served</span></div>
               </div>
             </div>
 
@@ -282,7 +282,7 @@ export default function Home() {
                   "Transparent pricing with no hidden fees",
                   "Compliance-first — we always disclose what we are and aren't",
                   "Powered by Anna AI for faster intake and follow-up",
-                  "Serving 7 states and 20+ cities",
+                  "Serving 20 states nationwide",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0 mt-0.5" />

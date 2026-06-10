@@ -52,7 +52,7 @@ export function Scene5() {
         animate={phase >= 3 ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 1, type: "spring" }}
       >
-        ganttformation.com
+        ganttformationgroup.com
       </motion.div>
     </motion.div>
   );

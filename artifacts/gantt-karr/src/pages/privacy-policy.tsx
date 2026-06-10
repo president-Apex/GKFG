@@ -146,8 +146,8 @@ export default function PrivacyPolicy() {
           <p>
             If you have questions regarding this Privacy Policy, please contact us:<br />
             <strong>Gantt Key Formation Group</strong><br />
-            Website: <a href="https://www.ganttformation.com" className="text-secondary hover:underline">www.ganttformation.com</a><br />
-            Email: <a href="mailto:info@ganttformation.com" className="text-secondary hover:underline">info@ganttformation.com</a>
+            Website: <a href="https://www.ganttformationgroup.com" className="text-secondary hover:underline">www.ganttformationgroup.com</a><br />
+            Email: <a href="mailto:info@ganttformationgroup.com" className="text-secondary hover:underline">info@ganttformationgroup.com</a>
           </p>
 
           <div className="flex flex-wrap gap-4 mt-12 text-sm text-muted-foreground border-t border-border pt-6">

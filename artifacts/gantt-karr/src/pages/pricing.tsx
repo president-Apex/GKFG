@@ -81,7 +81,7 @@ const faqs = [
   { q: "Can I book online without calling anyone?", a: "Yes. Anna AI handles all bookings 24/7. You don't have to talk to a person to get started." },
   { q: "What's included in the Registered Agent service?", a: "You get a professional address for state correspondence, immediate forwarding of official notices, and compliance reminders based on your plan tier." },
   { q: "What is BOI Compliance Watch?", a: "As of 2026, BOI reporting is NOT currently required for US-formed companies. Our BOI Compliance Watch monitors FinCEN rule changes and notifies you immediately if it becomes required. If filing becomes required, we file for you at no additional charge." },
-  { q: "Do you serve all 7 states equally?", a: "Mobile notary is Missouri and Kansas only. RON serves 20 states. Business formation services are available in all 7 states and beyond. Loan signing is MO and KS." },
+  { q: "Do you serve all 20 states equally?", a: "Mobile notary is Missouri and Kansas only. RON serves all 20 states. Business formation services are available in all 20 states and beyond. Loan signing is MO and KS." },
   { q: "What forms of payment do you accept?", a: "All major credit/debit cards, Zelle, and Venmo Business. Payment is collected at time of booking for RON and at appointment for mobile." },
 ];
 

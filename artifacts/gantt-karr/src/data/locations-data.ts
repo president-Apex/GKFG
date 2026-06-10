@@ -25,11 +25,6 @@ export const locationsData: Record<string, { name: string; info: string; animal?
     name: "Tennessee",
     info: "With no state income tax, Tennessee is a magnet for ambitious founders. Let's build your foundation here.",
     cities: ["nashville", "franklin", "knoxville"]
-  },
-  "montana": {
-    name: "Montana",
-    info: "Big Sky Country is increasingly popular for business formation. We provide the expertise you need to launch in Montana.",
-    cities: ["bozeman", "billings", "missoula"]
   }
 };
 
@@ -48,8 +43,5 @@ export const cityData: Record<string, { name: string; context: string }> = {
   "savannah": { name: "Savannah", context: "A historic coastal city with a thriving logistics and tourism market." },
   "nashville": { name: "Nashville", context: "Beyond music, a rapidly expanding center for healthcare and tech." },
   "franklin": { name: "Franklin", context: "A wealthy, fast-growing suburb ideal for premium services." },
-  "knoxville": { name: "Knoxville", context: "A strong community-focused market with a loyal local customer base." },
-  "bozeman": { name: "Bozeman", context: "A magnet for remote workers and outdoor-focused enterprises." },
-  "billings": { name: "Billings", context: "The economic center of Montana, offering stable growth." },
-  "missoula": { name: "Missoula", context: "A creative and vibrant hub in the Rockies." }
+  "knoxville": { name: "Knoxville", context: "A strong community-focused market with a loyal local customer base." }
 };
