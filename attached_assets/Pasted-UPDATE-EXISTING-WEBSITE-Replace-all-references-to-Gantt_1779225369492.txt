@@ -1,0 +1,230 @@
+UPDATE EXISTING WEBSITE
+
+Replace all references to:
+"Gantt Formation Group"
+or any prior formation naming
+
+WITH:
+
+GANTT & KARR FORMATION GROUP
+
+FOUNDER:
+Loresa Gantt
+
+Remove:
+- Joshua Rodriguez as founder
+- Any AI agency positioning
+- Any healthcare references
+- Any legal representation language
+- Anything implying attorney-client relationships
+
+BUSINESS POSITIONING:
+
+Gantt & Karr Formation Group is a premium business formation and startup setup company focused on helping entrepreneurs build correctly from day one.
+
+Positioning:
+
+"We help entrepreneurs launch, structure, and organize their businesses with confidence."
+
+Tagline:
+
+"Building Strong Businesses From Day One."
+
+SUBHEADLINE:
+
+Business Formation • EIN Filing Assistance • Registered Agent Setup • Operating Agreements • Startup Structure • Compliance Guidance • Business Setup Support
+
+BRAND COLORS
+
+Primary Emerald:
+#0E5A4F
+
+Charcoal:
+#2A2A2A
+
+Soft Ivory:
+#F7F5F2
+
+Silver Accent:
+#C4C9CE
+
+Button Hover:
+#09453D
+
+BACKGROUND:
+
+Use clean light ivory sections with charcoal text.
+
+VISUAL STYLE:
+
+- Premium
+- Family-led
+- Trust-first
+- Modern
+- Executive
+- Minimal
+- Clean spacing
+- Rounded corners
+- Soft shadows
+- Luxury feel
+- No tech overlays
+- No futuristic AI appearance
+
+HERO SECTION
+
+Headline:
+
+Gantt & Karr Formation Group
+
+Subheadline:
+
+Helping entrepreneurs launch and structure businesses the right way — from LLC setup and EIN assistance to business organization and startup support.
+
+Buttons:
+
+Primary:
+Start Your Business
+
+Secondary:
+Schedule Consultation
+
+Hero Image:
+
+Replace current image with professional image of Loresa Gantt and daughter in black business suits.
+
+Add subtle charcoal overlay behind image.
+
+SECTION 2:
+
+WHY GANTT & KARR
+
+Title:
+
+Why Entrepreneurs Choose Us
+
+Cards:
+
+✓ Simplified process
+
+✓ Personalized support
+
+✓ Fast response times
+
+✓ Business-first guidance
+
+✓ Family-led service
+
+✓ Professional structure from day one
+
+SECTION 3:
+
+SERVICES
+
+Create cards with icons:
+
+LLC Formation Assistance
+
+Help entrepreneurs organize and establish their business entity.
+
+EIN Filing Assistance
+
+Support obtaining business tax identification information.
+
+Registered Agent Setup
+
+Help guide entrepreneurs through setup requirements.
+
+Operating Agreement Assistance
+
+Support documentation and organization.
+
+Business Startup Consulting
+
+Help entrepreneurs understand next steps.
+
+Business Structure Guidance
+
+Help determine organizational setup options.
+
+SECTION 4:
+
+HOW IT WORKS
+
+Step 1:
+Choose your service
+
+Step 2:
+Complete intake form
+
+Step 3:
+Review business information
+
+Step 4:
+We prepare your setup process
+
+Step 5:
+Launch with confidence
+
+SECTION 5:
+
+FAQ
+
+How long does business setup take?
+
+Can you help if I already started my business?
+
+Do you work remotely?
+
+Do I need an LLC?
+
+What documents are needed?
+
+Are you attorneys?
+
+Answer:
+
+"No. Gantt & Karr Formation Group is not a law firm and does not provide legal advice."
+
+SECTION 6:
+
+DISCLAIMER
+
+Place in:
+
+Homepage
+
+Footer
+
+Contact Page
+
+Text:
+
+Gantt & Karr Formation Group is not a law firm and does not provide legal, tax, or financial advice. Information provided is educational and administrative in nature. Please consult licensed professionals for legal or tax advice.
+
+FOOTER
+
+Gantt & Karr Formation Group
+
+Building Strong Businesses From Day One
+
+Links:
+
+Home
+
+Services
+
+About
+
+FAQ
+
+Contact
+
+Terms
+
+Privacy Policy
+
+DISCLAIMER LINK
+
+CONTACT BUTTON STICKY:
+
+Start Your Business

@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Call — Rodriguez Formation Group</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+–navy: #0d1b2a;
+–navy-mid: #162032;
+–navy-light: #1e2f45;
+–gold: #c9a84c;
+–gold-light: #e2c275;
+–gold-pale: #f5e9c8;
+–white: #ffffff;
+–text-muted: #8a9bb0;
+–border: rgba(201,168,76,0.2);
+–border-soft: rgba(255,255,255,0.07);
+–error: #e05555;
+–success: #4caf82;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+font-family: ‘DM Sans’, sans-serif;
+background: var(–navy);
+color: var(–white);
+min-height: 100vh;
+overflow-x: hidden;
+}
+
+body::before {
+content: ‘’;
+position: fixed;
+inset: 0;
+background:
+radial-gradient(ellipse 80% 60% at 20% 0%, rgba(201,168,76,0.07) 0%, transparent 60%),
+radial-gradient(ellipse 60% 80% at 80% 100%, rgba(201,168,76,0.05) 0%, transparent 60%);
+pointer-events: none;
+z-index: 0;
+}
+
+/* NAV */
+nav {
+position: sticky;
+top: 0;
+z-index: 100;
+background: rgba(13,27,42,0.92);
+backdrop-filter: blur(12px);
+border-bottom: 1px solid var(–border);
+padding: 0 2rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 68px;
+}
+
+.logo {
+font-family: ‘Playfair Display’, serif;
+font-size: 1.15rem;
+font-weight: 600;
+color: var(–gold);
+letter-spacing: 0.02em;
+}
+
+.logo span { color: var(–white); }
+
+.nav-links { display: flex; align-items: center; gap: 1.75rem; }
+
+nav a {
+color: var(–text-muted);
+text-decoration: none;
+font-size: 0.875rem;
+font-weight: 500;
+transition: color 0.2s;
+}
+
+nav a:hover { color: var(–gold); }
+
+.nav-cta {
+background: var(–gold);
+color: var(–navy) !important;
+padding: 0.5rem 1.25rem;
+border-radius: 4px;
+font-weight: 600 !important;
+font-size: 0.85rem !important;
+}
+
+.nav-cta:hover { background: var(–gold-light) !important; }
+
+/* PAGE HERO */
+.hero {
+position: relative;
+z-index: 1;
+text-align: center;
+padding: 4.5rem 2rem 3rem;
+max-width: 680px;
+margin: 0 auto;
+animation: fadeUp 0.6s ease both;
+}
+
+.hero-badge {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+background: rgba(201,168,76,0.12);
+border: 1px solid var(–border);
+border-radius: 100px;
+padding: 0.35rem 1rem;
+font-size: 0.78rem;
+font-weight: 500;
+color: var(–gold);
+letter-spacing: 0.08em;
+text-transform: uppercase;
+margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+font-family: ‘Playfair Display’, serif;
+font-size: clamp(1.9rem, 4.5vw, 2.75rem);
+font-weight: 700;
+line-height: 1.15;
+color: var(–white);
+margin-bottom: 1rem;
+}
+
+.hero h1 em { font-style: normal; color: var(–gold); }
+
+.hero p {
+font-size: 1rem;
+color: var(–text-muted);
+font-weight: 300;
+line-height: 1.75;
+}
+
+/* CONTACT METHODS */
+.contact-methods {
+position: relative;
+z-index: 1;
+max-width: 1000px;
+margin: 0 auto 3rem;
+padding: 0 2rem;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1rem;
+}
+
+.method-card {
+background: var(–navy-mid);
+border: 1px solid var(–border-soft);
+border-radius: 12px;
+padding: 1.5rem;
+text-align: center;
+text-decoration: none;
+transition: border-color 0.2s, transform 0.2s;
+animation: fadeUp 0.5s ease both;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0.5rem;
+}
+
+.method-card:nth-child(1) { animation-delay: 0.05s; }
+.method-card:nth-child(2) { animation-delay: 0.1s; }
+.method-card:nth-child(3) { animation-delay: 0.15s; }
+
+.method-card:hover {
+border-color: var(–border);
+transform: translateY(-3px);
+}
+
+.method-icon {
+font-size: 1.75rem;
+margin-bottom: 0.25rem;
+}
+
+.method-label {
+font-size: 0.72rem;
+font-weight: 600;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(–gold);
+}
+
+.method-value {
+font-size: 0.95rem;
+font-weight: 500;
+color: var(–white);
+}
+
+.method-note {
+font-size: 0.75rem;
+color: var(–text-muted);
+}
+
+/* MAIN LAYOUT */
+.main-layout {
+position: relative;
+z-index: 1;
+max-width: 1000px;
+margin: 0 auto;
+padding: 0 2rem 6rem;
+display: grid;
+grid-template-columns: 1fr 380px;
+gap: 2rem;
+align-items: start;
+}
+
+/* FORM CARD */
+.form-card {
+background: var(–navy-mid);
+border: 1px solid var(–border-soft);
+border-radius: 16px;
+padding: 2.5rem;
+animation: fadeUp 0.6s 0.1s ease both;
+}
+
+.form-card h2 {
+font-family: ‘Playfair Display’, serif;
+font-size: 1.4rem;
+font-weight: 700;
+color: var(–white);
+margin-bottom: 0.35rem;
+}
+
+.form-card .subtitle {
+font-size: 0.85rem;
+color: var(–text-muted);
+margin-bottom: 2rem;
+line-height: 1.5;
+}
+
+/* PROGRESS */
+.progress-bar {
+display: flex;
+gap: 0.4rem;
+margin-bottom: 2rem;
+}
+
+.progress-step {
+flex: 1;
+height: 3px;
+border-radius: 100px;
+background: var(–border-soft);
+transition: background 0.3s;
+}
+
+.progress-step.active { background: var(–gold); }
+.progress-step.done { background: rgba(201,168,76,0.4); }
+
+/* FORM STEPS */
+.form-step { display: none; }
+.form-step.active { display: block; }
+
+.step-label {
+font-size: 0.7rem;
+font-weight: 600;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(–gold);
+margin-bottom: 1.25rem;
+}
+
+.field-group {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+margin-bottom: 1.5rem;
+}
+
+.field-row {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1rem;
+}
+
+.field {
+display: flex;
+flex-direction: column;
+gap: 0.4rem;
+}
+
+.field label {
+font-size: 0.78rem;
+font-weight: 500;
+color: #a0b4c8;
+letter-spacing: 0.02em;
+}
+
+.field label span { color: var(–gold); margin-left: 2px; }
+
+.field input,
+.field select,
+.field textarea {
+background: var(–navy-light);
+border: 1px solid var(–border-soft);
+border-radius: 7px;
+padding: 0.75rem 1rem;
+color: var(–white);
+font-family: ‘DM Sans’, sans-serif;
+font-size: 0.9rem;
+outline: none;
+transition: border-color 0.2s, box-shadow 0.2s;
+width: 100%;
+appearance: none;
+}
+
+.field input::placeholder,
+.field textarea::placeholder { color: rgba(138,155,176,0.5); }
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+border-color: var(–gold);
+box-shadow: 0 0 0 3px rgba(201,168,76,0.1);
+}
+
+.field textarea { resize: vertical; min-height: 100px; line-height: 1.6; }
+
+.field select {
+background-image: url(“data:image/svg+xml,%3Csvg xmlns=‘http://www.w3.org/2000/svg’ width=‘12’ height=‘8’ viewBox=‘0 0 12 8’%3E%3Cpath d=‘M1 1l5 5 5-5’ stroke=’%238a9bb0’ stroke-width=‘1.5’ fill=‘none’ stroke-linecap=‘round’/%3E%3C/svg%3E”);
+background-repeat: no-repeat;
+background-position: right 1rem center;
+padding-right: 2.5rem;
+cursor: pointer;
+}
+
+.field select option { background: var(–navy-mid); }
+
+/* SERVICE SELECTOR */
+.service-options {
+display: flex;
+flex-direction: column;
+gap: 0.6rem;
+margin-bottom: 1.5rem;
+}
+
+.service-option {
+display: flex;
+align-items: center;
+gap: 0.85rem;
+background: var(–navy-light);
+border: 1px solid var(–border-soft);
+border-radius: 8px;
+padding: 0.85rem 1rem;
+cursor: pointer;
+transition: border-color 0.2s, background 0.2s;
+user-select: none;
+}
+
+.service-option:hover { border-color: var(–border); }
+.service-option.selected { border-color: var(–gold); background: rgba(201,168,76,0.06); }
+
+.service-option input[type=“radio”],
+.service-option input[type=“checkbox”] {
+width: 16px;
+height: 16px;
+accent-color: var(–gold);
+flex-shrink: 0;
+cursor: pointer;
+}
+
+.service-option .option-text { flex: 1; }
+.service-option .option-name { font-size: 0.88rem; font-weight: 500; color: var(–white); }
+.service-option .option-sub { font-size: 0.75rem; color: var(–text-muted); margin-top: 1px; }
+.service-option .option-price { font-size: 0.85rem; font-weight: 600; color: var(–gold); white-space: nowrap; }
+
+/* STEP NAVIGATION */
+.step-nav {
+display: flex;
+gap: 0.75rem;
+margin-top: 1.5rem;
+}
+
+.btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+padding: 0.85rem 1.5rem;
+border-radius: 7px;
+font-size: 0.9rem;
+font-weight: 600;
+cursor: pointer;
+text-decoration: none;
+transition: all 0.2s;
+border: none;
+font-family: ‘DM Sans’, sans-serif;
+}
+
+.btn-primary { background: var(–gold); color: var(–navy); flex: 1; }
+.btn-primary:hover { background: var(–gold-light); transform: translateY(-1px); }
+.btn-outline { background: transparent; color: var(–text-muted); border: 1px solid var(–border-soft); }
+.btn-outline:hover { color: var(–white); border-color: rgba(255,255,255,0.2); }
+.btn-success { background: var(–success); color: var(–white); flex: 1; }
+
+/* SUCCESS STATE */
+.success-state {
+display: none;
+text-align: center;
+padding: 2rem 1rem;
+animation: fadeUp 0.5s ease both;
+}
+
+.success-state.visible { display: block; }
+
+.success-icon {
+width: 64px;
+height: 64px;
+background: rgba(76,175,130,0.15);
+border: 1px solid rgba(76,175,130,0.3);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.75rem;
+margin: 0 auto 1.5rem;
+}
+
+.success-state h3 {
+font-family: ‘Playfair Display’, serif;
+font-size: 1.5rem;
+color: var(–white);
+margin-bottom: 0.75rem;
+}
+
+.success-state p {
+font-size: 0.88rem;
+color: var(–text-muted);
+line-height: 1.7;
+}
+
+/* SIDEBAR */
+.sidebar {
+display: flex;
+flex-direction: column;
+gap: 1.25rem;
+animation: fadeUp 0.6s 0.2s ease both;
+}
+
+.sidebar-card {
+background: var(–navy-mid);
+border: 1px solid var(–border-soft);
+border-radius: 12px;
+padding: 1.5rem;
+}
+
+.sidebar-card h3 {
+font-family: ‘Playfair Display’, serif;
+font-size: 1rem;
+font-weight: 700;
+color: var(–white);
+margin-bottom: 1rem;
+}
+
+/* WHAT TO EXPECT */
+.expect-list {
+display: flex;
+flex-direction: column;
+gap: 0.85rem;
+}
+
+.expect-item {
+display: flex;
+gap: 0.85rem;
+align-items: flex-start;
+}
+
+.expect-num {
+width: 24px;
+height: 24px;
+background: rgba(201,168,76,0.15);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 0.7rem;
+font-weight: 700;
+color: var(–gold);
+flex-shrink: 0;
+margin-top: 1px;
+}
+
+.expect-item p {
+font-size: 0.82rem;
+color: #a0b4c8;
+line-height: 1.55;
+}
+
+.expect-item p strong { color: var(–white); font-weight: 500; }
+
+/* HOURS */
+.hours-list {
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+}
+
+.hours-row {
+display: flex;
+justify-content: space-between;
+font-size: 0.82rem;
+padding: 0.4rem 0;
+border-bottom: 1px solid var(–border-soft);
+}
+
+.hours-row:last-child { border-bottom: none; }
+.hours-row .day { color: var(–text-muted); }
+.hours-row .time { color: var(–gold-pale); font-weight: 500; }
+
+/* GUARANTEE */
+.guarantee-card {
+background: rgba(201,168,76,0.06);
+border: 1px solid var(–border);
+border-radius: 12px;
+padding: 1.5rem;
+text-align: center;
+}
+
+.guarantee-card .g-icon { font-size: 1.75rem; margin-bottom: 0.75rem; }
+
+.guarantee-card h3 {
+font-family: ‘Playfair Display’, serif;
+font-size: 1rem;
+color: var(–gold-pale);
+margin-bottom: 0.5rem;
+}
+
+.guarantee-card p {
+font-size: 0.78rem;
+color: var(–text-muted);
+line-height: 1.65;
+}
+
+/* DISCLAIMER */
+.disclaimer {
+position: relative;
+z-index: 1;
+max-width: 1000px;
+margin: 0 auto;
+padding: 0 2rem 4rem;
+}
+
+.disclaimer-box {
+background: rgba(255,255,255,0.02);
+border: 1px solid var(–border-soft);
+border-radius: 8px;
+padding: 1.25rem 1.75rem;
+display: flex;
+gap: 0.85rem;
+align-items: flex-start;
+}
+
+.disclaimer-box p {
+font-size: 0.78rem;
+color: var(–text-muted);
+line-height: 1.7;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 860px) {
+.main-layout { grid-template-columns: 1fr; }
+.sidebar { order: -1; display: grid; grid-template-columns: 1fr 1fr; }
+.guarantee-card { grid-column: span 2; }
+.contact-methods { grid-template-columns: 1fr; max-width: 480px; }
+}
+
+@media (max-width: 600px) {
+nav { padding: 0 1rem; }
+.hero { padding: 3rem 1.25rem 2rem; }
+.main-layout, .contact-methods, .disclaimer { padding-left: 1.25rem; padding-right: 1.25rem; }
+.form-card { padding: 1.75rem 1.25rem; }
+.field-row { grid-template-columns: 1fr; }
+.sidebar { grid-template-columns: 1fr; }
+.guarantee-card { grid-column: span 1; }
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+  <div class="logo">Rodriguez <span>Formation Group</span></div>
+  <div class="nav-links">
+    <a href="#">Services</a>
+    <a href="#">Pricing</a>
+    <a href="#" class="nav-cta">Book a Call</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-badge">📅 Free Consultation Available</div>
+  <h1>Let's Get Your<br>Business <em>Started.</em></h1>
+  <p>Fill out the form below and Joshua will personally follow up within a few hours — usually the same day.</p>
+</section>
+
+<!-- CONTACT METHOD CARDS -->
+
+<div class="contact-methods">
+  <a href="tel:4064178744" class="method-card">
+    <div class="method-icon">📞</div>
+    <div class="method-label">Call or Text</div>
+    <div class="method-value">(406) 417-8744</div>
+    <div class="method-note">Mon–Sat, 8am–7pm</div>
+  </a>
+  <a href="mailto:joshuarodriguez31120@gmail.com" class="method-card">
+    <div class="method-icon">✉️</div>
+    <div class="method-label">Email</div>
+    <div class="method-value">joshuarodriguez31120@gmail.com</div>
+    <div class="method-note">Response within a few hours</div>
+  </a>
+  <a href="#form" class="method-card">
+    <div class="method-icon">📋</div>
+    <div class="method-label">Request Form</div>
+    <div class="method-value">Fill out below</div>
+    <div class="method-note">We'll contact you directly</div>
+  </a>
+</div>
+
+<!-- MAIN LAYOUT -->
+
+<div class="main-layout" id="form">
+
+  <!-- FORM CARD -->
+
+  <div class="form-card">
+    <h2>Start Your Request</h2>
+    <p class="subtitle">Takes about 2 minutes. Joshua personally reviews every submission.</p>
+
+```
+<!-- PROGRESS -->
+<div class="progress-bar">
+  <div class="progress-step active" id="prog-1"></div>
+  <div class="progress-step" id="prog-2"></div>
+  <div class="progress-step" id="prog-3"></div>
+</div>
+
+<!-- STEP 1: YOUR INFO -->
+<div class="form-step active" id="step-1">
+  <div class="step-label">Step 1 of 3 — Your Information</div>
+  <div class="field-group">
+    <div class="field-row">
+      <div class="field">
+        <label>First Name <span>*</span></label>
+        <input type="text" id="fname" placeholder="First name" />
+      </div>
+      <div class="field">
+        <label>Last Name <span>*</span></label>
+        <input type="text" id="lname" placeholder="Last name" />
+      </div>
+    </div>
+    <div class="field">
+      <label>Phone Number <span>*</span></label>
+      <input type="tel" id="phone" placeholder="(816) 555-0100" />
+    </div>
+    <div class="field">
+      <label>Email Address <span>*</span></label>
+      <input type="email" id="email" placeholder="you@example.com" />
+    </div>
+    <div class="field">
+      <label>Best Way to Reach You</label>
+      <select id="contact-pref">
+        <option value="">Select preference</option>
+        <option>Call me</option>
+        <option>Text me</option>
+        <option>Email me</option>
+      </select>
+    </div>
+  </div>
+  <div class="step-nav">
+    <button class="btn btn-primary" onclick="goStep(2)">Continue →</button>
+  </div>
+</div>
+
+<!-- STEP 2: SERVICE -->
+<div class="form-step" id="step-2">
+  <div class="step-label">Step 2 of 3 — What Do You Need?</div>
+  <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:1rem;">Select your primary service</div>
+
+  <div class="service-options" id="service-select">
+    <label class="service-option" onclick="selectService(this)">
+      <input type="radio" name="service" value="essential" />
+      <div class="option-text">
+        <div class="option-name">Essential Package — LLC Filing</div>
+        <div class="option-sub">Articles of Organization + name check + email support</div>
+      </div>
+      <div class="option-price">$197</div>
+    </label>
+    <label class="service-option" onclick="selectService(this)">
+      <input type="radio" name="service" value="complete" />
+      <div class="option-text">
+        <div class="option-name">Complete Package — Done Right ⭐</div>
+        <div class="option-sub">LLC + EIN + Operating Agreement + Registered Agent</div>
+      </div>
+      <div class="option-price">$397</div>
+    </label>
+    <label class="service-option" onclick="selectService(this)">
+      <input type="radio" name="service" value="launch" />
+      <div class="option-text">
+        <div class="option-name">Launch Ready — White Glove</div>
+        <div class="option-sub">Everything + BOI Report + 30-min strategy call</div>
+      </div>
+      <div class="option-price">$597</div>
+    </label>
+    <label class="service-option" onclick="selectService(this)">
+      <input type="radio" name="service" value="notary-mobile" />
+      <div class="option-text">
+        <div class="option-name">Mobile Notary</div>
+        <div class="option-sub">Kansas City metro — we come to you</div>
+      </div>
+      <div class="option-price">$10+</div>
+    </label>
+    <label class="service-option" onclick="selectService(this)">
+      <input type="radio" name="service" value="notary-online" />
+      <div class="option-text">
+        <div class="option-name">Online Notary (RON)</div>
+        <div class="option-sub">Statewide Missouri — remote session</div>
+      </div>
+      <div class="option-price">$25</div>
+    </label>
+    <label class="service-option" onclick="selectService(this)">
+      <input type="radio" name="service" value="process-standard" />
+      <div class="option-text">
+        <div class="option-name">Process Serving — KC Metro (Standard)</div>
+        <div class="option-sub">Flat rate · Up to 3 attempts · Notarized proof of service included</div>
+      </div>
+      <div class="option-price">$65–$85</div>
+    </label>
+    <label class="service-option" onclick="selectService(this)">
+      <input type="radio" name="service" value="process-rush" />
+      <div class="option-text">
+        <div class="option-name">Process Serving — KC Metro (Rush / Same Day)</div>
+        <div class="option-sub">Priority same-day serve · Affidavit filed with court</div>
+      </div>
+      <div class="option-price">$110–$150</div>
+    </label>
+    <label class="service-option" onclick="selectService(this)">
+      <input type="radio" name="service" value="process-rural" />
+      <div class="option-text">
+        <div class="option-name">Process Serving — Rural Missouri</div>
+        <div class="option-sub">Base fee + $0.85/mile outside KC metro · Prepayment required</div>
+      </div>
+      <div class="option-price">$45+ miles</div>
+    </label>
+    <label class="service-option" onclick="selectService(this)">
+      <input type="radio" name="service" value="unsure" />
+      <div class="option-text">
+        <div class="option-name">Not Sure Yet</div>
+        <div class="option-sub">I'd like to talk through my options first</div>
+      </div>
+      <div class="option-price">Free</div>
+    </label>
+  </div>
+
+  <div class="step-nav">
+    <button class="btn btn-outline" onclick="goStep(1)">← Back</button>
+    <button class="btn btn-primary" onclick="goStep(3)">Continue →</button>
+  </div>
+</div>
+
+<!-- STEP 3: DETAILS -->
+<div class="form-step" id="step-3">
+  <div class="step-label">Step 3 of 3 — A Few More Details</div>
+  <div class="field-group">
+    <div class="field">
+      <label>Business Name (if you have one)</label>
+      <input type="text" id="bizname" placeholder="e.g. KC Home Services LLC" />
+    </div>
+    <div class="field">
+      <label>Business Type</label>
+      <select id="biztype">
+        <option value="">Select type</option>
+        <option>LLC</option>
+        <option>S-Corporation</option>
+        <option>Sole Proprietorship</option>
+        <option>Not sure yet</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>When do you need this done?</label>
+      <select id="timeline">
+        <option value="">Select timeline</option>
+        <option>As soon as possible</option>
+        <option>Within the next week</option>
+        <option>Within the next month</option>
+        <option>Just exploring for now</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Anything else Joshua should know?</label>
+      <textarea id="notes" placeholder="Questions, special circumstances, or anything else..."></textarea>
+    </div>
+  </div>
+  <div class="step-nav">
+    <button class="btn btn-outline" onclick="goStep(2)">← Back</button>
+    <button class="btn btn-primary" onclick="submitForm()">Submit Request ✓</button>
+  </div>
+</div>
+
+<!-- SUCCESS -->
+<div class="success-state" id="success-state">
+  <div class="success-icon">✓</div>
+  <h3>Request Received!</h3>
+  <p>Joshua will personally follow up with you within a few hours — usually the same business day.<br><br>
+  In the meantime, if you need anything urgently:<br>
+  <strong style="color:var(--gold-pale);">Call or text (406) 417-8744</strong></p>
+</div>
+```
+
+  </div>
+
+  <!-- SIDEBAR -->
+
+  <div class="sidebar">
+
+```
+<!-- WHAT TO EXPECT -->
+<div class="sidebar-card">
+  <h3>What Happens Next</h3>
+  <div class="expect-list">
+    <div class="expect-item">
+      <div class="expect-num">1</div>
+      <p><strong>Joshua reviews your request</strong> — usually within a few hours of submission.</p>
+    </div>
+    <div class="expect-item">
+      <div class="expect-num">2</div>
+      <p><strong>He reaches out to confirm details</strong> — by your preferred contact method.</p>
+    </div>
+    <div class="expect-item">
+      <div class="expect-num">3</div>
+      <p><strong>You approve and pay</strong> — secure checkout, no surprises.</p>
+    </div>
+    <div class="expect-item">
+      <div class="expect-num">4</div>
+      <p><strong>Joshua files your documents</strong> — and keeps you updated at every step.</p>
+    </div>
+    <div class="expect-item">
+      <div class="expect-num">5</div>
+      <p><strong>You receive confirmation</strong> — with all your documents, ready to operate.</p>
+    </div>
+  </div>
+</div>
+
+<!-- HOURS -->
+<div class="sidebar-card">
+  <h3>Availability</h3>
+  <div class="hours-list">
+    <div class="hours-row"><span class="day">Monday – Friday</span><span class="time">8am – 7pm</span></div>
+    <div class="hours-row"><span class="day">Saturday</span><span class="time">9am – 5pm</span></div>
+    <div class="hours-row"><span class="day">Sunday</span><span class="time">By appointment</span></div>
+    <div class="hours-row"><span class="day">After-hours notary</span><span class="time">Available</span></div>
+  </div>
+</div>
+
+<!-- GUARANTEE -->
+<div class="guarantee-card">
+  <div class="g-icon">🛡️</div>
+  <h3>Accuracy Guaranteed</h3>
+  <p>Every filing is personally reviewed by Joshua before it's submitted. If we make an error, we fix it — at no cost to you.</p>
+</div>
+```
+
+  </div>
+</div>
+
+<!-- DISCLAIMER -->
+
+<div class="disclaimer">
+  <div class="disclaimer-box">
+    <span style="font-size:1.1rem; flex-shrink:0; margin-top:1px;">⚖️</span>
+    <p><strong style="color:var(--gold-pale);">Important:</strong> Rodriguez Formation Group is not a law firm and does not provide legal advice. We provide filing and administrative support services only. Remote online notarization services are performed in accordance with Missouri state law. For legal advice, please consult a licensed Missouri attorney.</p>
+  </div>
+</div>
+
+<script>
+  function goStep(n) {
+    // hide all steps
+    document.querySelectorAll('.form-step').forEach(s => s.classList.remove('active'));
+    // show target step
+    document.getElementById('step-' + n).classList.add('active');
+    // update progress
+    for (let i = 1; i <= 3; i++) {
+      const p = document.getElementById('prog-' + i);
+      p.classList.remove('active', 'done');
+      if (i < n) p.classList.add('done');
+      if (i === n) p.classList.add('active');
+    }
+    // scroll form into view on mobile
+    document.getElementById('form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function selectService(el) {
+    document.querySelectorAll('.service-option').forEach(o => o.classList.remove('selected'));
+    el.classList.add('selected');
+  }
+
+  function submitForm() {
+    // Basic validation
+    const fname = document.getElementById('fname').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim();
+    if (!fname || !phone || !email) {
+      alert('Please fill in your name, phone, and email before submitting.');
+      goStep(1);
+      return;
+    }
+    // Hide all steps, show success
+    document.querySelectorAll('.form-step').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.progress-step').forEach(p => { p.classList.remove('active'); p.classList.add('done'); });
+    const s = document.getElementById('success-state');
+    s.classList.add('visible');
+    document.getElementById('form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Auto-select service options on click anywhere in the card
+  document.querySelectorAll('.service-option').forEach(opt => {
+    opt.addEventListener('click', function() {
+      document.querySelectorAll('.service-option').forEach(o => o.classList.remove('selected'));
+      this.classList.add('selected');
+    });
+  });
+</script>
+
+</body>
+</html>

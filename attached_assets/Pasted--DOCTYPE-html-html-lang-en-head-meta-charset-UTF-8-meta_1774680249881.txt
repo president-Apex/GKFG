@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — Rodriguez Formation Group</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+–navy: #0d1b2a;
+–navy-mid: #162032;
+–navy-light: #1e2f45;
+–gold: #c9a84c;
+–gold-light: #e2c275;
+–gold-pale: #f5e9c8;
+–white: #ffffff;
+–off-white: #f8f6f1;
+–text-muted: #8a9bb0;
+–border: rgba(201,168,76,0.2);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+font-family: ‘DM Sans’, sans-serif;
+background: var(–navy);
+color: var(–white);
+min-height: 100vh;
+overflow-x: hidden;
+}
+
+/* BACKGROUND TEXTURE */
+body::before {
+content: ‘’;
+position: fixed;
+inset: 0;
+background:
+radial-gradient(ellipse 80% 60% at 20% 0%, rgba(201,168,76,0.07) 0%, transparent 60%),
+radial-gradient(ellipse 60% 80% at 80% 100%, rgba(201,168,76,0.05) 0%, transparent 60%);
+pointer-events: none;
+z-index: 0;
+}
+
+/* NAV */
+nav {
+position: sticky;
+top: 0;
+z-index: 100;
+background: rgba(13,27,42,0.92);
+backdrop-filter: blur(12px);
+border-bottom: 1px solid var(–border);
+padding: 0 2rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 68px;
+}
+
+.logo {
+font-family: ‘Playfair Display’, serif;
+font-size: 1.15rem;
+font-weight: 600;
+color: var(–gold);
+letter-spacing: 0.02em;
+}
+
+.logo span { color: var(–white); }
+
+nav a {
+color: var(–text-muted);
+text-decoration: none;
+font-size: 0.875rem;
+font-weight: 500;
+transition: color 0.2s;
+}
+
+nav a:hover { color: var(–gold); }
+
+.nav-cta {
+background: var(–gold);
+color: var(–navy) !important;
+padding: 0.5rem 1.25rem;
+border-radius: 4px;
+font-weight: 600 !important;
+font-size: 0.85rem !important;
+transition: background 0.2s !important;
+}
+
+.nav-cta:hover { background: var(–gold-light) !important; color: var(–navy) !important; }
+
+/* HERO */
+.hero {
+position: relative;
+z-index: 1;
+text-align: center;
+padding: 5rem 2rem 4rem;
+max-width: 720px;
+margin: 0 auto;
+}
+
+.hero-badge {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+background: rgba(201,168,76,0.12);
+border: 1px solid var(–border);
+border-radius: 100px;
+padding: 0.35rem 1rem;
+font-size: 0.78rem;
+font-weight: 500;
+color: var(–gold);
+letter-spacing: 0.08em;
+text-transform: uppercase;
+margin-bottom: 1.75rem;
+animation: fadeUp 0.6s ease both;
+}
+
+.hero h1 {
+font-family: ‘Playfair Display’, serif;
+font-size: clamp(2rem, 5vw, 3.25rem);
+font-weight: 700;
+line-height: 1.15;
+color: var(–white);
+margin-bottom: 1rem;
+animation: fadeUp 0.6s 0.1s ease both;
+}
+
+.hero h1 em {
+font-style: normal;
+color: var(–gold);
+}
+
+.hero p {
+font-size: 1.05rem;
+color: var(–text-muted);
+font-weight: 300;
+line-height: 1.7;
+animation: fadeUp 0.6s 0.2s ease both;
+}
+
+/* DIVIDER */
+.divider {
+display: flex;
+align-items: center;
+gap: 1rem;
+max-width: 900px;
+margin: 0 auto 1rem;
+padding: 0 2rem;
+}
+
+.divider-line { flex: 1; height: 1px; background: var(–border); }
+
+.divider-label {
+font-family: ‘Playfair Display’, serif;
+font-size: 0.8rem;
+color: var(–gold);
+letter-spacing: 0.12em;
+text-transform: uppercase;
+white-space: nowrap;
+}
+
+/* PACKAGES */
+.packages {
+position: relative;
+z-index: 1;
+max-width: 1100px;
+margin: 0 auto;
+padding: 2rem 2rem 1rem;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.25rem;
+align-items: start;
+}
+
+.card {
+background: var(–navy-mid);
+border: 1px solid rgba(255,255,255,0.07);
+border-radius: 12px;
+padding: 2rem;
+position: relative;
+transition: transform 0.3s, border-color 0.3s;
+animation: fadeUp 0.6s ease both;
+}
+
+.card:hover {
+transform: translateY(-4px);
+border-color: rgba(201,168,76,0.3);
+}
+
+.card.featured {
+background: var(–navy-light);
+border-color: var(–gold);
+transform: translateY(-8px);
+}
+
+.card.featured:hover { transform: translateY(-12px); }
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+
+.popular-badge {
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: var(–gold);
+color: var(–navy);
+font-size: 0.7rem;
+font-weight: 700;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+padding: 0.3rem 1rem;
+border-radius: 100px;
+white-space: nowrap;
+}
+
+.card-tier {
+font-size: 0.72rem;
+font-weight: 600;
+letter-spacing: 0.14em;
+text-transform: uppercase;
+color: var(–gold);
+margin-bottom: 0.5rem;
+}
+
+.card-name {
+font-family: ‘Playfair Display’, serif;
+font-size: 1.5rem;
+font-weight: 700;
+color: var(–white);
+margin-bottom: 0.35rem;
+}
+
+.card-tagline {
+font-size: 0.82rem;
+color: var(–text-muted);
+margin-bottom: 1.5rem;
+line-height: 1.5;
+}
+
+.price-row {
+display: flex;
+align-items: baseline;
+gap: 0.25rem;
+margin-bottom: 0.3rem;
+}
+
+.price-amount {
+font-family: ‘Playfair Display’, serif;
+font-size: 2.75rem;
+font-weight: 700;
+color: var(–white);
+line-height: 1;
+}
+
+.price-dollar {
+font-size: 1.25rem;
+color: var(–gold);
+font-weight: 600;
+align-self: flex-start;
+padding-top: 0.5rem;
+}
+
+.price-note {
+font-size: 0.78rem;
+color: var(–text-muted);
+margin-bottom: 1.5rem;
+}
+
+.price-note strong { color: var(–gold-pale); }
+
+.turnaround {
+display: inline-flex;
+align-items: center;
+gap: 0.4rem;
+background: rgba(201,168,76,0.08);
+border: 1px solid rgba(201,168,76,0.2);
+border-radius: 6px;
+padding: 0.35rem 0.75rem;
+font-size: 0.75rem;
+color: var(–gold-pale);
+margin-bottom: 1.5rem;
+}
+
+.separator {
+height: 1px;
+background: rgba(255,255,255,0.07);
+margin: 1.25rem 0;
+}
+
+.features-label {
+font-size: 0.7rem;
+font-weight: 600;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(–text-muted);
+margin-bottom: 0.85rem;
+}
+
+.features {
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 0.65rem;
+margin-bottom: 1.75rem;
+}
+
+.features li {
+display: flex;
+align-items: flex-start;
+gap: 0.65rem;
+font-size: 0.875rem;
+color: #c5d0dd;
+line-height: 1.4;
+}
+
+.features li .check {
+width: 16px;
+height: 16px;
+background: rgba(201,168,76,0.15);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+margin-top: 1px;
+}
+
+.features li .check::after {
+content: ‘’;
+width: 5px;
+height: 3px;
+border-left: 1.5px solid var(–gold);
+border-bottom: 1.5px solid var(–gold);
+transform: rotate(-45deg) translateY(-1px);
+}
+
+.features li.highlight {
+color: var(–gold-pale);
+font-weight: 500;
+}
+
+.features li.highlight .check {
+background: rgba(201,168,76,0.3);
+}
+
+.btn {
+display: block;
+width: 100%;
+text-align: center;
+padding: 0.875rem;
+border-radius: 6px;
+font-size: 0.9rem;
+font-weight: 600;
+cursor: pointer;
+text-decoration: none;
+transition: all 0.2s;
+border: none;
+}
+
+.btn-primary {
+background: var(–gold);
+color: var(–navy);
+}
+
+.btn-primary:hover {
+background: var(–gold-light);
+transform: translateY(-1px);
+}
+
+.btn-outline {
+background: transparent;
+color: var(–gold);
+border: 1px solid var(–gold);
+}
+
+.btn-outline:hover {
+background: rgba(201,168,76,0.1);
+}
+
+/* ADDONS */
+.addons-section {
+position: relative;
+z-index: 1;
+max-width: 1100px;
+margin: 3rem auto 0;
+padding: 0 2rem;
+}
+
+.addons-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 1rem;
+margin-top: 1.5rem;
+}
+
+.addon-card {
+background: var(–navy-mid);
+border: 1px solid rgba(255,255,255,0.06);
+border-radius: 10px;
+padding: 1.25rem 1.5rem;
+display: flex;
+flex-direction: column;
+gap: 0.35rem;
+transition: border-color 0.2s, transform 0.2s;
+animation: fadeUp 0.5s ease both;
+}
+
+.addon-card:hover {
+border-color: var(–border);
+transform: translateY(-2px);
+}
+
+.addon-name {
+font-size: 0.9rem;
+font-weight: 600;
+color: var(–white);
+}
+
+.addon-desc {
+font-size: 0.78rem;
+color: var(–text-muted);
+line-height: 1.4;
+}
+
+.addon-price {
+font-family: ‘Playfair Display’, serif;
+font-size: 1.25rem;
+font-weight: 700;
+color: var(–gold);
+margin-top: 0.25rem;
+}
+
+/* NOTARY */
+.notary-section {
+position: relative;
+z-index: 1;
+max-width: 1100px;
+margin: 3rem auto 0;
+padding: 0 2rem;
+}
+
+.notary-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1.25rem;
+margin-top: 1.5rem;
+}
+
+.notary-card {
+background: var(–navy-mid);
+border: 1px solid rgba(255,255,255,0.06);
+border-radius: 10px;
+padding: 1.75rem;
+}
+
+.notary-card h3 {
+font-family: ‘Playfair Display’, serif;
+font-size: 1.1rem;
+color: var(–white);
+margin-bottom: 0.35rem;
+}
+
+.notary-card .sub {
+font-size: 0.78rem;
+color: var(–text-muted);
+margin-bottom: 1.1rem;
+}
+
+.notary-row {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0.5rem 0;
+border-bottom: 1px solid rgba(255,255,255,0.05);
+font-size: 0.85rem;
+}
+
+.notary-row:last-child { border-bottom: none; }
+.notary-row .label { color: #a0b0c0; }
+.notary-row .val { color: var(–gold-pale); font-weight: 500; }
+
+/* DISCLAIMER */
+.disclaimer {
+position: relative;
+z-index: 1;
+max-width: 900px;
+margin: 3.5rem auto 0;
+padding: 0 2rem;
+}
+
+.disclaimer-box {
+background: rgba(255,255,255,0.03);
+border: 1px solid rgba(255,255,255,0.07);
+border-radius: 8px;
+padding: 1.5rem 2rem;
+display: flex;
+gap: 1rem;
+align-items: flex-start;
+}
+
+.disclaimer-icon {
+font-size: 1.2rem;
+flex-shrink: 0;
+margin-top: 2px;
+}
+
+.disclaimer-box p {
+font-size: 0.8rem;
+color: var(–text-muted);
+line-height: 1.7;
+}
+
+/* BOTTOM CTA */
+.bottom-cta {
+position: relative;
+z-index: 1;
+text-align: center;
+padding: 5rem 2rem 6rem;
+max-width: 600px;
+margin: 0 auto;
+}
+
+.bottom-cta h2 {
+font-family: ‘Playfair Display’, serif;
+font-size: clamp(1.6rem, 4vw, 2.25rem);
+font-weight: 700;
+color: var(–white);
+margin-bottom: 0.75rem;
+}
+
+.bottom-cta p {
+font-size: 0.95rem;
+color: var(–text-muted);
+margin-bottom: 2rem;
+line-height: 1.6;
+}
+
+.cta-buttons {
+display: flex;
+gap: 1rem;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+width: auto;
+padding: 0.875rem 2rem;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+.packages { grid-template-columns: 1fr; max-width: 480px; }
+.card.featured { transform: none; }
+.card.featured:hover { transform: translateY(-4px); }
+.notary-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+nav { padding: 0 1rem; }
+.hero { padding: 3.5rem 1.25rem 2.5rem; }
+.packages, .addons-section, .notary-section, .disclaimer, .bottom-cta { padding-left: 1.25rem; padding-right: 1.25rem; }
+.divider { padding: 0 1.25rem; }
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+  <div class="logo">Rodriguez <span>Formation Group</span></div>
+  <a href="#" class="nav-cta">Book a Call</a>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-badge">⚖️ Missouri Business Formation</div>
+  <h1>Transparent Pricing.<br><em>Real Results.</em></h1>
+  <p>No hidden fees. No confusion. Just fast, compliant business setup with a real person guiding you every step of the way.</p>
+</section>
+
+<!-- FORMATION PACKAGES -->
+
+<div class="divider">
+  <div class="divider-line"></div>
+  <div class="divider-label">Formation Packages</div>
+  <div class="divider-line"></div>
+</div>
+
+<div class="packages">
+
+  <!-- ESSENTIAL -->
+
+  <div class="card">
+    <div class="card-tier">Essential</div>
+    <div class="card-name">Get Started</div>
+    <div class="card-tagline">For new owners who want it done right without the extras</div>
+    <div class="price-row">
+      <span class="price-dollar">$</span>
+      <span class="price-amount">197</span>
+    </div>
+    <div class="price-note">+ <strong>$51 Missouri state fee</strong></div>
+    <div class="turnaround">⏱ 3–5 business days</div>
+    <div class="separator"></div>
+    <div class="features-label">What's Included</div>
+    <ul class="features">
+      <li><span class="check"></span>Missouri LLC Filing</li>
+      <li><span class="check"></span>Articles of Organization Submission</li>
+      <li><span class="check"></span>Business Name Availability Check</li>
+      <li><span class="check"></span>Secretary of State Confirmation</li>
+      <li><span class="check"></span>Email Support</li>
+    </ul>
+    <a href="#" class="btn btn-outline">Start My LLC</a>
+  </div>
+
+  <!-- COMPLETE (FEATURED) -->
+
+  <div class="card featured">
+    <div class="popular-badge">⭐ Most Popular</div>
+    <div class="card-tier">Complete</div>
+    <div class="card-name">Done Right</div>
+    <div class="card-tagline">Everything you need to operate your business from day one</div>
+    <div class="price-row">
+      <span class="price-dollar">$</span>
+      <span class="price-amount">397</span>
+    </div>
+    <div class="price-note">+ <strong>$51 Missouri state fee</strong></div>
+    <div class="turnaround">⏱ 1–3 business days</div>
+    <div class="separator"></div>
+    <div class="features-label">What's Included</div>
+    <ul class="features">
+      <li><span class="check"></span>Everything in Essential</li>
+      <li class="highlight"><span class="check"></span>EIN Registration (IRS Tax ID)</li>
+      <li class="highlight"><span class="check"></span>Operating Agreement (Custom)</li>
+      <li class="highlight"><span class="check"></span>Registered Agent — 1st Year Free</li>
+      <li><span class="check"></span>Priority Processing</li>
+      <li><span class="check"></span>Phone + Email Support</li>
+    </ul>
+    <a href="#" class="btn btn-primary">Start My Business</a>
+  </div>
+
+  <!-- LAUNCH READY -->
+
+  <div class="card">
+    <div class="card-tier">Launch Ready</div>
+    <div class="card-name">White Glove</div>
+    <div class="card-tagline">Full setup + federal compliance most services miss entirely</div>
+    <div class="price-row">
+      <span class="price-dollar">$</span>
+      <span class="price-amount">597</span>
+    </div>
+    <div class="price-note">+ <strong>$51 Missouri state fee</strong></div>
+    <div class="turnaround">⏱ Same or next business day</div>
+    <div class="separator"></div>
+    <div class="features-label">What's Included</div>
+    <ul class="features">
+      <li><span class="check"></span>Everything in Complete</li>
+      <li class="highlight"><span class="check"></span>BOI Report Filing (Federal — Required)</li>
+      <li class="highlight"><span class="check"></span>30-Min Business Strategy Call</li>
+      <li><span class="check"></span>Business Startup Checklist</li>
+      <li><span class="check"></span>White Glove Priority Support</li>
+    </ul>
+    <a href="#" class="btn btn-outline">Done-For-You Setup</a>
+  </div>
+
+</div>
+
+<!-- STANDALONE ADD-ONS -->
+
+<div class="addons-section">
+  <div class="divider" style="padding:0; margin-bottom: 0;">
+    <div class="divider-line"></div>
+    <div class="divider-label">Standalone Add-Ons</div>
+    <div class="divider-line"></div>
+  </div>
+
+  <div class="addons-grid">
+    <div class="addon-card">
+      <div class="addon-name">EIN Registration</div>
+      <div class="addon-desc">IRS Federal Tax ID — required for banking, hiring & taxes</div>
+      <div class="addon-price">$125</div>
+    </div>
+    <div class="addon-card">
+      <div class="addon-name">Registered Agent</div>
+      <div class="addon-desc">Annual renewal — Missouri compliance requirement</div>
+      <div class="addon-price">$125 <span style="font-size:0.85rem;color:var(--text-muted);font-family:'DM Sans';">/yr</span></div>
+    </div>
+    <div class="addon-card">
+      <div class="addon-name">BOI Report Only</div>
+      <div class="addon-desc">Federal filing required for most LLCs formed after Jan 2024</div>
+      <div class="addon-price">$99</div>
+    </div>
+    <div class="addon-card">
+      <div class="addon-name">Operating Agreement</div>
+      <div class="addon-desc">Custom document for your ownership & management structure</div>
+      <div class="addon-price">$75</div>
+    </div>
+    <div class="addon-card">
+      <div class="addon-name">Expedited Filing</div>
+      <div class="addon-desc">Pushed to front of the queue — same/next day processing</div>
+      <div class="addon-price">$75</div>
+    </div>
+    <div class="addon-card">
+      <div class="addon-name">Name Search</div>
+      <div class="addon-desc">Missouri Secretary of State availability verification</div>
+      <div class="addon-price">$25</div>
+    </div>
+  </div>
+</div>
+
+<!-- NOTARY SERVICES -->
+
+<div class="notary-section">
+  <div class="divider" style="padding:0; margin-bottom: 0;">
+    <div class="divider-line"></div>
+    <div class="divider-label">Notary Services</div>
+    <div class="divider-line"></div>
+  </div>
+
+  <div class="notary-grid" style="margin-top: 1.5rem;">
+
+```
+<div class="notary-card">
+  <h3>🚗 Mobile Notary</h3>
+  <div class="sub">Kansas City Metro — We Come to You</div>
+  <div class="notary-row">
+    <span class="label">Per Notarization</span>
+    <span class="val">$10 (Missouri standard)</span>
+  </div>
+  <div class="notary-row">
+    <span class="label">Within 15 miles</span>
+    <span class="val">+ $25 travel fee</span>
+  </div>
+  <div class="notary-row">
+    <span class="label">15–30 miles</span>
+    <span class="val">+ $50 travel fee</span>
+  </div>
+  <div class="notary-row">
+    <span class="label">Extended areas</span>
+    <span class="val">+ $75+ travel fee</span>
+  </div>
+  <div class="notary-row">
+    <span class="label">Same-day & after-hours</span>
+    <span class="val">✓ Available</span>
+  </div>
+  <a href="#" class="btn btn-outline" style="margin-top:1.25rem; font-size:0.85rem; padding:0.7rem;">Book Mobile Notary</a>
+</div>
+
+<div class="notary-card" style="border-color: rgba(201,168,76,0.2);">
+  <h3>🌐 Online Notary (RON)</h3>
+  <div class="sub">Serving All of Missouri — No Travel Required</div>
+  <div class="notary-row">
+    <span class="label">Per Notarization</span>
+    <span class="val">$25</span>
+  </div>
+  <div class="notary-row">
+    <span class="label">Coverage</span>
+    <span class="val">Statewide — Missouri</span>
+  </div>
+  <div class="notary-row">
+    <span class="label">ID Verification</span>
+    <span class="val">✓ Secure & compliant</span>
+  </div>
+  <div class="notary-row">
+    <span class="label">Session Recording</span>
+    <span class="val">✓ Audio/video kept on file</span>
+  </div>
+  <div class="notary-row">
+    <span class="label">Availability</span>
+    <span class="val">Flexible scheduling</span>
+  </div>
+  <a href="#" class="btn btn-primary" style="margin-top:1.25rem; font-size:0.85rem; padding:0.7rem;">Start Online Session</a>
+</div>
+```
+
+  </div>
+</div>
+
+<!-- PROCESS SERVER -->
+
+<div class="notary-section" style="margin-top:3rem;">
+  <div class="divider" style="padding:0; margin-bottom:0;">
+    <div class="divider-line"></div>
+    <div class="divider-label">Process Serving</div>
+    <div class="divider-line"></div>
+  </div>
+
+  <div style="margin-top:1.5rem; background:var(--navy-mid); border:1px solid var(--border); border-radius:14px; padding:2rem 2.5rem;">
+
+```
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:start;">
+
+  <!-- LEFT: WHAT IT IS -->
+  <div>
+    <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:0.6rem;">What Is Process Serving?</div>
+    <p style="font-size:0.88rem; color:#c5d0dd; line-height:1.75; margin-bottom:1rem;">Process serving is the official delivery of legal documents — summons, subpoenas, complaints, and court orders — to the required parties in a case. Every lawsuit requires proper service to be legally valid.</p>
+    <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.75;">Joshua is authorized to serve papers throughout the Kansas City metro area (Jackson County 16th Circuit approved list). After delivery, he completes a notarized Proof of Service affidavit and files it with the court — handling the entire process end to end.</p>
+  </div>
+
+  <!-- RIGHT: PRICING -->
+  <div>
+    <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:0.85rem;">Pricing — Kansas City Metro (Flat Rate)</div>
+    <div class="notary-row"><span class="label">Standard Serve (up to 3 attempts)</span><span class="val">$65 – $85</span></div>
+    <div class="notary-row"><span class="label">Rush / Same-Day</span><span class="val">$110 – $150</span></div>
+    <div class="notary-row"><span class="label">Evasive / Difficult Target</span><span class="val">+$20 – $40</span></div>
+    <div class="notary-row"><span class="label">Second Person (same address)</span><span class="val">+$25</span></div>
+    <div class="notary-row"><span class="label">Notarized Proof of Service</span><span class="val">✓ Included</span></div>
+    <div class="notary-row" style="border:none;"><span class="label">Court affidavit filing</span><span class="val">✓ Included</span></div>
+
+    <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin:1.25rem 0 0.85rem;">Pricing — Rural Missouri (Base + Mileage)</div>
+    <div class="notary-row"><span class="label">Base fee (paperwork + 1st attempt)</span><span class="val">$45 – $60</span></div>
+    <div class="notary-row"><span class="label">Mileage (outside KC metro loop)</span><span class="val">$0.85 / mile</span></div>
+    <div class="notary-row"><span class="label">Rush rural serve</span><span class="val">$100 + $0.85/mile</span></div>
+    <div class="notary-row"><span class="label">Wait time (after first 15 min)</span><span class="val">$30 – $50 / hr</span></div>
+    <div class="notary-row"><span class="label">Second person (same address)</span><span class="val">+$35</span></div>
+    <div class="notary-row" style="border:none;"><span class="label">Prepayment required</span><span class="val">✓ Base + est. mileage</span></div>
+
+    <a href="#" class="btn btn-outline" style="margin-top:1.25rem; display:block; text-align:center; font-size:0.85rem; padding:0.7rem;">Request Process Server</a>
+  </div>
+
+</div>
+
+<!-- WHO NEEDS IT -->
+<div style="margin-top:2rem; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,0.06);">
+  <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:1rem;">Who Uses This Service</div>
+  <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.75rem;">
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); border-radius:8px; padding:0.85rem 1rem; font-size:0.8rem; color:#a0b4c8; text-align:center; line-height:1.5;">⚖️<br>Attorneys &amp; law firms</div>
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); border-radius:8px; padding:0.85rem 1rem; font-size:0.8rem; color:#a0b4c8; text-align:center; line-height:1.5;">🏠<br>Landlords filing evictions</div>
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); border-radius:8px; padding:0.85rem 1rem; font-size:0.8rem; color:#a0b4c8; text-align:center; line-height:1.5;">👤<br>Individuals in civil suits</div>
+    <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); border-radius:8px; padding:0.85rem 1rem; font-size:0.8rem; color:#a0b4c8; text-align:center; line-height:1.5;">🏢<br>Businesses collecting debts</div>
+  </div>
+</div>
+```
+
+  </div>
+</div>
+
+<!-- DISCLAIMER -->
+
+<div class="disclaimer">
+  <div class="disclaimer-box">
+    <div class="disclaimer-icon">⚖️</div>
+    <p><strong style="color:var(--gold-pale);">Important:</strong> Rodriguez Formation Group is not a law firm and does not provide legal advice. We provide filing and administrative support services only. Remote online notarization services are performed in accordance with Missouri state law and require identity verification and secure audio/video recording. For legal advice, please consult a licensed Missouri attorney.</p>
+  </div>
+</div>
+
+<!-- BOTTOM CTA -->
+
+<div class="bottom-cta">
+  <h2>Not sure which package is right?</h2>
+  <p>Most clients choose the Complete package to ensure everything is set up correctly from day one. Still have questions? Book a free call — no pressure.</p>
+  <div class="cta-buttons">
+    <a href="#" class="btn btn-primary">Get Started Now</a>
+    <a href="#" class="btn btn-outline">Book a Free Call</a>
+  </div>
+</div>
+
+</body>
+</html>

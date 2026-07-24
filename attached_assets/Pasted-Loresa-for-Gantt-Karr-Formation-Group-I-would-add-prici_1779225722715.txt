@@ -1,0 +1,188 @@
+Loresa, for Gantt & Karr Formation Group, I would add pricing carefully. Earlier for Apex you preferred consultation-first, but formation services are different — people expect pricing transparency for LLCs, EIN help, notary work, etc. Hidden pricing on formation sites often lowers trust.
+
+I would add this to the Replit prompt:
+
+ADD NEW SECTION:
+
+PRICING & SERVICES
+
+Headline:
+
+Simple Business Formation Pricing
+
+Subheadline:
+
+Choose the level of support that fits your business journey.
+
+PACKAGE 1
+
+STARTER LAUNCH
+
+$297
+
+Includes:
+
+✓ Business setup consultation
+
+✓ Entity filing assistance guidance
+
+✓ EIN filing assistance
+
+✓ Startup checklist
+
+✓ Business organization guidance
+
+Button:
+
+Start Your Business
+
+⸻
+
+PACKAGE 2
+
+GROWTH LAUNCH
+
+$597
+
+Includes:
+
+✓ Everything in Starter
+
+✓ Operating agreement assistance
+
+✓ Business startup consultation
+
+✓ Compliance guidance
+
+✓ Business organization recommendations
+
+Button:
+
+Schedule Consultation
+
+⸻
+
+PACKAGE 3
+
+PREMIUM EXECUTIVE LAUNCH
+
+$997
+
+Includes:
+
+✓ Everything in Growth
+
+✓ Priority support
+
+✓ Extended consultation
+
+✓ Business startup roadmap
+
+✓ Resource guidance
+
+✓ White-glove onboarding experience
+
+Button:
+
+Apply Now
+
+⸻
+
+ADD-ON SERVICES
+
+Headline:
+
+Additional Services
+
+Cards:
+
+Notary Services
+
+Starting at:
+$10–25+
+(variable based on state laws and travel)
+
+Description:
+
+Professional notarization support for personal and business documentation.
+
+Business Document Assistance
+
+Starting at:
+$49+
+
+Registered Agent Setup Support
+
+Starting at:
+$99+
+
+Operating Agreement Assistance
+
+Starting at:
+$99+
+
+Business Compliance Review
+
+Starting at:
+$149+
+
+Document Delivery / Concierge Service
+
+Starting at:
+$35+
+
+Rush Processing Assistance
+
+Starting at:
+$99+
+
+Mobile Notary Travel Fee
+
+Starting at:
+$25+
+
+⸻
+
+NEW PAGE:
+
+NOTARY SERVICES
+
+Headline:
+
+Professional Notary Services
+
+Subheadline:
+
+Convenient business and document notarization services.
+
+Services:
+
+✓ Business documents
+
+✓ Power of attorney documents
+
+✓ Affidavits
+
+✓ Contracts
+
+✓ Real estate forms
+
+✓ General notarization
+
+✓ Mobile notary availability
+
+CTA Button:
+
+Book Notary Service
+
+DISCLAIMER:
+
+Notary services and fees vary based on state requirements and document type.
+
+One thing I would adjust strategically: because Missouri notary fees have legal limits and travel fees can vary, the site should use “starting at” language rather than hard fixed prices everywhere.
+
+I’d also add a homepage badge strip:
+
+Business Formation | Notary Services | Startup Support | Resource Network
+
+That immediately tells visitors this is broader than just LLC filing.

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Process Server Kansas City MO | Fast & Reliable Service of Process</title>
+<meta name="description" content="Professional process serving throughout Kansas City and rural Missouri. Same-day available. Notarized proof of service. Serving KC metro, Kearney, Smithville, Plattsburg, Lathrop.">
+<link rel="canonical" href="https://rodriguezformationgroup.com/process-serving">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0d1b2a; --navy-mid: #162032; --navy-light: #1e2f45;
+    --gold: #c9a84c; --gold-light: #e2c275; --gold-pale: #f5e9c8;
+    --white: #ffffff; --text-muted: #8a9bb0;
+    --border: rgba(201,168,76,0.2); --border-soft: rgba(255,255,255,0.07);
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--navy); color: var(--white); overflow-x: hidden; }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background: radial-gradient(ellipse 80% 60% at 20% 0%, rgba(201,168,76,0.07) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 80% at 80% 100%, rgba(201,168,76,0.05) 0%, transparent 60%);
+  }
+
+nav {
+position: sticky; top: 0; z-index: 100;
+background: rgba(13,27,42,0.92); backdrop-filter: blur(12px);
+border-bottom: 1px solid var(–border);
+padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 68px;
+}
+.logo { font-family: ‘Playfair Display’, serif; font-size: 1.15rem; font-weight: 600; color: var(–gold); }
+.logo span { color: var(–white); }
+nav a { color: var(–text-muted); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; }
+nav a:hover { color: var(–gold); }
+.nav-cta { background: var(–gold); color: var(–navy) !important; padding: 0.5rem 1.25rem; border-radius: 4px; font-weight: 600 !important; }
+
+/* PAGE TABS */
+.page-tabs-wrapper {
+position: relative; z-index: 1;
+background: var(–navy-mid); border-bottom: 1px solid var(–border-soft);
+overflow-x: auto; white-space: nowrap;
+}
+.page-tabs { display: inline-flex; gap: 0; padding: 0 2rem; min-width: 100%; }
+.tab-btn {
+background: none; border: none; border-bottom: 2px solid transparent;
+color: var(–text-muted); font-family: ‘DM Sans’, sans-serif;
+font-size: 0.82rem; font-weight: 500; padding: 1rem 1.25rem;
+cursor: pointer; transition: color 0.2s, border-color 0.2s; white-space: nowrap;
+}
+.tab-btn:hover { color: var(–white); }
+.tab-btn.active { color: var(–gold); border-bottom-color: var(–gold); }
+
+/* PAGE CONTENT */
+.page { display: none; }
+.page.active { display: block; animation: fadeUp 0.4s ease both; }
+
+/* SHARED LAYOUT */
+.wrap { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+
+/* HERO */
+.seo-hero { padding: 4rem 0 3rem; }
+.seo-badge {
+display: inline-flex; align-items: center; gap: 0.5rem;
+background: rgba(201,168,76,0.12); border: 1px solid var(–border);
+border-radius: 100px; padding: 0.35rem 1rem;
+font-size: 0.78rem; font-weight: 600; color: var(–gold);
+letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1.5rem;
+}
+.seo-hero h1 {
+font-family: ‘Playfair Display’, serif;
+font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 700;
+line-height: 1.2; color: var(–white); margin-bottom: 1.25rem; max-width: 800px;
+}
+.seo-hero h1 em { font-style: normal; color: var(–gold); }
+.seo-hero .lead {
+font-size: 1rem; color: var(–text-muted); line-height: 1.85;
+font-weight: 300; max-width: 720px; margin-bottom: 2rem;
+}
+.hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
+
+/* TRUST BAR */
+.trust-bar {
+display: grid; grid-template-columns: repeat(4,1fr);
+border: 1px solid var(–border); border-radius: 10px; overflow: hidden;
+margin-bottom: 3rem;
+}
+.trust-item {
+background: var(–navy-mid); padding: 1.25rem 1.5rem;
+border-right: 1px solid var(–border-soft); text-align: center;
+}
+.trust-item:last-child { border-right: none; }
+.trust-num { font-family: ‘Playfair Display’, serif; font-size: 1.6rem; font-weight: 700; color: var(–gold); }
+.trust-label { font-size: 0.75rem; color: var(–text-muted); margin-top: 0.2rem; }
+
+/* DIVIDER */
+.divider { display: flex; align-items: center; gap: 1rem; margin: 3rem 0 2rem; }
+.divider-line { flex: 1; height: 1px; background: var(–border); }
+.divider-label { font-family: ‘Playfair Display’, serif; font-size: 0.8rem; color: var(–gold); letter-spacing: 0.12em; text-transform: uppercase; white-space: nowrap; }
+
+/* SERVICES GRID */
+.services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin-bottom: 3rem; }
+.service-card {
+background: var(–navy-mid); border: 1px solid var(–border-soft);
+border-radius: 10px; padding: 1.5rem;
+transition: border-color 0.2s, transform 0.2s;
+}
+.service-card:hover { border-color: var(–border); transform: translateY(-2px); }
+.service-card h3 { font-size: 0.95rem; font-weight: 600; color: var(–white); margin: 0.5rem 0 0.4rem; }
+.service-card p { font-size: 0.8rem; color: var(–text-muted); line-height: 1.6; }
+.service-price { font-family: ‘Playfair Display’, serif; font-size: 1.1rem; color: var(–gold); margin-top: 0.75rem; font-weight: 700; }
+
+/* LOCATION HERO */
+.loc-hero { padding: 4rem 0 2.5rem; }
+.loc-hero h1 { font-family: ‘Playfair Display’, serif; font-size: clamp(1.75rem,3.5vw,2.5rem); font-weight: 700; line-height: 1.2; color: var(–white); margin-bottom: 1rem; }
+.loc-hero h1 em { font-style: normal; color: var(–gold); }
+.loc-hero p { font-size: 0.95rem; color: var(–text-muted); line-height: 1.85; max-width: 680px; margin-bottom: 1.75rem; font-weight: 300; }
+
+/* DOCS SERVED */
+.docs-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 0.75rem; margin-bottom: 2.5rem; }
+.doc-tag {
+background: var(–navy-mid); border: 1px solid var(–border-soft);
+border-radius: 8px; padding: 0.85rem 1rem; font-size: 0.8rem;
+color: #a0b4c8; text-align: center; line-height: 1.5;
+}
+
+/* NEARBY */
+.nearby-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+.nearby-tag {
+background: rgba(201,168,76,0.08); border: 1px solid var(–border);
+border-radius: 6px; padding: 0.3rem 0.75rem;
+font-size: 0.78rem; color: var(–gold-pale);
+}
+
+/* CTA BOX */
+.cta-box {
+background: var(–navy-light); border: 1px solid var(–border);
+border-radius: 14px; padding: 2rem 2.5rem;
+display: flex; justify-content: space-between; align-items: center;
+gap: 1.5rem; flex-wrap: wrap; margin: 2.5rem 0 5rem;
+}
+.cta-box h3 { font-family: ‘Playfair Display’, serif; font-size: 1.25rem; color: var(–white); margin-bottom: 0.3rem; }
+.cta-box p { font-size: 0.85rem; color: var(–text-muted); }
+.cta-box-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+/* BUTTONS */
+.btn {
+display: inline-flex; align-items: center; justify-content: center;
+padding: 0.8rem 1.5rem; border-radius: 7px; font-size: 0.88rem; font-weight: 600;
+cursor: pointer; text-decoration: none; transition: all 0.2s; border: none;
+font-family: ‘DM Sans’, sans-serif;
+}
+.btn-primary { background: var(–gold); color: var(–navy); }
+.btn-primary:hover { background: var(–gold-light); transform: translateY(-1px); }
+.btn-outline { background: transparent; color: var(–gold); border: 1px solid var(–gold); }
+.btn-outline:hover { background: rgba(201,168,76,0.1); }
+
+/* GBP GUIDE */
+.gbp-step {
+background: var(–navy-mid); border: 1px solid var(–border-soft);
+border-radius: 12px; padding: 1.75rem; margin-bottom: 1rem;
+display: flex; gap: 1.25rem; align-items: flex-start;
+}
+.gbp-num {
+width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
+background: rgba(201,168,76,0.12); border: 1px solid var(–border);
+display: flex; align-items: center; justify-content: center;
+font-size: 0.85rem; font-weight: 700; color: var(–gold);
+}
+.gbp-step h3 { font-size: 0.95rem; font-weight: 600; color: var(–white); margin-bottom: 0.4rem; }
+.gbp-step p { font-size: 0.82rem; color: var(–text-muted); line-height: 1.65; }
+.gbp-step p strong { color: var(–gold-pale); }
+.gbp-step code {
+background: rgba(201,168,76,0.1); border: 1px solid var(–border);
+border-radius: 4px; padding: 0.15rem 0.5rem; font-size: 0.8rem; color: var(–gold-pale);
+font-family: monospace;
+}
+.copy-line {
+background: var(–navy-light); border: 1px solid var(–border);
+border-radius: 8px; padding: 0.85rem 1.25rem; margin-top: 0.75rem;
+font-size: 0.82rem; color: #c5d0dd; line-height: 1.65;
+display: flex; justify-content: space-between; gap: 1rem; align-items: center;
+}
+.copy-sm {
+background: rgba(201,168,76,0.1); border: 1px solid var(–border);
+color: var(–gold); font-size: 0.7rem; font-weight: 600;
+padding: 0.25rem 0.6rem; border-radius: 4px; cursor: pointer;
+font-family: ‘DM Sans’, sans-serif; flex-shrink: 0; transition: all 0.2s;
+white-space: nowrap;
+}
+.copy-sm:hover { background: rgba(201,168,76,0.2); }
+.copy-sm.copied { color: #4caf82; border-color: #4caf82; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 768px) {
+.trust-bar { grid-template-columns: repeat(2,1fr); }
+.services-grid, .docs-grid { grid-template-columns: repeat(2,1fr); }
+.cta-box { flex-direction: column; }
+.wrap { padding: 0 1.25rem; }
+}
+@media (max-width: 480px) {
+nav { padding: 0 1rem; }
+.services-grid { grid-template-columns: 1fr; }
+.docs-grid { grid-template-columns: repeat(2,1fr); }
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+  <div class="logo">Rodriguez <span>Formation Group</span></div>
+  <div style="display:flex;gap:1.5rem;align-items:center;">
+    <a href="#">Services</a>
+    <a href="#">Pricing</a>
+    <a href="#" class="nav-cta">Book Now</a>
+  </div>
+</nav>
+
+<!-- TAB NAVIGATION -->
+
+<div class="page-tabs-wrapper">
+  <div class="page-tabs">
+    <button class="tab-btn active" onclick="showPage('main', this)">Process Serving KC (Main SEO)</button>
+    <button class="tab-btn" onclick="showPage('smithville', this)">Smithville MO</button>
+    <button class="tab-btn" onclick="showPage('kearney', this)">Kearney MO</button>
+    <button class="tab-btn" onclick="showPage('plattsburg', this)">Plattsburg MO</button>
+    <button class="tab-btn" onclick="showPage('lathrop', this)">Lathrop MO</button>
+    <button class="tab-btn" onclick="showPage('liberty', this)">Liberty MO</button>
+    <button class="tab-btn" onclick="showPage('gbp', this)">Google Business Setup</button>
+  </div>
+</div>
+
+<!-- ======================== MAIN SEO PAGE ======================== -->
+
+<div class="page active" id="page-main">
+  <div class="wrap">
+    <div class="seo-hero">
+      <div class="seo-badge">📍 Kansas City, Missouri</div>
+      <h1>Professional Process Serving in<br><em>Kansas City and Rural Missouri</em></h1>
+      <p class="lead">We provide fast, court-compliant process serving throughout Kansas City and surrounding Missouri counties. Whether you need routine service, rush delivery, or rural coverage in Clay or Clinton County, Rodriguez Formation Group delivers documents professionally — with notarized proof of service and real-time updates.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn btn-primary">Request a Serve</a>
+        <a href="tel:4064178744" class="btn btn-outline">Call (406) 417-8744</a>
+      </div>
+      <div class="trust-bar">
+        <div class="trust-item"><div class="trust-num">3</div><div class="trust-label">Attempts per standard serve</div></div>
+        <div class="trust-item"><div class="trust-num">24hr</div><div class="trust-label">Rush same-day available</div></div>
+        <div class="trust-item"><div class="trust-num">100%</div><div class="trust-label">Notarized proof of service</div></div>
+        <div class="trust-item"><div class="trust-num">2</div><div class="trust-label">Counties covered — KC + rural</div></div>
+      </div>
+    </div>
+
+```
+<div class="divider"><div class="divider-line"></div><div class="divider-label">Services Offered</div><div class="divider-line"></div></div>
+<div class="services-grid">
+  <div class="service-card">
+    <div>⚡</div>
+    <h3>Rush / Same-Day Service</h3>
+    <p>Order by noon for same-day service throughout the KC metro. Confirmation call when complete.</p>
+    <div class="service-price">$110–$150</div>
+  </div>
+  <div class="service-card">
+    <div>📋</div>
+    <h3>Standard Service of Process</h3>
+    <p>Up to 3 attempts, notarized Proof of Service, court affidavit filed within 30 days.</p>
+    <div class="service-price">$65–$85</div>
+  </div>
+  <div class="service-card">
+    <div>🛣️</div>
+    <h3>Rural Missouri Service</h3>
+    <p>Kearney, Smithville, Plattsburg, Lathrop, and surrounding areas. Base + $0.85/mile.</p>
+    <div class="service-price">$45 + miles</div>
+  </div>
+  <div class="service-card">
+    <div>🏢</div>
+    <h3>Evasive / Difficult Serves</h3>
+    <p>Gated communities, high-rises, known avoiders. Surcharge applies. Strategy consultation included.</p>
+    <div class="service-price">+$20–$40</div>
+  </div>
+  <div class="service-card">
+    <div>✍️</div>
+    <h3>Notarized Proof of Service</h3>
+    <p>Included with every serve. Joshua is a commissioned Missouri notary — completed on the spot.</p>
+    <div class="service-price">Included</div>
+  </div>
+  <div class="service-card">
+    <div>💼</div>
+    <h3>Law Firm Accounts</h3>
+    <p>Monthly consolidated billing, priority queue, bulk discounts for firms with 5+ serves/month.</p>
+    <div class="service-price">Contact for rates</div>
+  </div>
+</div>
+
+<div class="divider"><div class="divider-line"></div><div class="divider-label">Documents We Serve</div><div class="divider-line"></div></div>
+<div class="docs-grid">
+  <div class="doc-tag">⚖️ Summons &amp; Complaints</div>
+  <div class="doc-tag">📜 Subpoenas</div>
+  <div class="doc-tag">🏠 Eviction Notices</div>
+  <div class="doc-tag">📑 Court Orders</div>
+  <div class="doc-tag">💰 Garnishment Notices</div>
+  <div class="doc-tag">👨‍👩‍👧 Family Law Documents</div>
+  <div class="doc-tag">🏢 Restraining Orders</div>
+  <div class="doc-tag">📋 Demand Letters</div>
+</div>
+
+<div class="cta-box">
+  <div>
+    <h3>Ready to Request a Serve?</h3>
+    <p>Call, text, or submit online. Rush orders accepted until noon for same-day KC metro service.</p>
+  </div>
+  <div class="cta-box-actions">
+    <a href="#" class="btn btn-primary">Request a Serve</a>
+    <a href="tel:4064178744" class="btn btn-outline">Call Now</a>
+  </div>
+</div>
+```
+
+  </div>
+</div>
+
+<!-- ======================== LOCATION PAGES ======================== -->
+
+<!-- SMITHVILLE -->
+
+<div class="page" id="page-smithville">
+  <div class="wrap">
+    <div class="loc-hero">
+      <div class="seo-badge">📍 Clay County, Missouri</div>
+      <h1>Process Server in <em>Smithville, MO</em></h1>
+      <p>Looking for a reliable process server in Smithville, Missouri? Rodriguez Formation Group provides fast, professional service of process for legal documents including summons, subpoenas, eviction notices, and court filings. We ensure proper delivery with a notarized Proof of Service in full compliance with Missouri requirements.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn btn-primary">Request Smithville Serve</a>
+        <a href="tel:4064178744" class="btn btn-outline">Call (406) 417-8744</a>
+      </div>
+    </div>
+
+```
+<div class="divider"><div class="divider-line"></div><div class="divider-label">Smithville Service Options</div><div class="divider-line"></div></div>
+<div class="services-grid">
+  <div class="service-card"><div>📋</div><h3>Standard Serve</h3><p>Base fee + mileage from KC. Up to 3 attempts. Notarized Proof of Service included.</p><div class="service-price">$45 + $0.85/mi</div></div>
+  <div class="service-card"><div>⚡</div><h3>Rush Serve</h3><p>Priority same-day or next-day service. Prepayment of base + estimated mileage required.</p><div class="service-price">$100 + $0.85/mi</div></div>
+  <div class="service-card"><div>⏱️</div><h3>Wait Time</h3><p>Remote or rural location with uncertain subject schedule. $30–$50/hr after first 15 minutes.</p><div class="service-price">$30–$50/hr</div></div>
+</div>
+
+<div class="divider"><div class="divider-line"></div><div class="divider-label">Documents Served in Smithville</div><div class="divider-line"></div></div>
+<div class="docs-grid">
+  <div class="doc-tag">⚖️ Summons &amp; Complaints</div>
+  <div class="doc-tag">📜 Subpoenas</div>
+  <div class="doc-tag">🏠 Eviction Notices</div>
+  <div class="doc-tag">📑 Court Orders</div>
+  <div class="doc-tag">💰 Garnishments</div>
+  <div class="doc-tag">👨‍👩‍👧 Family Law Docs</div>
+  <div class="doc-tag">🏢 Restraining Orders</div>
+  <div class="doc-tag">📋 Demand Letters</div>
+</div>
+
+<div style="margin: 2.5rem 0;">
+  <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:0.85rem;">Nearby Areas Also Served</div>
+  <div class="nearby-tags">
+    <span class="nearby-tag">Kearney</span><span class="nearby-tag">Liberty</span>
+    <span class="nearby-tag">Kansas City (North)</span><span class="nearby-tag">Gladstone</span>
+    <span class="nearby-tag">Plattsburg</span><span class="nearby-tag">Lathrop</span>
+  </div>
+</div>
+
+<div class="cta-box">
+  <div><h3>Need a Process Server in Smithville?</h3><p>Prepayment of base + estimated mileage required for all Clay County serves. Call to confirm availability.</p></div>
+  <div class="cta-box-actions">
+    <a href="#" class="btn btn-primary">Request a Serve</a>
+    <a href="tel:4064178744" class="btn btn-outline">Call Now</a>
+  </div>
+</div>
+```
+
+  </div>
+</div>
+
+<!-- KEARNEY -->
+
+<div class="page" id="page-kearney">
+  <div class="wrap">
+    <div class="loc-hero">
+      <div class="seo-badge">📍 Clay County, Missouri</div>
+      <h1>Process Server in <em>Kearney, MO</em></h1>
+      <p>Need a process server in Kearney, Missouri? Rodriguez Formation Group serves legal documents throughout Kearney and surrounding Clay County communities. From eviction notices to civil subpoenas, we deliver with a notarized Proof of Service filed with the court — handled by a commissioned Missouri notary.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn btn-primary">Request Kearney Serve</a>
+        <a href="tel:4064178744" class="btn btn-outline">Call (406) 417-8744</a>
+      </div>
+    </div>
+
+```
+<div class="divider"><div class="divider-line"></div><div class="divider-label">Kearney Service Options</div><div class="divider-line"></div></div>
+<div class="services-grid">
+  <div class="service-card"><div>📋</div><h3>Standard Serve</h3><p>Base fee + mileage. Up to 3 attempts. Notarized Proof of Service included. Court affidavit filed.</p><div class="service-price">$45 + $0.85/mi</div></div>
+  <div class="service-card"><div>⚡</div><h3>Rush Serve</h3><p>Same-day or next-day priority. Prepayment required. Confirmation call on completion.</p><div class="service-price">$100 + $0.85/mi</div></div>
+  <div class="service-card"><div>🚜</div><h3>Rural / Farm Addresses</h3><p>Experience serving rural and agricultural addresses in Clay County. Wait time applies if needed.</p><div class="service-price">Base + miles + wait</div></div>
+</div>
+
+<div style="margin: 2.5rem 0;">
+  <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:0.85rem;">Nearby Areas Also Served</div>
+  <div class="nearby-tags">
+    <span class="nearby-tag">Smithville</span><span class="nearby-tag">Plattsburg</span>
+    <span class="nearby-tag">Liberty</span><span class="nearby-tag">Excelsior Springs</span>
+    <span class="nearby-tag">Lathrop</span><span class="nearby-tag">Kansas City North</span>
+  </div>
+</div>
+
+<div class="cta-box">
+  <div><h3>Need a Process Server in Kearney?</h3><p>Call or text Joshua directly to confirm availability and get a mileage estimate before booking.</p></div>
+  <div class="cta-box-actions">
+    <a href="#" class="btn btn-primary">Request a Serve</a>
+    <a href="tel:4064178744" class="btn btn-outline">Call Now</a>
+  </div>
+</div>
+```
+
+  </div>
+</div>
+
+<!-- PLATTSBURG -->
+
+<div class="page" id="page-plattsburg">
+  <div class="wrap">
+    <div class="loc-hero">
+      <div class="seo-badge">📍 Clinton County, Missouri</div>
+      <h1>Process Server in <em>Plattsburg, MO</em></h1>
+      <p>Rodriguez Formation Group provides professional process serving in Plattsburg and throughout Clinton County. Few KC-area servers make the drive to Plattsburg — we do, with full documentation including a notarized Proof of Service affidavit filed with the court within 30 days.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn btn-primary">Request Plattsburg Serve</a>
+        <a href="tel:4064178744" class="btn btn-outline">Call (406) 417-8744</a>
+      </div>
+    </div>
+
+```
+<div class="divider"><div class="divider-line"></div><div class="divider-label">Plattsburg Service Options</div><div class="divider-line"></div></div>
+<div class="services-grid">
+  <div class="service-card"><div>📋</div><h3>Standard Serve</h3><p>Base fee + mileage from KC metro. Up to 3 attempts. Full documentation included.</p><div class="service-price">$45 + $0.85/mi</div></div>
+  <div class="service-card"><div>⚡</div><h3>Rush Serve</h3><p>Priority scheduling. Prepayment of base + estimated mileage required before departure.</p><div class="service-price">$100 + $0.85/mi</div></div>
+  <div class="service-card"><div>⏱️</div><h3>Wait Time</h3><p>Extended waits at rural addresses billed at $30–$50/hr after the first 15 minutes free.</p><div class="service-price">$30–$50/hr</div></div>
+</div>
+
+<div style="margin: 2.5rem 0;">
+  <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:0.85rem;">Nearby Areas Also Served</div>
+  <div class="nearby-tags">
+    <span class="nearby-tag">Lathrop</span><span class="nearby-tag">Kearney</span>
+    <span class="nearby-tag">Smithville</span><span class="nearby-tag">Trimble</span>
+    <span class="nearby-tag">Cameron</span><span class="nearby-tag">Kansas City North</span>
+  </div>
+</div>
+
+<div class="cta-box">
+  <div><h3>Need a Process Server in Plattsburg?</h3><p>One of the few servers covering Clinton County. Prepayment required. Call to get your mileage estimate.</p></div>
+  <div class="cta-box-actions">
+    <a href="#" class="btn btn-primary">Request a Serve</a>
+    <a href="tel:4064178744" class="btn btn-outline">Call Now</a>
+  </div>
+</div>
+```
+
+  </div>
+</div>
+
+<!-- LATHROP -->
+
+<div class="page" id="page-lathrop">
+  <div class="wrap">
+    <div class="loc-hero">
+      <div class="seo-badge">📍 Clinton County, Missouri</div>
+      <h1>Process Server in <em>Lathrop, MO</em></h1>
+      <p>Looking for a process server in Lathrop, Missouri? Rodriguez Formation Group covers Lathrop and the surrounding Clinton County area for service of process, eviction notices, subpoenas, and civil court filings. Notarized Proof of Service included — filed with the court within 30 days of successful service.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn btn-primary">Request Lathrop Serve</a>
+        <a href="tel:4064178744" class="btn btn-outline">Call (406) 417-8744</a>
+      </div>
+    </div>
+
+```
+<div class="divider"><div class="divider-line"></div><div class="divider-label">Lathrop Service Options</div><div class="divider-line"></div></div>
+<div class="services-grid">
+  <div class="service-card"><div>📋</div><h3>Standard Serve</h3><p>Base fee + mileage. Up to 3 attempts. Notarized affidavit filed with court.</p><div class="service-price">$45 + $0.85/mi</div></div>
+  <div class="service-card"><div>⚡</div><h3>Rush Serve</h3><p>Priority order. Call to confirm same-day availability for Lathrop area.</p><div class="service-price">$100 + $0.85/mi</div></div>
+  <div class="service-card"><div>⏱️</div><h3>Wait Time</h3><p>Remote addresses may require extended wait. Billed after first 15 minutes.</p><div class="service-price">$30–$50/hr</div></div>
+</div>
+
+<div style="margin: 2.5rem 0;">
+  <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:0.85rem;">Nearby Areas Also Served</div>
+  <div class="nearby-tags">
+    <span class="nearby-tag">Plattsburg</span><span class="nearby-tag">Kearney</span>
+    <span class="nearby-tag">Smithville</span><span class="nearby-tag">Excelsior Springs</span>
+    <span class="nearby-tag">Cameron</span><span class="nearby-tag">Trimble</span>
+  </div>
+</div>
+
+<div class="cta-box">
+  <div><h3>Need a Process Server in Lathrop?</h3><p>Serving Clinton County when most KC servers won't. Call to confirm availability and get a mileage quote.</p></div>
+  <div class="cta-box-actions">
+    <a href="#" class="btn btn-primary">Request a Serve</a>
+    <a href="tel:4064178744" class="btn btn-outline">Call Now</a>
+  </div>
+</div>
+```
+
+  </div>
+</div>
+
+<!-- LIBERTY -->
+
+<div class="page" id="page-liberty">
+  <div class="wrap">
+    <div class="loc-hero">
+      <div class="seo-badge">📍 Clay County, Missouri</div>
+      <h1>Process Server in <em>Liberty, MO</em></h1>
+      <p>Rodriguez Formation Group provides fast, professional process serving throughout Liberty, Missouri. Liberty is covered under our KC Metro flat rate — no mileage charge, same-day rush available. Whether you're an attorney, landlord, or individual, we handle your serve with a notarized Proof of Service ready for court.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn btn-primary">Request Liberty Serve</a>
+        <a href="tel:4064178744" class="btn btn-outline">Call (406) 417-8744</a>
+      </div>
+    </div>
+
+```
+<div class="divider"><div class="divider-line"></div><div class="divider-label">Liberty Service Options</div><div class="divider-line"></div></div>
+<div class="services-grid">
+  <div class="service-card"><div>📋</div><h3>Standard Serve</h3><p>Flat rate. Up to 3 attempts. Notarized Proof of Service. Court affidavit filed within 30 days.</p><div class="service-price">$65–$85</div></div>
+  <div class="service-card"><div>⚡</div><h3>Rush / Same-Day</h3><p>Order by noon for same-day service in Liberty. Confirmation call when complete.</p><div class="service-price">$110–$150</div></div>
+  <div class="service-card"><div>🏠</div><h3>Eviction Notices</h3><p>Serving landlords throughout Liberty. Fast turnaround — critical for court filing deadlines.</p><div class="service-price">$65–$85</div></div>
+</div>
+
+<div style="margin: 2.5rem 0;">
+  <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:0.85rem;">Nearby Areas Also Served</div>
+  <div class="nearby-tags">
+    <span class="nearby-tag">Kansas City</span><span class="nearby-tag">Gladstone</span>
+    <span class="nearby-tag">Kearney</span><span class="nearby-tag">Smithville</span>
+    <span class="nearby-tag">North KC</span><span class="nearby-tag">Riverside</span>
+  </div>
+</div>
+
+<div class="cta-box">
+  <div><h3>Need a Process Server in Liberty?</h3><p>Liberty is covered under our KC Metro flat rate. Same-day available. Call or text Joshua directly.</p></div>
+  <div class="cta-box-actions">
+    <a href="#" class="btn btn-primary">Request a Serve</a>
+    <a href="tel:4064178744" class="btn btn-outline">Call Now</a>
+  </div>
+</div>
+```
+
+  </div>
+</div>
+
+<!-- ======================== GOOGLE BUSINESS PROFILE GUIDE ======================== -->
+
+<div class="page" id="page-gbp">
+  <div class="wrap" style="padding-top:3rem; padding-bottom:5rem;">
+    <div class="seo-badge">🗺️ Google Business Profile</div>
+    <h1 style="font-family:'Playfair Display',serif; font-size:clamp(1.75rem,3.5vw,2.5rem); font-weight:700; color:var(--white); margin:1rem 0 0.5rem;">Google Business Profile Setup</h1>
+    <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:2.5rem; line-height:1.7;">Joshua's step-by-step guide to getting found on Google Maps for process serving and notary searches in KC and rural Missouri. This is the #1 driver of local inbound calls — do this first.</p>
+
+```
+<div class="divider"><div class="divider-line"></div><div class="divider-label">Setup Steps</div><div class="divider-line"></div></div>
+
+<div class="gbp-step">
+  <div class="gbp-num">1</div>
+  <div>
+    <h3>Create or Claim Your Profile</h3>
+    <p>Go to <strong>business.google.com</strong> and sign in with a Google account. Search for "Rodriguez Formation Group" — if it exists, claim it. If not, create it from scratch. Use your legal business name exactly as registered.</p>
+  </div>
+</div>
+
+<div class="gbp-step">
+  <div class="gbp-num">2</div>
+  <div>
+    <h3>Set Your Primary & Secondary Categories</h3>
+    <p><strong>Primary:</strong> <code>Process Server</code><br>
+    <strong>Secondary:</strong> <code>Notary Public</code> · <code>Legal Services</code> · <code>Business Formation Service</code><br>
+    This determines what searches you show up for — get the primary right first.</p>
+  </div>
+</div>
+
+<div class="gbp-step">
+  <div class="gbp-num">3</div>
+  <div>
+    <h3>Set Your Service Area (Not a Storefront)</h3>
+    <p>Choose <strong>"Service area business"</strong> — Joshua goes to clients, not the other way around. Add these specific areas:</p>
+    <div style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:0.65rem;">
+      <span class="nearby-tag">Kansas City, MO</span><span class="nearby-tag">Liberty, MO</span>
+      <span class="nearby-tag">Kearney, MO</span><span class="nearby-tag">Smithville, MO</span>
+      <span class="nearby-tag">Plattsburg, MO</span><span class="nearby-tag">Lathrop, MO</span>
+      <span class="nearby-tag">Gladstone, MO</span><span class="nearby-tag">North Kansas City, MO</span>
+      <span class="nearby-tag">Clay County, MO</span><span class="nearby-tag">Clinton County, MO</span>
+    </div>
+  </div>
+</div>
+
+<div class="gbp-step">
+  <div class="gbp-num">4</div>
+  <div>
+    <h3>Write Your Business Description</h3>
+    <p>Copy this exactly — it's keyword-optimized for local search:</p>
+    <div class="copy-line">
+      <span>Fast, reliable process serving in Kansas City and surrounding Missouri areas — including Kearney, Smithville, Plattsburg, and Lathrop. We provide standard, rush, and same-day service of process with notarized proof of service included. Mobile notary and Missouri LLC formation also available. Serving KC metro and rural Clay & Clinton County.</span>
+      <button class="copy-sm" onclick="copyText(this, 'Fast, reliable process serving in Kansas City and surrounding Missouri areas — including Kearney, Smithville, Plattsburg, and Lathrop. We provide standard, rush, and same-day service of process with notarized proof of service included. Mobile notary and Missouri LLC formation also available. Serving KC metro and rural Clay & Clinton County.')">Copy</button>
+    </div>
+  </div>
+</div>
+
+<div class="gbp-step">
+  <div class="gbp-num">5</div>
+  <div>
+    <h3>Add Your Services with Prices</h3>
+    <p>In the "Services" section, add each one individually with the price range. This shows up directly in search results. Add:</p>
+    <div style="display:flex; flex-direction:column; gap:0.4rem; margin-top:0.65rem;">
+      <div class="copy-line"><span><strong>Standard Process Serve</strong> — $65–$85 · Up to 3 attempts, notarized proof of service included</span><button class="copy-sm" onclick="copyText(this, 'Standard Process Serve — $65–$85 · Up to 3 attempts, notarized proof of service included')">Copy</button></div>
+      <div class="copy-line"><span><strong>Rush / Same-Day Serve</strong> — $110–$150 · KC Metro, order by noon</span><button class="copy-sm" onclick="copyText(this, 'Rush / Same-Day Serve — $110–$150 · KC Metro, order by noon')">Copy</button></div>
+      <div class="copy-line"><span><strong>Rural Process Serve</strong> — $45 + $0.85/mile · Clay & Clinton County</span><button class="copy-sm" onclick="copyText(this, 'Rural Process Serve — $45 + $0.85/mile · Clay & Clinton County')">Copy</button></div>
+      <div class="copy-line"><span><strong>Mobile Notary</strong> — $10/notarization + travel · KC metro</span><button class="copy-sm" onclick="copyText(this, 'Mobile Notary — $10/notarization + travel · KC metro')">Copy</button></div>
+      <div class="copy-line"><span><strong>Missouri LLC Formation</strong> — from $197 + state fees</span><button class="copy-sm" onclick="copyText(this, 'Missouri LLC Formation — from $197 + state fees')">Copy</button></div>
+    </div>
+  </div>
+</div>
+
+<div class="gbp-step">
+  <div class="gbp-num">6</div>
+  <div>
+    <h3>Set Your Hours</h3>
+    <p><strong>Mon–Fri:</strong> 8:00 AM – 7:00 PM<br>
+    <strong>Saturday:</strong> 9:00 AM – 5:00 PM<br>
+    <strong>Sunday:</strong> By appointment<br>
+    Check the <strong>"By appointment"</strong> box — this signals availability without full commitment.</p>
+  </div>
+</div>
+
+<div class="gbp-step">
+  <div class="gbp-num">7</div>
+  <div>
+    <h3>Add Photos (Critical for Trust)</h3>
+    <p>Upload at minimum:<br>
+    • <strong>Profile photo</strong> — Joshua's headshot from the website<br>
+    • <strong>Cover photo</strong> — the branded hero image from the website<br>
+    • <strong>Logo</strong> — the shield logo<br>
+    Google profiles with photos get 42% more direction requests. Do this the same day you verify.</p>
+  </div>
+</div>
+
+<div class="gbp-step">
+  <div class="gbp-num">8</div>
+  <div>
+    <h3>Get Your First 5 Reviews — This Week</h3>
+    <p>Reviews are the #1 ranking signal for local search. Text this to every person who's used Joshua's services:</p>
+    <div class="copy-line">
+      <span>Hey [Name], I just set up my Google Business profile for Rodriguez Formation Group. If you've worked with me and had a good experience, would you mind leaving a quick review? It really helps. Here's the link: [your Google review link]</span>
+      <button class="copy-sm" onclick="copyText(this, 'Hey [Name], I just set up my Google Business profile for Rodriguez Formation Group. If you have worked with me and had a good experience, would you mind leaving a quick review? It really helps.')">Copy</button>
+    </div>
+    <p style="margin-top:0.75rem; color:var(--text-muted);">💡 When asking attorneys or firms for reviews, ask them to mention <strong>"process server Kansas City"</strong> or <strong>"process server [city]"</strong> naturally in their review — this directly boosts keyword ranking.</p>
+  </div>
+</div>
+
+<div class="gbp-step">
+  <div class="gbp-num">9</div>
+  <div>
+    <h3>Verify Your Profile</h3>
+    <p>Google will mail a postcard to Joshua's address with a verification code — takes 5–14 days. Until verified, the profile won't rank. <strong>Request verification the same day you set it up.</strong> Video verification is now available as an alternative — choose that if offered, it's faster.</p>
+  </div>
+</div>
+
+<div style="margin-top:2rem; padding:1.5rem; background:rgba(201,168,76,0.06); border:1px solid var(--border); border-radius:10px;">
+  <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); margin-bottom:0.75rem;">After Setup — Monthly Maintenance (15 min/month)</div>
+  <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.85;">
+    ✓ Post a Google Business update once a month ("Now serving Plattsburg, MO" or "Same-day rush available KC metro")<br>
+    ✓ Reply to every review within 24 hours — even just "Thank you, [name]! Glad I could help."<br>
+    ✓ Add new photos every 60 days to keep the profile active<br>
+    ✓ Check the "Questions & Answers" section — answer any questions that come in
+  </div>
+</div>
+```
+
+  </div>
+</div>
+
+<script>
+function showPage(id, btn) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function copyText(btn, text) {
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = '✓ Copied';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+</script>
+
+</body>
+</html>

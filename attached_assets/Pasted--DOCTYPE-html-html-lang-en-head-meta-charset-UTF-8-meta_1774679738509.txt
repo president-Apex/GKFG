@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Rodriguez Formation Group</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+–navy: #0d1b2a;
+–navy-mid: #162032;
+–navy-light: #1e2f45;
+–gold: #c9a84c;
+–gold-light: #e2c275;
+–gold-pale: #f5e9c8;
+–white: #ffffff;
+–text-muted: #8a9bb0;
+–border: rgba(201,168,76,0.2);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+font-family: ‘DM Sans’, sans-serif;
+background: var(–navy);
+color: var(–white);
+min-height: 100vh;
+overflow-x: hidden;
+}
+
+body::before {
+content: ‘’;
+position: fixed;
+inset: 0;
+background:
+radial-gradient(ellipse 80% 60% at 20% 0%, rgba(201,168,76,0.07) 0%, transparent 60%),
+radial-gradient(ellipse 60% 80% at 80% 100%, rgba(201,168,76,0.05) 0%, transparent 60%);
+pointer-events: none;
+z-index: 0;
+}
+
+/* NAV */
+nav {
+position: sticky;
+top: 0;
+z-index: 100;
+background: rgba(13,27,42,0.92);
+backdrop-filter: blur(12px);
+border-bottom: 1px solid var(–border);
+padding: 0 2rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 68px;
+}
+
+.logo {
+font-family: ‘Playfair Display’, serif;
+font-size: 1.15rem;
+font-weight: 600;
+color: var(–gold);
+letter-spacing: 0.02em;
+}
+
+.logo span { color: var(–white); }
+
+.nav-links { display: flex; align-items: center; gap: 1.75rem; }
+
+nav a {
+color: var(–text-muted);
+text-decoration: none;
+font-size: 0.875rem;
+font-weight: 500;
+transition: color 0.2s;
+}
+
+nav a:hover { color: var(–gold); }
+
+.nav-cta {
+background: var(–gold);
+color: var(–navy) !important;
+padding: 0.5rem 1.25rem;
+border-radius: 4px;
+font-weight: 600 !important;
+font-size: 0.85rem !important;
+}
+
+.nav-cta:hover { background: var(–gold-light) !important; }
+
+/* HERO SPLIT */
+.hero {
+position: relative;
+z-index: 1;
+max-width: 1100px;
+margin: 0 auto;
+padding: 5rem 2rem 4rem;
+display: grid;
+grid-template-columns: 1fr 420px;
+gap: 4rem;
+align-items: center;
+}
+
+.hero-text { animation: fadeUp 0.6s ease both; }
+
+.hero-badge {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+background: rgba(201,168,76,0.12);
+border: 1px solid var(–border);
+border-radius: 100px;
+padding: 0.35rem 1rem;
+font-size: 0.78rem;
+font-weight: 500;
+color: var(–gold);
+letter-spacing: 0.08em;
+text-transform: uppercase;
+margin-bottom: 1.75rem;
+}
+
+.hero-text h1 {
+font-family: ‘Playfair Display’, serif;
+font-size: clamp(2rem, 4vw, 3rem);
+font-weight: 700;
+line-height: 1.15;
+color: var(–white);
+margin-bottom: 1.25rem;
+}
+
+.hero-text h1 em {
+font-style: normal;
+color: var(–gold);
+}
+
+.hero-text p {
+font-size: 1rem;
+color: var(–text-muted);
+font-weight: 300;
+line-height: 1.8;
+margin-bottom: 2rem;
+max-width: 520px;
+}
+
+.hero-actions {
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+}
+
+.btn {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+padding: 0.875rem 1.75rem;
+border-radius: 6px;
+font-size: 0.9rem;
+font-weight: 600;
+cursor: pointer;
+text-decoration: none;
+transition: all 0.2s;
+border: none;
+}
+
+.btn-primary { background: var(–gold); color: var(–navy); }
+.btn-primary:hover { background: var(–gold-light); transform: translateY(-1px); }
+.btn-outline { background: transparent; color: var(–gold); border: 1px solid var(–gold); }
+.btn-outline:hover { background: rgba(201,168,76,0.1); }
+
+/* PHOTO CARD */
+.photo-card {
+position: relative;
+animation: fadeUp 0.6s 0.15s ease both;
+}
+
+.photo-frame {
+position: relative;
+border-radius: 16px;
+overflow: hidden;
+border: 1px solid var(–border);
+box-shadow: 0 32px 64px rgba(0,0,0,0.4);
+}
+
+.photo-frame img {
+width: 100%;
+height: 520px;
+object-fit: cover;
+object-position: center top;
+display: block;
+filter: brightness(0.95) contrast(1.05);
+}
+
+/* Gold accent line left of photo */
+.photo-frame::before {
+content: ‘’;
+position: absolute;
+left: 0;
+top: 10%;
+bottom: 10%;
+width: 3px;
+background: var(–gold);
+z-index: 2;
+}
+
+.photo-tag {
+position: absolute;
+bottom: -18px;
+left: 50%;
+transform: translateX(-50%);
+background: var(–navy-light);
+border: 1px solid var(–border);
+border-radius: 10px;
+padding: 0.85rem 1.5rem;
+white-space: nowrap;
+box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+text-align: center;
+}
+
+.photo-tag .name {
+font-family: ‘Playfair Display’, serif;
+font-size: 1rem;
+font-weight: 700;
+color: var(–white);
+}
+
+.photo-tag .title {
+font-size: 0.75rem;
+color: var(–gold);
+letter-spacing: 0.06em;
+text-transform: uppercase;
+margin-top: 2px;
+}
+
+/* TRUST STATS */
+.stats {
+position: relative;
+z-index: 1;
+max-width: 1100px;
+margin: 4rem auto 0;
+padding: 0 2rem;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 1px;
+background: var(–border);
+border: 1px solid var(–border);
+border-radius: 12px;
+overflow: hidden;
+}
+
+.stat {
+background: var(–navy-mid);
+padding: 1.75rem 1.5rem;
+text-align: center;
+animation: fadeUp 0.5s ease both;
+}
+
+.stat:nth-child(1) { animation-delay: 0.1s; }
+.stat:nth-child(2) { animation-delay: 0.2s; }
+.stat:nth-child(3) { animation-delay: 0.3s; }
+.stat:nth-child(4) { animation-delay: 0.4s; }
+
+.stat-number {
+font-family: ‘Playfair Display’, serif;
+font-size: 2rem;
+font-weight: 700;
+color: var(–gold);
+line-height: 1;
+margin-bottom: 0.4rem;
+}
+
+.stat-label {
+font-size: 0.8rem;
+color: var(–text-muted);
+line-height: 1.4;
+}
+
+/* DIVIDER */
+.divider {
+display: flex;
+align-items: center;
+gap: 1rem;
+max-width: 1100px;
+margin: 4rem auto 0;
+padding: 0 2rem;
+}
+
+.divider-line { flex: 1; height: 1px; background: var(–border); }
+
+.divider-label {
+font-family: ‘Playfair Display’, serif;
+font-size: 0.8rem;
+color: var(–gold);
+letter-spacing: 0.12em;
+text-transform: uppercase;
+white-space: nowrap;
+}
+
+/* WHY SECTION */
+.why-section {
+position: relative;
+z-index: 1;
+max-width: 1100px;
+margin: 2.5rem auto 0;
+padding: 0 2rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 3rem;
+align-items: start;
+}
+
+.why-text h2 {
+font-family: ‘Playfair Display’, serif;
+font-size: clamp(1.6rem, 3vw, 2.25rem);
+font-weight: 700;
+color: var(–white);
+line-height: 1.2;
+margin-bottom: 1.25rem;
+}
+
+.why-text h2 em { font-style: normal; color: var(–gold); }
+
+.why-text p {
+font-size: 0.95rem;
+color: var(–text-muted);
+line-height: 1.85;
+margin-bottom: 1rem;
+font-weight: 300;
+}
+
+.why-text p strong { color: var(–gold-pale); font-weight: 500; }
+
+/* PILLARS */
+.pillars {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+.pillar {
+background: var(–navy-mid);
+border: 1px solid rgba(255,255,255,0.06);
+border-radius: 10px;
+padding: 1.25rem 1.5rem;
+display: flex;
+gap: 1rem;
+align-items: flex-start;
+transition: border-color 0.2s, transform 0.2s;
+animation: fadeUp 0.5s ease both;
+}
+
+.pillar:hover {
+border-color: var(–border);
+transform: translateX(4px);
+}
+
+.pillar:nth-child(1) { animation-delay: 0.1s; }
+.pillar:nth-child(2) { animation-delay: 0.2s; }
+.pillar:nth-child(3) { animation-delay: 0.3s; }
+.pillar:nth-child(4) { animation-delay: 0.4s; }
+
+.pillar-icon {
+width: 40px;
+height: 40px;
+background: rgba(201,168,76,0.12);
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.1rem;
+flex-shrink: 0;
+}
+
+.pillar-content h4 {
+font-size: 0.92rem;
+font-weight: 600;
+color: var(–white);
+margin-bottom: 0.3rem;
+}
+
+.pillar-content p {
+font-size: 0.8rem;
+color: var(–text-muted);
+line-height: 1.6;
+}
+
+/* DIFFERENCE SECTION */
+.difference {
+position: relative;
+z-index: 1;
+max-width: 1100px;
+margin: 4rem auto 0;
+padding: 0 2rem;
+}
+
+.compare-table {
+margin-top: 2rem;
+border: 1px solid var(–border);
+border-radius: 12px;
+overflow: hidden;
+}
+
+.compare-header {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+background: var(–navy-light);
+border-bottom: 1px solid var(–border);
+}
+
+.compare-header div {
+padding: 1rem 1.5rem;
+font-size: 0.78rem;
+font-weight: 600;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+}
+
+.compare-header div:first-child { color: var(–text-muted); }
+.compare-header div:nth-child(2) { color: var(–text-muted); text-align: center; }
+.compare-header div:last-child { color: var(–gold); text-align: center; }
+
+.compare-row {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+border-bottom: 1px solid rgba(255,255,255,0.04);
+background: var(–navy-mid);
+transition: background 0.15s;
+}
+
+.compare-row:last-child { border-bottom: none; }
+.compare-row:hover { background: var(–navy-light); }
+
+.compare-row div {
+padding: 0.9rem 1.5rem;
+font-size: 0.85rem;
+}
+
+.compare-row div:first-child { color: #c5d0dd; }
+.compare-row div:nth-child(2) { color: var(–text-muted); text-align: center; }
+.compare-row div:last-child { color: var(–gold-pale); text-align: center; font-weight: 500; }
+
+.x { color: #e05555 !important; }
+.check-gold { color: var(–gold) !important; }
+
+/* CONTACT STRIP */
+.contact-strip {
+position: relative;
+z-index: 1;
+max-width: 1100px;
+margin: 4rem auto 0;
+padding: 0 2rem;
+}
+
+.contact-box {
+background: var(–navy-light);
+border: 1px solid var(–border);
+border-radius: 14px;
+padding: 2.5rem 3rem;
+display: grid;
+grid-template-columns: 1fr auto;
+gap: 2rem;
+align-items: center;
+}
+
+.contact-box h3 {
+font-family: ‘Playfair Display’, serif;
+font-size: 1.5rem;
+font-weight: 700;
+color: var(–white);
+margin-bottom: 0.5rem;
+}
+
+.contact-box p {
+font-size: 0.9rem;
+color: var(–text-muted);
+line-height: 1.6;
+}
+
+.contact-box p a {
+color: var(–gold);
+text-decoration: none;
+}
+
+.contact-box p a:hover { color: var(–gold-light); }
+
+.contact-actions {
+display: flex;
+flex-direction: column;
+gap: 0.75rem;
+min-width: 200px;
+}
+
+/* FOOTER */
+footer {
+position: relative;
+z-index: 1;
+text-align: center;
+padding: 3rem 2rem 4rem;
+font-size: 0.78rem;
+color: var(–text-muted);
+border-top: 1px solid rgba(255,255,255,0.05);
+margin-top: 5rem;
+line-height: 1.7;
+}
+
+footer strong { color: var(–gold-pale); }
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+.hero { grid-template-columns: 1fr; gap: 2.5rem; }
+.photo-frame img { height: 380px; }
+.photo-card { order: -1; }
+.stats { grid-template-columns: repeat(2, 1fr); }
+.why-section { grid-template-columns: 1fr; gap: 2rem; }
+.contact-box { grid-template-columns: 1fr; }
+.contact-actions { flex-direction: row; flex-wrap: wrap; }
+}
+
+@media (max-width: 600px) {
+nav { padding: 0 1rem; }
+.hero { padding: 3rem 1.25rem 2.5rem; }
+.stats, .divider, .why-section, .difference, .contact-strip { padding-left: 1.25rem; padding-right: 1.25rem; }
+.compare-table { font-size: 0.8rem; }
+.compare-row div, .compare-header div { padding: 0.75rem 0.85rem; }
+.contact-box { padding: 1.75rem 1.5rem; }
+.stats { grid-template-columns: repeat(2,1fr); }
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+  <div class="logo">Rodriguez <span>Formation Group</span></div>
+  <div class="nav-links">
+    <a href="#">Services</a>
+    <a href="#">Pricing</a>
+    <a href="#" class="nav-cta">Book a Call</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-badge">⚖️ Kansas City's Trusted Formation Specialist</div>
+    <h1>You Deserve Someone<br>Who <em>Actually Shows Up.</em></h1>
+    <p>Most online formation services are just forms on a website. No one to call. No one who knows your name. When something goes wrong, you're on your own.</p>
+    <p>Rodriguez Formation Group is different. You get <strong>a real person, local to Kansas City</strong>, who handles your filing with care and answers when you call.</p>
+    <div class="hero-actions">
+      <a href="#" class="btn btn-primary">Get Started Today</a>
+      <a href="#" class="btn btn-outline">Book a Free Call</a>
+    </div>
+  </div>
+
+  <div class="photo-card">
+    <div class="photo-frame">
+      <img src="/mnt/user-data/uploads/5FA81234-36B2-4616-BF40-4B83C2AA6910.png" alt="Joshua Rodriguez — Rodriguez Formation Group" />
+    </div>
+    <div class="photo-tag">
+      <div class="name">Joshua Rodriguez</div>
+      <div class="title">Founder · Missouri Notary · Formation Specialist</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+
+<div class="stats">
+  <div class="stat">
+    <div class="stat-number">$51</div>
+    <div class="stat-label">Missouri state fee — lowest in the nation</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">24hr</div>
+    <div class="stat-label">Turnaround on priority filings</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">100%</div>
+    <div class="stat-label">Filings reviewed before submission</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">Local</div>
+    <div class="stat-label">Kansas City based — real person, real phone</div>
+  </div>
+</div>
+
+<!-- WHY SECTION -->
+
+<div class="divider">
+  <div class="divider-line"></div>
+  <div class="divider-label">Why Rodriguez Formation Group</div>
+  <div class="divider-line"></div>
+</div>
+
+<div class="why-section">
+  <div class="why-text">
+    <h2>Built for Business Owners,<br>Not <em>Algorithms.</em></h2>
+    <p>When you file with ZenBusiness or LegalZoom, you're a ticket number. Your documents get processed offshore, reviewed by software, and you get an email three days later.</p>
+    <p><strong>Here, your filing gets reviewed by Joshua before it ever touches the state system.</strong> He catches errors that cause rejections and delays. He knows Missouri's requirements because he files here every day.</p>
+    <p>And when you need to talk to someone — whether it's about your EIN, your BOI report, or what type of entity makes sense for your business — you call a number and a real person picks up.</p>
+    <p>That's the difference between a service and a partner.</p>
+  </div>
+
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-icon">🏙️</div>
+      <div class="pillar-content">
+        <h4>Local Kansas City Roots</h4>
+        <p>Based in the KC metro. Joshua knows the local business landscape and serves clients throughout Missouri personally.</p>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">📋</div>
+      <div class="pillar-content">
+        <h4>Formation + Notary Under One Roof</h4>
+        <p>LLC filing, EIN, operating agreement, BOI report, and mobile notary — no need to coordinate multiple providers.</p>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">⚡</div>
+      <div class="pillar-content">
+        <h4>Fast, Accurate Turnarounds</h4>
+        <p>Priority filings go same or next business day. Every document is reviewed before submission — no rejections from preventable errors.</p>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">📞</div>
+      <div class="pillar-content">
+        <h4>A Real Person Picks Up</h4>
+        <p>Call or text. Joshua is reachable — not a chatbot, not a call center, not a ticket queue.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COMPARISON TABLE -->
+
+<div class="difference">
+  <div class="divider" style="padding:0; margin-bottom:0;">
+    <div class="divider-line"></div>
+    <div class="divider-label">How We Compare</div>
+    <div class="divider-line"></div>
+  </div>
+
+  <div class="compare-table" style="margin-top: 2rem;">
+    <div class="compare-header">
+      <div>Feature</div>
+      <div>Online Services</div>
+      <div>Rodriguez Formation Group</div>
+    </div>
+    <div class="compare-row">
+      <div>Real person reviews your filing</div>
+      <div class="x">✗</div>
+      <div class="check-gold">✓ Every time</div>
+    </div>
+    <div class="compare-row">
+      <div>Local Kansas City knowledge</div>
+      <div class="x">✗</div>
+      <div class="check-gold">✓ Built in</div>
+    </div>
+    <div class="compare-row">
+      <div>BOI Report included</div>
+      <div class="x">✗ Usually extra</div>
+      <div class="check-gold">✓ Pro package</div>
+    </div>
+    <div class="compare-row">
+      <div>Mobile notary available</div>
+      <div class="x">✗</div>
+      <div class="check-gold">✓ Same day</div>
+    </div>
+    <div class="compare-row">
+      <div>Can call & reach someone</div>
+      <div class="x">✗ Ticket system</div>
+      <div class="check-gold">✓ Direct line</div>
+    </div>
+    <div class="compare-row">
+      <div>Hidden renewal fees</div>
+      <div class="x">Common</div>
+      <div class="check-gold">✓ Never</div>
+    </div>
+    <div class="compare-row">
+      <div>30-min strategy call included</div>
+      <div class="x">✗</div>
+      <div class="check-gold">✓ Pro package</div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT STRIP -->
+
+<div class="contact-strip">
+  <div class="contact-box">
+    <div>
+      <h3>Ready to Start Your Business?</h3>
+      <p>Book a free call or get started directly. Most filings are submitted within 24 hours of receiving your information.<br>
+      Questions? Call or text: <a href="tel:4064178744">(406) 417-8744</a> &nbsp;·&nbsp; <a href="mailto:joshuarodriguez31120@gmail.com">joshuarodriguez31120@gmail.com</a></p>
+    </div>
+    <div class="contact-actions">
+      <a href="#" class="btn btn-primary">Get Started Now</a>
+      <a href="#" class="btn btn-outline">Book a Free Call</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+  <strong>Rodriguez Formation Group</strong> &nbsp;·&nbsp; Kansas City, Missouri<br>
+  Rodriguez Formation Group is not a law firm and does not provide legal advice. We provide filing and administrative support services only.<br>
+  For legal advice, please consult a licensed Missouri attorney.
+</footer>
+
+</body>
+</html>

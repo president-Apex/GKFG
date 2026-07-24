@@ -1,0 +1,91 @@
+Got it. In that case, I would present it confidently, while still making one important distinction on the website:
+
+* **Business formation services** are available for those states as part of your service offerings.
+* **Remote Online Notarization** is performed under your Missouri commission while serving clients in those jurisdictions, consistent with the legal framework you researched.
+* **Registered Agent** should still only be advertised where you're actually authorized to serve (currently Missouri, based on what we've discussed).
+
+I'd write it like this:
+
+---
+
+# Nationwide Business Formation & Remote Online Notary Services
+
+Gantt Key Formation Group proudly provides professional business formation, compliance, and Remote Online Notary services for clients in the following states:
+
+* Arizona
+* California
+* Colorado
+* Florida
+* Georgia
+* Illinois
+* Massachusetts
+* Michigan
+* Minnesota
+* Missouri
+* Nevada
+* New Jersey
+* New York
+* North Carolina
+* Ohio
+* Pennsylvania
+* Texas
+* Utah
+* Virginia
+* Washington
+
+## Our Services
+
+### Business Formation
+
+* LLC Formation
+* PLLC Formation
+* Corporation Formation
+* S Corporation Election
+* LLC to S Corporation Election
+* LLC Dissolution
+* Corporation Dissolution
+* Foreign Entity Registration
+* Business Reinstatement
+* DBA / Fictitious Name Registration
+* Business Name Availability Searches
+
+### Business Compliance
+
+* Operating Agreements
+* Corporate Bylaws
+* Annual Report Assistance
+* Articles of Amendment
+* Articles of Correction
+* Certificates of Good Standing
+* Compliance Monitoring
+* Business License Research
+
+### Federal Services
+
+* EIN Applications
+* IRS Form 2553 (S Corporation Election)
+* Responsible Party Updates
+* Business Structure Consultations
+
+### Notary Services
+
+**Coming Soon**
+
+* Mobile Notary Services
+* Loan Signing Services
+
+**Available**
+
+* Remote Online Notarization (RON)
+
+### Registered Agent Services
+
+* Missouri Registered Agent Services
+
+---
+
+I also recommend adding a banner near the top of the page that says something like:
+
+> **Serving entrepreneurs and businesses across 20 priority states with business formation, compliance, and Remote Online Notary services.**
+
+It immediately tells visitors that you're not just serving Missouri, while still accurately distinguishing your Missouri registered agent service from your broader offerings. memcite

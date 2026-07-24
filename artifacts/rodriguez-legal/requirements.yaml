@@ -1,0 +1,15 @@
+packages:
+  "framer-motion": "Smooth scroll and staggered entry animations for premium feel"
+  "react-hook-form": "Form state management for the contact section"
+  "@hookform/resolvers": "Zod validation integration for the contact form"
+
+images:
+  - path: "artifacts/rodriguez-legal/public/images/hero-bg.png"
+    description: "Abstract premium dark navy architectural background with subtle muted gold geometric light streaks, professional legal corporate theme, highly polished, dark wash"
+    aspect_ratio: "16:9"
+  - path: "artifacts/rodriguez-legal/public/images/about-portrait.png"
+    description: "Elegant professional silhouette of a young trustworthy businessman in a subtle charcoal gray suit, minimal polished corporate aesthetic"
+    aspect_ratio: "3:4"
+
+notes:
+  - Form submission is mocked to show success UI since there is no backend API specified.

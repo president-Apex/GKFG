@@ -1,0 +1,198 @@
+This is very solid thinking—you’re basically building a tiered operational pricing model, which is exactly how professional process servers scale profitably.
+
+I’m going to take what you wrote and turn it into a clean, high-converting website + pricing structure that fits your brand and actually sells.
+
+⸻
+
+⚖️ PROCESS SERVING — FINAL WEBSITE VERSION
+
+🔥 SECTION TITLE (Pricing Page)
+
+Process Serving — Fast, Compliant, and Reliable
+
+⸻
+
+🏙️ KANSAS CITY METRO PRICING (FLAT RATE)
+
+Best for speed + convenience
+
+Service	Price
+Standard Service (3 attempts)	$75
+Rush Service (1–2 days)	$125
+Same-Day Attempt	$150
+Additional Address / Person	+$25
+Difficult Serve (evasive, gated, etc.)	+$25–$40
+
+
+⸻
+
+🌾 RURAL MISSOURI PRICING (BASE + MILEAGE)
+
+Best for distance-based jobs
+
+Service	Price
+Base Service Fee	$50
+Mileage	$0.85 per mile (round trip)
+Rush Service	$100 + mileage
+Wait Time (after 15 min)	$40/hour
+Additional Person (same location)	+$35
+
+
+⸻
+
+📊 QUICK COMPARISON (HIGH-CONVERTING VISUAL BLOCK)
+
+Service Type	KC Metro	Rural Areas
+Standard	$75	$50 + mileage
+Rush	$125	$100 + mileage
+Same Address (2nd person)	+$25	+$35
+
+
+⸻
+
+📋 WHAT’S INCLUDED (IMPORTANT FOR VALUE)
+	•	✔ Court-compliant document delivery
+	•	✔ Up to 3 service attempts (metro)
+	•	✔ Status updates
+	•	✔ Notarized Affidavit of Service
+	•	✔ Filing-ready documentation
+
+⸻
+
+⚡ CTA SECTION
+
+👉 Request Service of Process
+👉 Upload Documents
+
+⸻
+
+⚠️ COMPLIANCE BLOCK (KEEP THIS EXACTLY)
+
+<div class="disclaimer-box" style="margin-top:1.5rem;">
+  <div class="disclaimer-icon">⚖️</div>
+  <p>
+    Process serving is performed in accordance with Missouri Supreme Court Rule 54.13. 
+    Rodriguez Formation Group is not a law firm and does not provide legal advice. 
+    We act only as a neutral third party for delivery of legal documents.
+  </p>
+</div>
+
+
+⸻
+
+💰 PRICING STRATEGY (WHY THIS IS PERFECT)
+
+You now have:
+
+🏙️ KC = SPEED MODEL
+	•	Flat pricing
+	•	Compete with private servers
+	•	Win on speed + professionalism
+
+⸻
+
+🌾 RURAL = DISTANCE MODEL
+	•	Guaranteed profit
+	•	No wasted trips
+	•	Paid for mileage + time
+
+⸻
+
+🔥 HIGH-CONVERTING WEBSITE LINE (ADD THIS)
+
+Serving Kansas City with fast, flat-rate service — and rural Missouri with fair, distance-based pricing so you only pay for what’s required.
+
+⸻
+
+🧠 OPERATIONAL RULES (DO NOT SKIP THESE)
+
+1. ALWAYS COLLECT PAYMENT UPFRONT
+
+Especially rural:
+
+Base fee + estimated mileage
+
+⸻
+
+2. BUILD NOTARY INTO YOUR PRICE
+
+You already nailed this 👇
+Missouri requires notarized affidavit
+
+👉 So:
+	•	Don’t charge separately
+	•	Bake it into pricing (you already did)
+
+⸻
+
+3. TRACK MILEAGE AUTOMATICALLY
+
+Use:
+	•	Google Maps
+	•	Or MileIQ
+
+👉 This protects your profit
+
+⸻
+
+🚀 NEXT LEVEL (THIS IS WHERE MONEY COMES IN)
+
+🎯 TARGET CLIENTS
+
+You don’t market this to random people…
+
+You go after:
+	•	Law firms
+	•	Landlords / eviction attorneys
+	•	Property managers
+	•	Debt collectors
+
+⸻
+
+💼 ATTORNEY HOOK (USE THIS)
+
+Faster than the Sheriff. More reliable than random servers. Real-time updates included.
+
+⸻
+
+🧱 ADD THIS TO YOUR FUNNEL (IMPORTANT)
+
+New Intake Option:
+
+“What service do you need?”
+	•	LLC Formation
+	•	Notary
+	•	Process Serving ✅
+
+⸻
+
+📈 REVENUE REALITY
+
+Just 2–3 serves/day:
+	•	Avg $100–$150 each
+👉 $200–$450/day
+👉 $4K–$9K/month
+
+This is a serious revenue stream
+
+⸻
+
+🔥 FINAL POSITIONING
+
+You are now:
+
+Business Formation + Notary + Process Serving + Attorney Referral Infrastructure
+
+That is a full legal support ecosystem without being a law firm.
+
+⸻
+
+🚀 NEXT STEP
+
+I can build next:
+	1.	Process Serving landing page (SEO optimized)
+	2.	Attorney outreach script (this is big money)
+	3.	Invoice + payment template
+	4.	Dispatch + tracking system
+
+Just tell me 👍

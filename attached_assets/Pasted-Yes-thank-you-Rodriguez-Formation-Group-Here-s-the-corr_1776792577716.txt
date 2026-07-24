@@ -1,0 +1,266 @@
+Yes — thank you. Rodriguez Formation Group.
+
+Here’s the corrected, polished version you can use for Replit with stronger client-facing wording and the right business name.
+
+:::writing{variant=“standard” id=“62418”}
+Please update the Rodriguez Formation Group website and fix the broken “List of Attorneys” link.
+
+We want this to feel polished, premium, professional, and aligned with the current navy / gold branding already on the site.
+
+PRIMARY OBJECTIVES
+
+1. Fix the broken List of Attorneys link so it opens a real page.
+2. Create a polished Attorney Network / Attorney Directory page.
+3. Add attorneys for our target markets:
+    * Kansas City
+    * Montana
+    * Atlanta, Georgia
+    * Charlotte, North Carolina
+    * Phoenix, Arizona
+4. Preserve the existing branding, styling, spacing, and responsive design.
+
+⸻
+
+1) FIX THE BROKEN LINK
+
+* Find the current “List of Attorneys” button / link in the site navigation or anywhere else it appears.
+* It currently does not route anywhere.
+* Update it to open a live page at:
+
+/attorneys
+
+* Make sure the link works correctly on both desktop and mobile.
+* Make sure it is wired in the menu, footer, and any CTA areas where applicable.
+
+⸻
+
+2) CREATE A NEW PAGE
+
+Create a dedicated page for the attorney network.
+
+Suggested route:
+
+/attorneys
+
+Page title:
+
+Attorney Network
+
+Hero headline:
+
+Trusted Attorneys by Market
+
+Hero subheadline:
+
+Explore attorneys in our active service markets who support business formation, legal structure, compliance, contracts, and related business needs.
+
+Intro copy:
+
+Rodriguez Formation Group helps clients get their businesses set up the right way. For matters requiring legal counsel, this attorney network page is designed to help users explore attorneys by market and practice alignment.
+
+⸻
+
+3) PAGE STRUCTURE
+
+Build the page with the following sections:
+
+A. Hero Section
+
+* Headline
+* Subheadline
+* Short supporting paragraph
+* Optional button: Speak With a Formation Specialist
+
+B. Region Navigation / Jump Links
+
+At the top of the page, add quick links or filter buttons for:
+
+* Kansas City
+* Montana
+* Atlanta
+* Charlotte
+* Phoenix
+
+C. Search / Filter
+
+Add a clean filter or search bar that allows users to search by:
+
+* Attorney name
+* Firm name
+* City / state
+* Practice area
+
+D. Attorney Cards
+
+Display attorneys in clean, premium cards grouped by region.
+
+Each attorney card should support:
+
+* Attorney name
+* Firm name
+* Market / city / state
+* Practice area / specialty
+* Short description
+* Website button
+* Optional phone button
+* Optional email field
+* Optional image / headshot
+* Optional note field
+
+E. Disclaimer Section
+
+Add a clean disclaimer near the bottom:
+This directory is provided for informational and referral-network purposes only. Users should independently evaluate legal counsel for their specific legal needs. Rodriguez Formation Group is not a law firm and does not provide legal advice.
+
+⸻
+
+4) LOAD THESE ATTORNEYS INTO THE PAGE
+
+Use a structured data array or JSON file so this can be edited later without rebuilding the page.
+
+KANSAS CITY
+
+1. Jeff Donoho
+    Firm: Kennyhertz Perry
+    Market: Kansas City
+    Practice Area: Corporate Law / M&A / Transactional Law
+2. Dan A. Saathoff
+    Firm: Kennyhertz Perry
+    Market: Kansas City
+    Practice Area: Business & Corporate Law / Startups / M&A
+3. Peter Andreone
+    Firm: Kennyhertz Perry
+    Market: Kansas City
+    Practice Area: Business / Transactional / Litigation
+4. Richard T. Bryant
+    Firm: Richard T. Bryant & Associates
+    Market: Kansas City
+    Practice Area: Business Formation / Tax Registrations
+
+MONTANA
+
+1. Natalie Black
+    Firm: Worden Thane
+    Market: Montana
+    Practice Area: Business Organizations / Nonprofit & For-Profit Formation
+2. Erika L. Johnson
+    Firm: Worden Thane
+    Market: Montana
+    Practice Area: Business & Commercial Law
+3. Ronald A. Bender
+    Firm: Worden Thane
+    Market: Montana
+    Practice Area: Business Transactions / Business Advice
+4. James A. Bowditch
+    Firm: Boone Karlberg
+    Market: Montana
+    Practice Area: Business Formation / Planning / M&A
+
+ATLANTA, GEORGIA
+
+1. Christine Forsythe
+    Firm: The Forsythe Law Firm
+    Market: Atlanta, Georgia
+    Practice Area: Business Entity Formation
+2. Ashley Hughes
+    Firm: Oliver Hughes LLC
+    Market: Atlanta, Georgia
+    Practice Area: Corporate Counsel / Business Law
+3. Jeremy Simpson
+    Firm: Oliver Hughes LLC
+    Market: Atlanta, Georgia
+    Practice Area: Corporate Counsel / Business Advisory
+4. Amber Oliver
+    Firm: Oliver Hughes LLC
+    Market: Atlanta, Georgia
+    Practice Area: Business Law / Corporate Leadership
+
+CHARLOTTE, NORTH CAROLINA
+
+1. J. Nicholas “Nick” Kendall
+    Firm: Johnston Allison Hord
+    Market: Charlotte, North Carolina
+    Practice Area: Startups / Corporate / Transactions
+2. Mackenzie Ferguson
+    Firm: Johnston Allison Hord
+    Market: Charlotte, North Carolina
+    Practice Area: Corporate / Governance / M&A
+3. Jaylyn N. Powell
+    Firm: Johnston Allison Hord
+    Market: Charlotte, North Carolina
+    Practice Area: Business Transactions / M&A / Governance
+4. David S. Rugani
+    Firm: Johnston Allison Hord
+    Market: Charlotte, North Carolina
+    Practice Area: Business Formation / Capital / Exit Transactions
+
+PHOENIX, ARIZONA
+
+1. Troy A. Wallin
+    Firm: Wallin Hester
+    Market: Phoenix, Arizona
+    Practice Area: Corporate / Securities / Business Law
+2. Chad A. Hester
+    Firm: Wallin Hester
+    Market: Phoenix, Arizona
+    Practice Area: Business Law / Entrepreneurs
+3. Tyler N. Bowman
+    Firm: Wallin Hester
+    Market: Phoenix, Arizona
+    Practice Area: Transactional / Litigation / Small Business Law
+4. Donald W. Hudspeth
+    Firm: Law Offices of Donald W. Hudspeth
+    Market: Phoenix, Arizona
+    Practice Area: Business Formation / Business Law
+
+⸻
+
+5) DESIGN DIRECTION
+
+* Keep the site’s current premium visual identity.
+* Maintain the existing navy / gold palette.
+* Match current spacing, rounded corners, typography, and button style.
+* Make the attorney page feel like part of the same brand, not a random add-on.
+* Cards should feel clean, high-trust, and professional.
+
+⸻
+
+6) FUNCTIONALITY REQUIREMENTS
+
+* Search must work on mobile and desktop.
+* All attorney website links must open in a new tab.
+* If a phone number is later added, the card should support click-to-call formatting.
+* The layout should gracefully handle missing headshots or missing optional fields.
+* The page must be responsive.
+
+⸻
+
+7) TECHNICAL IMPLEMENTATION
+
+* Build the attorney list from a single source of truth, such as:
+    * /data/attorneys.ts
+    * /data/attorneys.js
+    * or /data/attorneys.json
+* Group attorneys by region in the UI.
+* Keep the code easy to update later as more attorneys are added.
+
+Suggested data shape:
+
+* id
+* name
+* firm
+* market
+* city
+* state
+* practiceArea
+* description
+* website
+* phone
+* email
+* image
+* featured
+* notes
+
+⸻
+
+8

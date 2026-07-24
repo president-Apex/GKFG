@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Process Serving for Law Firms | Rodriguez Formation Group</title>
+<meta name="description" content="Fast, reliable process serving for Kansas City law firms. Same-day available. Notarized proof of service included. Serving KC metro + Clay & Clinton County.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0d1b2a; --navy-mid: #162032; --navy-light: #1e2f45;
+    --gold: #c9a84c; --gold-light: #e2c275; --gold-pale: #f5e9c8;
+    --white: #ffffff; --text-muted: #8a9bb0; --border: rgba(201,168,76,0.2);
+    --border-soft: rgba(255,255,255,0.07); --success: #4caf82;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--navy); color: var(--white); overflow-x: hidden; }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background: radial-gradient(ellipse 80% 60% at 20% 0%, rgba(201,168,76,0.07) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 80% at 80% 100%, rgba(201,168,76,0.05) 0%, transparent 60%);
+  }
+
+nav {
+position: sticky; top: 0; z-index: 100;
+background: rgba(13,27,42,0.92); backdrop-filter: blur(12px);
+border-bottom: 1px solid var(–border);
+padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 68px;
+}
+.logo { font-family: ‘Playfair Display’, serif; font-size: 1.15rem; font-weight: 600; color: var(–gold); }
+.logo span { color: var(–white); }
+nav a { color: var(–text-muted); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; }
+nav a:hover { color: var(–gold); }
+.nav-cta { background: var(–gold); color: var(–navy) !important; padding: 0.5rem 1.25rem; border-radius: 4px; font-weight: 600 !important; }
+.nav-cta:hover { background: var(–gold-light) !important; }
+
+/* HERO */
+.hero {
+position: relative; z-index: 1;
+max-width: 1100px; margin: 0 auto; padding: 5rem 2rem 4rem;
+display: grid; grid-template-columns: 1fr 420px; gap: 4rem; align-items: center;
+}
+.hero-eyebrow {
+display: inline-flex; align-items: center; gap: 0.5rem;
+background: rgba(201,168,76,0.12); border: 1px solid var(–border);
+border-radius: 100px; padding: 0.35rem 1rem;
+font-size: 0.78rem; font-weight: 600; color: var(–gold);
+letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1.5rem;
+animation: fadeUp 0.5s ease both;
+}
+.hero h1 {
+font-family: ‘Playfair Display’, serif;
+font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; line-height: 1.15;
+color: var(–white); margin-bottom: 1.25rem;
+animation: fadeUp 0.5s 0.1s ease both;
+}
+.hero h1 em { font-style: normal; color: var(–gold); }
+.hero p { font-size: 1rem; color: var(–text-muted); line-height: 1.8; font-weight: 300; margin-bottom: 2rem; animation: fadeUp 0.5s 0.2s ease both; }
+
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; animation: fadeUp 0.5s 0.3s ease both; }
+
+/* PITCH CARD */
+.pitch-card {
+background: var(–navy-light); border: 1px solid var(–border);
+border-radius: 16px; padding: 2rem;
+animation: fadeUp 0.5s 0.2s ease both;
+box-shadow: 0 24px 48px rgba(0,0,0,0.3);
+}
+.pitch-card-label {
+font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em;
+text-transform: uppercase; color: var(–gold); margin-bottom: 1.25rem;
+}
+.pitch-stat {
+display: flex; justify-content: space-between; align-items: center;
+padding: 0.75rem 0; border-bottom: 1px solid var(–border-soft);
+}
+.pitch-stat:last-child { border-bottom: none; }
+.pitch-stat .ps-label { font-size: 0.85rem; color: var(–text-muted); }
+.pitch-stat .ps-val { font-size: 0.9rem; font-weight: 600; color: var(–gold-pale); }
+.pitch-stat .ps-val.green { color: var(–success); }
+
+/* SECTION */
+section { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+
+.divider { display: flex; align-items: center; gap: 1rem; margin: 3.5rem 0 2rem; }
+.divider-line { flex: 1; height: 1px; background: var(–border); }
+.divider-label { font-family: ‘Playfair Display’, serif; font-size: 0.8rem; color: var(–gold); letter-spacing: 0.12em; text-transform: uppercase; white-space: nowrap; }
+
+/* WHY ATTORNEYS CHOOSE */
+.reasons-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.reason-card {
+background: var(–navy-mid); border: 1px solid var(–border-soft);
+border-radius: 12px; padding: 1.75rem;
+transition: border-color 0.2s, transform 0.2s;
+animation: fadeUp 0.5s ease both;
+}
+.reason-card:hover { border-color: var(–border); transform: translateY(-3px); }
+.reason-card:nth-child(1) { animation-delay: 0.05s; }
+.reason-card:nth-child(2) { animation-delay: 0.1s; }
+.reason-card:nth-child(3) { animation-delay: 0.15s; }
+.reason-card:nth-child(4) { animation-delay: 0.2s; }
+.reason-card:nth-child(5) { animation-delay: 0.25s; }
+.reason-card:nth-child(6) { animation-delay: 0.3s; }
+.reason-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+.reason-title { font-size: 0.95rem; font-weight: 600; color: var(–white); margin-bottom: 0.4rem; }
+.reason-desc { font-size: 0.82rem; color: var(–text-muted); line-height: 1.65; }
+
+/* SERVICE TIERS FOR FIRMS */
+.firm-tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.tier-card {
+background: var(–navy-mid); border: 1px solid var(–border-soft);
+border-radius: 12px; padding: 1.75rem;
+animation: fadeUp 0.5s ease both;
+}
+.tier-card.featured { border-color: var(–gold); background: var(–navy-light); }
+.tier-name { font-family: ‘Playfair Display’, serif; font-size: 1.1rem; font-weight: 700; color: var(–white); margin-bottom: 0.25rem; }
+.tier-price { font-size: 1.5rem; font-weight: 700; color: var(–gold); font-family: ‘Playfair Display’, serif; margin-bottom: 0.25rem; }
+.tier-note { font-size: 0.75rem; color: var(–text-muted); margin-bottom: 1.25rem; }
+.tier-features { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.tier-features li { font-size: 0.82rem; color: #c5d0dd; display: flex; gap: 0.5rem; line-height: 1.4; }
+.tier-features li::before { content: ‘✓’; color: var(–gold); font-weight: 700; flex-shrink: 0; }
+
+/* COVERAGE */
+.coverage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.coverage-card { background: var(–navy-mid); border: 1px solid var(–border-soft); border-radius: 12px; padding: 1.75rem; }
+.coverage-card h3 { font-family: ‘Playfair Display’, serif; font-size: 1rem; color: var(–white); margin-bottom: 0.75rem; }
+.coverage-tag {
+display: inline-block; background: rgba(201,168,76,0.1); border: 1px solid var(–border);
+border-radius: 6px; padding: 0.3rem 0.7rem; font-size: 0.78rem; color: var(–gold-pale);
+margin: 0.2rem;
+}
+
+/* PROCESS TIMELINE */
+.timeline { display: flex; flex-direction: column; gap: 0; }
+.tl-item { display: flex; gap: 1.5rem; align-items: flex-start; padding-bottom: 1.75rem; position: relative; }
+.tl-item::before {
+content: ‘’; position: absolute; left: 19px; top: 40px; bottom: 0;
+width: 2px; background: var(–border-soft);
+}
+.tl-item:last-child::before { display: none; }
+.tl-num {
+width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0;
+background: rgba(201,168,76,0.12); border: 1px solid var(–border);
+display: flex; align-items: center; justify-content: center;
+font-size: 0.85rem; font-weight: 700; color: var(–gold);
+}
+.tl-content h4 { font-size: 0.95rem; font-weight: 600; color: var(–white); margin-bottom: 0.3rem; }
+.tl-content p { font-size: 0.82rem; color: var(–text-muted); line-height: 1.6; }
+
+/* OUTREACH EMAIL */
+.email-box {
+background: var(–navy-mid); border: 1px solid var(–border);
+border-radius: 14px; overflow: hidden;
+}
+.email-header {
+background: var(–navy-light); padding: 1rem 1.5rem;
+border-bottom: 1px solid var(–border-soft);
+display: flex; justify-content: space-between; align-items: center;
+}
+.email-header span { font-size: 0.78rem; color: var(–text-muted); }
+.email-header strong { color: var(–gold-pale); }
+.copy-btn {
+background: rgba(201,168,76,0.12); border: 1px solid var(–border);
+color: var(–gold); font-size: 0.75rem; font-weight: 600;
+padding: 0.35rem 0.85rem; border-radius: 5px; cursor: pointer;
+font-family: ‘DM Sans’, sans-serif; transition: all 0.2s;
+}
+.copy-btn:hover { background: rgba(201,168,76,0.2); }
+.copy-btn.copied { color: var(–success); border-color: var(–success); }
+.email-body { padding: 1.75rem; font-size: 0.88rem; color: #c5d0dd; line-height: 1.9; white-space: pre-wrap; }
+.email-body .placeholder { color: var(–gold); font-weight: 600; }
+
+/* CTA STRIP */
+.cta-strip {
+background: var(–navy-light); border: 1px solid var(–border);
+border-radius: 14px; padding: 2.5rem 3rem;
+display: grid; grid-template-columns: 1fr auto;
+gap: 2rem; align-items: center;
+margin: 3.5rem 0 5rem;
+}
+.cta-strip h2 { font-family: ‘Playfair Display’, serif; font-size: 1.5rem; color: var(–white); margin-bottom: 0.4rem; }
+.cta-strip p { font-size: 0.88rem; color: var(–text-muted); line-height: 1.6; }
+.cta-actions { display: flex; flex-direction: column; gap: 0.75rem; min-width: 210px; }
+
+/* BUTTONS */
+.btn {
+display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+padding: 0.875rem 1.75rem; border-radius: 7px; font-size: 0.9rem; font-weight: 600;
+cursor: pointer; text-decoration: none; transition: all 0.2s; border: none;
+font-family: ‘DM Sans’, sans-serif;
+}
+.btn-primary { background: var(–gold); color: var(–navy); }
+.btn-primary:hover { background: var(–gold-light); transform: translateY(-1px); }
+.btn-outline { background: transparent; color: var(–gold); border: 1px solid var(–gold); }
+.btn-outline:hover { background: rgba(201,168,76,0.1); }
+.btn-sm { padding: 0.6rem 1.25rem; font-size: 0.82rem; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 900px) {
+.hero { grid-template-columns: 1fr; gap: 2rem; }
+.reasons-grid, .firm-tiers { grid-template-columns: 1fr 1fr; }
+.coverage-grid { grid-template-columns: 1fr; }
+.cta-strip { grid-template-columns: 1fr; }
+.cta-actions { flex-direction: row; flex-wrap: wrap; }
+}
+@media (max-width: 600px) {
+nav { padding: 0 1rem; }
+.hero, section { padding-left: 1.25rem; padding-right: 1.25rem; }
+.reasons-grid, .firm-tiers { grid-template-columns: 1fr; }
+.cta-strip { padding: 1.75rem 1.5rem; }
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+  <div class="logo">Rodriguez <span>Formation Group</span></div>
+  <div style="display:flex;gap:1.5rem;align-items:center;">
+    <a href="#">Pricing</a>
+    <a href="#">Services</a>
+    <a href="#contact" class="nav-cta">Set Up Account</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+  <div>
+    <div class="hero-eyebrow">⚖️ For Law Firms & Attorneys</div>
+    <h1>Your Reliable Process<br>Server in <em>KC & Beyond.</em></h1>
+    <p>Most servers only cover the metro. We cover Kansas City and rural Clay & Clinton County — with same-day availability, notarized proof of service, and a real person you can actually reach when a deadline is on the line.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">Set Up a Firm Account</a>
+      <a href="tel:4064178744" class="btn btn-outline">Call (406) 417-8744</a>
+    </div>
+  </div>
+
+  <div class="pitch-card">
+    <div class="pitch-card-label">Why Firms Choose Rodriguez Formation Group</div>
+    <div class="pitch-stat"><span class="ps-label">Turnaround — Standard</span><span class="ps-val">1–3 attempts, 3–5 days</span></div>
+    <div class="pitch-stat"><span class="ps-label">Rush / Same-Day KC</span><span class="ps-val green">✓ Available</span></div>
+    <div class="pitch-stat"><span class="ps-label">Rural Coverage</span><span class="ps-val green">✓ Clay & Clinton County</span></div>
+    <div class="pitch-stat"><span class="ps-label">Notarized Proof of Service</span><span class="ps-val green">✓ Every serve</span></div>
+    <div class="pitch-stat"><span class="ps-label">Court affidavit filing</span><span class="ps-val green">✓ Included</span></div>
+    <div class="pitch-stat"><span class="ps-label">Real-time status updates</span><span class="ps-val green">✓ Call or text</span></div>
+    <div class="pitch-stat"><span class="ps-label">16th Circuit Approved</span><span class="ps-val green">✓ Jackson County</span></div>
+    <div class="pitch-stat" style="border:none;"><span class="ps-label">Bulk / monthly billing</span><span class="ps-val">✓ Available for firms</span></div>
+  </div>
+</div>
+
+<!-- WHY ATTORNEYS CHOOSE US -->
+
+<section>
+  <div class="divider"><div class="divider-line"></div><div class="divider-label">Why Attorneys Choose Us</div><div class="divider-line"></div></div>
+  <div class="reasons-grid">
+    <div class="reason-card">
+      <div class="reason-icon">⚡</div>
+      <div class="reason-title">We Answer When You Call</div>
+      <div class="reason-desc">No ticket system. No call center. Joshua picks up the phone — especially when you have a filing deadline and need confirmation now.</div>
+    </div>
+    <div class="reason-card">
+      <div class="reason-icon">🗺️</div>
+      <div class="reason-title">Metro + Rural Coverage</div>
+      <div class="reason-desc">Most KC servers won't cross the county line. We cover the full KC metro and extend into Kearney, Smithville, Plattsburg, and Lathrop — areas most competitors skip.</div>
+    </div>
+    <div class="reason-card">
+      <div class="reason-icon">📋</div>
+      <div class="reason-title">Court-Ready Paperwork</div>
+      <div class="reason-desc">Every serve includes a notarized Proof of Service affidavit filed with the court within 30 days. No chasing down documentation after the fact.</div>
+    </div>
+    <div class="reason-card">
+      <div class="reason-icon">🔄</div>
+      <div class="reason-title">Status Without Asking</div>
+      <div class="reason-desc">You'll know when service is attempted, completed, or when a subject is proving evasive — without having to follow up. We update you proactively.</div>
+    </div>
+    <div class="reason-card">
+      <div class="reason-icon">💼</div>
+      <div class="reason-title">Bulk & Monthly Billing</div>
+      <div class="reason-desc">For firms with regular volume, we offer consolidated monthly invoicing so your team isn't processing a separate payment for every single serve.</div>
+    </div>
+    <div class="reason-card">
+      <div class="reason-icon">🛡️</div>
+      <div class="reason-title">Notary On Staff</div>
+      <div class="reason-desc">Joshua is a commissioned Missouri notary — which means your Proof of Service is notarized on the spot, not days later waiting for a third party.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FIRM SERVICE TIERS -->
+
+<section>
+  <div class="divider"><div class="divider-line"></div><div class="divider-label">Firm Pricing</div><div class="divider-line"></div></div>
+  <div class="firm-tiers">
+    <div class="tier-card">
+      <div class="tier-name">Standard Serve</div>
+      <div class="tier-price">$65–$85</div>
+      <div class="tier-note">KC Metro flat rate</div>
+      <ul class="tier-features">
+        <li>Up to 3 attempts</li>
+        <li>Notarized Proof of Service</li>
+        <li>Court affidavit filed</li>
+        <li>3–5 business day window</li>
+        <li>Status updates included</li>
+      </ul>
+    </div>
+    <div class="tier-card featured">
+      <div class="tier-name">Rush / Same-Day</div>
+      <div class="tier-price">$110–$150</div>
+      <div class="tier-note">KC Metro · Priority queue</div>
+      <ul class="tier-features">
+        <li>Same-day when ordered by noon</li>
+        <li>Up to 3 attempts same day</li>
+        <li>Notarized Proof of Service</li>
+        <li>Court affidavit filed</li>
+        <li>Real-time confirmation call</li>
+      </ul>
+    </div>
+    <div class="tier-card">
+      <div class="tier-name">Rural Serve</div>
+      <div class="tier-price">$45 + miles</div>
+      <div class="tier-note">Clay & Clinton County · $0.85/mi</div>
+      <ul class="tier-features">
+        <li>Kearney, Smithville, Plattsburg, Lathrop</li>
+        <li>Prepayment: base + est. mileage</li>
+        <li>Wait time: $30–$50/hr after 15 min</li>
+        <li>Notarized Proof of Service</li>
+        <li>Court affidavit filed</li>
+      </ul>
+    </div>
+  </div>
+  <div style="margin-top:1rem; padding:0.85rem 1.25rem; background:rgba(201,168,76,0.06); border:1px solid var(--border); border-radius:8px; font-size:0.8rem; color:var(--text-muted); line-height:1.6;">
+    💼 <strong style="color:var(--gold-pale);">Firm accounts:</strong> Consolidated monthly invoicing available for firms with 5+ serves/month. Evasive target surcharge (+$20–$40) applied when subject is actively avoiding service. Second person at same address +$25 metro / +$35 rural.
+  </div>
+</section>
+
+<!-- HOW IT WORKS FOR FIRMS -->
+
+<section>
+  <div class="divider"><div class="divider-line"></div><div class="divider-label">How It Works</div><div class="divider-line"></div></div>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem;">
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-num">1</div>
+        <div class="tl-content">
+          <h4>Submit Your Serve Request</h4>
+          <p>Call, text, or email Joshua with the documents, subject name, address, and your deadline. Rush orders accepted until noon for same-day.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-num">2</div>
+        <div class="tl-content">
+          <h4>Confirm & Invoice</h4>
+          <p>Joshua confirms the serve details and sends a quick invoice. Rural serves require prepayment of base + estimated mileage before departure.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-num">3</div>
+        <div class="tl-content">
+          <h4>Service Attempted</h4>
+          <p>Up to 3 attempts on standard serves. If a subject is evasive, Joshua flags it immediately so you can advise on next steps (substitute service, posting, etc.).</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-num">4</div>
+        <div class="tl-content">
+          <h4>Notarized Proof of Service</h4>
+          <p>Upon successful service, Joshua completes and notarizes the Return of Service affidavit on the spot — no waiting for a separate notary.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-num">5</div>
+        <div class="tl-content">
+          <h4>Filed & Delivered to Your Firm</h4>
+          <p>The completed affidavit is filed with the court clerk within 30 days and a copy is delivered directly to your firm. Case closed, paperwork done.</p>
+        </div>
+      </div>
+    </div>
+
+```
+<!-- COVERAGE -->
+<div>
+  <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:1rem;">Full Service Coverage</div>
+  <div class="coverage-grid">
+    <div class="coverage-card">
+      <h3>🏙️ KC Metro — Flat Rate</h3>
+      <div>
+        <span class="coverage-tag">Kansas City</span>
+        <span class="coverage-tag">Liberty</span>
+        <span class="coverage-tag">Gladstone</span>
+        <span class="coverage-tag">North KC</span>
+        <span class="coverage-tag">Riverside</span>
+        <span class="coverage-tag">Parkville</span>
+      </div>
+    </div>
+    <div class="coverage-card">
+      <h3>🛣️ Rural — Base + Mileage</h3>
+      <div>
+        <span class="coverage-tag">Kearney</span>
+        <span class="coverage-tag">Smithville</span>
+        <span class="coverage-tag">Plattsburg</span>
+        <span class="coverage-tag">Lathrop</span>
+        <span class="coverage-tag">Clay County</span>
+        <span class="coverage-tag">Clinton County</span>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:1.25rem; padding:1rem 1.25rem; background:rgba(255,255,255,0.03); border:1px solid var(--border-soft); border-radius:8px; font-size:0.8rem; color:var(--text-muted); line-height:1.7;">
+    📌 <strong style="color:var(--gold-pale);">16th Circuit (Jackson County)</strong> approved process server list — pre-authorized for all Jackson County cases without per-case motion. Clay County application in progress.
+  </div>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- OUTREACH EMAIL TEMPLATE -->
+
+<section>
+  <div class="divider"><div class="divider-line"></div><div class="divider-label">Attorney Outreach Email — Copy & Send</div><div class="divider-line"></div></div>
+  <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1.25rem; line-height:1.6;">Use this email to introduce yourself to KC-area law firms. Personalize the <span style="color:var(--gold);">[highlighted fields]</span> before sending.</p>
+
+  <div class="email-box">
+    <div class="email-header">
+      <div>
+        <div><span>Subject: </span><strong>Process Serving for [Firm Name] — KC Metro + Rural Coverage</strong></div>
+      </div>
+      <button class="copy-btn" onclick="copyEmail(this)">Copy Email</button>
+    </div>
+    <div class="email-body" id="email-content">Hi <span class="placeholder">[Attorney First Name]</span>,
+
+My name is Joshua Rodriguez, and I provide professional process serving throughout the Kansas City metro and surrounding rural areas including Clay and Clinton County.
+
+I wanted to reach out because I noticed that <span class="placeholder">[Firm Name]</span> handles <span class="placeholder">[practice area — e.g., civil litigation / family law / landlord-tenant]</span> cases, and I’d like to offer my services as a reliable, fast process server for your firm.
+
+Here’s what I offer that most servers in the area don’t:
+
+• Same-day service available in KC Metro (order by noon)
+• Rural coverage — Kearney, Smithville, Plattsburg, Lathrop, and surrounding areas
+• Notarized Proof of Service completed on the spot — I’m a commissioned Missouri notary
+• Real-time updates — I call or text you directly, no chasing me down
+• 16th Circuit approved (Jackson County) — no per-case motion needed
+• Consolidated monthly invoicing for firms with regular volume
+
+Standard metro rates run $65–$85 per serve with up to 3 attempts included. Rush same-day is $110–$150.
+
+I’d be happy to handle your next serve as an introduction — no obligation. If you’d like to set up a firm account or have any questions, feel free to call or text me directly at (406) 417-8744 or reply to this email.
+
+Thanks for your time,
+
+Joshua Rodriguez
+Rodriguez Formation Group
+(406) 417-8744
+joshuarodriguez31120@gmail.com
+
+</div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+
+<section>
+  <div class="cta-strip" id="contact">
+    <div>
+      <h2>Ready to Set Up a Firm Account?</h2>
+      <p>Call or text Joshua directly to get set up. Most firms are onboarded same day — no paperwork, no contracts, just reliable service when you need it.<br>
+      <strong style="color:var(--gold);">(406) 417-8744</strong> &nbsp;·&nbsp; <a href="mailto:joshuarodriguez31120@gmail.com" style="color:var(--gold); text-decoration:none;">joshuarodriguez31120@gmail.com</a></p>
+    </div>
+    <div class="cta-actions">
+      <a href="tel:4064178744" class="btn btn-primary">Call Now</a>
+      <a href="#" class="btn btn-outline">Submit a Serve Request</a>
+    </div>
+  </div>
+</section>
+
+<script>
+function copyEmail(btn) {
+  const content = document.getElementById('email-content').innerText;
+  navigator.clipboard.writeText(content).then(() => {
+    btn.textContent = '✓ Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy Email'; btn.classList.remove('copied'); }, 2500);
+  });
+}
+</script>
+
+</body>
+</html>
