@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Layout } from "@/components/layout";
 import { useAnalyticsTracker } from "@/hooks/use-analytics-tracker";
+import { Analytics } from "@vercel/analytics/react";
 
 import Home from "@/pages/home";
 import About from "@/pages/about";
@@ -106,6 +107,7 @@ export default function App() {
           <Router />
         </WouterRouter>
         <Toaster />
+        <Analytics />
       </TooltipProvider>
     </QueryClientProvider>
   );
