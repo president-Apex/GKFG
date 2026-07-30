@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
@@ -75,6 +76,7 @@ function App() {
         <ChatWidget />
         <SocialProofPopup />
         <Toaster />
+        <Analytics />
       </TooltipProvider>
     </QueryClientProvider>
   );
